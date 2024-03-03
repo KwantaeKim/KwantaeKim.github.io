@@ -1,7 +1,8 @@
 # Site Settings
 lang: en
-title: Bulma Clean Theme
-tagline: Bulma Clean Theme
+# title: Kwantae Kim
+tagline: Kwantae Kim
+# tagline: Bulma Clean Theme
 email: your-email@domain.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
@@ -9,10 +10,9 @@ baseurl: "/bulma-clean-theme"
 url: "https://www.csrhymes.com"
 permalink: pretty
 #favicon: /path/to/favicon.png
-gh_sponsor: chrisrhymes
 #hide_share_buttons: true
-#theme_color: '#eeeeee'
-#fixed_navbar: top
+# theme_color: '#02343F'
+fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr
 
 paginate: 5
