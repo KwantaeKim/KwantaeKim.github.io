@@ -1,3 +1,13 @@
+<style>
+    .transparent-text {
+        opacity: 0.4; /* 90% transparent by default */
+        transition: opacity 0.3s ease; /* Add a smooth transition effect */
+    }
+    .transparent-text:hover {
+        opacity: 1; /* 0% transparent when hovering */
+    }
+</style>
+
 <footer class="footer">
     <div class="container">
         
@@ -14,7 +24,7 @@
         {% endif %}
 
         <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+            <p class="transparent-text">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
         </div>
     </div>
 </footer>

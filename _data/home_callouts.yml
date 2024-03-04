@@ -1,8 +1,9 @@
 style: is-light
+height: is-small
 items:
-  - title: Multiple page layouts
+  - title: Kwantae
     subtitle: Including sidebar, menubar, tabs and callouts
-    icon: fa-copy
+    icon: fa-microchip
   - title: Blog included
     subtitle: Layouts for blog and post pages included
     icon: fa-mail-bulk
