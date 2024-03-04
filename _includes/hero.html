@@ -1,17 +1,24 @@
+<style>
+    .title-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Adjust the values as needed */
+    }
+</style>
+
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image | relative_url }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container">
-            <h1 class="title is-1" style="display: flex; justify-content: center; align-items: center; margin-top: -2em;">🛠️ Under Development 😅</h1>
+            <h1 class="title is-1 title-shadow" style="display: flex; justify-content: center; align-items: center; margin-top: -1em;">🛠️ Under Development 😅</h1>
             <h1 class="title is-1" style="display: flex; justify-content: center; align-items: center;"> ----- </h1>
             <div class="columns">
-                <div class="column is-one-third" style="display: flex; justify-content: center; align-items: center;">
+                <div class="column is-half" style="display: flex; justify-content: center; align-items: center;">
                     {% if page.hero_photo %}
-                        <img src="{{ page.hero_photo | relative_url }}" alt="Hero Photo" style="max-width: 100%; max-height: 400px;">
+                        <img src="{{ page.hero_photo | relative_url }}" alt="Hero Photo" style="max-width: 100%; max-height: 500px;">
                     {% endif %}
                 </div>
-                <div class="column is-two-thirds">
-                    <h1 class="title is-2">{{ page.title }}</h1>
-                    <p class="subtitle is-3">{{ page.subtitle }}</p>
+                <div class="column is-half">
+                    <h1 class="title is-2 title-shadow">{{ page.title }}</h1>
+                    <p class="subtitle is-3 title-shadow">{{ page.subtitle }}</p>
+                    <p class="desc is-4 title-shadow">{{ page.desc }}</p>
                     {% if page.hero_link %}
                         <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
                     {% endif %}

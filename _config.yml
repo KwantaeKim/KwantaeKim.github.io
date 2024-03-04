@@ -5,9 +5,9 @@ description: >
 baseurl: "/bulma-clean-theme"
 url: "https://kwantaekim.github.io"
 permalink: pretty
-favicon: /img/tutto.png
+favicon: /img/tutto/tutto.png
 #hide_share_buttons: true
-# theme_color: '#02343F'
+theme_color: '#02343F'
 fixed_navbar: top
 timezone: Europe/Zurich
 #direction: one of <ltr, rtl, auto>, default: ltr
