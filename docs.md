@@ -2,6 +2,7 @@
 layout: page
 title: Docs
 menubar: docs_menu
+hero_height: is_small
 show_sidebar: false
 ---
 
