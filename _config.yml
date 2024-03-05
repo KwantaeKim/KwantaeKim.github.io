@@ -2,7 +2,8 @@
 lang: en
 description: >
   Kwantae Kim's Personal Webpage
-baseurl: "/bulma-clean-theme"
+baseurl: ""
+# baseurl: "/bulma-clean-theme"
 url: "https://kwantaekim.github.io"
 permalink: pretty
 favicon: /img/tutto/tutto.png

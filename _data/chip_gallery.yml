@@ -1,3 +1,37 @@
+- title: 2020
+  images:
+    - link: /img/chips/2020-CochClass.png
+      description: |-
+        ### CochClass
+        TSMC 65nm CMOS <br>
+        **Role**: Top Architect
+
+        <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank">ISSCC 2022</a>
+        <span style="margin-right: 1em;"></span>
+        <a href="https://doi.org/10.1109/JSSC.2022.3195610" target="_blank">JSSC 2022</a>
+
+        Tape-out: Dec. 2020 <br>
+        Fab-out: May. 2021
+      ratio: is-16by9
+
+- title: 2019
+  images:
+    - link: /img/chips/2019-BioZ2.png
+      description: |-
+        ### BioZ2
+        Samsung 65nm CMOS <br>
+        **Role**: Top Architect
+
+        <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank">VLSI 2020</a>
+        <span style="margin-right: 1em;"></span>
+        <a href="https://doi.org/10.1109/JSSC.2021.3100716" target="_blank">JSSC 2022</a>
+
+        <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">Code (MATLAB/Verilog)</a>
+
+        Tape-out: May. 2019 <br>
+        Fab-out: Dec. 2019
+      ratio: is-16by9
+
 - title: 2018
   images:
     - link: /img/chips/2018-GLY.png
