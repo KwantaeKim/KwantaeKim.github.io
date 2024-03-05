@@ -1,6 +1,6 @@
 ---
 title: Kwantae Kim
-subtitle: |
+subtitle: |-
   Established Researcher <br><br>
   ETH Zurich <br>
   Switzerland 🇨🇭 <br>

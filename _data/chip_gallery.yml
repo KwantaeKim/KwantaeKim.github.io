@@ -1,0 +1,68 @@
+- title: 2018
+  images:
+    - link: /img/chips/2018-GLY.png
+      description: |-
+        ### GLY
+        Samsung 65nm CMOS <br>
+        **Role**: Top Architect
+
+        <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank">ISSCC 2019</a>
+        <span style="margin-right: 1em;"></span>
+        <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank">JSSC 2020</a>
+
+        Tape-out: Jan. 2018 <br>
+        Fab-out: Aug. 2018
+      ratio: is-16by9
+
+- title: 2017
+  images:
+    - link: /img/chips/2017-IOT.png
+      description: |-
+        ### IOT
+        TSMC 180nm HV CMOS <br>
+        **Role**: Designer (Boost Converter)
+
+        <a href="https://doi.org/10.1109/ISSCC.2019.8662504" target="_blank">ISSCC 2019</a>
+
+        Tape-out: Dec. 2017 <br>
+        Fab-out: Mar. 2018
+      ratio: is-16by9
+
+- title: 2016
+  images:
+    - link: /img/chips/2016-TOF_TEST.png
+      description: |-
+        ### TOF TEST
+        SMIC 180nm CMOS <br>
+        **Role**: Top Architect
+
+        <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank">ESSCIRC 2017</a>
+
+        Tape-out: Jun. 2016 <br>
+        Fab-out: Aug. 2016
+      ratio: is-16by9
+    - link: /img/chips/2016-WIT.png
+      description: |-
+        ### WIT
+        Samsung 65nm CMOS <br>
+        **Role**: Layout Engineer (SAR ADC)
+
+        <a href="https://doi.org/10.1109/ISSCC.2017.7870407" target="_blank">ISSCC 2016</a>
+        <span style="margin-right: 1em;"></span>
+        <a href="https://doi.org/10.1109/JSSC.2017.2753234" target="_blank">JSSC 2017</a>
+
+
+        Tape-out: Feb. 2016 <br>
+        Fab-out: Aug. 2016
+      ratio: is-16by9
+    - link: /img/chips/2016-ANES.png
+      description: |-
+        ### ANES
+        Samsung 65nm CMOS <br>
+        **Role**: Layout Engineer (SAR ADC)
+
+        <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank">ISSCC 2016</a>
+
+        Tape-out: Feb. 2016 <br>
+        Fab-out: Aug. 2016
+      ratio: is-16by9
