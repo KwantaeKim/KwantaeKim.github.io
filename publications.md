@@ -70,14 +70,12 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 
 **27** Authored/Co-Authored IEEE papers
 
-<br>
-<div class='scholar'>
-  <div style="display: flex; align-items: center;" class='scholar-txt'>
-    <img src="./../img/icons/black--graduation-cap-solid.png" style="width: auto; height: 40px; display: block;">
-    <div style="margin-left: 5px;"><a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank">Google Scholar</a><br></div>
-  </div>
-  <img src="../img/citation_plot.png" style="width: 600px; height: auto;" class='scholar-img'>
+<div style="display: flex; align-items: center;">
+  <span style="margin-right: 5em;"></span>
+  <img src="./../img/icons/black--graduation-cap-solid.png" style="width: auto; height: 40px;">
+  <div style="margin-left: 5px;"><a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank">Google Scholar</a><br></div>
 </div>
+<img src="../img/citation_plot.png" style="width: 600px; height: auto;">
 
 ## First-Authored
 
