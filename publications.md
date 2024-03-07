@@ -7,25 +7,6 @@ toc_title: Contents
 show_sidebar: false
 ---
 
-## Highlights
-
-**10** First-Authored IEEE papers <br>
-→ 2 ISSCC, 3 JSSC, 1 VLSI, 1 ESSCIRC, etc
-
-**27** Authored/Co-Authored IEEE papers
-
-<div style="display: flex; align-items: center;">
-  <span style="margin-right: 240px;"></span>
-  <img src="./../img/icons/black--graduation-cap-solid.png" style="width: auto; height: 40px;">
-  <div style="margin-left: 5px;"><a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank">Google Scholar</a><br></div>
-</div>
-
-<img src="../img/citation_plot.png" style="width: 600px; height: auto;">
-
-## First-Authored
-
-\*Co-First Authors
-
 <style type="text/css">
 .tg .tg-venue{text-align:center; vertical-align:middle; border: 1px inset black}
 .tg .tg-desc{border: 1px inset black; position: relative}
@@ -33,13 +14,16 @@ show_sidebar: false
 
 table {border-collapse: collapse; border: 1px solid black;}
 thead {display: none;}
+.scholar {position: relative;}
+.scholar-img {display: block;}
+.scholar-txt {position: absolute; top: -10%; left:50%; transform: translateX(-120%);}
 
 /* TOC */
 .contents {position: sticky; top: 10%;}
 
 /* Hover Animation */
-tbody td {transition: all 0.2s linear; transition-delay: 0.3s, 0s;}
-tbody tr:hover td {transition-delay: 0s, 0s; font-size: 1.1em;
+.pub td {transition: all 0.2s linear; transition-delay: 0.3s, 0s;}
+.pub tr:hover td {transition-delay: 0s, 0s; font-size: 1.1em;
   outline: 1.5px solid black;
   background-color: white;
   box-shadow: #BFBFBF -1px 1px, #BFBFBF -2px 2px, #BFBFBF -3px 3px, #BFBFBF -4px 4px, #BFBFBF -5px 5px, #BFBFBF -6px 6px;
@@ -79,8 +63,28 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
   });
 </script>
 
+## Highlights
+
+**10** First-Authored IEEE papers <br>
+→ 2 ISSCC, 3 JSSC, 1 VLSI, 1 ESSCIRC, etc
+
+**27** Authored/Co-Authored IEEE papers
+
+<br>
+<div class='scholar'>
+  <div style="display: flex; align-items: center;" class='scholar-txt'>
+    <img src="./../img/icons/black--graduation-cap-solid.png" style="width: auto; height: 40px; display: block;">
+    <div style="margin-left: 5px;"><a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank">Google Scholar</a><br></div>
+  </div>
+  <img src="../img/citation_plot.png" style="width: 600px; height: auto;" class='scholar-img'>
+</div>
+
+## First-Authored
+
+\*Co-First Authors
+
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Kwantae Kim*; Chang Gao*; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
     <br>
@@ -185,7 +189,7 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 ### 2023
 
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
     <br>
@@ -218,7 +222,7 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 ### 2022
 
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Shih-Chii Liu; Chang Gao; Kwantae Kim; Tobi Delbruck
     <br>
@@ -257,7 +261,7 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 ### 2021
 
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Surin Gweon; Sanghoon Kang; Donghyeon Han; Kyoung-Rog Lee; Kwantae Kim; Hoi-Jun Yoo
     <br>
@@ -272,7 +276,7 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 ### 2020
 
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Jaehyuk Lee; Surin Gweon; Kwonjoon Lee; Soyeon Um; Kyoung-Rog Lee; Kwantae Kim; Jihee Lee; Hoi-Jun Yoo
     <br>
@@ -287,7 +291,7 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 ### 2019
 
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Ji-Hoon Kim; Changhyeon Kim; Kwantae Kim; Hoi-Jun Yoo
     <br>
@@ -318,7 +322,7 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 ### 2017
 
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Minseo Kim; Jaeeun Jang; Hyunki Kim; Jihee Lee; Jaehyuck Lee; Jiwon Lee; Kyoung-Rog Lee; Kwantae Kim; Yongsu Lee; Kyuho Jason Lee; Hoi-Jun Yoo
     <br>
@@ -359,7 +363,7 @@ tr:hover .hover-image {left: -150px; top:calc(50% - 75px); visibility: visible;}
 ### 2016
 
 <table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody>
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     Yongsu Lee; Hyeonwoo Lee; Jaeeun Jang; Jihee Lee; Minseo Kim; Jaehyuk Lee; Hyunki Kim; Kyoung-Rog Lee; Kwantae Kim; Hyunwoo Cho; Seunghyup Yoo; Hoi-Jun Yoo
     <br>
