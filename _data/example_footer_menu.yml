@@ -2,7 +2,7 @@
   link: /
 - name: Blog
   link: /blog/
-- name: Products
-  link: /products/
-- name: Privacy Policy
-  link: /privacy-policy/
+# - name: Products
+#   link: /products/
+# - name: Privacy Policy
+#   link: /privacy-policy/
