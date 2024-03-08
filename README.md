@@ -11,8 +11,8 @@ It is built with bulma-clean-theme, developed by [C.S. Rhymes](https://www.csrhy
 
 ## Copyright
 
-![copyright-bulma-clean-theme](./img/copyright-bulma-clean-theme.png)
+<img src='./img/copyright-bulma-clean-theme.png' style='background-color:white; padding:3px;'>
 
-![copyright-kwantaekim](./img/copyright-kwantae.png)
+<img src='./img/copyright-kwantae.png' style='background-color:white; padding:3px;'>
 
 MIT Licence unless otherwise specified. See <a href="./LICENSE.txt" target="_blank">License</a> file for details.
