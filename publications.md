@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Publications
-hero_height: is_small
+# hero_height: is_medium
 menubar_toc: true
 toc_title: Contents
 show_sidebar: false
+hero_image: /img/kwantaekim/IMG_3632.jpg
 ---
 
 <style type="text/css">
@@ -137,7 +138,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
     <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
     <br>
-    📚 <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">Open-Sourced (MATLAB/Verilog)</a>
+    📚 <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">Open-Sourced in PhD Thesis (MATLAB/Verilog)</a>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank">
