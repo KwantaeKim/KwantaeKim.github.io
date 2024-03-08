@@ -7,9 +7,12 @@ This repository is about Kwantae Kim's personal [webpage](https://kwantaekim.git
 
 It is built with bulma-clean-theme, developed by [C.S. Rhymes](https://www.csrhymes.com/).
 
+<br>
+
 ## Copyright
 
-© 2018 C.S. Rhymes<br>
-© 2024 ~ Kwantae Kim
+![copyright-bulma-clean-theme](./img/copyright-bulma-clean-theme.png)
 
-MIT Licence unless otherwise specified.<br>See <a href="./LICENSE.txt" target="_blank">License</a> file for details.
+![copyright-kwantaekim](./img/copyright-kwantae.png)
+
+MIT Licence unless otherwise specified. See <a href="./LICENSE.txt" target="_blank">License</a> file for details.
