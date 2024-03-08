@@ -1,10 +1,10 @@
 <!-- Link CSS -->
 <link href='./README.css' type='text/css' rel='stylesheet'>
 
+# README
+
 This repository is about Kwantae Kim's personal [webpage](https://kwantaekim.github.io).<br>
 It is built with bulma-clean-theme, developed by [C.S. Rhymes](https://www.csrhymes.com/).
-
-# Copyright
 
 <img src='./img/copyright-bulma-clean-theme.png'>
 
