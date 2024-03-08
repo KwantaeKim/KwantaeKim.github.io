@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Publications
-hero_height: is_small
+# hero_height: is_small
 menubar_toc: true
 toc_title: Contents
 show_sidebar: false
-hero_image: /img/kwantaekim/img_3632.jpg
+hero_image: /img/kwantaekim/IMG_3632.JPG
 ---
 
 <style type="text/css">
