@@ -6,7 +6,7 @@ baseurl: ""
 # baseurl: "/bulma-clean-theme"
 url: "https://kwantaekim.github.io"
 permalink: pretty
-favicon: /img/tutto/20200902_141209.jpg
+favicon: /img/icons/chip.svg
 #hide_share_buttons: true
 theme_color: '#02343F'
 fixed_navbar: top
