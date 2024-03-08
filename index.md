@@ -11,6 +11,7 @@ hero_image: /img/tutto/20200902_141209.jpg
 hero_photo: /img/kwantaekim/DSC06597-2.jpg
 hero_height: is-small
 menubar_toc: true
+favicon: /favicon.png
 # callouts: home_callouts
 show_sidebar: false
 home_page: true
