@@ -1,4 +1,7 @@
-# KwantaeKim.github.io
+<!-- Link CSS -->
+<link href='./README.css' type='text/css' rel='stylesheet'>
+
+# Readme
 
 This repository is about Kwantae Kim's personal [webpage](https://kwantaekim.github.io).
 
