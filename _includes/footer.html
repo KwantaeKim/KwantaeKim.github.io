@@ -25,9 +25,19 @@
         {% endif %}
 
         <div class="content is-small has-text-centered">
-            <p class="transparent-text">Website source: <a href="https://github.com/KwantaeKim/KwantaeKim.github.io" target="_blank">KwantaeKim.github.io</a></p>
+            <p class="transparent-text">Copyright (c) <span id="currentYear"></span> Kwantae Kim</a>
+            <p class="transparent-text">Website source: <a href="https://github.com/KwantaeKim/KwantaeKim.github.io" target="_blank">KwantaeKim.github.io</a>
             <p class="transparent-text">Site built using <a href="https://github.com/chrisrhymes/bulma-clean-theme" target="_blank">Bulma Clean Theme</a> by
                 <a href="https://www.csrhymes.com" target="_blank">C.S. Rhymes</a></p>
         </div>
+
+        <script>
+            // JavaScript code to get the current year
+            var currentYear = new Date().getFullYear();
+            
+            // Display the current year in the HTML element with id "currentYear"
+            document.getElementById("currentYear").innerHTML = currentYear;
+        </script>
+
     </div>
 </footer>
