@@ -1,0 +1,5 @@
+title: Open Source Chip Design
+sections:
+  - label: Getting Started
+    items:
+      - title: Integrating Jupyter Notebook in VS Code

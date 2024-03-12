@@ -1,0 +1,21 @@
+/* CSS Script / Version: 2024-03-12 */
+h2 {
+  font-weight: bold;
+  padding: 0px 0px 0px 10px;
+  box-shadow: -8px 0px 0px 0px #1E4174;
+}
+h3 {
+  font-weight: bold;
+  padding: 0px 0px 0px 10px;
+  box-shadow: -8px 0px 0px 0px #00203F;
+}
+h4 {
+  padding: 0px 0px 0px 10px;
+  box-shadow: -8px 0px 0px 0px #135079;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

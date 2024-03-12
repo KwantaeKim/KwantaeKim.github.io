@@ -5,6 +5,7 @@ description: >
 baseurl: ""
 # baseurl: "/bulma-clean-theme"
 url: "https://kwantaekim.github.io"
+image_dir: "/img"
 permalink: pretty
 favicon: ./favicon.png
 #hide_share_buttons: true

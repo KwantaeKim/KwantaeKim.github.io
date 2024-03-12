@@ -43,10 +43,11 @@ tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; h
 tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 
 /* Hyperlink */
-.pub a {color: black; /* default #4E4E4E */
+.pub-hover {
+  /* color: black; default #4E4E4E */
   text-decoration: none; /* Remove underline */}
-.pub a:hover,
-a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
+.pub-hover:hover,
+.pub-hover:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 </style>
 
 <!-- jQuery -->
@@ -77,6 +78,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     replaceSemicolonWithComma();
   });
 </script>
+<script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
 
 ## Highlights
 
@@ -87,7 +89,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 
 <div style="display: flex; align-items: center;">
   <span style="margin-right: 5em;"></span>
-  <img src="./../img/icons/black--graduation-cap-solid.png" style="width: auto; height: 40px;">
+  <img src="./../img/icons/icon--google-scholar.svg" style="width: auto; height: 30px;">
   <div style="margin-left: 5px;"><a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank">Google Scholar</a><br></div>
 </div>
 <img src="../img/citation_plot.png" style="width: 600px; height: auto;">
@@ -99,7 +101,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank">
+    <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank" class="pub-hover">
     A 23μW Solar-Powered Keyword-Spotting ASIC with Ring-Oscillator-Based Time-Domain Feature Extraction
     </a><br>
     Kwantae Kim*; Chang Gao*; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
@@ -109,7 +111,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     📚 Invited to IEEE JSSC 2022 </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank">
+    <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank" class="pub-hover">
     A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC With 0.55° Overall Phase Error
     </a><br>
     Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Jiwon Lee; Minseo Kim; Yongsu Lee; Soyeon Kim; Hoi-Jun Yoo
@@ -119,7 +121,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     🎉 Silver Award🥈in Samsung HumanTech Paper Competition </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2022.3195610" target="_blank">
+    <a href="https://doi.org/10.1109/JSSC.2022.3195610" target="_blank" class="pub-hover">
     A 23-μW Keyword Spotting IC With Ring-Oscillator-Based Time-Domain Feature Extraction
     </a><br>
     Kwantae Kim; Chang Gao; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
@@ -130,17 +132,18 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     🎉 Top-2 in the Most Popular Articles in IEEE JSSC (Sep. ~ Oct. 2023) </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2021.3100716" target="_blank">
+    <a href="https://doi.org/10.1109/JSSC.2021.3100716" target="_blank" class="pub-hover">
     Design of Sub-10-μW Sub-0.1% THD Sinusoidal Current Generator IC for Bio-Impedance Sensing
     </a><br>
     Kwantae Kim; Sangyeob Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
     <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
     <br>
-    <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">{% include tag.html tag="📚 MATLAB/Verilog in PhD Thesis" %}</a>
+    <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">{% include tag.html tag="MATLAB/Verilog in PhD Thesis" %}</a>
+    <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">{% include tag.html tag="Relevant Publication" %}</a>
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank">
+    <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank" class="pub-hover">
     A 0.5-V Sub-10-μW 15.28-mΩ/√Hz Bio-Impedance Sensor IC With Sub-1° Phase Error
     </a><br>
     Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Minseo Kim; Hoi-Jun Yoo
@@ -148,7 +151,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2020
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/MCAS.2023.3267893" target="_blank">
+    <a href="https://doi.org/10.1109/MCAS.2023.3267893" target="_blank" class="pub-hover">
     Continuous-Time Analog Filters for Audio Edge Intelligence: Review on Circuit Designs
     </a><br>
     Kwantae Kim; Shih-Chii Liu
@@ -158,7 +161,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     🎉 Top-1 in the Most Popular Articles in IEEE MCAS (Sep. ~ Oct. 2023) </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank">
+    <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank" class="pub-hover">
     A 0.5V, 6.2μW, 0.059mm<sup>2</sup> Sinusoidal Current Generator IC with 0.088% THD for Bio-Impedance Sensing
     </a><br>
     Kwantae Kim; Changhyeon Kim; Sungpill Choi; Hoi-Jun Yoo
@@ -166,7 +169,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE Symposium on VLSI Circuits</span>, 2020
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank">
+    <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank" class="pub-hover">
     A 24 μW 38.51 mΩ<sub>rms</sub> Resolution Bio-Impedance Sensor with Dual Path Instrumentation Amplifier
     </a><br>
     Kwantae Kim; Kiseok Song; Kyeongryeol Bong; Jaehyuk Lee; Kwonjoon Lee; Yongsu Lee; Unsoo Ha; Hoi-Jun Yoo
@@ -174,7 +177,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE European Solid State Circuits Conference (ESSCIRC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank">
+    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank" class="pub-hover">
     A 3.11 μW 40 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors Exploiting Positive-Feedback-Assisted Gain Boosting
     </a><br>
     Kwantae Kim; Shih-Chii Liu
@@ -184,7 +187,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     📚 Open-Sourced Design Parameters </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS.2016.7527432" target="_blank">
+    <a href="https://doi.org/10.1109/ISCAS.2016.7527432" target="_blank" class="pub-hover">
     A 54-μW Fast-Settling Arterial Pulse Wave Sensor for Wrist Watch Type System
     </a><br>
     Kwantae Kim; Minseo Kim; Hyunwoo Cho; Kwonjoon Lee; Seung-Tak Ryu; Hoi-Jun Yoo
@@ -202,7 +205,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2023.3273238" target="_blank">
+    <a href="https://doi.org/10.1109/JSSC.2023.3273238" target="_blank" class="pub-hover">
     Neuro-CIM: ADC-Less Neuromorphic Computing-in-Memory Processor With Operation Gating/Stopping and Digital–Analog Networks
     </a><br>
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
@@ -210,7 +213,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2023
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank">
+    <a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank" class="pub-hover">
     High-Accuracy and Energy-Efficient Acoustic Inference using Hardware-Aware Training and a 0.34nW/Ch Full-Wave Rectifier
     </a><br>
     Sheng Zhou*; Xi Chen*; Kwantae Kim; Shih-Chii Liu
@@ -220,7 +223,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     🎉 Best Poster Award </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181602" target="_blank">
+    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181602" target="_blank" class="pub-hover">
     An Area-Efficient Ultra-Low-Power Time-Domain Feature Extractor for Edge Keyword Spotting
     </a><br>
     Qinyu Chen; Yaoxing Chang; Kwantae Kim; Chang Gao; Shih-Chii Liu
@@ -235,7 +238,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/IEDM45625.2022.10019443" target="_blank">
+    <a href="https://doi.org/10.1109/IEDM45625.2022.10019443" target="_blank" class="pub-hover">
     Energy-Efficient Activity-driven Computing Architectures for Edge Intelligence
     </a><br>
     Shih-Chii Liu; Chang Gao; Kwantae Kim; Tobi Delbruck
@@ -243,7 +246,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE International Electron Devices Meeting (IEDM)</span>, 2022
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/HCS55958.2022.9895498" target="_blank">
+    <a href="https://doi.org/10.1109/HCS55958.2022.9895498" target="_blank" class="pub-hover">
     Neuro-CIM: A 310.4 TOPS/W Neuromorphic Computing-in-Memory Processor with Low WL/BL activity and Digital-Analog Mixed-mode Neuron Firing
     </a><br>
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
@@ -251,7 +254,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE Hot Chips Symposium (HCS)</span>, 2022
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2022.3182699" target="_blank">
+    <a href="https://doi.org/10.1109/JSSC.2022.3182699" target="_blank" class="pub-hover">
     FlashMAC: A Time-Frequency Hybrid MAC Architecture With Variable Latency-Aware Scheduling for TinyML Systems
     </a><br>
     Surin Gweon; Sanghoon Kang; Kwantae Kim; Hoi-Jun Yoo
@@ -259,7 +262,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/VLSITechnologyandCir46769.2022.9830276" target="_blank">
+    <a href="https://doi.org/10.1109/VLSITechnologyandCir46769.2022.9830276" target="_blank" class="pub-hover">
     Neuro-CIM: A 310.4 TOPS/W Neuromorphic Computing-in-Memory Processor with Low WL/BL activity and Digital-Analog Mixed-mode Neuron Firing
     </a><br>
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
@@ -274,7 +277,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/A-SSCC53895.2021.9634746" target="_blank">
+    <a href="https://doi.org/10.1109/A-SSCC53895.2021.9634746" target="_blank" class="pub-hover">
     FlashMAC: An Energy-Efficient Analog-Digital Hybrid MAC with Variable Latency-Aware Scheduling
     </a><br>
     Surin Gweon; Sanghoon Kang; Donghyeon Han; Kyoung-Rog Lee; Kwantae Kim; Hoi-Jun Yoo
@@ -289,7 +292,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/CICC48029.2020.9075950" target="_blank">
+    <a href="https://doi.org/10.1109/CICC48029.2020.9075950" target="_blank" class="pub-hover">
     A 9.6 mW/Ch 10 MHz Wide-bandwidth Electrical Impedance Tomography IC with Accurate Phase Compensation for Breast Cancer Detection
     </a><br>
     Jaehyuk Lee; Surin Gweon; Kwonjoon Lee; Soyeon Um; Kyoung-Rog Lee; Kwantae Kim; Jihee Lee; Hoi-Jun Yoo
@@ -304,7 +307,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS.2019.8702698" target="_blank">
+    <a href="https://doi.org/10.1109/ISCAS.2019.8702698" target="_blank" class="pub-hover">
     An Ultra-Low-Power Analog-Digital Hybrid CNN Face Recognition Processor Integrated with a CIS for Always-on Mobile Devices
     </a><br>
     Ji-Hoon Kim; Changhyeon Kim; Kwantae Kim; Hoi-Jun Yoo
@@ -312,7 +315,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2019
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS.2019.8702435" target="_blank">
+    <a href="https://doi.org/10.1109/ISCAS.2019.8702435" target="_blank" class="pub-hover">
     93.8% Current Efficiency and 0.672 ns Transient Response Reconfigurable LDO for Wireless Sensor Network Systems
     </a><br>
     Surin Gweon; Jaehyuk Lee; Kwantae Kim; Hoi-Jun Yoo
@@ -320,7 +323,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2019
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2019.8662504" target="_blank">
+    <a href="https://doi.org/10.1109/ISSCC.2019.8662504" target="_blank" class="pub-hover">
     A 7.0fps Optical and Electrical Dual Tomographic Imaging SoC for Skin-Disease Diagnosis System
     </a><br>
     Yongsu Lee; Kwantae Kim; Jiwon Lee; Kyoung-Rog Lee; Surin Gweon; Minseo Kim; Hoi-Jun Yoo
@@ -335,7 +338,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2017.2753234" target="_blank">
+    <a href="https://doi.org/10.1109/JSSC.2017.2753234" target="_blank" class="pub-hover">
     A 1.4-mΩ-Sensitivity 94-dB Dynamic-Range Electrical Impedance Tomography SoC and 48-Channel Hub-SoC for 3-D Lung Ventilation Monitoring System
     </a><br>
     Minseo Kim; Jaeeun Jang; Hyunki Kim; Jihee Lee; Jaehyuck Lee; Jiwon Lee; Kyoung-Rog Lee; Kwantae Kim; Yongsu Lee; Kyuho Jason Lee; Hoi-Jun Yoo
@@ -343,7 +346,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/EMBC.2017.8037109" target="_blank">
+    <a href="https://doi.org/10.1109/EMBC.2017.8037109" target="_blank" class="pub-hover">
     An Adaptive DC-Balanced and Multi-Mode Stimulator IC with 1GΩ Output Impedance for Compact Electro-Acupuncture System
     </a><br>
     Jiwon Lee; Minseo Kim; Kwantae Kim; Kiseok Song; Sanghoon Lee; Weon Kim; Jong Shin Woo; Hoi-Jun Yoo
@@ -351,7 +354,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE Engineering in Medicine and Biology Society (EMBC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2017.7870407" target="_blank">
+    <a href="https://doi.org/10.1109/ISSCC.2017.7870407" target="_blank" class="pub-hover">
     A 1.4mΩ-Sensitivity 94dB-Dynamic-Range Electrical Impedance Tomography SoC and 48-Channel Hub SoC for 3D Lung Ventilation Monitoring System
     </a><br>
     Minseo Kim; Hyunki Kim; Jaeeun Jang; Jihee Lee; Jaehyuk Lee; Jiwon Lee; Kyungrog Lee; Kwantae Kim; Yongsu Lee; Hoi-jun Yoo
@@ -359,7 +362,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
     <span style="font-style:italic;">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank">
+    <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank" class="pub-hover">
     A 25.2mW EEG-NIRS Multimodal SoC for Accurate Anesthesia Depth Monitoring
     </a><br>
     Unsoo Ha; Jaehyuk Lee; Jihee Lee; Kwantae Kim; Minseo Kim; Taehwan Roh; Sangsik Choi; Hoi-Jun Yoo
@@ -374,7 +377,7 @@ a:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank">
+    <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank" class="pub-hover">
     A 141μW Sensor SoC on OLED/OPD Substrate for SpO2/ExG Monitoring Sticker
     </a><br>
     Yongsu Lee; Hyeonwoo Lee; Jaeeun Jang; Jihee Lee; Minseo Kim; Jaehyuk Lee; Hyunki Kim; Kyoung-Rog Lee; Kwantae Kim; Hyunwoo Cho; Seunghyup Yoo; Hoi-Jun Yoo
