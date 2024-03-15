@@ -12,8 +12,8 @@ toc_title: Contents
 .tg .tg-desc{border: 1px inset black; position: relative;}
 .kwantae {text-decoration: underline;}
 
-table {border-collapse: collapse; border: 1px solid black;}
-thead {display: none;}
+.tg {border-collapse: collapse; border: 1px solid black;}
+.skip {display: none;}
 
 /* TOC */
 .contents {position: sticky; top: 10%;}

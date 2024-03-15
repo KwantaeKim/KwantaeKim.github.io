@@ -1,5 +1,7 @@
 - name: Publications
   link: /publications/
+- name: Talks
+  link: /talks/
 - name: Chips
   link: /chips/
 # - name: Example Pages

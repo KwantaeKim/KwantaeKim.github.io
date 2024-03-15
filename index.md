@@ -42,7 +42,7 @@ home_page: true
 ## Education
 
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea 🇰🇷 | Ph.D. in Electrical Engineering | 2021 |<br>
-<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea 🇰🇷 | M.S. in Electrical Engineering<br>Ranked 1<sup>st</sup> in Entrance Examination | 2017 | <br>
+<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea 🇰🇷 | M.S. in Electrical Engineering<br>Ranked 1<sup>st</sup> (1/152) in Entrance Examination | 2017 | <br>
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea 🇰🇷 | B.S. in Electrical Engineering | 2015 |
 
 ## Research
