@@ -50,9 +50,9 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
 /* Tabs */
 .tab-row {display: flex; margin:0; padding: 0;}
 .tab-cell {flex: 1; padding: 0; border: none;}
-
 </style>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+<link href="./emoji.css" rel="stylesheet" type='text/css'>
 
 <!-- --------- -->
 <!-- Body Part -->
@@ -69,7 +69,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     University of California, Santa Cruz (UC Santa Cruz)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Santa Cruz, California, USA 🇺🇸</div>
+        <div class="tab-cell" style="flex: 4;">Santa Cruz, California, USA <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -79,7 +79,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     Aalto University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jan. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Espoo, Finland 🇫🇮</div>
+        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -89,7 +89,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     Delft University of Technology (TU Delft)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Apr. 2023</div>
-        <div class="tab-cell" style="flex: 4;">Delft, Netherlands 🇳🇱</div>
+        <div class="tab-cell" style="flex: 4;">Delft, Netherlands <span class='emoji'>🇳🇱</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -99,7 +99,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     Semiconductor System Laboratory (SSL), KAIST
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2021</div>
-        <div class="tab-cell" style="flex: 4;">Daejeon, Korea 🇰🇷 (Virtual)</div>
+        <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -109,7 +109,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     Kangwon National University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2021</div>
-        <div class="tab-cell" style="flex: 4;">Chuncheon, Korea 🇰🇷</div>
+        <div class="tab-cell" style="flex: 4;">Chuncheon, Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -119,7 +119,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     Abbott (St. Jude Medical)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
-        <div class="tab-cell" style="flex: 4;">Sunnyvale, California, USA 🇺🇸</div>
+        <div class="tab-cell" style="flex: 4;">Sunnyvale, California, USA <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
 </tbody>
@@ -137,7 +137,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2022</div>
-        <div class="tab-cell" style="flex: 4;">Incheon, Korea 🇰🇷</div>
+        <div class="tab-cell" style="flex: 4;">Incheon, Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
 </tbody>
@@ -155,7 +155,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IEEE International Symposium on Circuits and Systems (ISCAS)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">May. 2023</div>
-        <div class="tab-cell" style="flex: 4;">Monterey, California, USA 🇺🇸</div>
+        <div class="tab-cell" style="flex: 4;">Monterey, California, USA <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -166,7 +166,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IEEE International Solid-State Circuits Conference (ISSCC)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2022</div>
-        <div class="tab-cell" style="flex: 4;">San Francisco, California, USA 🇺🇸 (Virtual)</div>
+        <div class="tab-cell" style="flex: 4;">San Francisco, California, USA <span class='emoji'>🇺🇸</span> (Virtual)</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -177,7 +177,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IEEE Symposium on VLSI Circuits
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2020</div>
-        <div class="tab-cell" style="flex: 4;">Honolulu, Hawaii, USA 🇺🇸 (Virtual)</div>
+        <div class="tab-cell" style="flex: 4;">Honolulu, Hawaii, USA <span class='emoji'>🇺🇸</span> (Virtual)</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -188,7 +188,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IEEE International Solid-State Circuits Conference (ISSCC)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
-        <div class="tab-cell" style="flex: 4;">San Francisco, California, USA 🇺🇸</div>
+        <div class="tab-cell" style="flex: 4;">San Francisco, California, USA <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -199,7 +199,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IEEE European Solid State Circuits Conference (ESSCIRC)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Sep. 2017</div>
-        <div class="tab-cell" style="flex: 4;">Leuven, Belgium 🇧🇪</div>
+        <div class="tab-cell" style="flex: 4;">Leuven, Belgium <span class='emoji'>🇧🇪</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -210,7 +210,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IEEE International Symposium on Circuits and Systems (ISCAS)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2016</div>
-        <div class="tab-cell" style="flex: 4;">Montreal, Quebec, Canada 🇨🇦</div>
+        <div class="tab-cell" style="flex: 4;">Montreal, Quebec, Canada <span class='emoji'>🇨🇦</span></div>
     </div>
   </td></tr>
 </tbody>
@@ -227,7 +227,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IDEC Congress Chip Design Contest (Oral)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2021</div>
-        <div class="tab-cell" style="flex: 4;">Daejeon, Korea 🇰🇷 (Virtual)</div>
+        <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -237,7 +237,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     IDEC Congress Chip Design Contest (Poster)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2019</div>
-        <div class="tab-cell" style="flex: 4;">Daejeon, Korea 🇰🇷</div>
+        <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -247,7 +247,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     KAIST-Keio-Tsinghua (KKT) Workshop (Oral)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Aug. 2016</div>
-        <div class="tab-cell" style="flex: 4;">Yokohama, Japan 🇯🇵</div>
+        <div class="tab-cell" style="flex: 4;">Yokohama, Japan <span class='emoji'>🇯🇵</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -257,7 +257,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     KAIST-Keio-Tsinghua (KKT) Workshop (Poster)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Aug. 2015</div>
-        <div class="tab-cell" style="flex: 4;">Daejeon, Korea 🇰🇷</div>
+        <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
 </tbody>

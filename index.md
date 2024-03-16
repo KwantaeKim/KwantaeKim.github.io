@@ -32,18 +32,19 @@ home_page: true
 </div>
 
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+<link href="./emoji.css" rel="stylesheet" type='text/css'>
 
 ## Employment
 
-<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland 🇨🇭 | Establisehd Researcher<br> in Electrical Engineering (D-ITET) | 2023 ~ Present |<br>
-<i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland 🇨🇭 | Postdoctoral Researcher<br>in Institute of Neuroinformatics | 2021 ~ 2023 | <br>
-<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Healthrian Co., Ltd. | South Korea 🇰🇷 | R&D Researcher | 2015 ~ 2017 |
+<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> in Electrical Engineering (D-ITET) | 2023 ~ Present |<br>
+<i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Postdoctoral Researcher<br>in Institute of Neuroinformatics | 2021 ~ 2023 | <br>
+<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Healthrian Co., Ltd. | South Korea <span class='emoji'>🇰🇷</span> | R&D Researcher | 2015 ~ 2017 |
 
 ## Education
 
-<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea 🇰🇷 | Ph.D. in Electrical Engineering | 2021 |<br>
-<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea 🇰🇷 | M.S. in Electrical Engineering<br>Ranked 1<sup>st</sup> (1/152) in Entrance Examination | 2017 | <br>
-<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea 🇰🇷 | B.S. in Electrical Engineering | 2015 |
+<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | Ph.D. in Electrical Engineering | 2021 |<br>
+<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | M.S. in Electrical Engineering<br>Ranked 1<sup>st</sup> (1/152) in Entrance Examination | 2017 | <br>
+<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | B.S. in Electrical Engineering | 2015 |
 
 ## Research
 
