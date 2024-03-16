@@ -7,22 +7,18 @@ hero_image: /img/research/hero_image.png
 menubar_toc: true
 ---
 
-<!-- Link CSS -->
-<link href='{{ site.base_url }}/blog/blog_style.css' type='text/css' rel='stylesheet'>
 <style>
 .bold {font-weight: bold; color: black;}
 /* TOC */
 .contents {position: sticky; top: 10%;}
 </style>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+<link href="./emoji.css" rel="stylesheet" type='text/css'>
 
 ## Vision
 
-<div style='font-size: 1.1em;'>
+The rapid advancement of <i class="fa-solid fa-wifi"></i> <b>Internet-of-Things (IoT)</b> sensor platform has been penetrating all corners of our lives, presenting unprecedented levels of demands for power efficiency, computation latency, task complexity, and form factors. The next evolutionary phase of IoT platform will be realized with the following four key features toward further enriching our daily lives: <b>Tiny</b>, <b>Sensory</b>, <b>Intelligent</b>, and <b>Wireless</b>.
 
-The rapid advancement of <i class="fa-solid fa-wifi"></i> <b>Internet-of-Things (IoT)</b> sensor platform has been penetrating all corners of our lives, presenting unprecedented levels of demands for power efficiency, computation latency, task complexity, and form factors. The next evolutionary phase of IoT platform will be realized with the following four key features toward further enriching our daily lives: <code>Tiny</code>, <code>Sensory</code>, <code>Intelligent</code>, and <code>Wireless</code>.
-
-<br><br>
 <center>
 <img src='{{ site.base_url }}/img/research/vision.png' style='width: 70%;' class='center'>
 </center>
@@ -30,11 +26,9 @@ The rapid advancement of <i class="fa-solid fa-wifi"></i> <b>Internet-of-Things 
 
 My ultimate research goal is to <i>Democratize</i> these features of IoT platform, envisioning a future where everyone can enjoy the benefits. To arrive at this goal, the <b><i class="fa-solid fa-microchip fa-lg" style="color: black;"></i> Integrated Circuit (IC)</b> designers will need to develop highly integrated <b>System-on-Chips (SoCs)</b> that operate efficiently within constrained energy sources and silicon area.
 
-<br><br>
-
 My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="fa-solid fa-heart-pulse fa-lg" style="color: #ff2600;"></i> Biomedical</b> and <b><i class="fa-solid fa-brain fa-lg" style="color: #f3b5b8;"></i> Neuromorphic</b> sensor systems. I am passionate about realizing ultra-low-power, digital-friendly analog circuit architectures suitable for tiny <b>Artificial Intelligence (AI)</b> embedded IoT platforms.
 
-</div><br><br><br><br><br>
+<br><br><br><br><br>
 
 ## <i class="fa-solid fa-heart-pulse" style="color: #ff2600;"></i> Biomedical Sensor IC
 
@@ -74,7 +68,7 @@ A current injector was proposed featuring an <span class='bold'>All-Digital ΔΣ
 
 In 2023, an improved circuit design was presented in <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">TCAS-II 2023</a> paper (Oregon State University, USA <span class='emoji'>🇺🇸</span>) based on the open-source code, highlighting its research outreach and academic contributions.
 
-<br>
+<br><br><br><br><br>
 
 ## <i class="fa-solid fa-brain" style="color: #f3b5b8;"></i> Neuromorphic Sensor IC
 

@@ -48,9 +48,9 @@ home_page: true
 
 ## Service
 
-<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Technical Committee | IEEE SSCS Open-Source Ecosystem<br>IEEE CASS Sensory Systems (ISCAS Committee)<br>ACM ICONS | 2023~Present<br>2023~Present<br>2023~Present | <br>
-<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Guest Editor | IEEE Design＆Test - Special Issue on Open-Source Silicon | 2023 | <br>
-<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Co-Organizer | IEEE SSCS Women in Circuits Event in ISSCC | 2022~Present | <br>
-<span style="margin-right: 0.1em;"></span><i class="fa-solid fa-magnifying-glass"></i><span style="margin-right: 0.1em;"></span> Reviewer | IEEE ISSCC Rising Stars Workshop 2024<br>IEEE JSSC, TBioCAS, TCAS-I, TCAS-II, SSC-L, TIM, Sensors Journal<br>IEEE ISCAS 2023~2024, APCCAS 2022<br>ACM ICONS 2023 | | <br>
-<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Mentor | IEEE SSCS Open-Source Design Contest (PICO Chipathon) | 2022~Present | <br>
-<span style="margin-right: 0.1em;"></span><i class="fa-solid fa-hand"></i><span style="margin-right: 0.1em;"></span> Volunteer | IEEE Swiss Women in CAS-ED Symposium | 2022 | <br>
+<i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Technical Committee | IEEE SSCS Open-Source Ecosystem<br>IEEE CASS Sensory Systems (ISCAS Committee)<br>ACM ICONS | 2023~Present<br>2023~Present<br>2023~Present | <br>
+<i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Guest Editor | IEEE Design＆Test - Special Issue on Open-Source Silicon | 2023 | <br>
+<i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Co-Organizer | IEEE SSCS Women in Circuits Event in ISSCC | 2022~Present | <br>
+<i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Mentor | IEEE SSCS Open-Source Design Contest (PICO Chipathon) | 2022~Present | <br>
+<i class="fa-solid fa-magnifying-glass"></i><span style="margin-right: 0.1em;"></span> Reviewer | IEEE ISSCC Rising Stars Workshop 2024<br>IEEE JSSC, TBioCAS, TCAS-I, TCAS-II, SSC-L, TIM, Sensors Journal<br>IEEE ISCAS 2023~2024, APCCAS 2022<br>ACM ICONS 2023 | | <br>
+<i class="fa-solid fa-hand"></i><span style="margin-right: 0.1em;"></span> Volunteer | IEEE Swiss Women in CAS-ED Symposium | 2022 | <br>
