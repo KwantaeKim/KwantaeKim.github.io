@@ -17,7 +17,7 @@ toc_title: Contents
 
 /* Hover Animation */
 .talk td {transition: all 0.2s linear; transition-delay: 0.3s, 0s;}
-.talk tr:hover td {transition-delay: 0s, 0s; font-size: 1.1em;
+.talk tr:hover td {transition-delay: 0s, 0s;
   outline: 1.5px solid black;
   background-color: white;
   box-shadow: #BFBFBF -1px 1px, #BFBFBF -2px 2px, #BFBFBF -3px 3px, #BFBFBF -4px 4px, #BFBFBF -5px 5px, #BFBFBF -6px 6px;
@@ -34,7 +34,7 @@ tr:hover .hover-iscas23 {left: -220px; top:calc(50% - 30px); visibility: visible
 tr:hover .hover-iscas19 {left: -250px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-iscas16 {left: -210px; top:calc(50% - 30px); visibility: visible; height: 70px;}
 tr:hover .hover-aicas23 {left: -260px; top:calc(50% - 30px); visibility: visible; height: 50px;}
-tr:hover .hover-aicas22 {left: -140px; top:calc(50% - 30px); visibility: visible; height: 80px;}
+tr:hover .hover-aicas22 {left: -140px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-hotchips {left: -150px; top:calc(50% - 30px); visibility: visible; height: 60px;}
 tr:hover .hover-embc {left: -170px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; height: 80px;}

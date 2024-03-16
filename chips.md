@@ -5,4 +5,6 @@ title: Chip Gallery
 gallery: chip_gallery
 show_sidebar: false
 hero_image: /img/chips/TIP.jpg
+hero_shaded: true
+hero_darken: true
 ---

@@ -36,18 +36,21 @@ home_page: true
 
 ## Employment
 
-<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> in Electrical Engineering (D-ITET) | 2023 ~ Present |<br>
-<i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Postdoctoral Researcher<br>in Institute of Neuroinformatics | 2021 ~ 2023 | <br>
-<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Healthrian Co., Ltd. | South Korea <span class='emoji'>🇰🇷</span> | R&D Researcher | 2015 ~ 2017 |
+<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> in Electrical Engineering (D-ITET) | 2023~Present | <br>
+<i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Postdoctoral Researcher<br>in Institute of Neuroinformatics | 2021~2023 | <br>
+<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Healthrian Co., Ltd. | South Korea <span class='emoji'>🇰🇷</span> | R＆D Researcher | 2015~2017 |
 
 ## Education
 
-<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | Ph.D. in Electrical Engineering | 2021 |<br>
+<i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | Ph.D. in Electrical Engineering | 2021 | <br>
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | M.S. in Electrical Engineering<br>Ranked 1<sup>st</sup> (1/152) in Entrance Examination | 2017 | <br>
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | B.S. in Electrical Engineering | 2015 |
 
-## Research
+## Service
 
-I am with Energy-Efficient Circuits and Intelligent Systems (EECIS) research group led by [Prof. Taekwang Jang](https://circuit.ee.ethz.ch/people/prof_taekwang-jang.html).
-
-My research focuses on power-efficient analog/mixed-signal neuromorphic integrated circuits for biomedical and audio sensor systems. I am passionate about realizing ultra-low-power, digital-friendly analog circuit architectures suitable for tiny artificial intelligence (AI) embedded internet-of-thing (IoT) platforms.
+<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Technical Committee | IEEE SSCS Open-Source Ecosystem<br>IEEE CASS Sensory Systems (ISCAS Committee)<br>ACM ICONS | 2023~Present<br>2023~Present<br>2023~Present | <br>
+<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Guest Editor | IEEE Design＆Test - Special Issue on Open-Source Silicon | 2023 | <br>
+<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Co-Organizer | IEEE SSCS Women in Circuits Event in ISSCC | 2022~Present | <br>
+<span style="margin-right: 0.1em;"></span><i class="fa-solid fa-magnifying-glass"></i><span style="margin-right: 0.1em;"></span> Reviewer | IEEE ISSCC Rising Stars Workshop 2024<br>IEEE JSSC, TBioCAS, TCAS-I, TCAS-II, SSC-L, TIM, Sensors Journal<br>IEEE ISCAS 2023~2024, APCCAS 2022<br>ACM ICONS 2023 | | <br>
+<span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Mentor | IEEE SSCS Open-Source Design Contest (PICO Chipathon) | 2022~Present | <br>
+<span style="margin-right: 0.1em;"></span><i class="fa-solid fa-hand"></i><span style="margin-right: 0.1em;"></span> Volunteer | IEEE Swiss Women in CAS-ED Symposium | 2022 | <br>

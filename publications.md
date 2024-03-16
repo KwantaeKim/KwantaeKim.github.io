@@ -10,7 +10,7 @@ toc_title: Contents
 
 <style type="text/css">
 .tg .tg-desc{border: 1px inset black; position: relative;}
-.kwantae {text-decoration: underline;}
+.kwantae {color: black; text-decoration: underline; font-weight: bold;}
 
 .tg {border-collapse: collapse; border: 1px solid black;}
 .skip {display: none;}
@@ -20,7 +20,7 @@ toc_title: Contents
 
 /* Hover Animation */
 .pub td {transition: all 0.2s linear; transition-delay: 0.3s, 0s;}
-.pub tr:hover td {transition-delay: 0s, 0s; font-size: 1.1em;
+.pub tr:hover td {transition-delay: 0s, 0s;
   outline: 1.5px solid black;
   background-color: white;
   box-shadow: #BFBFBF -1px 1px, #BFBFBF -2px 2px, #BFBFBF -3px 3px, #BFBFBF -4px 4px, #BFBFBF -5px 5px, #BFBFBF -6px 6px;
@@ -48,6 +48,9 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
   text-decoration: none; /* Remove underline */}
 .pub-hover:hover,
 .pub-hover:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
+
+/* Venue */
+span.venue {font-style: italic;}
 </style>
 
 <!-- jQuery -->
@@ -76,6 +79,15 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
 
   document.addEventListener('DOMContentLoaded', function() {
     replaceSemicolonWithComma();
+  });
+
+  $(document).ready(function(){
+    $("span.venue").each(function() {
+      var text = $(this).html();
+      // Make specified strings bold and black
+      text = text.replace(/\((ISSCC|S.VLSI|CICC|A-SSCC|ESSCIRC|JSSC|ISCAS|AICAS|MCAS|IEDM|HCS|EMBC|)\)/g, "<b style='color: black;'>($1)</b>");
+      $(this).html(text);
+    });
   });
 </script>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
@@ -106,7 +118,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim*; Chang Gao*; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span style="font-style:italic;">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2022
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2022
     <br><span style='color: black;'>
     📚 Invited to IEEE JSSC 2022 </span>
   </td></tr>
@@ -116,7 +128,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Jiwon Lee; Minseo Kim; Yongsu Lee; Soyeon Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span style="font-style:italic;">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
     <br><span style='color: black;'>
     🎉 Silver Award🥈in Samsung HumanTech Paper Competition </span>
   </td></tr>
@@ -126,7 +138,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Chang Gao; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
     <br><span style='color: black;'>
     🎉 Highlighted in the IEEExplore Main Page (Sep. ~ Oct. 2023) <br>
     🎉 Top-2 in the Most Popular Articles in IEEE JSSC (Sep. ~ Oct. 2023) </span>
@@ -137,10 +149,10 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Sangyeob Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
-    <br>
-    <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">{% include tag.html tag="MATLAB/Verilog in PhD Thesis" %}</a>
-    <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">{% include tag.html tag="Relevant Publication" %}</a>
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
+    <br><span style='color: black;'>
+    <i class="fa-solid fa-file-code fa-bounce fa-lg"></i> MATLAB/Verilog Code in <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">PhD Thesis</a> <br>
+    <i class="fa-solid fa-file-pdf"></i> <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">Relevant Publication</a> </span>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank" class="pub-hover">
@@ -148,7 +160,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Minseo Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2020
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2020
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/MCAS.2023.3267893" target="_blank" class="pub-hover">
@@ -156,7 +168,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--cas.png" class="hover-cas"></div>
-    <span style="font-style:italic;">IEEE Circuits and Systems Magazine (MCAS)</span>, 2023
+    <span class="venue">IEEE Circuits and Systems Magazine (MCAS)</span>, 2023
     <br><span style='color: black;'>
     🎉 Top-1 in the Most Popular Articles in IEEE MCAS (Sep. ~ Oct. 2023) </span>
   </td></tr>
@@ -166,7 +178,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Changhyeon Kim; Sungpill Choi; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--vlsic.png" class="hover-vlsic"></div>
-    <span style="font-style:italic;">IEEE Symposium on VLSI Circuits</span>, 2020
+    <span class="venue">IEEE Symposium on VLSI Circuits (S.VLSI)</span>, 2020
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank" class="pub-hover">
@@ -174,7 +186,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Kiseok Song; Kyeongryeol Bong; Jaehyuk Lee; Kwonjoon Lee; Yongsu Lee; Unsoo Ha; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--esscirc.png" class="hover-esscirc"></div>
-    <span style="font-style:italic;">IEEE European Solid State Circuits Conference (ESSCIRC)</span>, 2017
+    <span class="venue">IEEE European Solid State Circuits Conference (ESSCIRC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank" class="pub-hover">
@@ -182,7 +194,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--iscas23.png" class="hover-iscas23"></div>
-    <span style="font-style:italic;">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2023
+    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2023
     <br><span style='color: black;'>
     📚 Open-Sourced Design Parameters </span>
   </td></tr>
@@ -192,7 +204,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Kwantae Kim; Minseo Kim; Hyunwoo Cho; Kwonjoon Lee; Seung-Tak Ryu; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--iscas16.png" class="hover-iscas16"></div>
-    <span style="font-style:italic;">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2016
+    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2016
   </td></tr>
 </tbody></table>
 
@@ -210,7 +222,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2023
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2023
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank" class="pub-hover">
@@ -218,7 +230,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Sheng Zhou*; Xi Chen*; Kwantae Kim; Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--aicas23.png" class="hover-aicas23"></div>
-    <span style="font-style:italic;">IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)</span>, 2023
+    <span class="venue">IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)</span>, 2023
     <br><span style='color: black;'>
     🎉 Best Poster Award </span>
   </td></tr>
@@ -228,7 +240,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Qinyu Chen; Yaoxing Chang; Kwantae Kim; Chang Gao; Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--iscas23.png" class="hover-iscas23"></div>
-    <span style="font-style:italic;">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2023
+    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2023
   </td></tr>
 </tbody>
 </table>
@@ -243,7 +255,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Shih-Chii Liu; Chang Gao; Kwantae Kim; Tobi Delbruck
     <div class="img-container"><img src="./../img/icons/logo--iedm.png" class="hover-cas"></div>
-    <span style="font-style:italic;">IEEE International Electron Devices Meeting (IEDM)</span>, 2022
+    <span class="venue">IEEE International Electron Devices Meeting (IEDM)</span>, 2022
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/HCS55958.2022.9895498" target="_blank" class="pub-hover">
@@ -251,7 +263,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--hotchips.png" class="hover-hotchips"></div>
-    <span style="font-style:italic;">IEEE Hot Chips Symposium (HCS)</span>, 2022
+    <span class="venue">IEEE Hot Chips Symposium (HCS)</span>, 2022
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/JSSC.2022.3182699" target="_blank" class="pub-hover">
@@ -259,7 +271,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Surin Gweon; Sanghoon Kang; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/VLSITechnologyandCir46769.2022.9830276" target="_blank" class="pub-hover">
@@ -267,7 +279,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--vlsi.png" class="hover-sscs"></div>
-    <span style="font-style:italic;">IEEE Symposium on VLSI Circuits</span>, 2022
+    <span class="venue">IEEE Symposium on VLSI Circuits (S.VLSI)</span>, 2022
   </td></tr>
 </tbody>
 </table>
@@ -282,7 +294,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Surin Gweon; Sanghoon Kang; Donghyeon Han; Kyoung-Rog Lee; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--a-sscc.png" class="hover-a-sscc"></div>
-    <span style="font-style:italic;">IEEE Asian Solid-State Circuits Conference (A-SSCC)</span>, 2021
+    <span class="venue">IEEE Asian Solid-State Circuits Conference (A-SSCC)</span>, 2021
   </td></tr>
 </tbody>
 </table>
@@ -297,7 +309,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Jaehyuk Lee; Surin Gweon; Kwonjoon Lee; Soyeon Um; Kyoung-Rog Lee; Kwantae Kim; Jihee Lee; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--cicc.png" class="hover-cicc"></div>
-    <span style="font-style:italic;">IEEE Custom Integrated Circuits Conference (CICC)</span>, 2020
+    <span class="venue">IEEE Custom Integrated Circuits Conference (CICC)</span>, 2020
   </td></tr>
 </tbody>
 </table>
@@ -312,7 +324,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Ji-Hoon Kim; Changhyeon Kim; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--iscas19.png" class="hover-iscas19"></div>
-    <span style="font-style:italic;">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2019
+    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2019
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISCAS.2019.8702435" target="_blank" class="pub-hover">
@@ -320,7 +332,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Surin Gweon; Jaehyuk Lee; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--iscas19.png" class="hover-iscas19"></div>
-    <span style="font-style:italic;">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2019
+    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2019
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISSCC.2019.8662504" target="_blank" class="pub-hover">
@@ -328,7 +340,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Yongsu Lee; Kwantae Kim; Jiwon Lee; Kyoung-Rog Lee; Surin Gweon; Minseo Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span style="font-style:italic;">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
   </td></tr>
 </tbody>
 </table>
@@ -343,7 +355,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Minseo Kim; Jaeeun Jang; Hyunki Kim; Jihee Lee; Jaehyuck Lee; Jiwon Lee; Kyoung-Rog Lee; Kwantae Kim; Yongsu Lee; Kyuho Jason Lee; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span style="font-style:italic;">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2017
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/EMBC.2017.8037109" target="_blank" class="pub-hover">
@@ -351,7 +363,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Jiwon Lee; Minseo Kim; Kwantae Kim; Kiseok Song; Sanghoon Lee; Weon Kim; Jong Shin Woo; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--embc.png" class="hover-embc"></div>
-    <span style="font-style:italic;">IEEE Engineering in Medicine and Biology Society (EMBC)</span>, 2017
+    <span class="venue">IEEE Engineering in Medicine and Biology Society (EMBC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISSCC.2017.7870407" target="_blank" class="pub-hover">
@@ -359,7 +371,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Minseo Kim; Hyunki Kim; Jaeeun Jang; Jihee Lee; Jaehyuk Lee; Jiwon Lee; Kyungrog Lee; Kwantae Kim; Yongsu Lee; Hoi-jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span style="font-style:italic;">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2017
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank" class="pub-hover">
@@ -367,7 +379,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Unsoo Ha; Jaehyuk Lee; Jihee Lee; Kwantae Kim; Minseo Kim; Taehwan Roh; Sangsik Choi; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span style="font-style:italic;">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2017
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2017
   </td></tr>
 </tbody>
 </table>
@@ -382,7 +394,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     </a><br>
     Yongsu Lee; Hyeonwoo Lee; Jaeeun Jang; Jihee Lee; Minseo Kim; Jaehyuk Lee; Hyunki Kim; Kyoung-Rog Lee; Kwantae Kim; Hyunwoo Cho; Seunghyup Yoo; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span style="font-style:italic;">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2016
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2016
   </td></tr>
 </tbody>
 </table>
