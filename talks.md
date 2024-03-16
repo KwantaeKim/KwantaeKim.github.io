@@ -50,9 +50,20 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
 /* Tabs */
 .tab-row {display: flex; margin:0; padding: 0;}
 .tab-cell {flex: 1; padding: 0; border: none;}
+
+/* Emoji */
+@font-face {
+  font-family: NotoColorEmojiLimited;
+  unicode-range: U+1F1E6-1F1FF;
+  src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+.emoji {
+  font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+}
 </style>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
-<link href="./emoji.css" rel="stylesheet" type='text/css'>
 
 <!-- --------- -->
 <!-- Body Part -->
