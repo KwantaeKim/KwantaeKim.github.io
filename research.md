@@ -13,7 +13,7 @@ menubar_toc: true
 .contents {position: sticky; top: 10%;}
 </style>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
-<link href="./emoji.css" rel="stylesheet" type='text/css'>
+<link href="./../emoji.css" rel="stylesheet" type='text/css'>
 
 ## Vision
 
@@ -48,12 +48,15 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 <span style="margin-right: 1em;"></span>
 <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank">ISCAS 2023</a>
 
-A voltage amplifier was proposed featuring a <span class='bold'>Lead-Compensated</span> flipped voltage follower (FVF) topology,
-surpassing the state-of-the-arts with an <span class='bold'>11.65x</span> higher bandwidth while consuming <span class='bold'>3.19x</span> less power, all without sacrificing noise performance.
-
-This innovative and simple approach has been widely adopted in bioimpedance (BioZ) amplifier designs by multiple research groups, evidenced by <a href="https://doi.org/10.1109/ISSCC42613.2021.9365801" target="_blank">ISSCC 2021</a> (A*STAR, Singapore <span class='emoji'>🇸🇬</span>), <a href="https://doi.org/10.1109/ISSCC42614.2022.9731787" target="_blank">ISSCC 2022</a> (Fudan University, China <span class='emoji'>🇨🇳</span>), and ISSCC 2024 (KAIST, South Korea <span class='emoji'>🇰🇷</span>). Notably, this work also received recognition with a Silver Award🥈in Samsung HumanTech paper competition.
-
-As an exemplary design showcase, a PVT-stable amplifier was presented and its schematic parameters are 📚 <span class='bold'>Open-Sourced</span> in ISCAS 2023 paper. You are more than welcomed to copy＆paste the design and enjoy the low-power, low-noise, and wide-bandwidth biomedical amplifier! 😀
+- <span class='bold'>Lead-Compensated</span> flipped voltage follower (FVF)
+  - <span class='bold'>11.65x</span> higher bandwidth, <span class='bold'>3.19x</span> less power, without noise increase
+- Widely adopted by multiple research groups for <span class='bold'>Voltage Amplifier</span> designs
+  - <a href="https://doi.org/10.1109/ISSCC42613.2021.9365801" target="_blank">ISSCC 2021</a> (A*STAR, Singapore <span class='emoji'>🇸🇬</span>)
+  - <a href="https://doi.org/10.1109/ISSCC42614.2022.9731787" target="_blank">ISSCC 2022</a> (Fudan University, China <span class='emoji'>🇨🇳</span>)
+  - <a href="https://doi.org/10.1109/ISSCC49657.2024.10454399" target="_blank">ISSCC 2024</a> (KAIST, South Korea <span class='emoji'>🇰🇷</span>)
+- Silver Award🥈in 2019 Samsung HumanTech paper competition
+- 📚 <span class='bold'>Open-Sourced</span> schematic parameters in ISCAS 2023 paper
+  - You are more than welcomed to copy＆paste this biomedical amplifier design 😀
 
 ### <i class="fa-solid fa-microchip"></i> BioZ2
 
@@ -64,9 +67,11 @@ As an exemplary design showcase, a PVT-stable amplifier was presented and its sc
 <i class="fa-solid fa-file-code fa-bounce fa-lg"></i>
 <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">Open Source Code</a>
 
-A current injector was proposed featuring an <span class='bold'>All-Digital ΔΣ</span> modulated sinewave generator method, outperforming prior works by <span class='bold'>1.9~7.5x</span> in linearity, <span class='bold'>8.9x</span> in power, and a <span class='bold'>33x</span> in chip area occupation. The design is open-sourced with MATLAB/Verilog Code in my PhD dissertation, ensuring easy replication by fellow researchers.
-
-In 2023, an improved circuit design was presented in <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">TCAS-II 2023</a> paper (Oregon State University, USA <span class='emoji'>🇺🇸</span>) based on the open-source code, highlighting its research outreach and academic contributions.
+- <span class='bold'>All-Digital ΔΣ</span> modulated sinewave generator
+  - A sinusoidal current generator with <span class='bold'>1.9~7.5x</span> more linear, <span class='bold'>8.9x</span> less power, <span class='bold'>33x</span> less area
+- 📚 <span class='bold'>Open-Sourced</span> MATLAB/Verilog Code in PhD dissertation
+  - <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">TCAS-II 2023</a> (Oregon State University, USA <span class='emoji'>🇺🇸</span>)<br>
+    → An improved design based on the open-source code
 
 <br><br><br><br><br>
 
@@ -80,4 +85,13 @@ In 2023, an improved circuit design was presented in <a href="https://doi.org/10
 
 ## Approved Grants
 
-## Partners
+<br><br><br><br><br>
+
+## Research Partners
+
+<i class="fa-solid fa-location-dot fa-lg"></i> Navigate map,
+<i class="fa-solid fa-magnifying-glass"></i> find my collaborators, and
+<i class="fa-solid fa-up-right-from-square"></i> visit webpages! <i class="fa-solid fa-house-user"></i>
+
+<iframe src="{{ site.base_url }}/worldmap.html" width="100%" height="500"></iframe>
+

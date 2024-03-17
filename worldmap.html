@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_adf609a015a1129631a30724326c7fa9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <style>.leaflet-container { height: 100% !important; }</style>
+    
+            <div class="folium-map" id="map_adf609a015a1129631a30724326c7fa9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_adf609a015a1129631a30724326c7fa9 = L.map(
+                "map_adf609a015a1129631a30724326c7fa9",
+                {
+                    center: [50.0, 70.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: true,
+                    lang: "en",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_478381c84dc1413d676e73d43c88c2ba = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_478381c84dc1413d676e73d43c88c2ba.addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+    
+            var marker_f320165a0ce35426c24c1bc59892ad40 = L.marker(
+                [51.998761, 4.373417],
+                {}
+            ).addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+    
+            var icon_35f958a243600e1b5471f920acf35e63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_f320165a0ce35426c24c1bc59892ad40.setIcon(icon_35f958a243600e1b5471f920acf35e63);
+        
+    
+        var popup_a5763d434bc9468ae3dbe703f0cf0c83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56b147181fdb664c6f35426e0afaf212 = $(`<div id="html_56b147181fdb664c6f35426e0afaf212" style="width: 100.0%; height: 100.0%;"><a href = "https://www.tudemi.com" target=_blank><img src="./img/icons/logo--tudelft.png" style="width: 100px; height: auto;"></a></div>`)[0];
+                popup_a5763d434bc9468ae3dbe703f0cf0c83.setContent(html_56b147181fdb664c6f35426e0afaf212);
+            
+        
+
+        marker_f320165a0ce35426c24c1bc59892ad40.bindPopup(popup_a5763d434bc9468ae3dbe703f0cf0c83)
+        ;
+
+        
+    
+    
+            marker_f320165a0ce35426c24c1bc59892ad40.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Chang Gao</b><br>Assistant Professor<br>TU Delft<br>Netherlands 🇳🇱</div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8c34735f8394ef99bec338a37293057 = L.marker(
+                [52.1682999, 4.4570475],
+                {}
+            ).addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+    
+            var icon_68b6cc8bd3513f57972146cf5be27393 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_f8c34735f8394ef99bec338a37293057.setIcon(icon_68b6cc8bd3513f57972146cf5be27393);
+        
+    
+        var popup_cca45963168be470f50620e71f3cbc2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac87eef2257c3c34211c3666937a060b = $(`<div id="html_ac87eef2257c3c34211c3666937a060b" style="width: 100.0%; height: 100.0%;"><a href = "https://www.universiteitleiden.nl/en/staffmembers/qinyu-chen#tab-1" target=_blank><img src="./img/icons/logo--leiden.png" style="width: 100px; height: auto;"></a></div>`)[0];
+                popup_cca45963168be470f50620e71f3cbc2a.setContent(html_ac87eef2257c3c34211c3666937a060b);
+            
+        
+
+        marker_f8c34735f8394ef99bec338a37293057.bindPopup(popup_cca45963168be470f50620e71f3cbc2a)
+        ;
+
+        
+    
+    
+            marker_f8c34735f8394ef99bec338a37293057.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Qinyu Chen</b><br>Assistant Professor<br>Leiden University<br>Netherlands 🇳🇱</div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bd8f54d62b5bade9f3f2e34e6709ee7 = L.marker(
+                [36.368939, 127.3626673],
+                {}
+            ).addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+    
+            var icon_722e563d10cabaea05ba510a8c81122e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_6bd8f54d62b5bade9f3f2e34e6709ee7.setIcon(icon_722e563d10cabaea05ba510a8c81122e);
+        
+    
+        var popup_a3a28666038cfd1f5d7ecc5a80e82121 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ae40bcf4148ed9d8e49bd5e1d98ecbf = $(`<div id="html_3ae40bcf4148ed9d8e49bd5e1d98ecbf" style="width: 100.0%; height: 100.0%;"><a href = "http://ssl.kaist.ac.kr" target=_blank><img src="./img/icons/logo--kaist.png" style="width: 100px; height: auto;"></a></div>`)[0];
+                popup_a3a28666038cfd1f5d7ecc5a80e82121.setContent(html_3ae40bcf4148ed9d8e49bd5e1d98ecbf);
+            
+        
+
+        marker_6bd8f54d62b5bade9f3f2e34e6709ee7.bindPopup(popup_a3a28666038cfd1f5d7ecc5a80e82121)
+        ;
+
+        
+    
+    
+            marker_6bd8f54d62b5bade9f3f2e34e6709ee7.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Hoi-Jun Yoo</b><br>Professor<br>KAIST<br>South Korea 🇰🇷</div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6edbdf29be642d88c823675e3fad5c5d = L.marker(
+                [47.3984854, 8.5479158],
+                {}
+            ).addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+    
+            var icon_6aa1d14c31ffc932d3c83512a2e874d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_6edbdf29be642d88c823675e3fad5c5d.setIcon(icon_6aa1d14c31ffc932d3c83512a2e874d2);
+        
+    
+        var popup_1ff809370c5bae936cd34464939132d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e908226f4d9cbf528764fe24bcfcdfdc = $(`<div id="html_e908226f4d9cbf528764fe24bcfcdfdc" style="width: 100.0%; height: 100.0%;"><a href = "https://sensors.ini.ch" target=_blank><img src="./img/icons/logo--ini.png" style="width: 150px; height: auto;"></a></div>`)[0];
+                popup_1ff809370c5bae936cd34464939132d0.setContent(html_e908226f4d9cbf528764fe24bcfcdfdc);
+            
+        
+
+        marker_6edbdf29be642d88c823675e3fad5c5d.bindPopup(popup_1ff809370c5bae936cd34464939132d0)
+        ;
+
+        
+    
+    
+            marker_6edbdf29be642d88c823675e3fad5c5d.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Tobi Delbruck, Shih-Chii Liu</b><br>Professor<br>Institute of Neuroinformatics, UZH/ETH Zurich<br>Switzerland 🇨🇭</div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb208ab52d9185f3154242b44d4b0ee6 = L.marker(
+                [47.3776048, 8.5527199],
+                {}
+            ).addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+    
+            var icon_35e6ef912fa8a36336f334a9ab77023a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eb208ab52d9185f3154242b44d4b0ee6.setIcon(icon_35e6ef912fa8a36336f334a9ab77023a);
+        
+    
+        var popup_435a9944f132b5c153bedefd51b774f2 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_17d2547bea2ce0b80bb4e6ed29edcc88 = $(`<div id="html_17d2547bea2ce0b80bb4e6ed29edcc88" style="width: 100.0%; height: 100.0%;"><a href = "https://circuit.ee.ethz.ch" target=_blank><img src="./img/icons/logo--ethz.png" style="width: 150px; height: auto;"></a></div>`)[0];
+                popup_435a9944f132b5c153bedefd51b774f2.setContent(html_17d2547bea2ce0b80bb4e6ed29edcc88);
+            
+        
+
+        marker_eb208ab52d9185f3154242b44d4b0ee6.bindPopup(popup_435a9944f132b5c153bedefd51b774f2)
+        .openPopup();
+
+        
+    
+    
+            marker_eb208ab52d9185f3154242b44d4b0ee6.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Kwantae Kim</b><br>Established Researcher<br>ETH Zurich<br>Switzerland 🇨🇭</div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7596d511f417a738b2a82e95c67db7a3 = L.marker(
+                [24.5250967, 54.4335328],
+                {}
+            ).addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+    
+            var icon_8a85330f71a60242eec7ceddee2a5695 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_7596d511f417a738b2a82e95c67db7a3.setIcon(icon_8a85330f71a60242eec7ceddee2a5695);
+        
+    
+        var popup_4e4d02ad6fb6e44bfd810b6a157ee199 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21d9e002b9cb08eaf4f0cce0516ca85b = $(`<div id="html_21d9e002b9cb08eaf4f0cce0516ca85b" style="width: 100.0%; height: 100.0%;"><a href = "https://wp.nyu.edu/sohmyung/" target=_blank><img src="./img/icons/logo--nyu-uae.png" style="width: 150px; height: auto;"></a></div>`)[0];
+                popup_4e4d02ad6fb6e44bfd810b6a157ee199.setContent(html_21d9e002b9cb08eaf4f0cce0516ca85b);
+            
+        
+
+        marker_7596d511f417a738b2a82e95c67db7a3.bindPopup(popup_4e4d02ad6fb6e44bfd810b6a157ee199)
+        ;
+
+        
+    
+    
+            marker_7596d511f417a738b2a82e95c67db7a3.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Sohmyung Ha</b><br>Assistant Professor<br>New York University Abu Dhabi<br>UAE 🇦🇪</div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_478381c84dc1413d676e73d43c88c2ba.addTo(map_adf609a015a1129631a30724326c7fa9);
+        
+</script>
+</html>

@@ -40,6 +40,15 @@ tr:hover .hover-embc {left: -170px; top:calc(50% - 30px); visibility: visible; h
 tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 
+tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
+tr:hover .hover-aalto {left: -120px; top:calc(50% - 50px); visibility: visible; height: 100px;}
+tr:hover .hover-tudelft {left: -170px; top:calc(50% - 40px); visibility: visible; height: 100px;}
+tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
+tr:hover .hover-ssl {left: -350px; top:calc(50% - 50px); visibility: visible; height: 100px;}
+tr:hover .hover-knu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
+tr:hover .hover-abbott {left: -190px; top:calc(50% - 15px); visibility: visible; height: 40px;}
+tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible; height: 40px;}
+
 /* Hyperlink */
 .pub-hover {
   /* color: black; default #4E4E4E */
@@ -77,6 +86,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     <span style='color: #4A61C8;'>
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
     </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--ucsc.png" class="hover-ucsc"></div>
     University of California, Santa Cruz (UC Santa Cruz)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2024</div>
@@ -87,6 +97,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     <span style='color: #4A61C8;'>
     Next 10 Years in Research
     </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     Aalto University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jan. 2024</div>
@@ -97,6 +108,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     <span style='color: #4A61C8;'>
     Event-Driven Bio-Inspired Audio Sensor Front End for Edge TinyML: When Time-Domain Analog Circuits Meet Neuromorphic Audio Sensors in TinyML Applications
     </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--tudelft.png" class="hover-tudelft"></div>
     Delft University of Technology (TU Delft)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Apr. 2023</div>
@@ -107,6 +119,8 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     <span style='color: #4A61C8;'>
     Time-Domain Audio Feature Extraction Circuits for μW-Scale TinyML Applications
     </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
+    <div class="img-container"><img src="./../img/icons/logo--ssl.png" class="hover-ssl"></div>
     Semiconductor System Laboratory (SSL), KAIST
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2021</div>
@@ -117,6 +131,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     <span style='color: #4A61C8;'>
     Low Power & Low Distortion Sinusoidal Current Generator IC for Bio-Impedance Sensing
     </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--knu.svg" class="hover-knu"></div>
     Kangwon National University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2021</div>
@@ -127,7 +142,9 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
     <span style='color: #4A61C8;'>
     A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC with 0.55° Overall Phase Error
     </span><br>
-    Abbott (St. Jude Medical)
+    <div class="img-container"><img src="./../img/icons/logo--abbott.svg" class="hover-abbott"></div>
+    <div class="img-container"><img src="./../img/icons/logo--stjude.svg" class="hover-stjude"></div>
+    St. Jude Medical (Abbott)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
         <div class="tab-cell" style="flex: 4;">Sunnyvale, California, USA <span class='emoji'>🇺🇸</span></div>

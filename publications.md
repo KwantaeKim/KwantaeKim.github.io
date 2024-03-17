@@ -152,7 +152,7 @@ span.venue {font-style: italic;}
     <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
     <br><span style='color: black;'>
     <i class="fa-solid fa-file-code fa-bounce fa-lg"></i> MATLAB/Verilog Code in <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">PhD Thesis</a> <br>
-    <i class="fa-solid fa-file-pdf"></i> <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">Relevant Publication</a> </span>
+    <i class="fa-solid fa-file-pdf fa-lg"></i> <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">Relevant Publication</a> </span>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank" class="pub-hover">
