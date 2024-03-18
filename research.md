@@ -15,7 +15,7 @@ menubar_toc: true
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
 <link href="./../emoji.css" rel="stylesheet" type='text/css'>
 
-## Vision
+## <i class="fa-solid fa-star"></i> Vision
 
 The rapid advancement of <i class="fa-solid fa-wifi"></i> <b>Internet-of-Things (IoT)</b> sensor platform has been penetrating all corners of our lives, presenting unprecedented levels of demands for power efficiency, computation latency, task complexity, and form factors. The next evolutionary phase of IoT platform will be realized with the following four key features toward further enriching our daily lives: <b>Tiny</b>, <b>Sensory</b>, <b>Intelligent</b>, and <b>Wireless</b>.
 
@@ -50,12 +50,12 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 
 - <span class='bold'>Lead-Compensated</span> flipped voltage follower (FVF)
   - <span class='bold'>11.65x</span> higher bandwidth, <span class='bold'>3.19x</span> less power, without noise increase
-- Widely adopted by multiple research groups for <span class='bold'>Voltage Amplifier</span> designs
+- Widely adopted by multiple research groups
   - <a href="https://doi.org/10.1109/ISSCC42613.2021.9365801" target="_blank">ISSCC 2021</a> (A*STAR, Singapore <span class='emoji'>🇸🇬</span>)
   - <a href="https://doi.org/10.1109/ISSCC42614.2022.9731787" target="_blank">ISSCC 2022</a> (Fudan University, China <span class='emoji'>🇨🇳</span>)
   - <a href="https://doi.org/10.1109/ISSCC49657.2024.10454399" target="_blank">ISSCC 2024</a> (KAIST, South Korea <span class='emoji'>🇰🇷</span>)
-- Silver Award🥈in 2019 Samsung HumanTech paper competition
-- 📚 <span class='bold'>Open-Sourced</span> schematic parameters in ISCAS 2023 paper
+- 🎉 Silver Award🥈in 2019 Samsung HumanTech paper competition
+- 📚 <span class='bold'>Open-Sourced</span> schematic parameters in ISCAS 2023
   - You are more than welcomed to copy＆paste this biomedical amplifier design 😀
 
 ### <i class="fa-solid fa-microchip"></i> BioZ2
@@ -68,7 +68,8 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">Open Source Code</a>
 
 - <span class='bold'>All-Digital ΔΣ</span> modulated sinewave generator
-  - A sinusoidal current generator with <span class='bold'>1.9~7.5x</span> more linear, <span class='bold'>8.9x</span> less power, <span class='bold'>33x</span> less area
+- A sinusoidal current generator with performance improvements in:
+  - <span class='bold'>1.9~7.5x</span> more linear, <span class='bold'>8.9x</span> less power, <span class='bold'>33x</span> less area
 - 📚 <span class='bold'>Open-Sourced</span> MATLAB/Verilog Code in PhD dissertation
   - <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">TCAS-II 2023</a> (Oregon State University, USA <span class='emoji'>🇺🇸</span>)<br>
     → An improved design based on the open-source code
@@ -83,15 +84,40 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 <img src='{{ site.base_url }}/img/research/neuro_gscd.png' style='width: 70%;'>
 </center>
 
-## Approved Grants
+### <i class="fa-solid fa-microchip"></i> CochClass
+
+<a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank">ISSCC 2022</a>
+<span style="margin-right: 1em;"></span>
+<a href="https://doi.org/10.1109/JSSC.2022.3195610" target="_blank">JSSC 2022</a>
+<span style="margin-right: 1em;"></span>
+<a href="https://doi.org/10.1109/MCAS.2023.3267893" target="_blank">CAS Magazine 2023</a>
+
+- The first <span class='bold'>Fully-Integrated</span> keyword spotting chip that includes:
+  - <span class='bold'>Time Domain</span> analog feature extractor
+  - Digital neural network classifier
+- Spike-friendly <span class='bold'>Neuromorphic</span> signal processing inspired by biological cochlea
+- <span class='bold'>Technology-Scalable</span> attributes of time domain circuits in advanced CMOS process nodes
+- JSSC 2022
+  - 🎉 Highlighted in the IEEExplore Main Page (Sep. ~ Oct. 2023)
+  - 🎉 Top-2 in the Most Popular Articles in JSSC (Sep. ~ Oct. 2023)
+- CAS Magazine 2023
+  - 🎉 Top-1 in the Most Popular Articles in CAS Magazine (Sep. ~ Oct. 2023)
+
+<center>
+<img src='{{ site.base_url }}/img/research/neuro_highlight_jssc22_1.png' style='width: 80%;'>
+</center>
+
 
 <br><br><br><br><br>
 
-## Research Partners
+## <i class="fa-solid fa-hand-holding-dollar"></i> Approved Grants
+
+<br><br><br><br><br>
+
+## <i class="fa-solid fa-people-group"></i> Research Partners
 
 <i class="fa-solid fa-location-dot fa-lg"></i> Navigate map,
 <i class="fa-solid fa-magnifying-glass"></i> find my collaborators, and
 <i class="fa-solid fa-up-right-from-square"></i> visit webpages! <i class="fa-solid fa-house-user"></i>
 
 <iframe src="{{ site.base_url }}/worldmap.html" width="100%" height="500"></iframe>
-

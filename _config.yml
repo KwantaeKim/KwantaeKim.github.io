@@ -41,7 +41,8 @@ sass:
   style: compressed
   source_dir: _sass
 
-#google_analytics: UA-code-here
+# Added in ./_includes/google-analytics.html 
+#google_analytics:
 
 defaults:
   -

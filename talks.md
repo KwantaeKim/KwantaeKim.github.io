@@ -42,7 +42,7 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
 
 tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-aalto {left: -120px; top:calc(50% - 50px); visibility: visible; height: 100px;}
-tr:hover .hover-tudelft {left: -170px; top:calc(50% - 40px); visibility: visible; height: 100px;}
+tr:hover .hover-tudelft {left: -180px; top:calc(50% - 40px); visibility: visible; height: 70px;}
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-ssl {left: -350px; top:calc(50% - 50px); visibility: visible; height: 100px;}
 tr:hover .hover-knu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
