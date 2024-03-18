@@ -54,7 +54,7 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
   - <a href="https://doi.org/10.1109/ISSCC42613.2021.9365801" target="_blank">ISSCC 2021</a> (A*STAR, Singapore <span class='emoji'>🇸🇬</span>)
   - <a href="https://doi.org/10.1109/ISSCC42614.2022.9731787" target="_blank">ISSCC 2022</a> (Fudan University, China <span class='emoji'>🇨🇳</span>)
   - <a href="https://doi.org/10.1109/ISSCC49657.2024.10454399" target="_blank">ISSCC 2024</a> (KAIST, South Korea <span class='emoji'>🇰🇷</span>)
-- 🎉 Silver Award🥈in 2019 Samsung HumanTech paper competition
+- <i class="fa-solid fa-medal fa-lg"></i> Silver Award in 2019 Samsung HumanTech paper competition
 - 📚 <span class='bold'>Open-Sourced</span> schematic parameters in ISCAS 2023
   - You are more than welcomed to copy＆paste this biomedical amplifier design 😀
 
@@ -96,7 +96,7 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
   - <span class='bold'>Time Domain</span> analog feature extractor
   - Digital neural network classifier
 - Spike-friendly <span class='bold'>Neuromorphic</span> signal processing inspired by biological cochlea
-- <span class='bold'>Technology-Scalable</span> attributes of time domain circuits in advanced CMOS process nodes
+- <span class='bold'>Technology-Scalable</span> time domain circuits in advanced CMOS process nodes
 - JSSC 2022
   - 🎉 Highlighted in the IEEExplore Main Page (Sep. ~ Oct. 2023)
   - 🎉 Top-2 in the Most Popular Articles in JSSC (Sep. ~ Oct. 2023)
@@ -107,10 +107,17 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 <img src='{{ site.base_url }}/img/research/neuro_highlight_jssc22_1.png' style='width: 80%;'>
 </center>
 
+### <i class="fa-solid fa-circle-nodes"></i> C2-FWR
 
-<br><br><br><br><br>
+<a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank">AICAS 2023</a>
 
-## <i class="fa-solid fa-hand-holding-dollar"></i> Approved Grants
+- Low power analog signal processing circuits for intelligent audio sensors
+- Python-modeled full-wave rectifier (FWR) and <span class='bold'>Hardware-Aware Training</span> in RNN classifier
+  - Dynamic comparator and chopper
+  - 30x less power but negligible classification accuracy drop
+- <i class="fa-solid fa-medal fa-lg"></i> <a href='https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html#:~:text=Poster%20Award%202023-,The%20Sensors%20Research%20Group%20INI%20won%20the%20Best%20Poster%20Award,renowned%20IEEE%20AICAS%202023%20event.' target="_blank">Best Poster Award</a> in AICAS 2023
+
+<!-- ## <i class="fa-solid fa-hand-holding-dollar"></i> Approved Grants -->
 
 <br><br><br><br><br>
 

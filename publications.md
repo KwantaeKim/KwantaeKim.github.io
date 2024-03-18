@@ -130,7 +130,7 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
     <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
     <br><span style='color: black;'>
-    🎉 Silver Award🥈in Samsung HumanTech Paper Competition </span>
+    <i class="fa-solid fa-trophy fa-lg"></i> Silver Award in 2019 Samsung HumanTech paper competition </span>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/JSSC.2022.3195610" target="_blank" class="pub-hover">
