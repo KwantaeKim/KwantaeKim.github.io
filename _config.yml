@@ -41,8 +41,7 @@ sass:
   style: compressed
   source_dir: _sass
 
-# Added in ./_includes/google-analytics.html 
-#google_analytics:
+google_analytics: G-WZD02XER41
 
 defaults:
   -
