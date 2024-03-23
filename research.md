@@ -123,8 +123,5 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 
 ## <i class="fa-solid fa-people-group"></i> Research Partners
 
-<i class="fa-solid fa-location-dot fa-lg"></i> Navigate map,
-<i class="fa-solid fa-magnifying-glass"></i> find my collaborators, and
-<i class="fa-solid fa-up-right-from-square"></i> visit webpages! <i class="fa-solid fa-house-user"></i>
-
-<iframe src="{{ site.base_url }}/worldmap.html" width="100%" height="500"></iframe>
+<!-- Adapt and sync the height value with the source html -->
+<iframe src="{{ site.base_url }}/worldmap_overlay.html" width="100%" height="550"></iframe>
