@@ -53,10 +53,10 @@ home_page: true
 ## Education
 
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | Ph.D. in Electrical Engineering | 2021 | <br>
-<i class="fa-solid fa-graduation-cap"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Visiting Scholar in Institute of Neuroinformatics | 2020 | <br>
+<i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Visiting Scholar in Institute of Neuroinformatics | 2020 | <br>
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | M.S. in Electrical Engineering<br>Ranked 1<sup>st</sup> (1/152) in Entrance Examination | 2017 | <br>
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | B.S. in Electrical Engineering | 2015 |
-<i class="fa-solid fa-graduation-cap"></i> UC Berkeley | USA <span class='emoji'>🇺🇸</span> | Summer Session in Mathematics | 2013 |
+<i class="fa-solid fa-school-flag"></i> UC Berkeley | USA <span class='emoji'>🇺🇸</span> | Summer Session in Mathematics | 2013 |
 
 ## Service
 
