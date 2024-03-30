@@ -20,7 +20,7 @@ menubar_toc: true
 The rapid advancement of <i class="fa-solid fa-wifi"></i> <b>Internet-of-Things (IoT)</b> sensor platform has been penetrating all corners of our lives, presenting unprecedented levels of demands for power efficiency, computation latency, task complexity, and form factors. The next evolutionary phase of IoT platform will be realized with the following four key features toward further enriching our daily lives: <b>Tiny</b>, <b>Sensory</b>, <b>Intelligent</b>, and <b>Wireless</b>.
 
 <center>
-<img src='{{ site.base_url }}/img/research/vision.png' style='width: 70%;' class='center'>
+<img src='{{ site.base_url }}/img/research/vision.png' style='width: 90%;' class='center'>
 </center>
 <br>
 
@@ -54,7 +54,7 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
   - <a href="https://doi.org/10.1109/ISSCC42613.2021.9365801" target="_blank">ISSCC 2021</a> (A*STAR, Singapore <span class='emoji'>🇸🇬</span>)
   - <a href="https://doi.org/10.1109/ISSCC42614.2022.9731787" target="_blank">ISSCC 2022</a> (Fudan University, China <span class='emoji'>🇨🇳</span>)
   - <a href="https://doi.org/10.1109/ISSCC49657.2024.10454399" target="_blank">ISSCC 2024</a> (KAIST, South Korea <span class='emoji'>🇰🇷</span>)
-- <i class="fa-solid fa-medal fa-lg"></i> Silver Award in 2019 Samsung HumanTech paper competition
+- <i class="fa-solid fa-trophy fa-lg"></i> Silver Award in 2019 Samsung HumanTech paper competition
 - 📚 <span class='bold'>Open-Sourced</span> schematic parameters in ISCAS 2023
   - You are more than welcomed to copy＆paste this biomedical amplifier design 😀
 
@@ -97,11 +97,10 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
   - Digital neural network classifier
 - Spike-friendly <span class='bold'>Neuromorphic</span> signal processing inspired by biological cochlea
 - <span class='bold'>Technology-Scalable</span> time domain circuits in advanced CMOS process nodes
-- JSSC 2022
-  - 🎉 Highlighted in the IEEExplore Main Page (Sep. ~ Oct. 2023)
-  - 🎉 Top-2 in the Most Popular Articles in JSSC (Sep. ~ Oct. 2023)
-- CAS Magazine 2023
-  - 🎉 Top-1 in the Most Popular Articles in CAS Magazine (Sep. ~ Oct. 2023)
+- IEEE Highlights (Sep. ~ Oct. 2023)
+  - 🎉 Highlighted in the IEEExplore Main Page
+  - 🎉 Top-2 in the Most Popular Articles in JSSC
+  - 🎉 Top-1 in the Most Popular Articles in CAS Magazine
 
 <center>
 <img src='{{ site.base_url }}/img/research/neuro_highlight_jssc22_1.png' style='width: 80%;'>
@@ -115,7 +114,7 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 - Python-modeled full-wave rectifier (FWR) and <span class='bold'>Hardware-Aware Training</span> in RNN classifier
   - Dynamic comparator and chopper
   - 30x less power but negligible classification accuracy drop
-- <i class="fa-solid fa-medal fa-lg"></i> <a href='https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html#:~:text=Poster%20Award%202023-,The%20Sensors%20Research%20Group%20INI%20won%20the%20Best%20Poster%20Award,renowned%20IEEE%20AICAS%202023%20event.' target="_blank">Best Poster Award</a> in AICAS 2023
+- <i class="fa-solid fa-trophy fa-lg"></i> <a href='https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html#:~:text=Poster%20Award%202023-,The%20Sensors%20Research%20Group%20INI%20won%20the%20Best%20Poster%20Award,renowned%20IEEE%20AICAS%202023%20event.' target="_blank">Best Poster Award</a> in AICAS 2023
 
 <!-- ## <i class="fa-solid fa-hand-holding-dollar"></i> Approved Grants -->
 

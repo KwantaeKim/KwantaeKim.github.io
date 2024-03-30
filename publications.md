@@ -232,7 +232,7 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--aicas23.png" class="hover-aicas23"></div>
     <span class="venue">IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)</span>, 2023
     <br><span style='color: black;'>
-    🎉 Best Poster Award </span>
+    <i class="fa-solid fa-trophy fa-lg"></i> Best Poster Award </span>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISCAS46773.2023.10181602" target="_blank" class="pub-hover">
