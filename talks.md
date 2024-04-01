@@ -93,7 +93,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     University of California, Santa Cruz (UC Santa Cruz)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Santa Cruz, California, USA <span class='emoji'>🇺🇸</span></div>
+        <div class="tab-cell" style="flex: 4;">Santa Cruz, California, United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -150,7 +150,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     St. Jude Medical (Abbott)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
-        <div class="tab-cell" style="flex: 4;">Sunnyvale, California, USA <span class='emoji'>🇺🇸</span></div>
+        <div class="tab-cell" style="flex: 4;">Sunnyvale, California, United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
 </tbody>
@@ -186,7 +186,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     IEEE International Symposium on Circuits and Systems (ISCAS)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">May. 2023</div>
-        <div class="tab-cell" style="flex: 4;">Monterey, California, USA <span class='emoji'>🇺🇸</span></div>
+        <div class="tab-cell" style="flex: 4;">Monterey, California, United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -197,7 +197,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     IEEE International Solid-State Circuits Conference (ISSCC)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2022</div>
-        <div class="tab-cell" style="flex: 4;">San Francisco, California, USA <span class='emoji'>🇺🇸</span> (Virtual)</div>
+        <div class="tab-cell" style="flex: 4;">San Francisco, California, United States <span class='emoji'>🇺🇸</span> (Virtual)</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -208,7 +208,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     IEEE Symposium on VLSI Circuits
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2020</div>
-        <div class="tab-cell" style="flex: 4;">Honolulu, Hawaii, USA <span class='emoji'>🇺🇸</span> (Virtual)</div>
+        <div class="tab-cell" style="flex: 4;">Honolulu, Hawaii, United States <span class='emoji'>🇺🇸</span> (Virtual)</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -219,7 +219,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     IEEE International Solid-State Circuits Conference (ISSCC)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
-        <div class="tab-cell" style="flex: 4;">San Francisco, California, USA <span class='emoji'>🇺🇸</span></div>
+        <div class="tab-cell" style="flex: 4;">San Francisco, California, United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">

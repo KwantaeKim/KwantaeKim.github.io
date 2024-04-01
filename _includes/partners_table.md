@@ -1,0 +1,6 @@
+| **Hoi-Jun Yoo** | <a href = 'http://ssl.kaist.ac.kr' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Professor | IEEE Fellow | KAIST | South Korea <span class='emoji'>🇰🇷</span> |
+| **Shih-Chii Liu** | <a href = 'https://sensors.ini.ch' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Professor | IEEE Fellow | UZH | Switzerland <span class='emoji'>🇨🇭</span> |
+| **Tobi Delbruck** | <a href = 'https://sensors.ini.ch' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Professor | IEEE Fellow | UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> |
+| **Sohmyung Ha** | <a href = 'https://wp.nyu.edu/sohmyung/' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Senior Member | New York University Abu Dhabi | UAE <span class='emoji'>🇦🇪</span> |
+| **Chang Gao** | <a href = 'https://www.tudemi.com' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | TU Delft | Netherlands <span class='emoji'>🇳🇱</span> |
+| **Qinyu Chen** | <a href = 'https://www.universiteitleiden.nl/en/staffmembers/qinyu-chen#tab-1' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | Leiden University | Netherlands <span class='emoji'>🇳🇱</span> |

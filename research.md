@@ -124,3 +124,6 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 
 <!-- Adapt and sync the height value with the source html -->
 <iframe src="{{ site.base_url }}/worldmap_overlay.html" width="100%" height="550"></iframe>
+<div style="margin-top: -2em;"></div>
+
+{% include partners_table.md %}

@@ -21,6 +21,11 @@ home_page: true
 .contents {position: sticky; top: 10%;}
 </style>
 
+<script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+<link href="./emoji.css" rel="stylesheet" type='text/css'>
+
+<iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="300" style="padding: 0; margin: 0; border: none;"></iframe><br>
+
 <div style="display: flex; align-items: center;">
   <img src="./img/icons/icon--google-scholar.svg" style="width: auto; height: 30px;">
   <div style="margin-left: 5px;"><a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank">Google Scholar</a><br></div>
@@ -41,9 +46,6 @@ home_page: true
   <div style="margin-left: 5px;"><a href="https://circuit.ee.ethz.ch" target="_blank">Group Webpage</a><br></div>
 </div>
 
-<script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
-<link href="./emoji.css" rel="stylesheet" type='text/css'>
-
 ## Employment
 
 <i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> in Electrical Engineering (D-ITET) | 2023~Present | <br>
@@ -56,7 +58,7 @@ home_page: true
 <i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Visiting Scholar in Institute of Neuroinformatics | 2020 | <br>
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | M.S. in Electrical Engineering<br>Ranked 1<sup>st</sup> (1/152) in Entrance Examination | 2017 | <br>
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | B.S. in Electrical Engineering | 2015 |
-<i class="fa-solid fa-school-flag"></i> UC Berkeley | USA <span class='emoji'>🇺🇸</span> | Summer Session in Mathematics | 2013 |
+<i class="fa-solid fa-school-flag"></i> UC Berkeley | United States <span class='emoji'>🇺🇸</span> | Summer Session in Mathematics | 2013 |
 
 ## Service
 
