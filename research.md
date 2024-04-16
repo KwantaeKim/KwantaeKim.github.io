@@ -113,7 +113,8 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 - Low power analog signal processing circuits for intelligent audio sensors
 - Python-modeled full-wave rectifier (FWR) and <span class='bold'>Hardware-Aware Training</span> in RNN classifier
   - Dynamic comparator and chopper
-  - 30x less power but negligible classification accuracy drop
+  - 31.2x less power but negligible classification accuracy drop
+  - Without increase of network size
 - <i class="fa-solid fa-trophy fa-lg"></i> <a href='https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html#:~:text=Poster%20Award%202023-,The%20Sensors%20Research%20Group%20INI%20won%20the%20Best%20Poster%20Award,renowned%20IEEE%20AICAS%202023%20event.' target="_blank">Best Poster Award</a> in AICAS 2023
 
 <!-- ## <i class="fa-solid fa-hand-holding-dollar"></i> Approved Grants -->
