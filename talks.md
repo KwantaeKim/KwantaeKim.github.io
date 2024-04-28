@@ -46,6 +46,7 @@ tr:hover .hover-tudelft {left: -180px; top:calc(50% - 40px); visibility: visible
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-ssl {left: -350px; top:calc(50% - 50px); visibility: visible; height: 100px;}
 tr:hover .hover-knu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
+tr:hover .hover-jbnu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-abbott {left: -190px; top:calc(50% - 15px); visibility: visible; height: 40px;}
 tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible; height: 40px;}
 
@@ -79,12 +80,38 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 <!-- --------- -->
 
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
-<link href="./emoji.css" rel="stylesheet" type='text/css'>
+<link href="./../emoji.css" rel="stylesheet" type='text/css'>
 
 ## Invited Talks
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
+    </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
+    KAIST
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Apr. 2024</div>
+        <div class="tab-cell" style="flex: 1;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 3;">
+          <i class="fa-solid fa-file-pdf fa-bounce fa-lg"></i>
+          <a href="{{ site.base_url }}/assets/KwantaeKim-KAIST-20240423.pdf" target="_blank">Slide</a>
+        </div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
+    </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--jbnu.svg" class="hover-jbnu"></div>
+    Jeonbuk National University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Apr. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Jeonju, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
