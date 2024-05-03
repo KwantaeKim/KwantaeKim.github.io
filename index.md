@@ -1,9 +1,9 @@
 ---
 title: Kwantae Kim
 subtitle: |-
-  Established Researcher <br><br>
-  ETH Zurich <br>
-desc: kimkwa (at) ethz (dot) ch
+  Incoming Assistant Professor <br><br>
+  Aalto University <br>
+desc: kwantaekim429 (at) gmail (dot) com
 layout: page
 hero_darken: true
 hero_image: /img/tutto/20200902_141209.jpg
@@ -43,12 +43,13 @@ home_page: true
   <span style="margin-right: 3em;"></span>
 
   <img src="./img/icons/icon--home.svg" style="width: auto; height: 30px;">
-  <div style="margin-left: 5px;"><a href="https://circuit.ee.ethz.ch" target="_blank">Group Webpage</a><br></div>
+  <div style="margin-left: 5px;"><a href="https://circuit.ee.ethz.ch" target="_blank">Webpage (ETH Zurich)</a><br></div>
 </div>
 
 ## Employment
 
-<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> in Electrical Engineering (D-ITET) | 2023~Present | <br>
+<i class="fa-solid fa-school-flag"></i> Aalto University | Finland <span class='emoji'>🇫🇮</span> | Incoming Assistant Professor<br> in Electrical Engineering | Aug 2024~ | <br>
+<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> in Electrical Engineering (D-ITET) | 2023~July 2024 | <br>
 <i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Postdoctoral Researcher<br>in Institute of Neuroinformatics | 2021~2023 | <br>
 <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Healthrian Co., Ltd. | South Korea <span class='emoji'>🇰🇷</span> | R＆D Researcher | 2015~2017 |
 
