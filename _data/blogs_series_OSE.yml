@@ -1,0 +1,6 @@
+title: Open Source Chip Design
+sections:
+  - label: Getting Started
+    items:
+      - title: Introducing Open-Source Circuit Design
+      - title: Integrating Jupyter Notebook in VS Code

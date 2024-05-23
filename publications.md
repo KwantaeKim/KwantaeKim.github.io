@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Publications
-# hero_height: is_small
 show_sidebar: false
 hero_image: /img/kwantaekim/IMG_3632.JPG
 menubar_toc: true
 toc_title: Contents
 ---
 
+<!-- CSS -->
 <style type="text/css">
 .tg .tg-desc{border: 1px inset black; position: relative;}
 .kwantae {color: black; text-decoration: underline; font-weight: bold;}
@@ -398,3 +398,10 @@ span.venue {font-style: italic;}
   </td></tr>
 </tbody>
 </table>
+
+<br><br>
+
+---
+
+***Acknowledgments***<br>
+Thanks to <a href="https://github.com/ZuowenWang0000" target="_blank">Zuowen Wang</a> for taking the <i class="fa-solid fa-camera fa-lg"></i> photo during my <i class="fa-solid fa-person-chalkboard fa-lg"></i> presentation!

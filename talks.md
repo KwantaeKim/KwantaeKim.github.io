@@ -320,3 +320,10 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
   </td></tr>
 </tbody>
 </table>
+
+<br><br>
+
+---
+
+***Acknowledgments***<br>
+Thanks to [Zuowen Wang](https://github.com/ZuowenWang0000) for taking the <i class="fa-solid fa-camera fa-lg"></i> photo during my <i class="fa-solid fa-person-chalkboard fa-lg"></i> presentation!

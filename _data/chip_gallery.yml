@@ -1,3 +1,17 @@
+- title: 2023
+  images:
+    - link: /img/chips/2023-IIR-DRNN.png
+      description: |-
+        ### IIR-DRNN
+        TSMC 65nm CMOS <br>
+        **Role**: Designer (Full-Custom SRAM)
+
+        <a href="https://doi.org/10.48550/arXiv.2405.03905" target="_blank">arXiv 2024</a>
+
+        Tape-out: Mar. 2023 <br>
+        Fab-out: Aug. 2023
+      ratio: is-16by9
+
 - title: 2020
   images:
     - link: /img/chips/2020-CochClass.png
