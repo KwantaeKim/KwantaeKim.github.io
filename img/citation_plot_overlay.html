@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overlay Text on Iframe</title>
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+    <!-- Overlay styling -->
+    <style>
+        #text-overlay {
+            text-align: left; font-family: Trebuchet MS; font-size: 1.5em;
+            position: absolute;
+            bottom: 65%;
+            left: 12%;
+            font-size: 12pt;
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            line-height: 2; /* Double-spacing */
+            border-radius: 5px;
+            padding: 5px;
+            z-index: 998;
+            }
+            #google-scholar-overlay {
+              text-align: left; font-family: Trebuchet MS; font-size: 1em;
+              z-index: 999;
+              position: absolute;
+              bottom: 23%;
+              right: 8%;
+              }
+            #hyper {
+              text-decoration: none;
+              color: #4A5BBF;
+            }
+            #hyper:hover{
+              color: black;
+            }
+    </style>
+</head>
+<body>
+    <!-- Overlay text with bbox_props styling -->
+    <div id="text-overlay" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); border-radius: 10px; padding: 10px;">
+      <b>Kwantae Kim</b> | <span id="last-update"></span>
+      <div id="citations" style="margin-top: -0.2em; margin-bottom: -0.8em;"></div>
+      <div id="hidx" style="margin-top: -0.8em; margin-bottom: -0.8em;"></div>
+      <div id="i10idx" style="margin-top: -0.8em;"></div>
+      <div id="google-scholar-overlay">
+        <a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" id="hyper" target="_blank">
+          <i class="fa-brands fa-google-scholar fa-lg"></i> Google Scholar
+        </a>
+      </div>
+    </div>
+
+    <script>
+        // Read the last_update parameter from the JSON file
+        fetch('./citation_last_update.json')
+            .then(response => response.json())
+            .then(data => {
+                // Extract the last_update parameter
+                var lastUpdate = data.last_update;
+                var citations = data.citations;
+                var hidx = data.hidx;
+                var i10idx = data.i10idx;
+                // Display the last_update parameter on the HTML page
+                document.getElementById('last-update').innerHTML = 'Last Update: ' + lastUpdate;
+                document.getElementById('citations').innerHTML = 'Citations: ' + citations;
+                document.getElementById('hidx').innerHTML = 'h-index: ' + hidx;
+                document.getElementById('i10idx').innerHTML = 'i10-index: ' + i10idx;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+
+    <!-- Iframe with generated HTML -->
+    <iframe src="./citation_plot.html" width="80%" height="400" style="padding: 0; margin: 0; border: none;"></iframe>
+
+</body>
+</html>

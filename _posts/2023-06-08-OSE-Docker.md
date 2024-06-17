@@ -150,7 +150,7 @@ Okay, now it is all set. Please skip [Windows Section](#in--windows) and jump di
 
 ### Docker
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-15-09-50.png' style='width:60%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-05-18-58-08.png' style='width:90%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-13-07-37.png' style='width:60%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-18-52.png' style='width:60%'>
 

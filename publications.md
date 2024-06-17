@@ -99,12 +99,7 @@ span.venue {font-style: italic;}
 
 **27** Authored/Co-Authored IEEE papers
 
-<div style="display: flex; align-items: center;">
-  <span style="margin-right: 5em;"></span>
-  <img src="./../img/icons/icon--google-scholar.svg" style="width: auto; height: 30px;">
-  <div style="margin-left: 5px;"><a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank">Google Scholar</a><br></div>
-</div>
-<img src="../img/citation_plot.png" style="width: 600px; height: auto;">
+<iframe src="{{ site.base_url }}/img/citation_plot_overlay.html" width="100%" height="450" style="padding: 0; margin: 0; border: none;"></iframe>
 
 ## First-Authored
 

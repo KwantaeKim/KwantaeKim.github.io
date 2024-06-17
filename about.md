@@ -3,7 +3,7 @@ title: Kwantae Kim
 subtitle: |-
   Incoming Assistant Professor <br><br>
   Aalto University <br>
-desc: kwantaekim429 (at) gmail (dot) com
+desc: kwantae.kim (at) aalto (dot) fi
 
 layout: page
 show_sidebar: false
