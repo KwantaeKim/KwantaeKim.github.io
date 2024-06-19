@@ -1,5 +1,7 @@
 - name: Home
   link: /
+- name: About
+  link: /about/
 - name: Research
   link: /research/
 - name: Publications
@@ -9,4 +11,4 @@
 - name: Chips
   link: /chips/
 - name: Blog
-  link: /blog/
+  link: /blogs/

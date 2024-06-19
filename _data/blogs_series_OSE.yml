@@ -9,6 +9,7 @@ sections:
   - label: Using Local Python Environment
     items:
       - title: Integrating Jupyter Notebook in VS Code
+      - title: Generate Analog Layouts in VS Code
   - label: Using Docker Environment
     items:
       - title: Setting Up Open Source Tools with Docker
