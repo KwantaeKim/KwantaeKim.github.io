@@ -193,11 +193,11 @@ Okay, now it is all set. Please skip [Windows Section](#in--windows) and jump di
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-05-18-58-08.png' style='width:90%'>
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-15-58.png' style='width:60%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-15-58-00.png' style='width:60%'>
 
 Similarly like <i class="fa-brands fa-apple fa-lg"></i> MacOS case, install <i class="fa-brands fa-docker fa-lg"></i> Docker from <a href="https://www.docker.com" target="_blank">webpage</a>. Enable **Use WSL 2 ..** during the installation.<br>We will use **Windows Subsystem for Linux (WSL)** <i class="fa-brands fa-linux fa-xl"></i> later.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-05.png' style='width:60%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-05-00.png' style='width:60%'>
 
 You can skip signing in by selecting **Continue without signing in**.
 
@@ -224,7 +224,7 @@ Run `wsl -l -v`, then you should see that your <i class="fa-brands fa-ubuntu"></
 
 Open <i class="fa-brands fa-docker fa-lg"></i> **Docker** and open <i class="fa-solid fa-gear"></i> Settings at the top menu bar. Go `Resources → WSL Integration` and enable `Ubuntu-22.04`. This will allow us to run <i class="fa-brands fa-docker fa-lg"></i> **Docker** in <i class="fa-brands fa-ubuntu"></i> **Ubuntu WSL** terminal.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-59.png' style='width:70%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-59-00.png' style='width:70%'>
 
 <br>
 
@@ -236,7 +236,7 @@ Next, install VS Code using <a href="https://code.visualstudio.com/" target="_bl
 
 Open VS Code. If it asks to install WSL, install it.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-39.png' style='width:50%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-39-00.png' style='width:50%'>
 
 Go `Extensions` (on the left panel), search `Docker`, and install it. Upon installation, you will see <i class="fa-brands fa-docker fa-lg"></i> icon at the bottom of the left panel like the below screenshot.
 
