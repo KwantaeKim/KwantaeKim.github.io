@@ -3,6 +3,7 @@ layout: post
 title: Setting Up Open Source Tools with Docker
 date: 2024-05-25 00:00:00
 hero_image: /img/tutto/IMG_3508.jpeg
+image: /{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-21-31-52.png
 
 menubar_toc: true
 show_sidebar: false
@@ -57,17 +58,19 @@ show_sidebar: false
 {% assign post-date = "2023-06-08" %}
 
 We can run place-and-route (PnR) and arrive GDS file generation as introduced in <a href="{{ site.baseurl }}{{ post[0].url }}">this post</a>,
-using open-source chip design tool with python scripts, in <i class="fa-brands fa-google fa-lg"></i> **Google Colab** environment.
+using open-source chip design tool with <i class="fa-brands fa-python fa-lg"></i> Python scripts, in <i class="fa-brands fa-google fa-lg"></i> **Google Colab** environment.
 
 In this post, I am gonna share a GUI-based tool setup, more familiar with analog circuit designers.
 
 A research team led by <a href="https://github.com/hpretl" target="_blank">Harald Pretl</a> from **Johannes Kepler University (JKU)** developed a <i class="fa-brands fa-docker fa-lg"></i> Docker container, **IIC-OSIC-TOOLS**. Using this container, we can easily setup open-source tools and access to it through **Virtual Network Computing (VNC)**.
 
-If you nagivate to the <a href="https://github.com/iic-jku/iic-osic-tools" target="_blank">IIC-OSIC-TOOLS <i class="fa-brands fa-github fa-lg"></i> Github page</a>, and you are completely new to <i class="fa-brands fa-git-alt fa-lg"></i> Git or <i class="fa-brands fa-github fa-lg"></i> Github usage, you will probably feel lost or confused about what to do first .. <i class="fa-regular fa-face-sad-tear fa-lg"></i>
+If you nagivate to the <a href="https://github.com/iic-jku/iic-osic-tools" target="_blank">IIC-OSIC-TOOLS <i class="fa-brands fa-github fa-lg"></i> Github page</a>, and you are completely new to <i class="fa-brands fa-git-alt fa-lg"></i> Git or <i class="fa-brands fa-github fa-lg"></i> Github usage, you will probably feel lost or confused about what to do first .. <i class="fa-regular fa-face-sad-tear fa-xl"></i>
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-12-49-13.png' style='width:70%'>
 
 > Um .. so .. what should I do?
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/i-dunno.gif' style='width:50%'>
 
 <br><br>
 
@@ -77,7 +80,7 @@ If you nagivate to the <a href="https://github.com/iic-jku/iic-osic-tools" targe
 
 ## In <i class="fa-brands fa-apple fa-lg"></i> MacOS
 
-<i class="fa-solid fa-circle-check fa-beat" style="color: #005000;"></i> Verified with Apple M2 Air laptop.
+<i class="fa-solid fa-circle-check fa-beat" style="color: #005000;"></i> Verified with Apple M2 Air laptop
 
 ### Docker
 
@@ -98,13 +101,51 @@ If you installed it, open the <i class="fa-brands fa-docker fa-lg"></i> **Docker
 
 Go through **Accept → Finish → Skip**.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-13-07-37.png' style='width:60%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-13-07-37.png' style='width:100%'>
 
 Find the top <i class="fa-solid fa-magnifying-glass fa-lg"></i> Search Bar in <i class="fa-brands fa-docker fa-lg"></i> Docker app, search `iic-osic-tools` (with `hpretl` prefix), and click **Pull** button.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-18-52.png' style='width:60%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-18-52.png' style='width:100%'>
 
 Upon the complete **Pull** process, you can find a green <i class="fa-solid fa-check" style="color: #005000;"></i> check mark.
+
+<br>
+
+### VS Code
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-23-45-31.png' style='width:90%'>
+
+Next, install VS Code using <a href="https://code.visualstudio.com/" target="_blank">This Link</a>. VS Code is quite useful and needed because you have to work with terminals, <i class="fa-solid fa-folder-tree fa-lg"></i> manage files, <i class="fa-solid fa-file-pen fa-lg"></i> edit files, and run <i class="fa-brands fa-python fa-lg"></i> Python codes in Jupyter Notebook, which are all possible in a single program!
+
+Open VS Code. Go `Extensions` (on the left panel), search `Docker`, and install it. Upon installation, you will see <i class="fa-brands fa-docker fa-lg"></i> icon at the bottom of the left panel like the below screenshot.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-20-50-16.png' style='width:30%'>
+
+<br>
+
+### XQuartz
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-PCyR7pTlBc?si=1aDbpA1P9gpXM7IZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Next, we need to enable the **X11 Forwarding**. The above video clearly explains what is the basic concept of X11 forwarding.
+
+Follow the steps introduced in the above video and install **XQuartz** (from 1:51 to 2:40).
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-26-46.png' style='width:50%'>
+
+Upcom installation, open **XQuartz** with spotlight (`⌘ + Space`), and execute `xhost + 127.0.0.1` on **XQuartz** terminal to allow network connections. Then you will get the following output:
+
+>127.0.0.1 being added to access control list
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-29-31.png' style='width:50%'>
+
+The fonts will be broken in **XQuartz** terminal if you are using custom styling on your terminal (ex. oh-my-zsh) but it is not a big problem and thus you can ignore it.
+
+In addition, run `sudo chmod 666 /var/run/docker.sock` on your terminal to make sure the <i class="fa-brands fa-docker fa-lg"></i> **Docker** can run on our terminal.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-36-36.png' style='width:50%'>
+
+<br>
 
 ### Git
 
@@ -116,8 +157,7 @@ Open terminal using spotlight (`⌘ + Space`), and execute `which git` to check 
 
 Like above, if you can find the path like `/usr/bin/git`, then it means you have <i class="fa-brands fa-git-alt fa-lg"></i> Git installed.
 
-If the terminal output prints `~ not found`, then it means you do not have <i class="fa-brands fa-git-alt fa-lg"></i> Git in your OS. In this cas, please install it by searching `git install macos` or similar words in <i class="fa-brands fa-google fa-lg"></i> Google<br>
-(you can also ask to <i class="fa-regular fa-comments fa-lg"></i> ChatGPT for sure).
+If the terminal prints `~ not found`, then it means you do not have <i class="fa-brands fa-git-alt fa-lg"></i> Git on your OS. In this cas, please install it by searching **git install macos** or similar words in <i class="fa-brands fa-google fa-lg"></i> Google (you can also ask to <i class="fa-regular fa-comments fa-lg"></i> ChatGPT for sure).
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-52-09.png' style='width:50%'>
 
@@ -146,51 +186,120 @@ Okay, now it is all set. Please skip [Windows Section](#in--windows) and jump di
 
 ## In <i class="fa-brands fa-windows"></i> Windows
 
-<i class="fa-solid fa-circle-check fa-beat" style="color: #005000;"></i> Verified with Windows 11 laptop.
+<i class="fa-solid fa-circle-check fa-beat" style="color: #005000;"></i> Verified with Windows 10 <br>
+<i class="fa-solid fa-circle-check fa-beat" style="color: #005000;"></i> Verified with Windows 11
 
 ### Docker
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-05-18-58-08.png' style='width:90%'>
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-13-07-37.png' style='width:60%'>
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-18-52.png' style='width:60%'>
 
-Similarly like <i class="fa-brands fa-apple fa-lg"></i> MacOS, install <i class="fa-brands fa-docker fa-lg"></i> Docker from <a href="https://www.docker.com" target="_blank">webpage</a>, search `iic-osic-tools` (with `hpretl` prefix) in Docker app, run Pull, and ensure you see the green <i class="fa-solid fa-check" style="color: #005000;"></i> check mark.
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-15-58.png' style='width:60%'>
 
-### Git
+Similarly like <i class="fa-brands fa-apple fa-lg"></i> MacOS case, install <i class="fa-brands fa-docker fa-lg"></i> Docker from <a href="https://www.docker.com" target="_blank">webpage</a>. Enable **Use WSL 2 ..** during the installation.<br>We will use **Windows Subsystem for Linux (WSL)** <i class="fa-brands fa-linux fa-xl"></i> later.
 
-You have to install a terminal program to use <i class="fa-brands fa-linux fa-lg"></i> Linux-like terminal in <i class="fa-brands fa-windows"></i> Windows.
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-05.png' style='width:60%'>
 
-Many people nowadays use <a href="https://mobaxterm.mobatek.net" target="_blank">MobaXterm</a> so I recommend to install this program (if you are already using another terminal program, this step is not needed).
+You can skip signing in by selecting **Continue without signing in**.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-13-07-37.png' style='width:70%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-18-52.png' style='width:70%'>
+
+Search `iic-osic-tools` (with `hpretl` prefix) in Docker app, run Pull, and ensure you see the green <i class="fa-solid fa-check" style="color: #005000;"></i> check mark.
+
+Be patient! This process can take several 10s of minutes depending on your PC.
+
+<br>
+
+### WSL
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/av0UQy6g2FA?si=fzr3kkpEet6A-mUi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Next, you have to install **Windows Subsystem for Linux (WSL)**. I found a really helpful <i class="fa-brands fa-youtube fa-lg"></i> YouTube video for this. Please check and follow the instructions until 3:52.
+
+Upon completion, open **PowerShell** by <i class="fa-brands fa-windows"></i> `Start → Windows PowerShell`.
+
+Run `wsl -l -v`, then you should see that your <i class="fa-brands fa-ubuntu"></i> **Ubuntu** version is 2, like the below screenshot (you can ignore `docker-desktop-data` in the below screenshot).
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-20-30-36.png' style='width:70%'>
+
+Open <i class="fa-brands fa-docker fa-lg"></i> **Docker** and open <i class="fa-solid fa-gear"></i> Settings at the top menu bar. Go `Resources → WSL Integration` and enable `Ubuntu-22.04`. This will allow us to run <i class="fa-brands fa-docker fa-lg"></i> **Docker** in <i class="fa-brands fa-ubuntu"></i> **Ubuntu WSL** terminal.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-59.png' style='width:70%'>
+
+<br>
+
+### VS Code
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-20-42-15.png' style='width:90%'>
+
+Next, install VS Code using <a href="https://code.visualstudio.com/" target="_blank">This Link</a>. VS Code is quite useful and needed because you have to work with <i class="fa-brands fa-linux fa-xl"></i> Linux terminals in <i class="fa-brands fa-windows"></i> Windows, <i class="fa-solid fa-folder-tree fa-lg"></i> manage files, <i class="fa-solid fa-file-pen fa-lg"></i> edit files, and run <i class="fa-brands fa-python fa-lg"></i> Python codes in Jupyter Notebook, which are all possible in a single program!
+
+Open VS Code. If it asks to install WSL, install it.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-16-39.png' style='width:50%'>
+
+Go `Extensions` (on the left panel), search `Docker`, and install it. Upon installation, you will see <i class="fa-brands fa-docker fa-lg"></i> icon at the bottom of the left panel like the below screenshot.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-20-50-16.png' style='width:30%'>
+
+<br>
+
+### MobaXterm
+
+Many people use <a href="https://mobaxterm.mobatek.net" target="_blank">MobaXterm</a> for SSH. What is good thing about this program is, it has a built-in X11 forwarding function. Its installation is also simple, so I recommend to install this program.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-15-43-25.png' style='width:60%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-15-43-56.png' style='width:60%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-15-45-16.png' style='width:90%'>
 
-It is quite handy with the Portable edition, as it does not require us to go through the install process.
+It is quite handy with the **Portable** edition, as it does not require us to go through the install process.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-15-50-01.png' style='width:60%'>
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-15-51-12.png' style='width:90%'>
 
-If you installed MobaXterm, open terminal and check whether your <i class="fa-brands fa-windows"></i> Windows has <i class="fa-brands fa-git-alt fa-lg"></i> Git, by executing `which git` as also mentioned in [MacOS Section](#git)
+Open **MobaXterm**. You can see that the `X Server` icon becomes active like below screenshots (from left screenshot to right screenshot).
 
-As shown above, if your <i class="fa-brands fa-windows"></i> Windows has <i class="fa-brands fa-git-alt fa-lg"></i> Git, it will output the path like `/bin/git`.
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-03-20.png' style='width:15%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-04-58.png' style='width:15%'>
 
-If not, it will output <i class="fa-solid fa-xmark fa-lg" style="color:red;"></i> mark, like I searched `amplifier` for fun <i class="fa-regular fa-face-grin-wink fa-lg"></i>.
+Open the local terminal and you can test whether your <i class="fa-brands fa-windows"></i> Windows has <i class="fa-brands fa-git-alt fa-lg"></i> Git, by executing `which git` as also mentioned in [MacOS Section](#git) (of course this action can be done in **WSL** terminal as well).
 
-Rest of the steps are the same with <i class="fa-brands fa-apple fa-lg"></i> MacOS case.
+As shown below, if your <i class="fa-brands fa-windows"></i> Windows has <i class="fa-brands fa-git-alt fa-lg"></i> Git, it will output the path like `/bin/git`. If not, it will output <i class="fa-solid fa-xmark fa-lg" style="color:red;"></i> mark, like I searched `amplifier` for fun <i class="fa-regular fa-face-grin-wink fa-lg"></i>.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-55-25.png' style='width:90%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-15-51-12.png' style='width:80%'>
+
+<br>
+
+### Git
+
+We are now ready to play with <i class="fa-brands fa-git-alt fa-lg"></i> Git!
+
+Open VS Code, and open the built-in terminal by ``Ctrl + ` ``.
+
+Open a new <i class="fa-brands fa-ubuntu fa-lg"></i> **Ubuntu WSL** terminal like the below video.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-211540.gif' style='width:60%'>
 
 Navigate to the <a href="https://github.com/iic-jku/iic-osic-tools" target="_blank">IIC-OSIC-TOOLS <i class="fa-brands fa-github fa-lg"></i> Github page</a> and find `Code → Copy` button.
 
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-55-25.png' style='width:90%'>
+
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-59-00.png' style='width:45%'>
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-16-10-21.png' style='width:70%'>
 
-Paste the copied URL after `git clone` like above screenshot. Here, `git clone` is something similar concept of <i class="fa-solid fa-file-arrow-down fa-lg"></i> Download more or less. You can click the wheel button of your <i class="fa-solid fa-computer-mouse fa-lg"></i> mouse or `Shift + Insert` to paste into the terminal.
+Make a new folder with `mkdir`, move to that folder, and paste the copied URL after `git clone` like below screenshot.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-16-13-56.png' style='width:70%'>
+Here, `git clone` is something similar concept of <i class="fa-solid fa-file-arrow-down fa-lg"></i> Download more or less.
 
-After `git clone`, you can check what are the loaded files by executing `ls`. You will find `iic-osic-tools` directory. Move in to that directory, and do `ls` again. There seems to be several files, though not sure what are they yet <i class="fa-regular fa-face-grin-beam-sweat fa-lg"></i>.
+You can click the wheel button of your <i class="fa-solid fa-computer-mouse fa-lg"></i> mouse or `Shift + Insert` to paste into the terminal.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-23-12.png' style='width:80%'>
+
+After `git clone`, you can check what are the loaded files by executing `ls`. You will find `iic-osic-tools` directory. Move into that directory, and do `ls` again. There seems to be several files, though you might be not sure what are they yet <i class="fa-regular fa-face-grin-beam-sweat fa-xl"></i>.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-27-37.png' style='width:85%'>
+
+In addition, run `sudo chmod 666 /var/run/docker.sock` in your **WSL** terminal. It will allow us to run <i class="fa-brands fa-docker fa-lg"></i> **Docker** by using **WSL** terminal.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-31-37.png' style='width:85%'>
 
 <br><br>
 
@@ -210,18 +319,18 @@ Upon the very first time execution, you can see that the program says like:
 
 > I will make a new container as you currently do not have one!
 
-### Trouble Shooting
-
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-16-24-41.png' style='width:43%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-16-25-04.png' style='width:50%'>
 
 The above two screenshots show that even though you run `./start_vnc.sh` but fails.
 
-- The left case corresponds that the <i class="fa-brands fa-docker fa-lg"></i> Docker is not running yet.<br>
-  Open <i class="fa-brands fa-docker fa-lg"></i> Docker and execute `./start_vnc.sh` again.
-- The right case corresponds that `start_vnc.sh` file is running background already.<br>
-  Just press `s` in this case.<br>
-  If you happen to find a case showing `Press "s" to stop` instead of `Press "s" to start`, just execute `start_vnc.sh` again.
+- The left case corresponds that the <i class="fa-brands fa-docker fa-lg"></i> Docker is not running yet.
+  - Open <i class="fa-brands fa-docker fa-lg"></i> Docker and execute `./start_vnc.sh` again.
+- The right case corresponds that `start_vnc.sh` file is running background already.
+  - Just press `s` in this case.
+  - If you happen to find a case showing `Press "s" to stop` instead of `Press "s" to start`, press `s` and execute `start_vnc.sh` again.
+
+<br>
 
 ### Login to VNC
 
@@ -240,59 +349,94 @@ Then you can type password, which is `abc123` by default.
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-17-04-18.png' style='width:45%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-17-16-32.png' style='width:45%'>
 
-Upon login, you now see the screen like above, though the desktop image can be different, sometimes it just shows a dark image.
+Upon login, you now see the screen like above, left screen or right screen, though the desktop image can be different, sometimes it just shows a dark image.
 
 Just rightclick the mouse and then you can check it works fine like below.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-17-18-08.png' style='width:20%'>
 
-But, as I checked with my friend in <i class="fa-brands fa-apple fa-lg"></i> MacOS, it sometimes shows below problems:
+<br>
 
-- Screen resolution does not match well, and the screen is cut at edges, which is disturbing
-- Cannot see the mouse cursor
+### Problem
 
-Fortunately, we can fix this by using **VNC Viewer**.
+But, it has below problems which are better to be solved:
 
-### VNC Viewer
+- Screen resolution does not match well, and sometimes the screen is cut at edges, which is disturbing like below video
+  <br><img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-214338.gif' style='width:50%'>
+  - Because of this, we cannot fully utilize dual monitor, which is extremely critical for analog circuit designers! (especially for layout stuff) I believe many people will agree with this point <i class="fa-regular fa-face-laugh-wink fa-xl"></i>
+- Cannot see the mouse cursor in some cases
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-17-24-24.png' style='width:70%'>
+Instead, we can build **X11 Forwarding** as described below.
 
-Navigate to this <a href="https://www.realvnc.com/en/connect/download/viewer/?__lai_s=0.12162073490813649&__lai_sr=10-14&__lai_sl=l" target="_blank">VNC Viewer</a> link, install VNC Viewer, and open it.
+<br><br>
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-17-26-04.png' style='width:70%'>
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-17-26-27.png' style='width:70%'>
+---
 
-As shown above, type `localhost:5901` in <i class="fa-solid fa-magnifying-glass fa-lg"></i> Search Bar<Br>
-(I found port number `5901` in <a href="https://github.com/iic-jku/iic-osic-tools" target="_blank">IIC-OSIC-TOOLS <i class="fa-brands fa-github fa-lg"></i> Github page</a>).
+<br><br>
 
-The password is the same. `abc123` by default.
+## X11 Forwarding
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-17-29-06.png' style='width:60%'>
-<img src='{{ site.base_url }}{{ site.image_dir }}/thumbs-up-sheep.gif' style='width:35%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-22-18-27.png' style='width:70%'>
 
-🎉 Ta-Da! Now you can see a good resolution VNC screen! All set!
+Again, from this point, the method is universal and thus it does not matter whether you are using <i class="fa-brands fa-windows fa-lg"></i> Windows or <i class="fa-brands fa-apple fa-lg"></i> MacOS.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-00-22-57.png' style='width:40%'>
+As shown above, I git cloned `iic-osic-tools` under `Documents/open-source` folder.
 
-Click the terminal as shown in the lowerleft corner of your VNC Viewer screen.
+Move to that folder, and run `code .` on terminal like below video. Then you can see the files within `iic-osic-tools` folder on your left.
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-03-04-05.png' style='width:90%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-222157.gif' style='width:100%'>
 
-You can find that the default current directory is `foss/designs`. Here is the hierarchy of directory:
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-223024.gif' style='width:100%'>
+
+Do the following as shown in the above video:
+
+- Open `start_vnc.sh` file
+- Search `PARAMS`
+- Assign `${PARAMS} -e DISPLAY=host.docker.internal:0` to `PARAMS`
+- Save `start_vnc.sh`
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-224237.gif' style='width:100%'>
+
+- Delete the remaining <i class="fa-brands fa-docker fa-lg"></i> Docker container as shown above video
+- Turn on the X11 forwarding function. If you do not make sure your X11 forwarding is enabled, the <i class="fa-brands fa-docker fa-lg"></i> Docker container will be immediately terminated!
+  - In <i class="fa-brands fa-windows"></i> Windows, you can enable X11 forwarding by simply opening **MobaXterm** and leave it opened. Check whether **X Server** is active on your upperright corner
+  <br><img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-04-58.png' style='width:15%'>
+  - In <i class="fa-brands fa-apple"></i> MacOS, you can enable X11 forwarding by simply opening **XQuartz** and leave it opened.
+- Run `start_vnc.sh`
+  - in **WSL** terminal for <i class="fa-brands fa-windows"></i> Windows
+  - in terminal for <i class="fa-brands fa-apple"></i> MacOS
+
+If you follow the above steps, you will see a new terminal pops up like below screenshot.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-22-55-02.png' style='width:70%'><br>
+↑ <i class="fa-brands fa-windows"></i> Windows
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-49-43.png' style='width:70%'><br>
+↑ <i class="fa-brands fa-apple"></i> MacOS
+
+Yes! 🎉 Ta-Da! We are all set!
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/thumbs-up-sheep.gif' style='width:40%'>
+
+You can find that the current directory is `foss/designs` by default. Here is the hierarchy of directory:
 
 ```shell
-foss
-foss/designs   # linked to the host OS
-foss/examples
-foss/pdks
-foss/tools
+/foss
+/foss/designs   # linked to the host OS
+/foss/examples
+/foss/pdks
+/foss/tools
 ```
 
-Note that `foss/designs` is mount to `~/eda/designs`. Like the below screenshot, for example in <i class="fa-brands fa-apple fa-lg"></i> MacOS, any file put in `~/eda/designs` path is synchronized with `foss/designs` path.
-
-(I don't know why, but this synchronization does not work in <i class="fa-brands fa-windows"></i> Windows, though `~/eda/designs` path is automatically generated)
+Note that `/foss/designs` is mount to `~/eda/designs` by default. Like the below screenshot, for example in <i class="fa-brands fa-apple fa-lg"></i> MacOS, any file put in `~/eda/designs` path is synchronized with `foss/designs` path. Similarly in <i class="fa-brands fa-windows"></i> Windows, since we are working on **WSL** terminal you can check the linked folder by moving to `~/eda/designs` folder (ex. run `cd ~/eda/designs`).
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-01-25-41.png' style='width:70%'>
+
+Once you have done these steps, you can open the <i class="fa-brands fa-docker fa-lg"></i> Docker terminal using <i class="fa-brands fa-docker fa-lg"></i> Docker app, if you turn on the X11 forwarding, as shown in the below video!
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-231230.gif' style='width:100%'>
+
+<center><img src='{{ site.base_url }}{{ site.image_dir }}/applause.gif' style='width:50%'></center>
 
 <br><br>
 
@@ -302,9 +446,9 @@ Note that `foss/designs` is mount to `~/eda/designs`. Like the below screenshot,
 
 ## Xschem
 
-If you are an **Analog Circuit Designer**, you probably want to view the GUI-based screen first <i class="fa-regular fa-face-laugh-wink fa-lg"></i>
+If you are an **Analog Circuit Designer**, you probably want to view the GUI-based screen first <i class="fa-regular fa-face-laugh-wink fa-xl"></i>
 
-**Xschem** is an open-source IC design tool similar to schematic editor within **Cadence Virtuoso**. You can open Xschem by executing `xschem` in terminal.
+**Xschem** is an open-source IC design tool similar to schematic editor within **Cadence Virtuoso**. You can open **Xschem** by executing `xschem` in terminal.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-21-31-52.png' style='width:70%'>
 
@@ -329,9 +473,9 @@ As you explore the design here and there, you will find comparator, capacitor DA
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-21-41-57.png' style='width:90%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-21-42-09.png' style='width:90%'>
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/thumbs-up-sheep.gif' style='width:35%'>
-
 So, yeah! The tool setup is all done!
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/yes-whoo.gif' style='width:50%'>
 
 <br><br>
 

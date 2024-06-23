@@ -3,13 +3,11 @@ sections:
   - label: Getting Started
     items:
       - title: Introducing Open-Source Circuit Design
-  - label: Using Google Colab
-    items:
       - title: Copy, Paste, and Run with Google Colab
-  - label: Using Local Python Environment
+  - label: Install Open Source Tools
     items:
       - title: Integrating Jupyter Notebook in VS Code
-      - title: Generate Analog Layouts in VS Code
-  - label: Using Docker Environment
-    items:
       - title: Setting Up Open Source Tools with Docker
+  - label: Try It Out
+    items:
+      - title: Generate Analog Layouts in VS Code
