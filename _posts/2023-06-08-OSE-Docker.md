@@ -419,7 +419,7 @@ Do the following as shown in the above video:
 - Turn on the **X11 Forwarding** function. If you do not make sure your **X11 Forwarding** is enabled, the <i class="fa-brands fa-docker fa-lg"></i> **Docker** container will be immediately terminated!
   - In <i class="fa-brands fa-windows"></i> Windows, you can enable **X11 Forwarding** by simply opening **MobaXterm** and leave it opened. Check whether **X Server** is active on your upperright corner
   <br><img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-04-58.png' style='width:15%'>
-  - In <i class="fa-brands fa-apple"></i> MacOS, you can enable **X11 Forwarding** by simply opening **XQuartz** and leave it opened. Run `xhost + 127.0.0.1` on your `XQuartz` terminal and try again if your <i class="fa-brands fa-apple"></i> **Docker** does not open the terminal.
+  - In <i class="fa-brands fa-apple"></i> MacOS, you can enable **X11 Forwarding** by simply opening **XQuartz** and leave it opened.<br>Run `xhost + 127.0.0.1` on your `XQuartz` terminal and try again if your <i class="fa-brands fa-apple"></i> **Docker** does not open the terminal.
 - Run `start_vnc.sh`
   - in **WSL** terminal for <i class="fa-brands fa-windows"></i> Windows
   - in terminal for <i class="fa-brands fa-apple"></i> MacOS
@@ -490,6 +490,41 @@ As you explore the design here and there, you will find comparator, capacitor DA
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-21-41-57.png' style='width:90%'>
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-21-42-09.png' style='width:90%'>
+
+<br>
+
+### Switching PDKs
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-25-22-23-51.png' style='width:60%'>
+
+Move to home folder by running `cd` only, which is equivalent to `cd ~/`, `~` means home folder.
+
+After that, run VS Code within the <i class="fa-brands fa-docker fa-lg"></i> Docker `code .`
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-25-22-27-55.png' style='width:60%'>
+
+If it asks whether you trust or not, click **Yes, I trust the authors**.
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-25-223305.gif' style='width:100%'>
+
+As shown above, edit `.bashrc` to switch different PDKs between `sky130` and `gf180` and save it.
+
+| SkyWater 130nm                            | Global Foundries 180nm                            |
+|:------------------------------------------|:--------------------------------------------------|
+| export PDK = sky130A                      | export PDK = gf180mcuC                            |
+| export PDKPATH = $PDK_ROOT/$PDK           | export PDKPATH = $PDK_ROOT/$PDK                   |
+| export STD_CELL_LIBRARY = sky130_fd_sc_hd | export STD_CELL_LIBRARY = gf180mcu_fd_sc_mcu7t5v0 |
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-25-223808.gif' style='width:80%'>
+
+Okay, now open a new terminal to ensure your new `.bashrc` file affects your PDK setting. Like above, we can see that `xschem` is set to `gf180` in the new terminal while the earlier terminal is still set to `sky130`. You can switch anytime by properly setting your `.bashrc` file.
+
+---
+
+<i class="fa-solid fa-triangle-exclamation fa-xl" style="color: #FFD43B;"></i> Be careful! Any bash terminal prettifier which modifies `.bashrc` may mess up our PDK setting! (ex. oh-my-bash)<br>
+<span style="margin-right: 2em;"></span> Do not try to install bash prettifier <i class="fa-regular fa-face-laugh-wink fa-lg"></i>
+
+---
 
 So, yeah! The tool setup is all done!
 
