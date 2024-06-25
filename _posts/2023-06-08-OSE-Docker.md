@@ -376,7 +376,7 @@ Instead, we can build **X11 Forwarding** as described below.
 
 ## X11 Forwarding
 
-<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-22-18-27.png' style='width:70%'>
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-22-18-27.png' style='width:80%'>
 
 Again, from this point, the method is universal and thus it does not matter whether you are using <i class="fa-brands fa-windows fa-lg"></i> Windows or <i class="fa-brands fa-apple fa-lg"></i> MacOS.
 
@@ -386,6 +386,10 @@ Move to that folder, and run `code .` on terminal like below video. Then you can
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-222157.gif' style='width:100%'>
 
+<br>
+
+### Display
+
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-223024.gif' style='width:100%'>
 
 Do the following as shown in the above video:
@@ -393,15 +397,29 @@ Do the following as shown in the above video:
 - Open `start_vnc.sh` file
 - Search `PARAMS`
 - Assign `${PARAMS} -e DISPLAY=host.docker.internal:0` to `PARAMS`
+
+<br>
+
+### Design Path
+
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-25-165456.gif' style='width:100%'>
+
+- Assign your working directory to `DESIGNS`
+  - In <i class="fa-brands fa-windows fa-lg"></i> Windows, your path `Documents/open-source` in <i class="fa-brands fa-windows fa-lg"></i> Windows is automatically mounted to `/mnt/c/Users/{your username}/Documents/open-source` in <i class="fa-brands fa-linux fa-xl"></i> WSL. For simplicity, I recommend to use the path under `Documents` folder
+  - In <i class="fa-brands fa-apple fa-lg"></i> MacOS, any path you want can be used
 - Save `start_vnc.sh`
+
+<br>
+
+### Rebuild Container
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-224237.gif' style='width:100%'>
 
 - Delete the remaining <i class="fa-brands fa-docker fa-lg"></i> Docker container as shown above video
-- Turn on the X11 forwarding function. If you do not make sure your X11 forwarding is enabled, the <i class="fa-brands fa-docker fa-lg"></i> Docker container will be immediately terminated!
-  - In <i class="fa-brands fa-windows"></i> Windows, you can enable X11 forwarding by simply opening **MobaXterm** and leave it opened. Check whether **X Server** is active on your upperright corner
+- Turn on the **X11 Forwarding** function. If you do not make sure your **X11 Forwarding** is enabled, the <i class="fa-brands fa-docker fa-lg"></i> **Docker** container will be immediately terminated!
+  - In <i class="fa-brands fa-windows"></i> Windows, you can enable **X11 Forwarding** by simply opening **MobaXterm** and leave it opened. Check whether **X Server** is active on your upperright corner
   <br><img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-04-58.png' style='width:15%'>
-  - In <i class="fa-brands fa-apple"></i> MacOS, you can enable X11 forwarding by simply opening **XQuartz** and leave it opened.
+  - In <i class="fa-brands fa-apple"></i> MacOS, you can enable **X11 Forwarding** by simply opening **XQuartz** and leave it opened. Run `xhost + 127.0.0.1` on your `XQuartz` terminal and try again if your <i class="fa-brands fa-apple"></i> **Docker** does not open the terminal.
 - Run `start_vnc.sh`
   - in **WSL** terminal for <i class="fa-brands fa-windows"></i> Windows
   - in terminal for <i class="fa-brands fa-apple"></i> MacOS
@@ -409,10 +427,10 @@ Do the following as shown in the above video:
 If you follow the above steps, you will see a new terminal pops up like below screenshot.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-22-55-02.png' style='width:70%'><br>
-↑ <i class="fa-brands fa-windows"></i> Windows
+<i class="fa-solid fa-arrow-up"></i> <i class="fa-brands fa-windows"></i> Windows
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-49-43.png' style='width:70%'><br>
-↑ <i class="fa-brands fa-apple"></i> MacOS
+<i class="fa-solid fa-arrow-up"></i> <i class="fa-brands fa-apple"></i> MacOS
 
 Yes! 🎉 Ta-Da! We are all set!
 
@@ -436,7 +454,7 @@ Once you have done these steps, you can open the <i class="fa-brands fa-docker f
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-231230.gif' style='width:100%'>
 
-<center><img src='{{ site.base_url }}{{ site.image_dir }}/applause.gif' style='width:50%'></center>
+<center><img src='{{ site.base_url }}{{ site.image_dir }}/applause.gif' style='width:60%'></center>
 
 <br><br>
 
