@@ -71,7 +71,7 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 - A sinusoidal current generator with performance improvements in:
   - <span class='bold'>1.9~7.5x</span> more linear, <span class='bold'>8.9x</span> less power, <span class='bold'>33x</span> less area
 - 📚 <span class='bold'>Open-Sourced</span> MATLAB/Verilog Code in PhD dissertation
-  - <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">TCAS-II 2023</a> (Oregon State University, USA <span class='emoji'>🇺🇸</span>)<br>
+  - <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">TCAS-II 2023</a>, <a href="https://doi.org/10.1109/TCSII.2024.3419705" target="_blank">TCAS-II 2024</a> (Oregon State University, USA <span class='emoji'>🇺🇸</span>)<br>
     → An improved design based on the open-source code
 
 <br><br><br><br><br>
