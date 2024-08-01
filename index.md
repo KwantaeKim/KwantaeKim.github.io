@@ -1,7 +1,7 @@
 ---
 title: Kwantae Kim
 subtitle: |-
-  Incoming Assistant Professor <br><br>
+  Assistant Professor <br><br>
   Aalto University
 layout: page
 hero_darken: true

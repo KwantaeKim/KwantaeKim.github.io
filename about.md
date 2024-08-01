@@ -1,7 +1,7 @@
 ---
 title: Kwantae Kim
 subtitle: |-
-  Incoming Assistant Professor <br><br>
+  Assistant Professor <br><br>
   Aalto University <br>
 desc: kwantae.kim (at) aalto (dot) fi
 
@@ -44,16 +44,11 @@ section-about: true
 
   <img src="{{ site.base_url }}/img/icons/icon--youtube.svg" style="width: auto; height: 30px;">
   <div style="margin-left: 5px;"><a href="https://youtube.com/@KwantaeKim" target="_blank">Youtube</a><br></div>
-
-  <span style="margin-right: 3em;"></span>
-
-  <img src="{{ site.base_url }}/img/icons/icon--home.svg" style="width: auto; height: 30px;">
-  <div style="margin-left: 5px;"><a href="https://circuit.ee.ethz.ch" target="_blank">Webpage (ETH Zurich)</a><br></div>
 </div>
 
 ## Employment
 
-<i class="fa-solid fa-school-flag"></i> Aalto University | Finland <span class='emoji'>🇫🇮</span> | Incoming Assistant Professor<br> School of Electrical Engineering | Aug 2024~ | <br>
+<i class="fa-solid fa-school-flag"></i> Aalto University | Finland <span class='emoji'>🇫🇮</span> | Assistant Professor<br> Department of Electronics and Nanoengineering | Aug 2024~ | <br>
 <i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> Electrical Engineering (D-ITET) | 2023~July 2024 | <br>
 <i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Postdoctoral Researcher<br>Institute of Neuroinformatics | 2021~2023 | <br>
 <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Healthrian Co., Ltd. | South Korea <span class='emoji'>🇰🇷</span> | R＆D Researcher | 2015~2017 |
