@@ -1,17 +1,10 @@
 <nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }" style="background-color: #02343F;">
     <div class="container">
 
-        <!-- LOGO -->
-        <table style="border-collapse: collapse; border: none;">
-            <thead style="display: none;"><tr><th>.</th></tr></thead><tbody>
-                <tr><td style="display: flex; justify-content: center; align-items: center;">
-                    <img src="{{ site.base_url }}{{ site.image_dir }}/icons/logo--aalto-horizontal.png" style="height:50px;">
-                </td></tr>
-        </tbody></table>
-
-        <div style="margin-left: 1em;"></div>
-
         <div class="navbar-brand">
+            <!-- LOGO -->        
+            <img src="{{ site.base_url }}{{ site.image_dir }}/icons/logo--aalto-horizontal.png" style="height:50px;">
+            <!-- Mobile Mode -->        
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
