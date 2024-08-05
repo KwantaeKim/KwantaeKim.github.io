@@ -7,10 +7,19 @@
                 <tr><td style="display: flex; justify-content: center; align-items: center;">
                     <img src="{{ site.base_url }}{{ site.image_dir }}/icons/logo--aalto-horizontal.png" style="height:50px;">
                 </td></tr>
-        </tbody></table>            
+        </tbody></table>
+
+        <div style="margin-left: 1em;"></div>
+
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-
             <div class="navbar-start">
                 <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
                 {% if site.data.navigation %}
