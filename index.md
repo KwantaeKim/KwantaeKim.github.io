@@ -1,14 +1,14 @@
 ---
-title: Kwantae Kim
+title: TSirc Group
 subtitle: |-
-  Assistant Professor <br><br>
+  Tiny Systems and Advanced Circuits (TSirc) <br><br>
   Aalto University
 layout: page
 hero_darken: true
 hero_image: /img/tutto/20200902_141209.jpg
 hero_photo: /img/kwantaekim/DSC06597-2.jpg
 hero_height: is-small
-favicon: /favicon.png
+favicon: /favicon-group.png
 menubar_toc: true
 show_sidebar: false
 section-about: true

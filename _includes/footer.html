@@ -1,18 +1,49 @@
 <style>
+    .icon-container {
+    position: relative;
+    display: inline-block;
+    }
+
+    /* The hover text (initially hidden) */
+    .hover-text {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px; /* Padding for space inside the element */
+    position: absolute;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    /* Show the hover text when the container is hovered */
+    .icon-container:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+    }
+
     .transparent-text {
         opacity: 0.5; /* 90% transparent by default */
         transition: opacity 0.3s ease; /* Add a smooth transition effect */
         line-height: 0.5;
+        display: inline-block;
     }
     .transparent-text:hover {
         opacity: 1; /* 0% transparent when hovering */
     }
+
 </style>
 
 <footer class="footer">
     <div class="container">
         
-        {% if site.footer_menu %}
+        <!-- {% if site.footer_menu %}
         <div class="columns is-multiline">
             {% for item in site.data[site.footer_menu] %}
             <div class="column has-text-centered">
@@ -22,28 +53,105 @@
             </div>
             {% endfor %}
         </div>
-        {% endif %}
+        {% endif %} -->
 
         <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
         <br>
         <div class="content is-small has-text-centered">
-            <p class="transparent-text">Copyright (c) <span id="currentYear"></span> Kwantae Kim </p><br>
+            <p class="transparent-text">Copyright (c) <span id="currentYear"></span> Kwantae Kim </p>
+            
+            <br><br>
+
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-github fa-2xl"></i></p>
+                <div class="hover-text">Github</div>
+            </div>
+
+            <span style="margin-right: 1em;"></span>
+
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-markdown fa-2xl"></i></p>
+                <div class="hover-text">Markdown</div>
+            </div>
+
+            <span style="margin-right: 1em;"></span>
+            
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-html5 fa-2xl"></i></p>
+                <div class="hover-text">HTML</div>
+            </div>
+            
+            <span style="margin-right: 1em;"></span>
+
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-css3-alt fa-2xl"></i></p>
+                <div class="hover-text">CSS</div>
+            </div>
+            
+            <span style="margin-right: 1em;"></span>
+            
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-js fa-2xl"></i></p>
+                <div class="hover-text">JavaScript</div>
+            </div>
+            
+            <span style="margin-right: 1em;"></span>
+            
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-python fa-2xl"></i></p>
+                <div class="hover-text">Python</div>
+            </div>
+            
+            <span style="margin-right: 1em;"></span>
+            
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-microsoft fa-2xl"></i></p>
+                <div class="hover-text">Microsoft Excel / Powerpoint / Visio</div>
+            </div>
+            
+            <span style="margin-right: 1em;"></span>
+            
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-solid fa-font-awesome fa-2xl"></i></p>
+                <div class="hover-text">Font Awesome</div>
+            </div>
+            
+            <span style="margin-right: 1em;"></span>            
+            
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-google-scholar fa-2xl"></i></p>
+                <div class="hover-text">Google Scholar</div>
+            </div>
+
+            <span style="margin-right: 1em;"></span>
+            
+            <div class="icon-container">
+                <p class="transparent-text"><i class="fa-brands fa-google fa-2xl"></i></p>
+                <div class="hover-text">Google Sheets</div>
+            </div>
+
+            <br><br>
+            
             <p class="transparent-text">
-                <i class="fa-brands fa-markdown fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-brands fa-html5 fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-brands fa-css3-alt fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-brands fa-js fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-brands fa-python fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-solid fa-file-excel fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-solid fa-file-powerpoint fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-solid fa-font-awesome fa-2xl"></i> <span style="margin-right: 1em;"></span>
-                <i class="fa-brands fa-google-scholar fa-2xl"></i>
-            </p><br>
-            <p class="transparent-text">Website source: <a href="https://github.com/KwantaeKim/KwantaeKim.github.io" target="_blank">KwantaeKim.github.io</a> </p>
+                Website source: <a href="https://github.com/KwantaeKim/KwantaeKim.github.io" target="_blank">KwantaeKim.github.io</a>
+            </p>
+
+            <br>
+
             <p class="transparent-text">
-                Site built using <a href="https://github.com/chrisrhymes/bulma-clean-theme" target="_blank">Bulma Clean Theme</a> by
+                Site built using
+            </p>
+            <p class="transparent-text">
+                <a href="https://github.com/chrisrhymes/bulma-clean-theme" target="_blank">Bulma Clean Theme</a> by
                 <a href="https://www.csrhymes.com" target="_blank">C.S. Rhymes</a>
             </p>
+            <p class="transparent-text">
+                and
+            </p>
+            <p class="transparent-text">
+                images from <a href="https://www.flaticon.com" target="_blank">Flaticon</a>
+            </p>
+
         </div>
 
         <script>
