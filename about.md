@@ -49,7 +49,7 @@ section-about: true
 ## Employment
 
 <i class="fa-solid fa-school-flag"></i> Aalto University | Finland <span class='emoji'>🇫🇮</span> | Assistant Professor<br> Department of Electronics and Nanoengineering | Aug 2024~ | <br>
-<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> Electrical Engineering (D-ITET) | 2023~July 2024 | <br>
+<i class="fa-solid fa-school-flag"></i> ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Establisehd Researcher<br> Electrical Engineering (D-ITET) | 2023~2024 | <br>
 <i class="fa-solid fa-school-flag"></i> UZH/ETH Zurich | Switzerland <span class='emoji'>🇨🇭</span> | Postdoctoral Researcher<br>Institute of Neuroinformatics | 2021~2023 | <br>
 <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Healthrian Co., Ltd. | South Korea <span class='emoji'>🇰🇷</span> | R＆D Researcher | 2015~2017 |
 
