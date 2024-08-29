@@ -58,6 +58,14 @@ defaults:
       author: "Kwantae Kim"
       layout: post
       show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts_conference"
+    values:
+      author: "Kwantae Kim"
+      layout: post
+      show_sidebar: true
 
 markdown: kramdown
 highlighter: rouge
@@ -69,3 +77,5 @@ collections:
     output: true
     layout: product
     show_sidebar: false
+  posts_conference:
+    output: true

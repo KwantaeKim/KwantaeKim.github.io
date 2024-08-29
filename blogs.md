@@ -7,3 +7,7 @@ show_sidebar: false
 ---
 
 {% include series-OSE.html %}
+
+<br><br>
+
+{% include series-conference.html %}

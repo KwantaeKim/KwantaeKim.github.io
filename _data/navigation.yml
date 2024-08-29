@@ -10,20 +10,12 @@
   link: /talks/
 - name: Chips
   link: /chips/
-# - name: Example Pages
+# - name: Blog
 #   link: /#
 #   dropdown:
-#     - name: Landing Page With Callouts
-#       link: /landing/
-#     - name: Sponsors Page
-#       link: /sponsors/
-#     - name: Image Gallery
-#       link: /gallery/
-#     - name: Products
-#       link: /products/
-#     - name: Recipe Page
-#       link: /example-recipe/
-#     - name: Showcase
-#       link: /showcase/
+#     - name: OSE
+#       link: /blogs/
+#     - name: Conf
+#       link: /blogs/
 - name: Blog
   link: /blogs/

@@ -3,7 +3,7 @@ title: Kwantae Kim
 subtitle: |-
   Assistant Professor <br><br>
   Aalto University <br>
-desc: kwantae.kim (at) aalto (dot) fi
+desc: kwantae (dot) kim (at) aalto (dot) fi
 
 layout: page
 show_sidebar: false
