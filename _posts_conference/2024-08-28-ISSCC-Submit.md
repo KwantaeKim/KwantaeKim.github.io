@@ -49,20 +49,20 @@ IEEE ISSCC is a flagship conference for IC design where thousands people gather 
 
 ## Double-Blind Review
 
-According to this strict double-blind review guideline, you as a paper author, must not reveal yourself in such a way that you can be identified by the review committees. This can be typically found in the PDF document of the s<a href="https://submissions.mirasmart.com/ISSCC2025/PDF/ISSCC2025CFP.pdf" target="_blank">*Call for Papers*</a> on the ISSCC official <a href="https://www.isscc.org/call-for-papers-overview" target="_blank">Website</a>.
+According to this strict double-blind review guideline, you as a paper author, must not reveal yourself in such a way that you can be identified by the review committees. This can be typically found in the PDF document of the <a href="https://submissions.mirasmart.com/ISSCC2025/PDF/ISSCC2025CFP.pdf" target="_blank">*Call for Papers*</a> on the ISSCC official <a href="https://www.isscc.org/call-for-papers-overview" target="_blank">Website</a>.
 
 - Remove any <u>logos, code names, or other marks</u> from the chip photo or PCB.
   - Typically, a white rectangular box is added over the specific area of the photo.
   - These elements may be restored during the final submission stage, once the paper is accepted.
 - The allowed language is <u>English only</u>.
   - The use of other languages is not allowed, as they may imply that the authors are from a specific country.
-  - For example, let's say you used an oscilloscope and took a screenshot to be used for measurement results in Fig. 6, but the oscilloscope was set to Korean and the screenshot includes Korean. These kinds of situations are something that must be avoided and double/triple-checked.
+  - For example, let's say you used an oscilloscope and took a screenshot to be used for measurement results in Fig. 6, but the oscilloscope was set to Korean and the screenshot includes Korean. <i class="fa-regular fa-face-surprise fa-lg"></i> These kinds of situations are something that must be avoided and double/triple-checked.
 - Acknowledgments must not be included.
   - They can be added later once the paper is accepted.
 - Remove <u>metadata</u> from PDF files before uploading them to the submission system.
   - In <i class="fa-brands fa-windows"></i> Windows, you can remove metadata by `Right Click → Properties → Details → Remove Properties and Personal Information`.
   - This can be checked by sending the file to another computer and opening it there. If you cannot recognize your username from the PDF opened on another computer, then it means it is good to go.
-  - In <i class="fa-brands fa-apple fa-lg"></i> MacOS, unfortunately I have no idea how to remove metadata ... <i class="fa-regular fa-face-sad-tear fa-lg"></i> (it would be appreciated if someone can let me know how to do it <i class="fa-regular fa-face-laugh fa-lg"></i>).
+  - In <i class="fa-brands fa-apple fa-lg"></i> MacOS or <i class="fa-brands fa-linux fa-xl"></i> Linux, unfortunately I have no idea how to remove metadata ... <i class="fa-regular fa-face-sad-tear fa-lg"></i> (it would be appreciated if someone can let me know how to do it <i class="fa-regular fa-face-laugh fa-lg"></i>).
 - Although it is written in the <a href="https://submissions.mirasmart.com/ISSCC2025/PDF/ISSCC2025CFP.pdf" target="_blank">*Call for Papers*</a> that<br>
   *"The submission site allows authors to modify the title (“Paper Title (blinded)”) if the intended title would reveal the authors or their affiliation"*,<br>
   it is a good practice to replace your project code with some other letters (like 'XXXX')
