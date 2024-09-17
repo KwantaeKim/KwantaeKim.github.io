@@ -122,6 +122,18 @@ toc_title: Contents
   </td></tr>
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
+      <div class="tab-cell" style="flex: 2;">David Iselin</div>
+      <div class="tab-cell" style="flex: 4;">
+        <a href="https://www.linkedin.com/in/david-iselin-754a951b8/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      </div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">MSc Student</div>
+      <div class="tab-cell" style="flex: 4;">ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Xi Chen</div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/xichen0509/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
@@ -221,7 +233,7 @@ toc_title: Contents
 </tbody>
 </table>
 
-## SSCS Mentoring
+## IEEE SSCS Mentoring
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
