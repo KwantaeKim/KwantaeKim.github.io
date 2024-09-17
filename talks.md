@@ -74,13 +74,11 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 }
 </style>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+<link href="./../emoji.css" rel="stylesheet" type='text/css'>
 
 <!-- --------- -->
 <!-- Body Part -->
 <!-- --------- -->
-
-<script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
-<link href="./../emoji.css" rel="stylesheet" type='text/css'>
 
 ## Invited Talks
 
