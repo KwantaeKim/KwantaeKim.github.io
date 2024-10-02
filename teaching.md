@@ -53,7 +53,23 @@ toc_title: Contents
 <!-- Body Part -->
 <!-- --------- -->
 
-## Pedagogical Training
+## Lecturer
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    ELEC-E3510 Basics of IC Design
+    </span>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
+      <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+</tbody>
+</table>
+
+## Pedagogical Trainee
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
@@ -77,15 +93,6 @@ toc_title: Contents
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
-    ELEC-E3510 Basics of IC Design
-    </span>
-    <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Oct. 2024 ~</div>
-      <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     227-1032-00L Neuromorphic Engineering II
     </span>
     <div class="tab-row">
@@ -102,6 +109,8 @@ toc_title: Contents
 
 ## Research Advisor
 
+<center><img src='{{ site.base_url }}/img/research/award_aicas.jpeg' style='width:70%;'></center>
+
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
@@ -112,8 +121,8 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">PhD Student</div>
-      <div class="tab-cell" style="flex: 4;">ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
+      <div class="tab-cell" style="flex: 2;">Jul. 2023 ~</div>
+      <div class="tab-cell" style="flex: 4;">PhD Student, ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
@@ -128,8 +137,8 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">MSc Student</div>
-      <div class="tab-cell" style="flex: 4;">ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
+      <div class="tab-cell" style="flex: 2;">Mar. 2024 ~ Jul. 2024</div>
+      <div class="tab-cell" style="flex: 4;">MSc Student, ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -140,8 +149,8 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">MSc Student</div>
-      <div class="tab-cell" style="flex: 4;">ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
+      <div class="tab-cell" style="flex: 2;">Aug. 2022 ~ Feb. 2023</div>
+      <div class="tab-cell" style="flex: 4;">MSc Student, ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
@@ -157,8 +166,8 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">PhD Student</div>
-      <div class="tab-cell" style="flex: 4;">KAIST, Korea <span class='emoji'>🇰🇷</span></div>
+      <div class="tab-cell" style="flex: 2;">Nov. 2020 ~ Feb. 2022</div>
+      <div class="tab-cell" style="flex: 4;">PhD Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
@@ -178,8 +187,8 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">MSc Student</div>
-      <div class="tab-cell" style="flex: 4;">KAIST, Korea <span class='emoji'>🇰🇷</span></div>
+      <div class="tab-cell" style="flex: 2;">Oct. 2017 ~ Oct. 2022</div>
+      <div class="tab-cell" style="flex: 4;">MSc Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
@@ -203,8 +212,8 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">MSc Student</div>
-      <div class="tab-cell" style="flex: 4;">KAIST, Korea <span class='emoji'>🇰🇷</span></div>
+      <div class="tab-cell" style="flex: 2;">Oct. 2017 ~ May. 2019</div>
+      <div class="tab-cell" style="flex: 4;">MSc Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
@@ -226,29 +235,17 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">BSc Student</div>
-      <div class="tab-cell" style="flex: 4;">KAIST, Korea <span class='emoji'>🇰🇷</span></div>
+      <div class="tab-cell" style="flex: 2;">Jun. 2018 ~ Aug. 2018</div>
+      <div class="tab-cell" style="flex: 4;">BSc Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
 </tbody>
 </table>
 
-## IEEE SSCS Mentoring
+## IEEE SSCS Mentor
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
-  <tr><td class="tg-desc">
-    <div class="tab-row" style='color: #4A61C8;'>
-      <div class="tab-cell" style="flex: 2;">Arpit Bal</div>
-      <div class="tab-cell" style="flex: 4;">
-        <a href="https://www.linkedin.com/in/ab30/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-      </div>
-    </div>
-    <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">PhD Student</div>
-      <div class="tab-cell" style="flex: 4;">IIT Bombay, India <span class='emoji'>🇮🇳</span></div>
-    </div>
-  </td></tr>
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Mukul Lokhande</div>
@@ -257,8 +254,20 @@ toc_title: Contents
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">PhD Student</div>
-      <div class="tab-cell" style="flex: 4;">IIT Indore, India <span class='emoji'>🇮🇳</span></div>
+      <div class="tab-cell" style="flex: 2;">Nov. 2023 ~ Mar. 2024</div>
+      <div class="tab-cell" style="flex: 4;">PhD Student, IIT Indore, India <span class='emoji'>🇮🇳</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <div class="tab-row" style='color: #4A61C8;'>
+      <div class="tab-cell" style="flex: 2;">Arpit Bal</div>
+      <div class="tab-cell" style="flex: 4;">
+        <a href="https://www.linkedin.com/in/ab30/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      </div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Jan. 2023 ~ Jul. 2023</div>
+      <div class="tab-cell" style="flex: 4;">PhD Student, IIT Bombay, India <span class='emoji'>🇮🇳</span></div>
     </div>
   </td></tr>
 </tbody>

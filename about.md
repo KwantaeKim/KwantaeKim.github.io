@@ -61,6 +61,12 @@ section-about: true
 <i class="fa-solid fa-graduation-cap"></i> KAIST | South Korea <span class='emoji'>🇰🇷</span> | B.S. in Electrical Engineering | 2015 |
 <i class="fa-solid fa-school-flag"></i> UC Berkeley | United States <span class='emoji'>🇺🇸</span> | Summer Session in Mathematics | 2013 |
 
+## Grants / Awards
+
+<i class="fa-solid fa-book-open-reader"></i> Research Grant | UZH Postdoc Grant<br>CHF 115,276 (~€119,651)<br>Role: PI | <i class="fa-solid fa-graduation-cap"></i> University of Zurich | Switzerland <span class='emoji'>🇨🇭</span> | 2023 |
+<i class="fa-solid fa-trophy"></i> Best Poster Award | IEEE AICAS<br>Role: Co-Recipient | | | 2023 |
+<i class="fa-solid fa-trophy"></i> Silver Award | HumanTech Paper Competition<br>KRW 11,000,000 (~€7,719)<br>Role: Main Recipient | <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-building"></i><span style="margin-right: 0.2em;"></span> Samsung Electronics | South Korea <span class='emoji'>🇰🇷</span> | 2019 |
+
 ## Service
 
 <i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Technical Committee | IEEE SSCS Open-Source Ecosystem<br>IEEE CASS Sensory Systems (ISCAS Committee)<br>ACM ICONS | 2023~Present<br>2023~Present<br>2023 | <br>

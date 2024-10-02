@@ -19,7 +19,7 @@ section-about: true
 .contents {position: sticky; top: 10%;}
 </style>
 
-<iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="350" style="padding: 0; margin: 0; border: none;"></iframe>
+<iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="550" style="padding: 0; margin: 0; border: none;"></iframe>
 <link href="{{ site.base_url }}/emoji.css" rel="stylesheet" type='text/css'>
 
 ## News
