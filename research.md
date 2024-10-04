@@ -121,7 +121,7 @@ My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="
 
 <br><br><br><br><br>
 
-## <i class="fa-solid fa-people-group"></i> Research Partners
+## <i class="fa-solid fa-users"></i> Research Partners
 
 <!-- Adapt and sync the height value with the source html -->
 <iframe src="{{ site.base_url }}/worldmap_overlay.html" width="100%" height="550"></iframe>

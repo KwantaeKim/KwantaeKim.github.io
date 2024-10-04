@@ -53,22 +53,6 @@ toc_title: Contents
 <!-- Body Part -->
 <!-- --------- -->
 
-## Lecturer
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
-  <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
-    ELEC-E3510 Basics of IC Design
-    </span>
-    <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
-      <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
-    </div>
-  </td></tr>
-</tbody>
-</table>
-
 ## Pedagogical Trainee
 
 <table class="tg">
@@ -91,6 +75,15 @@ toc_title: Contents
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    ELEC-E3510 Basics of IC Design
+    </span>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
+      <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     227-1032-00L Neuromorphic Engineering II
