@@ -1,7 +1,10 @@
-- name: About
-  link: /about/
-# - name: Group
-#   link: /group/
+- name: Group
+  link: /#
+  dropdown:
+    - name: Professor
+      link: /group-prof/
+    - name: Students
+      link: /group-students/
 - name: Research
   link: /research/
 - name: Publications
@@ -12,12 +15,5 @@
   link: /teaching/
 - name: Chips
   link: /chips/
-# - name: Blog
-#   link: /#
-#   dropdown:
-#     - name: OSE
-#       link: /blogs/
-#     - name: Conf
-#       link: /blogs/
 - name: Blog
   link: /blogs/

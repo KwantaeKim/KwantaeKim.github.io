@@ -8,9 +8,12 @@ toc_title: Contents
 ---
 
 <style type="text/css">
+/* Table */
 .tg .tg-desc{border: 1px inset black; position: relative;}
 .tg {border-collapse: collapse; border: 1px solid black;}
 .skip {display: none;}
+.tab-row {display: flex; margin:0; padding: 0;}
+.tab-cell {flex: 1; padding: 0; border: none;}
 
 /* TOC */
 .contents {position: sticky; top: 10%;}
@@ -23,16 +26,13 @@ toc_title: Contents
   box-shadow: #BFBFBF -1px 1px, #BFBFBF -2px 2px, #BFBFBF -3px 3px, #BFBFBF -4px 4px, #BFBFBF -5px 5px, #BFBFBF -6px 6px;
   transform: translate3d(6px, -6px, 0);}
 
-/* Hyperlink */
-.pub-hover {
-  /* color: black; default #4E4E4E */
-  text-decoration: none; /* Remove underline */}
-.pub-hover:hover,
-.pub-hover:focus {color: blue; background-color: #f0f8ff; padding: 1px 1px;}
-
-/* Tabs */
-.tab-row {display: flex; margin:0; padding: 0;}
-.tab-cell {flex: 1; padding: 0; border: none;}
+/* Hover Image */
+.img-container img {position: absolute; visibility: hidden;}
+tr:hover .hover-aalto {left: -140px; top:calc(50% - 55px); visibility: visible; height: 120px;}
+tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
+tr:hover .hover-ethz {left: -245px; top:calc(50% - 20px); visibility: visible; height: 50px;}
+tr:hover .hover-iitbombay {left: -105px; top:calc(50% - 35px); visibility: visible; height: 80px;}
+tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visible; height: 80px;}
 
 /* Emoji */
 @font-face {
@@ -53,7 +53,7 @@ toc_title: Contents
 <!-- Body Part -->
 <!-- --------- -->
 
-## Pedagogical Trainee
+## Pedagogical Training
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
@@ -62,6 +62,7 @@ toc_title: Contents
     <a href="https://www.aalto.fi/en/services/a-peda-intro-5-cr" target="_blank">
     A! Peda Intro
     </a>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
@@ -79,6 +80,7 @@ toc_title: Contents
     <span style='color: #4A61C8;'>
     ELEC-E3510 Basics of IC Design
     </span>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
@@ -88,6 +90,7 @@ toc_title: Contents
     <span style='color: #4A61C8;'>
     227-1032-00L Neuromorphic Engineering II
     </span>
+    <div class="img-container"><img src="./../img/icons/logo--ethz.png" class="hover-ethz"></div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;">Feb. 2022 ~ May. 2023</div>
       <div class="tab-cell" style="flex: 4;">ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
@@ -109,6 +112,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Sheng Zhou</div>
+      <div class="img-container"><img src="./../img/icons/logo--ethz.png" class="hover-ethz"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/sheng-zhou-796681204/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       </div>
@@ -125,6 +129,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">David Iselin</div>
+      <div class="img-container"><img src="./../img/icons/logo--ethz.png" class="hover-ethz"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/david-iselin-754a951b8/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       </div>
@@ -137,6 +142,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Xi Chen</div>
+      <div class="img-container"><img src="./../img/icons/logo--ethz.png" class="hover-ethz"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/xichen0509/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       </div>
@@ -153,6 +159,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Sangyeob Kim</div>
+      <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/sangyeob-kim-871818179/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
         <a href="https://scholar.google.com/citations?hl=en&user=Ahs1LtAAAAAJ" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
@@ -174,6 +181,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Surin Gweon</div>
+      <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/surin-gweon-0a2019211/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
         <a href="https://scholar.google.com/citations?user=-nzMf7wAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
@@ -199,6 +207,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Ji-Hoon Kim</div>
+      <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/jihoon-kim-860429225/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
         <a href="https://scholar.google.com/citations?user=y-cGLEMAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
@@ -222,6 +231,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Soyeon Kim</div>
+      <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/soyeon-kim-a34a81230/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
         <a href="https://scholar.google.com/citations?hl=en&user=-E66LsAAAAAJ" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
@@ -242,6 +252,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Mukul Lokhande</div>
+      <div class="img-container"><img src="./../img/icons/logo--iitindore.png" class="hover-iitindore"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/mukullokhande26/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       </div>
@@ -254,6 +265,7 @@ toc_title: Contents
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Arpit Bal</div>
+      <div class="img-container"><img src="./../img/icons/logo--iitbombay.svg" class="hover-iitbombay"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://www.linkedin.com/in/ab30/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       </div>

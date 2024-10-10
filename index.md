@@ -1,6 +1,6 @@
 ---
 title: TSirc Group
-subtitle: |-
+subtitle:
   Tiny Systems and Advanced Circuits (TSirc) <br><br>
   Aalto University
 layout: page
