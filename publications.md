@@ -97,7 +97,7 @@ span.venue {font-style: italic;}
 **10** First-Authored IEEE papers <br>
 → 2 ISSCC, 3 JSSC, 1 VLSI, 1 ESSCIRC, etc
 
-**27** Authored/Co-Authored IEEE papers
+**28** Authored/Co-Authored IEEE papers
 
 <iframe src="{{ site.base_url }}/img/citation_plot_overlay.html" width="100%" height="450" style="padding: 0; margin: 0; border: none;"></iframe>
 
@@ -206,6 +206,20 @@ span.venue {font-style: italic;}
 <br>
 
 ## Co-Authored
+
+### 2025
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <span style="color: #485fc7">A 8.62μW, 75dB DR<sub>SoC</sub> End-to-End Spoken Language Understanding SoC with Channel-Level AGC and Temporal-Sparsity-Aware Streaming-Mode RNN</span>
+    <br>
+    Sheng Zhou, Zixiao Li, Tobi Delbruck, Kwantae Kim, Shih-Chii Liu
+    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2025
+  </td></tr>
+</tbody>
+</table>
 
 ### 2023
 

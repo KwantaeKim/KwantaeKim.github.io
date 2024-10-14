@@ -123,7 +123,10 @@ tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visib
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
-      <div class="tab-cell" style="flex: 4;"><a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank">AICAS 2023</a> (<a href="https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html" target="_blank">Best Poster Award</a>)</div>
+      <div class="tab-cell" style="flex: 4;">
+        <a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank">AICAS 2023</a> (<a href="https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html" target="_blank">Best Poster Award</a>) /
+        <span style='color: #485fc7;'>ISSCC 2025</span>
+      </div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">

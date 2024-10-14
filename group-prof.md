@@ -35,7 +35,7 @@ toc_title: TSirc Group
 <!-- Body Part -->
 <!-- --------- -->
 
-## Group Lead {#group-lead}
+## Professor {#group-lead}
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
