@@ -111,6 +111,24 @@ tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visib
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
+      <div class="tab-cell" style="flex: 2;">Soyeon Um</div>
+      <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
+      <div class="tab-cell" style="flex: 4;">
+        <a href="https://www.linkedin.com/in/soyeon-um-8a4192267/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+        <a href="https://scholar.google.com/citations?user=4MtOGOIAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
+      </div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
+      <div class="tab-cell" style="flex: 4;">PhD Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;"></div>
+      <div class="tab-cell" style="flex: 4;"></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Sheng Zhou</div>
       <div class="img-container"><img src="./../img/icons/logo--ethz.png" class="hover-ethz"></div>
       <div class="tab-cell" style="flex: 4;">
@@ -191,7 +209,7 @@ tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visib
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Oct. 2017 ~ Oct. 2022</div>
+      <div class="tab-cell" style="flex: 2;">Oct. 2017 ~ Jun. 2022</div>
       <div class="tab-cell" style="flex: 4;">MSc Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
     </div>
     <div class="tab-row">
