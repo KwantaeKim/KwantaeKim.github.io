@@ -29,6 +29,12 @@ details > summary::marker {display: none;}
 
 ## News
 
+### 🎉 16.Oct.2024
+
+{% include news-20241016.md %}
+
+---
+
 ### <i class="fa-regular fa-handshake fa-lg"></i> 04.Oct.2024
 
 {% include news-20241004.md %}
