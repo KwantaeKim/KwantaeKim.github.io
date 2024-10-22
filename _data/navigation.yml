@@ -5,6 +5,8 @@
       link: /group-prof/
     - name: Students
       link: /group-students/
+    - name: Contact
+      link: /group-contact/
 - name: Research
   link: /research/
 - name: Publications

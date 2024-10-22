@@ -24,8 +24,11 @@ details > summary::-webkit-details-marker {display: none;}
 details > summary::marker {display: none;}
 </style>
 
-<iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="550" style="padding: 0; margin: 0; border: none;"></iframe>
 <link href="{{ site.base_url }}/emoji.css" rel="stylesheet" type='text/css'>
+
+## Visitors
+
+<iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="550" style="padding: 0; margin: 0; border: none;"></iframe>
 
 ## News
 
