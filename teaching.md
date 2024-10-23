@@ -28,7 +28,7 @@ toc_title: Contents
 
 /* Hover Image */
 .img-container img {position: absolute; visibility: hidden;}
-tr:hover .hover-aalto {left: -140px; top:calc(50% - 55px); visibility: visible; height: 120px;}
+tr:hover .hover-aalto {left: -140px; top:calc(50% - 50px); visibility: visible; height: 100px;}
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-ethz {left: -245px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-iitbombay {left: -105px; top:calc(50% - 35px); visibility: visible; height: 80px;}

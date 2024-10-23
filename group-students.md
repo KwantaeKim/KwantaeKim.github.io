@@ -17,6 +17,7 @@ toc_title: TSirc Group
 #bingzheng-qiu {visibility: hidden; height: 0; overflow: hidden;}
 #yu-xue {visibility: hidden; height: 0; overflow: hidden;}
 #kaiyuan-jiang {visibility: hidden; height: 0; overflow: hidden;}
+#ahmed-mohey {visibility: hidden; height: 0; overflow: hidden;}
 
 /* Emoji */
 @font-face {
@@ -37,9 +38,88 @@ toc_title: TSirc Group
 <!-- Body Part -->
 <!-- --------- -->
 
-## Master Students
+## PhD Students
 
----
+### Ahmed Mohey {#ahmed-mohey}
+
+<!-- Bingzheng -->
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+  <div class="tab-row" style="display: flex; align-items: center;">
+    <div class="tab-cell" style="flex: 2;">
+    <!-- First Tab -->
+    <center><img src="./../img/group/Ahmed_Mohey.jpeg" style='
+      height: 200px;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;'>
+    </center>
+    </div>
+    <div class="tab-cell" style="flex: 0.5;"></div>
+    <div class="tab-cell" style="flex: 5;">
+    <!-- Second Tab -->
+      <div style="font-size: 1.5em; font-weight: bold;">Ahmed M. Mohey</div>
+      <span style="display: block; height: 0.5em;"></span>
+      Co-Supervised by <a href="https://martinandraud.github.io" target="_blank">Prof. Martin Andraud</a>
+      <span style="display: block; height: 0.5em;"></span>
+      <a href="https://www.linkedin.com/in/ahmed-m-mohey/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
+      <br><span style="margin-right: 1.4em;"></span>Time-Domain Signal Processing
+      <br><span style="margin-right: 1.4em;"></span>In-Sensor/Memory Computing
+    </div>
+  </div>
+  </td></tr>
+</tbody>
+</table>
+
+<div style="font-size: 1.5em; font-weight: bold;">Education</div>
+<span style="display: block;"></span>
+
+<!-- PhD -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;">
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> PhD
+  </div>
+  <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+  <div class="tab-cell" style="flex: 1;">Sep 2021 ~</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 5;">Electrical Engineering</div>
+</div>
+
+<span style="display: block;"></span>
+
+<!-- MSc -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"><i class="fa-solid fa-graduation-cap"></i> MSc</div>
+  <div class="tab-cell" style="flex: 4;">Ain Shams University, Egypt <span class='emoji'>🇪🇬</span></div>
+  <div class="tab-cell" style="flex: 1;">2018</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 5;">Electrical Engineering</div>
+</div>
+
+<span style="display: block;"></span>
+
+<!-- BSc -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"><i class="fa-solid fa-graduation-cap"></i> BSc</div>
+  <div class="tab-cell" style="flex: 4;">Ain Shams University, Egypt <span class='emoji'>🇪🇬</span></div>
+  <div class="tab-cell" style="flex: 1;">2012</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 5;">Electrical Engineering</div>
+</div>
+
+<span style="display: block; height: 10em;"></span>
+
+## MSc Students
 
 ### Bingzheng Qiu {#bingzheng-qiu}
 
@@ -64,6 +144,9 @@ toc_title: TSirc Group
       <div style="font-size: 1.5em; font-weight: bold;">Bingzheng Qiu</div>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/bingzheng-qiu-6976a2253/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
+      <br><span style="margin-right: 1.4em;"></span>Voltage-to-Time Converter
     </div>
   </div>
   </td></tr>
@@ -73,7 +156,7 @@ toc_title: TSirc Group
 <div style="font-size: 1.5em; font-weight: bold;">Employment</div>
 <span style="display: block;"></span>
 
-<!-- Aalto -->
+<!-- Internship -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.5;">
     <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Internship</div>
@@ -92,7 +175,8 @@ toc_title: TSirc Group
 <!-- MSc -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.5;">
-    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> MSc</div>
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> MSc
+  </div>
   <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
   <div class="tab-cell" style="flex: 1;">Sep 2023 ~</div>
 </div>
@@ -124,8 +208,6 @@ toc_title: TSirc Group
 
 <br>
 
----
-
 ### Yu Xue {#yu-xue}
 
 <!-- Yu -->
@@ -149,6 +231,9 @@ toc_title: TSirc Group
       <div style="font-size: 1.5em; font-weight: bold;">Yu Xue</div>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/宇-薛-5018712bb/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
+      <br><span style="margin-right: 1.4em;"></span>Instrumentation Amplifier
     </div>
   </div>
   </td></tr>
@@ -201,8 +286,6 @@ toc_title: TSirc Group
 
 <br>
 
----
-
 ### Kaiyuan Jiang {#kaiyuan-jiang}
 
 <!-- Yu -->
@@ -226,6 +309,9 @@ toc_title: TSirc Group
       <div style="font-size: 1.5em; font-weight: bold;">Kaiyuan Jiang</div>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/kaiyuan-jiang-55ba652a2/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
+      <br><span style="margin-right: 1.4em;"></span>Current Reference
     </div>
   </div>
   </td></tr>
