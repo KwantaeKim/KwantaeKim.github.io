@@ -34,8 +34,6 @@ toc_title: TSirc Group
 <!-- Body Part -->
 <!-- --------- -->
 
-## Prof. Kwantae Kim
-
 ### Tiny Systems and Circuits (TSirc) Group
 
 <span style="display: block; height: 0.5em;"></span>
