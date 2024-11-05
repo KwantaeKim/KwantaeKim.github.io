@@ -221,6 +221,20 @@ span.venue {font-style: italic;}
 </tbody>
 </table>
 
+### 2024
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/MDAT.2024.3445831" target="_blank" class="pub-hover">
+    Open-Source Silicon—Unleashing Innovation and Collaboration
+    </a><br>
+    Matthew Guthaus, Kwantae Kim, Francisco Brito-Filho, Satoshi Kawakami, Boris Murmann<br>
+    <span class="venue">IEEE Design & Test</span>, 2024
+  </td></tr>
+</tbody>
+</table>
+
 ### 2023
 
 <table class="tg">

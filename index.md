@@ -25,12 +25,19 @@ details > summary::marker {display: none;}
 </style>
 
 <link href="{{ site.base_url }}/emoji.css" rel="stylesheet" type='text/css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 
 ## Visitors
 
 <iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="550" style="padding: 0; margin: 0; border: none;"></iframe>
 
 ## News
+
+### <i class="fa-solid fa-person-chalkboard fa-lg"></i> 05.Nov.2024
+
+{% include news-20241105.md %}
+
+---
 
 ### 🎉 16.Oct.2024
 
