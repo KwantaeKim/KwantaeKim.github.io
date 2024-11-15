@@ -68,7 +68,7 @@ toc_title: TSirc Group
       <span style="display: block; height: 2em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
       <br><span style="margin-right: 1.4em;"></span>Time-Domain Signal Processing
-      <br><span style="margin-right: 1.4em;"></span>In-Sensor/Memory Computing
+      <br><span style="margin-right: 1.4em;"></span>In-Sensor Processing
     </div>
   </div>
   </td></tr>

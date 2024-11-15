@@ -86,6 +86,20 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
+    <a href="https://prein.fi/events/photonics-flagship-finland-korea-joint-research-symposium-at-aalto-university/" target="_blank">
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    </a></span><br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Photonics Flagship Finland-Korea Joint Research Symposium
+    <br>
+    Aalto University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
     </span><br>
     <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
@@ -143,7 +157,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
         <div class="tab-cell" style="flex: 4;">Delft, Netherlands <span class='emoji'>🇳🇱</span></div>
     </div>
   </td></tr>
-  <tr><td class="tg-desc">
+  <!-- <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     Time-Domain Audio Feature Extraction Circuits for μW-Scale TinyML Applications
     </span><br>
@@ -154,7 +168,7 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
         <div class="tab-cell" style="flex: 1;">Oct. 2021</div>
         <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
     </div>
-  </td></tr>
+  </td></tr> -->
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     Low Power & Low Distortion Sinusoidal Current Generator IC for Bio-Impedance Sensing

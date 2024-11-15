@@ -65,7 +65,7 @@ tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visib
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
+      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~ Nov. 2024</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>

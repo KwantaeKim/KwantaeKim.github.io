@@ -97,7 +97,7 @@ span.venue {font-style: italic;}
 **10** First-Authored IEEE papers <br>
 → 2 ISSCC, 3 JSSC, 1 VLSI, 1 ESSCIRC, etc
 
-**28** Authored/Co-Authored IEEE papers
+**30** Authored/Co-Authored IEEE papers
 
 <iframe src="{{ site.base_url }}/img/citation_plot_overlay.html" width="100%" height="450" style="padding: 0; margin: 0; border: none;"></iframe>
 
@@ -163,9 +163,9 @@ span.venue {font-style: italic;}
     </a><br>
     Kwantae Kim; Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--cas.png" class="hover-cas"></div>
-    <span class="venue">IEEE Circuits and Systems Magazine (MCAS)</span>, 2023
+    <span class="venue">IEEE Circuits and Systems Magazine</span>, 2023
     <br><span style='color: black;'>
-    🎉 Top-1 in the Most Popular Articles in IEEE MCAS (Sep. ~ Oct. 2023) </span>
+    🎉 Top-1 in the Most Popular Articles in IEEE CAS Magazine (Sep. ~ Oct. 2023) </span>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank" class="pub-hover">
@@ -225,6 +225,14 @@ span.venue {font-style: italic;}
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/MSSC.2024.3455290" target="_blank" class="pub-hover">
+    Bringing Dynamic Sparsity to the Forefront for Low-Power Audio Edge Computing: Brain-inspired approach for sparsifying network updates
+    </a><br>
+    Shih-Chii Liu, Sheng Zhou, Zixiao Li, Chang Gao, Kwantae Kim, Tobi Delbruck
+    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
+    <span class="venue">IEEE Solid-State Circuits Magazine</span>, 2024
+  </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/MDAT.2024.3445831" target="_blank" class="pub-hover">
     Open-Source Silicon—Unleashing Innovation and Collaboration
