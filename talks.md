@@ -2,7 +2,7 @@
 layout: page
 title: Talks
 show_sidebar: false
-hero_image: /img/kwantaekim/IMG_3632.JPG
+hero_image: /img/kwantaekim/TSMC_OIP.jpg
 menubar_toc: true
 toc_title: Contents
 ---
@@ -39,6 +39,7 @@ tr:hover .hover-hotchips {left: -150px; top:calc(50% - 30px); visibility: visibl
 tr:hover .hover-embc {left: -170px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; height: 80px;}
+tr:hover .hover-tsmc-oip24 {left: -400px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 
 tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-aalto {left: -140px; top:calc(50% - 50px); visibility: visible; height: 100px;}
@@ -86,6 +87,20 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
+    <a href="https://tsmc-signup.pl-marketing.biz/attendees/2024oip/eu/agenda/present" target="_blank">
+    Ultra-Low-Power AI-Enabled Keyword Spotting Chips for Edge IoT
+    </a></span><br>
+    <div class="img-container"><img src="./../img/icons/logo--tsmc-oip24.jpg" class="hover-tsmc-oip24"></div>
+    Open Innovation Platform Ecosystem Forum
+    <br>
+    TSMC
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Amsterdam, Netherlands <span class='emoji'>🇳🇱</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
     <a href="https://prein.fi/events/photonics-flagship-finland-korea-joint-research-symposium-at-aalto-university/" target="_blank">
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
     </a></span><br>
@@ -126,8 +141,9 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
   </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
+    <a href="https://calendar.ucsc.edu/event/ece_seminar_the_era_of_tiny_iot_platforms_integrated_circuits_for_intelligent_biomedicalneuromorphic_sensors" target="_blank">
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
-    </span><br>
+    </a></span><br>
     <div class="img-container"><img src="./../img/icons/logo--ucsc.png" class="hover-ucsc"></div>
     University of California, Santa Cruz (UC Santa Cruz)
     <div class="tab-row">
@@ -201,8 +217,9 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
+    <a href="https://aicas2022.org/?page_id=192" target="_blank">
     Event-Driven Bio-Inspired Audio Sensor Front End for EdgeTinyML
-    </span><br>
+    </a></span><br>
     <div class="img-container"><img src="./../img/icons/logo--aicas22.png" class="hover-aicas22"></div>
     IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)
     <div class="tab-row">

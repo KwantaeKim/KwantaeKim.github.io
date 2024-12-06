@@ -33,6 +33,12 @@ details > summary::marker {display: none;}
 
 ## News
 
+### 📚 06.Dec.2024
+
+{% include news-20241206.md %}
+
+---
+
 ### <i class="fa-solid fa-person-chalkboard fa-lg"></i> 05.Nov.2024
 
 {% include news-20241105.md %}
@@ -48,9 +54,3 @@ details > summary::marker {display: none;}
 ### <i class="fa-regular fa-handshake fa-lg"></i> 04.Oct.2024
 
 {% include news-20241004.md %}
-
----
-
-### 📚 10.May.2024
-
-{% include news-20240510.md %}

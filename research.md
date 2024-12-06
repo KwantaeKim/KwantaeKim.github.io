@@ -24,9 +24,9 @@ The rapid advancement of <i class="fa-solid fa-wifi"></i> <b>Internet-of-Things 
 </center>
 <br>
 
-My ultimate research goal is to <i>Democratize</i> these features of IoT platform, envisioning a future where everyone can enjoy the benefits. To arrive at this goal, the <b><i class="fa-solid fa-microchip fa-lg" style="color: black;"></i> Integrated Circuit (IC)</b> designers will need to develop highly integrated <b>System-on-Chips (SoCs)</b> that operate efficiently within constrained energy sources and silicon area.
+<b>TSirc Group</b> aims to <i>Democratize</i> these features of IoT platform, envisioning a future where everyone can enjoy the benefits. To arrive at this goal, the <b><i class="fa-solid fa-microchip fa-lg" style="color: black;"></i> Integrated Circuit (IC)</b> designers will need to develop highly integrated <b>System-on-Chips (SoCs)</b> that operate efficiently within constrained energy sources and silicon area.
 
-My research focuses on power-efficient analog/mixed-signal ICs for <b><i class="fa-solid fa-heart-pulse fa-lg" style="color: #ff2600;"></i> Biomedical</b> and <b><i class="fa-solid fa-brain fa-lg" style="color: #f3b5b8;"></i> Neuromorphic</b> sensor systems. I am passionate about realizing ultra-low-power, digital-friendly analog circuit architectures suitable for tiny <b>Artificial Intelligence (AI)</b> embedded IoT platforms.
+We focus on power-efficient analog/mixed-signal ICs for <b><i class="fa-solid fa-heart-pulse fa-lg" style="color: #ff2600;"></i> Biomedical</b> and <b><i class="fa-solid fa-brain fa-lg" style="color: #f3b5b8;"></i> Neuromorphic</b> sensor systems. We are passionate about realizing ultra-low-power, digital-friendly analog circuit architectures suitable for tiny <b>Artificial Intelligence (AI)</b> embedded IoT platforms.
 
 <br><br><br><br><br>
 

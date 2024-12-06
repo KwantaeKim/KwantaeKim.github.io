@@ -85,129 +85,35 @@ span.venue {font-style: italic;}
     $("span.venue").each(function() {
       var text = $(this).html();
       // Make specified strings bold and black
-      text = text.replace(/\((ISSCC|S.VLSI|CICC|A-SSCC|ESSCIRC|JSSC|ISCAS|AICAS|MCAS|IEDM|HCS|EMBC|)\)/g, "<b style='color: black;'>($1)</b>");
+      text = text.replace(/\((ISSCC|S.VLSI|CICC|A-SSCC|ESSCIRC|JSSC|ISCAS|AICAS|MCAS|IEDM|HCS|EMBC|TCASAI|)\)/g, "<b style='color: black;'>($1)</b>");
       $(this).html(text);
     });
   });
 </script>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
 
-## Highlights
-
-**10** First-Authored IEEE papers <br>
-→ 2 ISSCC, 3 JSSC, 1 VLSI, 1 ESSCIRC, etc
-
-**30** Authored/Co-Authored IEEE papers
+## Citations
 
 <iframe src="{{ site.base_url }}/img/citation_plot_overlay.html" width="100%" height="450" style="padding: 0; margin: 0; border: none;"></iframe>
 
-## First-Authored
-
 \*Co-First Authors
+
+## Accepted
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank" class="pub-hover">
-    A 23μW Solar-Powered Keyword-Spotting ASIC with Ring-Oscillator-Based Time-Domain Feature Extraction
+    <a href="https://arxiv.org/abs/2405.03905" target="_blank" class="pub-hover">
+    DeltaKWS: A 65nm 36nJ/Decision Bio-inspired Temporal-Sparsity-Aware Digital Keyword Spotting IC with 0.6V Near-Threshold SRAM
     </a><br>
-    Kwantae Kim*; Chang Gao*; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
-    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2022
-    <br><span style='color: black;'>
-    📚 Invited to IEEE JSSC 2022 </span>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank" class="pub-hover">
-    A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC With 0.55° Overall Phase Error
-    </a><br>
-    Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Jiwon Lee; Minseo Kim; Yongsu Lee; Soyeon Kim; Hoi-Jun Yoo
-    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
-    <br><span style='color: black;'>
-    <i class="fa-solid fa-trophy fa-lg"></i> Silver Award in 2019 Samsung HumanTech paper competition </span>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2022.3195610" target="_blank" class="pub-hover">
-    A 23-μW Keyword Spotting IC With Ring-Oscillator-Based Time-Domain Feature Extraction
-    </a><br>
-    Kwantae Kim; Chang Gao; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
-    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
-    <br><span style='color: black;'>
-    🎉 Highlighted in the IEEExplore Main Page (Sep. ~ Oct. 2023) <br>
-    🎉 Top-2 in the Most Popular Articles in IEEE JSSC (Sep. ~ Oct. 2023) </span>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2021.3100716" target="_blank" class="pub-hover">
-    Design of Sub-10-μW Sub-0.1% THD Sinusoidal Current Generator IC for Bio-Impedance Sensing
-    </a><br>
-    Kwantae Kim; Sangyeob Kim; Hoi-Jun Yoo
-    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
-    <br><span style='color: black;'>
-    <i class="fa-solid fa-file-code fa-bounce fa-lg"></i> MATLAB/Verilog Code in <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">PhD Thesis</a> <br>
-    <i class="fa-solid fa-file-pdf fa-lg"></i> <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">Relevant Publication</a> </span>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank" class="pub-hover">
-    A 0.5-V Sub-10-μW 15.28-mΩ/√Hz Bio-Impedance Sensor IC With Sub-1° Phase Error
-    </a><br>
-    Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Minseo Kim; Hoi-Jun Yoo
-    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2020
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/MCAS.2023.3267893" target="_blank" class="pub-hover">
-    Continuous-Time Analog Filters for Audio Edge Intelligence: Review on Circuit Designs
-    </a><br>
-    Kwantae Kim; Shih-Chii Liu
+    Qinyu Chen*, Kwantae Kim*, Chang Gao*, Sheng Zhou, Taekwang Jang, Tobi Delbruck, Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--cas.png" class="hover-cas"></div>
-    <span class="venue">IEEE Circuits and Systems Magazine</span>, 2023
-    <br><span style='color: black;'>
-    🎉 Top-1 in the Most Popular Articles in IEEE CAS Magazine (Sep. ~ Oct. 2023) </span>
+    <span class="venue">IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI)</span>
   </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank" class="pub-hover">
-    A 0.5V, 6.2μW, 0.059mm<sup>2</sup> Sinusoidal Current Generator IC with 0.088% THD for Bio-Impedance Sensing
-    </a><br>
-    Kwantae Kim; Changhyeon Kim; Sungpill Choi; Hoi-Jun Yoo
-    <div class="img-container"><img src="./../img/icons/logo--vlsic.png" class="hover-vlsic"></div>
-    <span class="venue">IEEE Symposium on VLSI Circuits (S.VLSI)</span>, 2020
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank" class="pub-hover">
-    A 24 μW 38.51 mΩ<sub>rms</sub> Resolution Bio-Impedance Sensor with Dual Path Instrumentation Amplifier
-    </a><br>
-    Kwantae Kim; Kiseok Song; Kyeongryeol Bong; Jaehyuk Lee; Kwonjoon Lee; Yongsu Lee; Unsoo Ha; Hoi-Jun Yoo
-    <div class="img-container"><img src="./../img/icons/logo--esscirc.png" class="hover-esscirc"></div>
-    <span class="venue">IEEE European Solid State Circuits Conference (ESSCIRC)</span>, 2017
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank" class="pub-hover">
-    A 3.11 μW 40 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors Exploiting Positive-Feedback-Assisted Gain Boosting
-    </a><br>
-    Kwantae Kim; Shih-Chii Liu
-    <div class="img-container"><img src="./../img/icons/logo--iscas23.png" class="hover-iscas23"></div>
-    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2023
-    <br><span style='color: black;'>
-    📚 Open-Sourced Design Parameters </span>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS.2016.7527432" target="_blank" class="pub-hover">
-    A 54-μW Fast-Settling Arterial Pulse Wave Sensor for Wrist Watch Type System
-    </a><br>
-    Kwantae Kim; Minseo Kim; Hyunwoo Cho; Kwonjoon Lee; Seung-Tak Ryu; Hoi-Jun Yoo
-    <div class="img-container"><img src="./../img/icons/logo--iscas16.png" class="hover-iscas16"></div>
-    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2016
-  </td></tr>
-</tbody></table>
+</tbody>
+</table>
 
-<br>
-
-## Co-Authored
-
-### 2025
+## 2025
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -221,7 +127,7 @@ span.venue {font-style: italic;}
 </tbody>
 </table>
 
-### 2024
+## 2024
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -243,7 +149,7 @@ span.venue {font-style: italic;}
 </tbody>
 </table>
 
-### 2023
+## 2023
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -266,6 +172,16 @@ span.venue {font-style: italic;}
     <i class="fa-solid fa-trophy fa-lg"></i> Best Poster Award </span>
   </td></tr>
   <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/MCAS.2023.3267893" target="_blank" class="pub-hover">
+    Continuous-Time Analog Filters for Audio Edge Intelligence: Review on Circuit Designs
+    </a><br>
+    Kwantae Kim; Shih-Chii Liu
+    <div class="img-container"><img src="./../img/icons/logo--cas.png" class="hover-cas"></div>
+    <span class="venue">IEEE Circuits and Systems Magazine</span>, 2023
+    <br><span style='color: black;'>
+    🎉 Top-1 in the Most Popular Articles in IEEE CAS Magazine (Sep. ~ Oct. 2023) </span>
+  </td></tr>
+  <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISCAS46773.2023.10181602" target="_blank" class="pub-hover">
     An Area-Efficient Ultra-Low-Power Time-Domain Feature Extractor for Edge Keyword Spotting
     </a><br>
@@ -273,10 +189,20 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--iscas23.png" class="hover-iscas23"></div>
     <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2023
   </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank" class="pub-hover">
+    A 3.11 μW 40 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors Exploiting Positive-Feedback-Assisted Gain Boosting
+    </a><br>
+    Kwantae Kim; Shih-Chii Liu
+    <div class="img-container"><img src="./../img/icons/logo--iscas23.png" class="hover-iscas23"></div>
+    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2023
+    <br><span style='color: black;'>
+    📚 Open-Sourced Design Parameters </span>
+  </td></tr>
 </tbody>
 </table>
 
-### 2022
+## 2022
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -287,6 +213,28 @@ span.venue {font-style: italic;}
     Shih-Chii Liu; Chang Gao; Kwantae Kim; Tobi Delbruck
     <div class="img-container"><img src="./../img/icons/logo--iedm.png" class="hover-cas"></div>
     <span class="venue">IEEE International Electron Devices Meeting (IEDM)</span>, 2022
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/JSSC.2022.3195610" target="_blank" class="pub-hover">
+    A 23-μW Keyword Spotting IC With Ring-Oscillator-Based Time-Domain Feature Extraction
+    </a><br>
+    Kwantae Kim; Chang Gao; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
+    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
+    <br><span style='color: black;'>
+    🎉 Highlighted in the IEEExplore Main Page (Sep. ~ Oct. 2023) <br>
+    🎉 Top-2 in the Most Popular Articles in IEEE JSSC (Sep. ~ Oct. 2023) </span>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/JSSC.2021.3100716" target="_blank" class="pub-hover">
+    Design of Sub-10-μW Sub-0.1% THD Sinusoidal Current Generator IC for Bio-Impedance Sensing
+    </a><br>
+    Kwantae Kim; Sangyeob Kim; Hoi-Jun Yoo
+    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
+    <br><span style='color: black;'>
+    <i class="fa-solid fa-file-code fa-bounce fa-lg"></i> MATLAB/Verilog Code in <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">PhD Thesis</a> <br>
+    <i class="fa-solid fa-file-pdf fa-lg"></i> <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">Relevant Publication</a> </span>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/HCS55958.2022.9895498" target="_blank" class="pub-hover">
@@ -312,10 +260,20 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--vlsi.png" class="hover-sscs"></div>
     <span class="venue">IEEE Symposium on VLSI Circuits (S.VLSI)</span>, 2022
   </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank" class="pub-hover">
+    A 23μW Solar-Powered Keyword-Spotting ASIC with Ring-Oscillator-Based Time-Domain Feature Extraction
+    </a><br>
+    Kwantae Kim*; Chang Gao*; Rui Graça; Ilya Kiselev; Hoi-Jun Yoo; Tobi Delbruck; Shih-Chii Liu
+    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2022
+    <br><span style='color: black;'>
+    📚 Invited to IEEE JSSC 2022 </span>
+  </td></tr>
 </tbody>
 </table>
 
-### 2021
+## 2021
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -330,10 +288,26 @@ span.venue {font-style: italic;}
 </tbody>
 </table>
 
-### 2020
+## 2020
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/JSSC.2020.2991511" target="_blank" class="pub-hover">
+    A 0.5-V Sub-10-μW 15.28-mΩ/√Hz Bio-Impedance Sensor IC With Sub-1° Phase Error
+    </a><br>
+    Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Minseo Kim; Hoi-Jun Yoo
+    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2020
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank" class="pub-hover">
+    A 0.5V, 6.2μW, 0.059mm<sup>2</sup> Sinusoidal Current Generator IC with 0.088% THD for Bio-Impedance Sensing
+    </a><br>
+    Kwantae Kim; Changhyeon Kim; Sungpill Choi; Hoi-Jun Yoo
+    <div class="img-container"><img src="./../img/icons/logo--vlsic.png" class="hover-vlsic"></div>
+    <span class="venue">IEEE Symposium on VLSI Circuits (S.VLSI)</span>, 2020
+  </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/CICC48029.2020.9075950" target="_blank" class="pub-hover">
     A 9.6 mW/Ch 10 MHz Wide-bandwidth Electrical Impedance Tomography IC with Accurate Phase Compensation for Breast Cancer Detection
@@ -345,7 +319,7 @@ span.venue {font-style: italic;}
 </tbody>
 </table>
 
-### 2019
+## 2019
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -373,10 +347,20 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
     <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
   </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank" class="pub-hover">
+    A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC With 0.55° Overall Phase Error
+    </a><br>
+    Kwantae Kim; Ji-Hoon Kim; Surin Gweon; Jiwon Lee; Minseo Kim; Yongsu Lee; Soyeon Kim; Hoi-Jun Yoo
+    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
+    <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2019
+    <br><span style='color: black;'>
+    <i class="fa-solid fa-trophy fa-lg"></i> Silver Award in 2019 Samsung HumanTech paper competition </span>
+  </td></tr>
 </tbody>
 </table>
 
-### 2017
+## 2017
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -397,6 +381,14 @@ span.venue {font-style: italic;}
     <span class="venue">IEEE Engineering in Medicine and Biology Society (EMBC)</span>, 2017
   </td></tr>
   <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank" class="pub-hover">
+    A 24 μW 38.51 mΩ<sub>rms</sub> Resolution Bio-Impedance Sensor with Dual Path Instrumentation Amplifier
+    </a><br>
+    Kwantae Kim; Kiseok Song; Kyeongryeol Bong; Jaehyuk Lee; Kwonjoon Lee; Yongsu Lee; Unsoo Ha; Hoi-Jun Yoo
+    <div class="img-container"><img src="./../img/icons/logo--esscirc.png" class="hover-esscirc"></div>
+    <span class="venue">IEEE European Solid State Circuits Conference (ESSCIRC)</span>, 2017
+  </td></tr>
+  <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISSCC.2017.7870407" target="_blank" class="pub-hover">
     A 1.4mΩ-Sensitivity 94dB-Dynamic-Range Electrical Impedance Tomography SoC and 48-Channel Hub SoC for 3D Lung Ventilation Monitoring System
     </a><br>
@@ -415,10 +407,18 @@ span.venue {font-style: italic;}
 </tbody>
 </table>
 
-### 2016
+## 2016
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISCAS.2016.7527432" target="_blank" class="pub-hover">
+    A 54-μW Fast-Settling Arterial Pulse Wave Sensor for Wrist Watch Type System
+    </a><br>
+    Kwantae Kim; Minseo Kim; Hyunwoo Cho; Kwonjoon Lee; Seung-Tak Ryu; Hoi-Jun Yoo
+    <div class="img-container"><img src="./../img/icons/logo--iscas16.png" class="hover-iscas16"></div>
+    <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2016
+  </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank" class="pub-hover">
     A 141μW Sensor SoC on OLED/OPD Substrate for SpO2/ExG Monitoring Sticker
