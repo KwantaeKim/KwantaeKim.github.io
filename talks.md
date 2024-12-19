@@ -355,4 +355,4 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 ---
 
 ***Acknowledgments***<br>
-Thanks to [Zuowen Wang](https://github.com/ZuowenWang0000) for taking the <i class="fa-solid fa-camera fa-lg"></i> photo during my <i class="fa-solid fa-person-chalkboard fa-lg"></i> presentation!
+Thanks to <a href="https://www.linkedin.com/in/glavine-yeh-32a50313a/" target="_blank">Glavine Yeh</a> for taking an awesome <i class="fa-solid fa-camera fa-lg"></i> photo!

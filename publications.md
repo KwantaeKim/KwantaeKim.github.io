@@ -103,7 +103,7 @@ span.venue {font-style: italic;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://arxiv.org/abs/2405.03905" target="_blank" class="pub-hover">
+    <a href="https://doi.org/10.1109/TCASAI.2024.3507694" target="_blank" class="pub-hover">
     DeltaKWS: A 65nm 36nJ/Decision Bio-inspired Temporal-Sparsity-Aware Digital Keyword Spotting IC with 0.6V Near-Threshold SRAM
     </a><br>
     Qinyu Chen*, Kwantae Kim*, Chang Gao*, Sheng Zhou, Taekwang Jang, Tobi Delbruck, Shih-Chii Liu
@@ -435,4 +435,4 @@ span.venue {font-style: italic;}
 ---
 
 ***Acknowledgments***<br>
-Thanks to <a href="https://github.com/ZuowenWang0000" target="_blank">Zuowen Wang</a> for taking the <i class="fa-solid fa-camera fa-lg"></i> photo during my <i class="fa-solid fa-person-chalkboard fa-lg"></i> presentation!
+Thanks to <a href="https://github.com/ZuowenWang0000" target="_blank">Zuowen Wang</a> for taking an awesome <i class="fa-solid fa-camera fa-lg"></i> photo!

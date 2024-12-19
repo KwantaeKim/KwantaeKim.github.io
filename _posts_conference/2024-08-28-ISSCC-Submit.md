@@ -78,4 +78,4 @@ According to this strict double-blind review guideline, you as a paper author, m
 ---
 
 ***Acknowledgments***<br>
-Thanks to <a href="https://www.linkedin.com/in/jinsulee/" target="_blank">Jinsu Lee</a> for sharing experience on preparing paper title regarding the double-blind review!
+Thanks to <a href="https://www.linkedin.com/in/jinsulee/" target="_blank">Jinsu Lee</a>, first author of <a href="https://doi.org/10.1109/ISSCC.2019.8662302" target="_blank">LNPU</a> paper at ISSCC'19, for sharing experience on preparing paper title regarding the double-blind review!

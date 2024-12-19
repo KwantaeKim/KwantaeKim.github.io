@@ -304,4 +304,5 @@ tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visib
 ---
 
 ***Acknowledgments***<br>
-Thanks to [Zuowen Wang](https://github.com/ZuowenWang0000) for taking the <i class="fa-solid fa-camera fa-lg"></i> photo during my <i class="fa-solid fa-person-chalkboard fa-lg"></i> presentation!
+Thanks to <a href="https://github.com/ZuowenWang0000" target="_blank">Zuowen Wang</a> for taking an awesome <i class="fa-solid fa-camera fa-lg"></i> photo during Kwantae's <i class="fa-solid fa-person-chalkboard fa-lg"></i> presentation!<br>
+Thanks to <a href="https://www.linkedin.com/in/hyunjun-choi-454667264/" target="_blank">Hyunjun Choi</a> for taking an awesome <i class="fa-solid fa-camera fa-lg"></i> photo including Kwantae, Sheng, and Xi!
