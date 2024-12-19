@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
+ruby "3.1.3" # Explicitly specify Ruby version
 gemspec
 
 group :jekyll_plugins do
