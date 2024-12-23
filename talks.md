@@ -39,13 +39,16 @@ tr:hover .hover-hotchips {left: -150px; top:calc(50% - 30px); visibility: visibl
 tr:hover .hover-embc {left: -170px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; height: 80px;}
-tr:hover .hover-tsmc-oip24 {left: -400px; top:calc(50% - 40px); visibility: visible; height: 80px;}
+tr:hover .hover-tsmc-oip24 {left: -350px; top:calc(50% - 35px); visibility: visible; height: 70px;}
 
 tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-aalto {left: -140px; top:calc(50% - 50px); visibility: visible; height: 100px;}
 tr:hover .hover-tudelft {left: -180px; top:calc(50% - 40px); visibility: visible; height: 70px;}
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
-tr:hover .hover-ssl {left: -350px; top:calc(50% - 50px); visibility: visible; height: 100px;}
+tr:hover .hover-kyunghee {left: -150px; top:calc(50% - 40px); visibility: visible; height: 80px;}
+tr:hover .hover-seoultech {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-yonsei {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-skku {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 tr:hover .hover-knu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-jbnu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-abbott {left: -190px; top:calc(50% - 15px); visibility: visible; height: 40px;}
@@ -85,6 +88,61 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--skku.svg" class="hover-skku"></div>
+    Sungkyunkwan University (SKKU)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Dec. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei"></div>
+    Yonsei University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--seoultech.png" class="hover-seoultech"></div>
+    SeoulTech
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--kyunghee.png" class="hover-kyunghee"></div>
+    Kyung Hee University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    Hardware-Algorithm Co-Optimizations for Audio Signal Processing
+    </span><br>
+    <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
+    KAIST
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     <a href="https://tsmc-signup.pl-marketing.biz/attendees/2024oip/eu/agenda/present" target="_blank">
@@ -167,24 +225,23 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     Event-Driven Bio-Inspired Audio Sensor Front End for Edge TinyML: When Time-Domain Analog Circuits Meet Neuromorphic Audio Sensors in TinyML Applications
     </span><br>
     <div class="img-container"><img src="./../img/icons/logo--tudelft.png" class="hover-tudelft"></div>
-    Delft University of Technology (TU Delft)
+    TU Delft
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Apr. 2023</div>
         <div class="tab-cell" style="flex: 4;">Delft, Netherlands <span class='emoji'>🇳🇱</span></div>
     </div>
   </td></tr>
-  <!-- <tr><td class="tg-desc">
+  <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     Time-Domain Audio Feature Extraction Circuits for μW-Scale TinyML Applications
     </span><br>
     <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
-    <div class="img-container"><img src="./../img/icons/logo--ssl.png" class="hover-ssl"></div>
-    Semiconductor System Laboratory (SSL), KAIST
+    KAIST
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2021</div>
         <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
     </div>
-  </td></tr> -->
+  </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     Low Power & Low Distortion Sinusoidal Current Generator IC for Bio-Impedance Sensing

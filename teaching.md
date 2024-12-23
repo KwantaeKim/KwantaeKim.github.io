@@ -33,6 +33,7 @@ tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; 
 tr:hover .hover-ethz {left: -245px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-iitbombay {left: -105px; top:calc(50% - 35px); visibility: visible; height: 80px;}
 tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visible; height: 80px;}
+tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 
 /* Emoji */
 @font-face {
@@ -270,6 +271,19 @@ tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visib
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <div class="tab-row" style='color: #4A61C8;'>
+      <div class="tab-cell" style="flex: 2;">Rahul Sharma</div>
+      <div class="img-container"><img src="./../img/icons/logo--iitguwahati.svg" class="hover-iitguwahati"></div>
+      <div class="tab-cell" style="flex: 4;">
+        <a href="https://www.linkedin.com/in/rahul-shsr/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      </div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Dec. 2024 ~ </div>
+      <div class="tab-cell" style="flex: 4;">PhD Student, IIT Guwahati, India <span class='emoji'>🇮🇳</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Mukul Lokhande</div>
