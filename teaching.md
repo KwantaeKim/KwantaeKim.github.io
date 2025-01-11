@@ -61,7 +61,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     <a href="https://www.aalto.fi/en/services/a-peda-intro-5-cr" target="_blank">
-    A! Peda Intro
+    A! Peda Intro (5 ECTS)
     </a>
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>

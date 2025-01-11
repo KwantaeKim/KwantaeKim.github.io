@@ -420,7 +420,7 @@ span.venue {font-style: italic;}
     <span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span>, 2016
   </td></tr>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank" class="pub-hover">
+    <a href="https://doi.org/10.1109/ISSCC.2016.7418068" target="_blank" class="pub-hover">
     A 141μW Sensor SoC on OLED/OPD Substrate for SpO2/ExG Monitoring Sticker
     </a><br>
     Yongsu Lee; Hyeonwoo Lee; Jaeeun Jang; Jihee Lee; Minseo Kim; Jaehyuk Lee; Hyunki Kim; Kyoung-Rog Lee; Kwantae Kim; Hyunwoo Cho; Seunghyup Yoo; Hoi-Jun Yoo
