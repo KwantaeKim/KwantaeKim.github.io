@@ -120,7 +120,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~</div>
+      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~ Dec. 2024</div>
       <div class="tab-cell" style="flex: 4;">PhD Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
     </div>
     <div class="tab-row">
@@ -137,7 +137,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Jul. 2023 ~</div>
+      <div class="tab-cell" style="flex: 2;">Jul. 2023 ~ Sep. 2024</div>
       <div class="tab-cell" style="flex: 4;">PhD Student, ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
     </div>
     <div class="tab-row">
