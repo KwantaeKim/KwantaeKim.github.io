@@ -216,9 +216,10 @@ Be patient! This process can take several 10s of minutes depending on your PC.
 
 Next, you have to install **Windows Subsystem for Linux (WSL)**. I found a really helpful <i class="fa-brands fa-youtube fa-lg"></i> YouTube video for this. Please check and follow the instructions until 3:52.
 
-Upon completion, open **PowerShell** by <i class="fa-brands fa-windows"></i> `Start → Windows PowerShell`.
+<img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2025-02-01-2.png' style='width:70%'><br>
+During the installation process, if you happen to see the above error, just restart your Windows and try again.
 
-Run `wsl -l -v`, then you should see that your <i class="fa-brands fa-ubuntu"></i> **Ubuntu** version is 2, like the below screenshot (you can ignore `docker-desktop-data` in the below screenshot).
+If you have done all the things in the above video until 3:52, open **PowerShell** by <i class="fa-brands fa-windows"></i> `Start → Windows PowerShell`. Run `wsl -l -v`, then you should see that your <i class="fa-brands fa-ubuntu"></i> **Ubuntu** version is 2, like the below screenshot (you can ignore `docker-desktop-data` in the below screenshot).
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-20-30-36.png' style='width:70%'>
 
