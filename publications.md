@@ -258,7 +258,7 @@ span.venue {font-style: italic;}
     </a><br>
     Sangyeob Kim; Sangjin Kim; Soyeon Um; Soyeon Kim; Kwantae Kim; Hoi-Jun Yoo
     <div class="img-container"><img src="./../img/icons/logo--vlsi.png" class="hover-sscs"></div>
-    <span class="venue">IEEE Symposium on VLSI Circuits (S.VLSI)</span>, 2022
+    <span class="venue">IEEE Symposium on VLSI Technology and Circuits (S.VLSI)</span>, 2022
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank" class="pub-hover">

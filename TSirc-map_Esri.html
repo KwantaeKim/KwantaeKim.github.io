@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_777c2de9565a4e196f2ad3ef838e6a79 {
+                #map_93809803dc4bf660c4ba08aa5319e923 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_777c2de9565a4e196f2ad3ef838e6a79" ></div>
+            <div class="folium-map" id="map_93809803dc4bf660c4ba08aa5319e923" ></div>
         
 </body>
 <script>
     
     
-            var map_777c2de9565a4e196f2ad3ef838e6a79 = L.map(
-                "map_777c2de9565a4e196f2ad3ef838e6a79",
+            var map_93809803dc4bf660c4ba08aa5319e923 = L.map(
+                "map_93809803dc4bf660c4ba08aa5319e923",
                 {
                     center: [60.186852, 24.819287],
                     crs: L.CRS.EPSG3857,
@@ -61,37 +61,37 @@
 
         
     
-            var tile_layer_976d46a857b36d019e6fb14c105efb31 = L.tileLayer(
+            var tile_layer_a49d684b88ce7cb54fcaf016537e29cb = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {"attribution": "Esri", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_976d46a857b36d019e6fb14c105efb31.addTo(map_777c2de9565a4e196f2ad3ef838e6a79);
+            tile_layer_a49d684b88ce7cb54fcaf016537e29cb.addTo(map_93809803dc4bf660c4ba08aa5319e923);
         
     
-            var marker_c42b629d5ee35517bfece952c4be0c70 = L.marker(
+            var marker_f12bc7d16acf0ad1c56665e123aba58d = L.marker(
                 [60.186852, 24.819287],
                 {}
-            ).addTo(map_777c2de9565a4e196f2ad3ef838e6a79);
+            ).addTo(map_93809803dc4bf660c4ba08aa5319e923);
         
     
-            var icon_9cdfa9b1cbc96ed61fc4dc39322e3d27 = L.AwesomeMarkers.icon(
+            var icon_00924ca2512fff1554fe3065c865f06d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_c42b629d5ee35517bfece952c4be0c70.setIcon(icon_9cdfa9b1cbc96ed61fc4dc39322e3d27);
+            marker_f12bc7d16acf0ad1c56665e123aba58d.setIcon(icon_00924ca2512fff1554fe3065c865f06d);
         
     
-        var popup_73ffa6a7aa5bb9dab457d226ecdd3423 = L.popup({"autoClose": false, "maxWidth": "100%"});
+        var popup_2dc70071e79205d86ea76c3a2fa4c1fa = L.popup({"autoClose": false, "maxWidth": "100%"});
 
         
             
-                var html_f4659ab97a74b0d90f9e48736f393bb8 = $(`<div id="html_f4659ab97a74b0d90f9e48736f393bb8" style="width: 100.0%; height: 100.0%;"><img src="./favicon-rounded.png" style="width: 100px; height: auto;"></div>`)[0];
-                popup_73ffa6a7aa5bb9dab457d226ecdd3423.setContent(html_f4659ab97a74b0d90f9e48736f393bb8);
+                var html_51dd5ec9b965909ffd544c31c5f38650 = $(`<div id="html_51dd5ec9b965909ffd544c31c5f38650" style="width: 100.0%; height: 100.0%;"><img src="./favicon-rounded.png" style="width: 100px; height: auto;"></div>`)[0];
+                popup_2dc70071e79205d86ea76c3a2fa4c1fa.setContent(html_51dd5ec9b965909ffd544c31c5f38650);
             
         
 
-        marker_c42b629d5ee35517bfece952c4be0c70.bindPopup(popup_73ffa6a7aa5bb9dab457d226ecdd3423)
+        marker_f12bc7d16acf0ad1c56665e123aba58d.bindPopup(popup_2dc70071e79205d86ea76c3a2fa4c1fa)
         .openPopup();
 
         

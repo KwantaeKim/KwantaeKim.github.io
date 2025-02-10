@@ -307,6 +307,10 @@ toc_title: TSirc Group
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 5;">IEEE SSCS Code-a-Chip Travel Grant at ISSCC 2025</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
   <div class="tab-cell" style="flex: 5;">IEEE JSSC, TBioCAS, TCAS-I, TCAS-II, TCASAI, SSC-L, TIM, Sensors Journal</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">

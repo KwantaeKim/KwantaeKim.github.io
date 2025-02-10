@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_69c7ae7ce8c635722c83b6b48420632b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+<link rel="stylesheet" type="text/css" href="./emoji.css"></head>
+<body>
+    
+    <style>.leaflet-container { height: 100% !important; }</style>
+    
+            <div class="folium-map" id="map_69c7ae7ce8c635722c83b6b48420632b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_69c7ae7ce8c635722c83b6b48420632b = L.map(
+                "map_69c7ae7ce8c635722c83b6b48420632b",
+                {
+                    center: [40.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: true,
+                    lang: "en",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f53fb8ecf1d57af2f8d6cd0d641103f0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_f53fb8ecf1d57af2f8d6cd0d641103f0.addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+        
+    
+            var marker_a53e2abf73b04b4312e54587df54fe96 = L.marker(
+                [37.785426, -122.404493],
+                {}
+            ).addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+        
+    
+            var icon_1fdc77d1f51b960ebed4396c65ed1a18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_a53e2abf73b04b4312e54587df54fe96.setIcon(icon_1fdc77d1f51b960ebed4396c65ed1a18);
+        
+    
+        var popup_950b15529b9329e5fa6046c533e6cea8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82227864ae88d5c7322dcb16dbac196e = $(`<div id="html_82227864ae88d5c7322dcb16dbac196e" style="width: 100.0%; height: 100.0%;"><a href="https://www.isscc.org" target="_blank"><img src="./img/icons/logo--isscc.png" style="width: 100px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
+                popup_950b15529b9329e5fa6046c533e6cea8.setContent(html_82227864ae88d5c7322dcb16dbac196e);
+            
+        
+
+        marker_a53e2abf73b04b4312e54587df54fe96.bindPopup(popup_950b15529b9329e5fa6046c533e6cea8)
+        ;
+
+        
+    
+    
+            marker_a53e2abf73b04b4312e54587df54fe96.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE ISSCC 2025</b><br>San Francisco<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87ddf5174f2989d46722317fe8d4912a = L.marker(
+                [34.986206, 135.752487],
+                {}
+            ).addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+        
+    
+            var icon_ff94674d75774670c7e8296b0b80cffe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_87ddf5174f2989d46722317fe8d4912a.setIcon(icon_ff94674d75774670c7e8296b0b80cffe);
+        
+    
+        var popup_d38de5111b5912d1831f2db7a1b60b0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_638e7814ea6095c7d66a7e5f33b9e15f = $(`<div id="html_638e7814ea6095c7d66a7e5f33b9e15f" style="width: 100.0%; height: 100.0%;"><a href="https://www.vlsisymposium.org" target="_blank"><img src="./img/icons/logo--vlsi.png" style="width: 110px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
+                popup_d38de5111b5912d1831f2db7a1b60b0a.setContent(html_638e7814ea6095c7d66a7e5f33b9e15f);
+            
+        
+
+        marker_87ddf5174f2989d46722317fe8d4912a.bindPopup(popup_d38de5111b5912d1831f2db7a1b60b0a)
+        ;
+
+        
+    
+    
+            marker_87ddf5174f2989d46722317fe8d4912a.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE VLSI Symposium 2025</b><br>Kyoto<br>Japan <span class="emoji">🇯🇵</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cde82de43d6de86cc29163c25a521e05 = L.marker(
+                [42.359208, -71.027212],
+                {}
+            ).addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+        
+    
+            var icon_52468d87f9d87d3f0b01c5c0d8c3c6e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_cde82de43d6de86cc29163c25a521e05.setIcon(icon_52468d87f9d87d3f0b01c5c0d8c3c6e7);
+        
+    
+        var popup_220525a74948b770e4ddf1a98fd785ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65f8cb619c25bb97fdd10beb19f74529 = $(`<div id="html_65f8cb619c25bb97fdd10beb19f74529" style="width: 100.0%; height: 100.0%;"><a href="https://www.ieee-cicc.org" target="_blank"><img src="./img/icons/logo--cicc.png" style="width: 150px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
+                popup_220525a74948b770e4ddf1a98fd785ec.setContent(html_65f8cb619c25bb97fdd10beb19f74529);
+            
+        
+
+        marker_cde82de43d6de86cc29163c25a521e05.bindPopup(popup_220525a74948b770e4ddf1a98fd785ec)
+        ;
+
+        
+    
+    
+            marker_cde82de43d6de86cc29163c25a521e05.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE CICC 2025</b><br>Boston<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df8a79e956323a67616e86c2ffecb467 = L.marker(
+                [48.149555, 11.567753],
+                {}
+            ).addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+        
+    
+            var icon_acfa7a3f60b4ff079bdb4b5b496bf0a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_df8a79e956323a67616e86c2ffecb467.setIcon(icon_acfa7a3f60b4ff079bdb4b5b496bf0a8);
+        
+    
+        var popup_b51c5fc69ac313f7acad9c8d766a60ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a584d15e19a0360f18f3fd0a2480b9cf = $(`<div id="html_a584d15e19a0360f18f3fd0a2480b9cf" style="width: 100.0%; height: 100.0%;"><a href="https://www.esserc2025.org" target="_blank"><img src="./img/icons/logo--esserc25.png" style="width: 200px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
+                popup_b51c5fc69ac313f7acad9c8d766a60ab.setContent(html_a584d15e19a0360f18f3fd0a2480b9cf);
+            
+        
+
+        marker_df8a79e956323a67616e86c2ffecb467.bindPopup(popup_b51c5fc69ac313f7acad9c8d766a60ab)
+        ;
+
+        
+    
+    
+            marker_df8a79e956323a67616e86c2ffecb467.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE ESSERC 2025</b><br>Munich<br>Germany <span class="emoji">🇩🇪</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b16db264a87a13db6d6024a67cf5d398 = L.marker(
+                [36.37496, 127.391453],
+                {}
+            ).addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+        
+    
+            var icon_5373bba4011029c60167e18caa236a12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_b16db264a87a13db6d6024a67cf5d398.setIcon(icon_5373bba4011029c60167e18caa236a12);
+        
+    
+        var popup_d6480517b23754814b39707401b5829d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe84555e484c404929c1d68d3891c739 = $(`<div id="html_fe84555e484c404929c1d68d3891c739" style="width: 100.0%; height: 100.0%;"><a href="https://a-sscc2025.org" target="_blank"><img src="./img/icons/logo--a-sscc.png" style="width: 150px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
+                popup_d6480517b23754814b39707401b5829d.setContent(html_fe84555e484c404929c1d68d3891c739);
+            
+        
+
+        marker_b16db264a87a13db6d6024a67cf5d398.bindPopup(popup_d6480517b23754814b39707401b5829d)
+        ;
+
+        
+    
+    
+            marker_b16db264a87a13db6d6024a67cf5d398.bindTooltip(
+                `<div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE A-SSCC 2025</b><br>Daejeon<br>South Korea <span class="emoji">🇰🇷</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+            var geocoderOpts_geocoder_09bb1fc0226f64fc283d5294af8ae84d = {"collapsed": false, "defaultMarkGeocode": true, "position": "topright", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
+
+            // note: geocoder name should start with lowercase
+            var geocoderName_geocoder_09bb1fc0226f64fc283d5294af8ae84d = geocoderOpts_geocoder_09bb1fc0226f64fc283d5294af8ae84d["provider"];
+
+            var customGeocoder_geocoder_09bb1fc0226f64fc283d5294af8ae84d = L.Control.Geocoder[ geocoderName_geocoder_09bb1fc0226f64fc283d5294af8ae84d ](
+                geocoderOpts_geocoder_09bb1fc0226f64fc283d5294af8ae84d['providerOptions']
+            );
+            geocoderOpts_geocoder_09bb1fc0226f64fc283d5294af8ae84d["geocoder"] = customGeocoder_geocoder_09bb1fc0226f64fc283d5294af8ae84d;
+
+            L.Control.geocoder(
+                geocoderOpts_geocoder_09bb1fc0226f64fc283d5294af8ae84d
+            ).on('markgeocode', function(e) {
+                var zoom = geocoderOpts_geocoder_09bb1fc0226f64fc283d5294af8ae84d['zoom'] || map_69c7ae7ce8c635722c83b6b48420632b.getZoom();
+                map_69c7ae7ce8c635722c83b6b48420632b.setView(e.geocode.center, zoom);
+            }).addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": true, "position": "topright", "title": "Expand me", "titleCancel": "Exit me"}
+            ).addTo(map_69c7ae7ce8c635722c83b6b48420632b);
+        
+</script>
+</html>
