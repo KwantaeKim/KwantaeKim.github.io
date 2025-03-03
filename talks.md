@@ -145,9 +145,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
   </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
-    <a href="https://tsmc-signup.pl-marketing.biz/attendees/2024oip/eu/agenda/present" target="_blank">
     Ultra-Low-Power AI-Enabled Keyword Spotting Chips for Edge IoT
-    </a></span><br>
+    </span><br>
     <div class="img-container"><img src="./../img/icons/logo--tsmc-oip24.jpg" class="hover-tsmc-oip24"></div>
     Open Innovation Platform Ecosystem Forum
     <br>

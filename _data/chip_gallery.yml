@@ -4,7 +4,7 @@
       description: |-
         ### IIR-DRNN
         TSMC 65nm CMOS <br>
-        **Role**: Designer (Full-Custom SRAM)
+        **Kwantae**: Designer (Full-Custom SRAM)
 
         <a href="https://doi.org/10.1109/TCASAI.2024.3507694" target="_blank">TCASAI (accepted)</a>
 
@@ -18,7 +18,7 @@
       description: |-
         ### CochClass
         TSMC 65nm CMOS <br>
-        **Role**: Top Architect
+        **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank">ISSCC 2022</a>
         <span style="margin-right: 1em;"></span>
@@ -34,7 +34,7 @@
       description: |-
         ### BioZ2
         Samsung 65nm CMOS <br>
-        **Role**: Top Architect
+        **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank">VLSI 2020</a>
         <span style="margin-right: 1em;"></span>
@@ -52,7 +52,7 @@
       description: |-
         ### GLY
         Samsung 65nm CMOS <br>
-        **Role**: Top Architect
+        **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank">ISSCC 2019</a>
         <span style="margin-right: 1em;"></span>
@@ -68,7 +68,7 @@
       description: |-
         ### IOT
         TSMC 180nm HV CMOS <br>
-        **Role**: Designer (Boost Converter)
+        **Kwantae**: Designer (Boost Converter)
 
         <a href="https://doi.org/10.1109/ISSCC.2019.8662504" target="_blank">ISSCC 2019</a>
 
@@ -82,7 +82,7 @@
       description: |-
         ### TOF TEST
         SMIC 180nm CMOS <br>
-        **Role**: Top Architect
+        **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank">ESSCIRC 2017</a>
 
@@ -93,7 +93,7 @@
       description: |-
         ### WIT
         Samsung 65nm CMOS <br>
-        **Role**: Layout Engineer (SAR ADC)
+        **Kwantae**: Layout Engineer (SAR ADC)
 
         <a href="https://doi.org/10.1109/ISSCC.2017.7870407" target="_blank">ISSCC 2016</a>
         <span style="margin-right: 1em;"></span>
@@ -107,7 +107,7 @@
       description: |-
         ### ANES
         Samsung 65nm CMOS <br>
-        **Role**: Layout Engineer (SAR ADC)
+        **Kwantae**: Layout Engineer (SAR ADC)
 
         <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank">ISSCC 2016</a>
 
