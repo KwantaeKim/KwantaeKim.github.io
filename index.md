@@ -33,6 +33,12 @@ details > summary::marker {display: none;}
 
 ## News
 
+### <i class="fa-regular fa-handshake fa-lg"></i> 04.Mar.2025
+
+{% include news-20250304.md %}
+
+---
+
 ### 📚 06.Dec.2024
 
 {% include news-20241206.md %}

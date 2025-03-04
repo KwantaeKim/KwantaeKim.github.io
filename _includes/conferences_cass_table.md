@@ -20,4 +20,5 @@ th, td {
  | <a href='https://smacd-conference.org' target=_blank> SMACD 2025 </a> | <span style='color: #d3d3d3; text-decoration: line-through;'>28.Feb.2025</span> | 07.Jul.2025-10.Jul.2025 | Istanbul Bilgi University | Türkiye <span class='emoji'>🇹🇷</span> | 
  | <a href='https://www.ieee-isvlsi.org/' target=_blank> ISVLSI 2025 </a> | 10.Mar.2025 | 06.Jun.2025-09.Jun.2025 | Elite City Resort | Greece <span class='emoji'>🇬🇷</span> | 
  | <a href='https://2025.ieee-isicas.org' target=_blank> ISICAS 2025 </a> | 06.Mar.2025 | 24.Oct.2025-26.Oct.2025 | Hyatt Regency Qingdao | China <span class='emoji'>🇨🇳</span> | 
+ | <a href='https://events.tuni.fi/norcas/' target=_blank> NORCAS 2025 </a> | 15.Aug.2025 | 28.Oct.2025-29.Oct.2025 | Riga Technical University | Latvia <span class='emoji'>🇱🇻</span> | 
  
