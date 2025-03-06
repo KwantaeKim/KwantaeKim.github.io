@@ -24,6 +24,7 @@ th, td {
 | **Martin Andraud** | <a href = 'https://martinandraud.github.io' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | UCLouvain | Belgium <span class='emoji'>🇧🇪</span> |
 | <i class='fa-solid fa-location-dot fa-lg' style='color: #4c5dbe;'></i><span style='margin-right: 0.15em;'></span> **Asia** | 
 | **Hoi-Jun Yoo** | <a href = 'http://ssl.kaist.ac.kr' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Professor | IEEE Fellow | KAIST | South Korea <span class='emoji'>🇰🇷</span> |
+| **Sangyeob Kim** | <a href = 'https://sites.google.com/view/sangyeobkim/' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | Yonsei University | South Korea <span class='emoji'>🇰🇷</span> |
 | **Kyung-Sik Choi** | <a href = 'https://stan.seoultech.ac.kr/home' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | SeoulTech | South Korea <span class='emoji'>🇰🇷</span> |
 | **Woojun Choi** | <a href = 'https://sites.google.com/view/miclkhu/micl?authuser=0' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | Kyung Hee University | South Korea <span class='emoji'>🇰🇷</span> |
 | **Youngwoo Ji** | <a href = 'https://lab.hanbat.ac.kr/cats/main' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | Hanbat<br>National University | South Korea <span class='emoji'>🇰🇷</span> |
