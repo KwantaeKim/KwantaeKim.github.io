@@ -98,7 +98,7 @@ span.venue {font-style: italic;}
 
 \*Co-First Authors
 
-## Accepted
+## 2025
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -108,15 +108,8 @@ span.venue {font-style: italic;}
     </a><br>
     Qinyu Chen*, Kwantae Kim*, Chang Gao*, Sheng Zhou, Taekwang Jang, Tobi Delbruck, Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--cas.png" class="hover-cas"></div>
-    <span class="venue">IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI)</span>
+    <span class="venue">IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI)</span>, 2025
   </td></tr>
-</tbody>
-</table>
-
-## 2025
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <!-- <span style="color: #485fc7"> -->
     <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank" class="pub-hover">
