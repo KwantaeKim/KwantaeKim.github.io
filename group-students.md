@@ -537,7 +537,7 @@ toc_title: TSirc Group
 
 <br>
 
-### Xingrui Wang {#xingrui-wang}
+<!-- ### Xingrui Wang {#xingrui-wang} -->
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
