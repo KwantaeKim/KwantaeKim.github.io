@@ -1,7 +1,7 @@
 ---
 layout: page
 show_sidebar: false
-hero_image: /img/research/hero_image.png
+hero_image: /img/group/soujanya-amf25.jpeg
 menubar_toc: true
 toc_title: TSirc Group
 ---
