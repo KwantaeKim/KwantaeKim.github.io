@@ -421,7 +421,7 @@ Do the following as shown in the above video:
   - In <i class="fa-brands fa-windows"></i> Windows, you can enable **X11 Forwarding** by simply opening **MobaXterm** and leave it opened. Check whether **X Server** is active on your upperright corner
   <br><img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-21-04-58.png' style='width:15%'>
   - In <i class="fa-brands fa-apple"></i> MacOS, you can enable **X11 Forwarding** by simply opening **XQuartz** and leave it opened.<br>Run `xhost + 127.0.0.1` on your `XQuartz` terminal and try again if your <i class="fa-brands fa-apple"></i> **Docker** does not open the terminal.
-- Run `start_vnc.sh`
+- Run `./start_vnc.sh`
   - in **WSL** terminal for <i class="fa-brands fa-windows"></i> Windows
   - in terminal for <i class="fa-brands fa-apple"></i> MacOS
 
