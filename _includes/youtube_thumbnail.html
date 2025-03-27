@@ -1,0 +1,15 @@
+{% assign raw_url = include.url %}
+{% assign splitted1 = raw_url | split: 'v=' %}
+{% assign splitted2 = splitted1 | last | split: '&' %}
+{% assign video_id = splitted2 | first %}
+{% assign thumbnail_url = "https://img.youtube.com/vi/" | append: video_id | append: "/hqdefault.jpg" %}
+
+{% if include.width %}
+  {% assign style_attr = 'style="width: ' | append: include.width | append: '%;"' %}
+{% else %}
+  {% assign style_attr = '' %}
+{% endif %}
+
+<a href="{{ raw_url }}" target="_blank">
+  <img src="{{ thumbnail_url }}" alt="YouTube Thumbnail" {{ style_attr }}>
+</a>

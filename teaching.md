@@ -54,6 +54,24 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 <!-- Body Part -->
 <!-- --------- -->
 
+## Tutorials
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    How to use Microsoft Visio for academic drawing (1)
+    </span>
+    <br>
+    {% include youtube_thumbnail.html url="https://www.youtube.com/watch?v=RYU7SMZm3eo" width="20" %}
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Mar. 2025</div>
+      <div class="tab-cell" style="flex: 4;"><a href="https://youtu.be/RYU7SMZm3eo" target="_blank"><i class="fa-brands fa-youtube fa-bounce fa-lg"></i> Video</a></div>
+    </div>
+  </td></tr>
+</tbody>
+</table>
+
 ## Pedagogical Training
 
 <table class="tg">
