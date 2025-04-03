@@ -6,8 +6,8 @@ subtitle:
 layout: page
 hero_darken: true
 hero_image: /img/aalto/IMG_6346.jpeg
-hero_photo: /img/kwantaekim/DSC06597-2.jpg
-hero_height: is-small
+# hero_photo: /img/kwantaekim/DSC06597-2.jpg
+hero_height: is-medium
 favicon: /favicon-group.png
 menubar_toc: true
 show_sidebar: false
