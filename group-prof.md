@@ -55,6 +55,7 @@ toc_title: TSirc Group
     <div class="tab-cell" style="flex: 5;">
     <!-- Second Tab -->
       <h3>Kwantae Kim</h3>
+      IEEE Senior Member <br><br>
       <a href="https://www.linkedin.com/in/kwantae-kim-930365141/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="margin-right: 0.2em;"></span>
       <a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
