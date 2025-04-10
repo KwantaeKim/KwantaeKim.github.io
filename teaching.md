@@ -209,6 +209,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       <div class="tab-cell" style="flex: 2;">Sangyeob Kim</div>
       <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
       <div class="tab-cell" style="flex: 4;">
+        <a href="https://sites.google.com/view/sangyeobkim/" target="_blank"><i class="fa-solid fa-house-user fa-lg"></i></a>
         <a href="https://www.linkedin.com/in/sangyeob-kim-871818179/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
         <a href="https://scholar.google.com/citations?hl=en&user=Ahs1LtAAAAAJ" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
       </div>
@@ -216,6 +217,10 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;">Nov. 2020 ~ Feb. 2022</div>
       <div class="tab-cell" style="flex: 4;">PhD Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;"></div>
+      <div class="tab-cell" style="flex: 4;">→ Yonsei University (Assist. Prof.), South Korea <span class='emoji'>🇰🇷</span></div>
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
@@ -306,7 +311,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Dec. 2024 ~ </div>
+      <div class="tab-cell" style="flex: 2;">Dec. 2024 ~ Mar. 2025 </div>
       <div class="tab-cell" style="flex: 4;">PhD Student, IIT Guwahati, India <span class='emoji'>🇮🇳</span></div>
     </div>
   </td></tr>
