@@ -52,7 +52,7 @@
 
     <script>
         // Read the last_update parameter from the JSON file
-        fetch('./citation_last_update.json')
+        fetch('./citation_last_update.json?v=' + new Date().getTime())
             .then(response => response.json())
             .then(data => {
                 // Extract the last_update parameter

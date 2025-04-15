@@ -403,6 +403,10 @@ toc_title: TSirc Group
       <span style="display: block; height: 2em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
       <br><span style="margin-right: 1.4em;"></span>Instrumentation Amplifier
+      <span style="display: block; height: 0.5em;"></span>
+      <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
+      <br><span style="margin-right: 1.4em;"></span>
+      <span style="color: #485fc7">IEEE NEWCAS 2025 (accepted)</span>
     </div>
   </div>
   </td></tr>
@@ -479,7 +483,11 @@ toc_title: TSirc Group
       <a href="https://www.linkedin.com/in/kaiyuan-jiang-55ba652a2/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 2em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
-      <br><span style="margin-right: 1.4em;"></span>Current Reference
+      <br><span style="margin-right: 1.4em;"></span>Dynamic Current Reference
+      <span style="display: block; height: 0.5em;"></span>
+      <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
+      <br><span style="margin-right: 1.4em;"></span>
+      <span style="color: #485fc7">IEEE NEWCAS 2025 (accepted)</span>
     </div>
   </div>
   </td></tr>
