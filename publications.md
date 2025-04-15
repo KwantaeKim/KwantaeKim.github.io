@@ -37,6 +37,7 @@ tr:hover .hover-iscas23 {left: -220px; top:calc(50% - 30px); visibility: visible
 tr:hover .hover-iscas19 {left: -250px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-iscas16 {left: -210px; top:calc(50% - 30px); visibility: visible; height: 70px;}
 tr:hover .hover-aicas23 {left: -260px; top:calc(50% - 30px); visibility: visible; height: 50px;}
+tr:hover .hover-newcas25 {left: -210px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 tr:hover .hover-hotchips {left: -150px; top:calc(50% - 30px); visibility: visible; height: 60px;}
 tr:hover .hover-embc {left: -170px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; height: 80px;}
@@ -85,7 +86,7 @@ span.venue {font-style: italic;}
     $("span.venue").each(function() {
       var text = $(this).html();
       // Make specified strings bold and black
-      text = text.replace(/\((ISSCC|S.VLSI|CICC|A-SSCC|ESSCIRC|JSSC|ISCAS|AICAS|MCAS|IEDM|HCS|EMBC|TCASAI|)\)/g, "<b style='color: black;'>($1)</b>");
+      text = text.replace(/\((ISSCC|S.VLSI|CICC|A-SSCC|ESSCIRC|JSSC|ISCAS|AICAS|MCAS|IEDM|HCS|EMBC|TCASAI|NEWCAS|)\)/g, "<b style='color: black;'>($1)</b>");
       $(this).html(text);
     });
   });
@@ -97,11 +98,28 @@ span.venue {font-style: italic;}
 <iframe src="{{ site.base_url }}/img/citation_plot_overlay.html" width="100%" height="450" style="padding: 0; margin: 0; border: none;"></iframe>
 
 \*Co-First Authors
+<!-- <span style="color: #485fc7"> -->
 
 ## 2025
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <span style="color: #485fc7">
+    A 1.6nA-to-72nA Clock-Tunable Dynamic Current Reference with a Built-in 2nd-Order Current-Mode Low-Pass Filter and Coarse-Fine Regulation    
+    </span><br>
+    Kaiyuan Jiang, Youngwoo Ji, Marko Kosunen, Kwantae Kim
+    <div class="img-container"><img src="./../img/icons/logo--newcas25.png" class="hover-newcas25" style="background-color: #2C2C66; padding: 10px; border-radius: 10px;"></div>
+    <span class="venue">IEEE International NEWCAS Conference (NEWCAS)</span>, 2025
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style="color: #485fc7">
+    A 2.56 μW 31.57 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors with Source Degenerated Current Mirror and DTMOS Transistor
+    </span><br>
+    Yu Xue, Kwantae Kim
+    <div class="img-container"><img src="./../img/icons/logo--newcas25.png" class="hover-newcas25" style="background-color: #2C2C66; padding: 10px; border-radius: 10px;"></div>
+    <span class="venue">IEEE International NEWCAS Conference (NEWCAS)</span>, 2025
+  </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/TCASAI.2024.3507694" target="_blank" class="pub-hover">
     DeltaKWS: A 65nm 36nJ/Decision Bio-inspired Temporal-Sparsity-Aware Digital Keyword Spotting IC with 0.6V Near-Threshold SRAM
@@ -111,7 +129,6 @@ span.venue {font-style: italic;}
     <span class="venue">IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI)</span>, 2025
   </td></tr>
   <tr><td class="tg-desc">
-    <!-- <span style="color: #485fc7"> -->
     <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank" class="pub-hover">
     A 8.62μW, 75dB DR<sub>SoC</sub> End-to-End Spoken Language Understanding SoC with Channel-Level AGC and Temporal-Sparsity-Aware Streaming-Mode RNN
     </a><br>

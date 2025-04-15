@@ -22,6 +22,33 @@ section-about: true
 details > summary {list-style: none; cursor: pointer; font-size: 1.2em; font-weight: bold;}
 details > summary::-webkit-details-marker {display: none;}
 details > summary::marker {display: none;}
+
+/* News Button */
+.btn-show-2024 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1d3b44; /* same approx. dark teal */
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.btn-show-2024:hover {
+  background-color: #22474f; /* slightly different teal for hover */
+}
+
+/* Less bright outline for focus/active */
+.btn-show-2024:focus,
+.btn-show-2024:active {
+  outline: 2px solid #2fa093; /* a more subdued teal */
+  outline-offset: 2px;
+}
 </style>
 
 <link href="{{ site.base_url }}/emoji.css" rel="stylesheet" type='text/css'>
@@ -33,36 +60,73 @@ details > summary::marker {display: none;}
 
 ## News
 
+### 🎉 15.Apr.2025
+
+{% include news-20250415.md %}
+
 ### 🎉 03.Apr.2025
 
 {% include news-20250403.md %}
-
----
 
 ### <i class="fa-regular fa-handshake fa-lg"></i> 04.Mar.2025
 
 {% include news-20250304.md %}
 
----
+<!-- Old News -->
 
-### 📚 06.Dec.2024
+<div style="text-align: center; margin: 1em 0;">
+  <button id="toggle-2024-news-btn" class="btn-show-2024" onclick="toggle2024News()">
+    <i class="fa-solid fa-newspaper"></i>
+    Show 2024 News
+  </button>
+</div>
+<br><br><br>
 
-{% include news-20241206.md %}
+<div id="older-news-container"></div>
 
----
+<script>
+  let news2024Html = null;  // cache for the fetched content
+  let showing2024 = false;  // track whether 2024 news is currently visible
 
-### <i class="fa-solid fa-person-chalkboard fa-lg"></i> 05.Nov.2024
+  function toggle2024News() {
+    const btn = document.getElementById('toggle-2024-news-btn');
+    const container = document.getElementById('older-news-container');
 
-{% include news-20241105.md %}
-
----
-
-### 🎉 16.Oct.2024
-
-{% include news-20241016.md %}
-
----
-
-### <i class="fa-regular fa-handshake fa-lg"></i> 04.Oct.2024
-
-{% include news-20241004.md %}
+    // If currently hidden, show it
+    if (!showing2024) {
+      // If we've already fetched it before, just re-inject
+      if (news2024Html !== null) {
+        container.innerHTML = news2024Html;
+        showing2024 = true;
+        btn.innerHTML = '<i class="fa-solid fa-newspaper"></i> Hide 2024 News';
+      } else {
+        // First time fetch
+        btn.disabled = true;
+        fetch('/news-2024.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(html => {
+            news2024Html = html;       // cache the result
+            container.innerHTML = html; 
+            showing2024 = true;
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fa-solid fa-newspaper"></i> Hide 2024 News';
+          })
+          .catch(error => {
+            console.error('Error fetching 2024 news:', error);
+            btn.disabled = false;
+          });
+      }
+    } 
+    // If currently shown, hide it
+    else {
+      container.innerHTML = '';
+      showing2024 = false;
+      btn.innerHTML = '<i class="fa-solid fa-newspaper"></i> Show 2024 News';
+    }
+  }
+</script>
