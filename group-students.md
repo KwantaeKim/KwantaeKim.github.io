@@ -43,6 +43,8 @@ toc_title: TSirc Group
 
 ## PhD Students
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Soujanya Bhowmick {#soujanya-bhowmick}
 
 <table class="tg">
@@ -135,6 +137,8 @@ toc_title: TSirc Group
 
 <br>
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Zhenhan Wang {#zhenhan-wang}
 
 <table class="tg">
@@ -143,7 +147,7 @@ toc_title: TSirc Group
   <div class="tab-row" style="display: flex; align-items: center;">
     <div class="tab-cell" style="flex: 2;">
     <!-- First Tab -->
-    <center><img src="./../img/group/Zhenhan_Wang.jpg" style='
+    <center><img src="./../img/group/Zhenhan_Wang.jpeg" style='
       height: 200px;
       width: 100%;
       max-width: 200px;
@@ -162,6 +166,7 @@ toc_title: TSirc Group
       <span style="display: block; height: 2em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
       <br><span style="margin-right: 1.4em;"></span>Flexible Integrated Circuits
+      <br><span style="margin-right: 1.4em;"></span>Voltage-to-Time Converter
     </div>
   </div>
   </td></tr>
@@ -215,6 +220,8 @@ toc_title: TSirc Group
 </div>
 
 <br>
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Lingyun Yao {#lingyun-yao}
 
@@ -295,6 +302,8 @@ toc_title: TSirc Group
 <span style="display: block; height: 10em;"></span>
 
 ## MSc Students
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Bingzheng Qiu {#bingzheng-qiu}
 
@@ -378,6 +387,8 @@ toc_title: TSirc Group
 
 <br>
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Yu Xue {#yu-xue}
 
 <table class="tg">
@@ -458,6 +469,8 @@ toc_title: TSirc Group
 </div>
 
 <br>
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Kaiyuan Jiang {#kaiyuan-jiang}
 
