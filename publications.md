@@ -106,7 +106,7 @@ span.venue {font-style: italic;}
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <span style="color: #485fc7">
-    A 1.6nA-to-72nA Clock-Tunable Dynamic Current Reference with a Built-in 2nd-Order Current-Mode Low-Pass Filter and Coarse-Fine Regulation    
+    A 2.3nA-to-205nA Clock-Tunable Dynamic Current Reference with a Built-in 2nd-Order Current-Mode Low-Pass Filter and Coarse-Fine Regulation    
     </span><br>
     Kaiyuan Jiang, Youngwoo Ji, Marko Kosunen, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--newcas25.png" class="hover-newcas25" style="background-color: #2C2C66; padding: 10px; border-radius: 10px;"></div>
@@ -114,7 +114,7 @@ span.venue {font-style: italic;}
   </td></tr>
   <tr><td class="tg-desc">
     <span style="color: #485fc7">
-    A 2.56 μW 31.57 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors with Source Degenerated Current Mirror and DTMOS Transistor
+    A 2.48 μW 33.13 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors with Source Degenerated Current Mirror and DTMOS Transistor
     </span><br>
     Yu Xue, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--newcas25.png" class="hover-newcas25" style="background-color: #2C2C66; padding: 10px; border-radius: 10px;"></div>

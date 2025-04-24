@@ -92,7 +92,7 @@ toc_title: TSirc Group
 <!-- ETH -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.5;">
-    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Establisehd Researcher</div>
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Established Researcher</div>
   <div class="tab-cell" style="flex: 4;">ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
   <div class="tab-cell" style="flex: 1;">2023 ~ 2024</div>
 </div>
