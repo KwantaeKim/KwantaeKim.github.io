@@ -24,11 +24,12 @@ th, td {
  | <a href='https://www.islped.org/2025' target=_blank> ISLPED </a> | <span style='color: #d3d3d3; text-decoration: line-through;'>17.Mar.2025</span> | 06.Aug.2025-08.Aug.2025 | University of Iceland | Iceland <span class='emoji'>🇮🇸</span> | 
  | <a href='https://www.mwscas2025.org' target=_blank> MWSCAS </a> | <span style='color: #d3d3d3; text-decoration: line-through;'>31.Mar.2025</span> | 10.Aug.2025-13.Aug.2025 | Lansing Center | United States <span class='emoji'>🇺🇸</span> | 
  | <a href='https://sites.google.com/uea.edu.br/chip-in-the-jungle-2025/sbcci?authuser=0' target=_blank> SBCCI </a> | 28.Apr.2025 | 25.Aug.2025-29.Aug.2025 | Studio 5 Shopping<br>and Convention Center | Brazil <span class='emoji'>🇧🇷</span> | 
- | <a href='https://prime-conference.org' target=_blank> PRIME </a> | 24.Apr.2025 | 21.Sep.2025-24.Sep.2025 | Hotel Caparena | Italy <span class='emoji'>🇮🇹</span> | 
+ | <a href='https://prime-conference.org' target=_blank> PRIME </a> | <span style='color: #d3d3d3; text-decoration: line-through;'>24.Apr.2025</span> | 21.Sep.2025-24.Sep.2025 | Hotel Caparena | Italy <span class='emoji'>🇮🇹</span> | 
  | <a href='https://www.ieee-socc.org/' target=_blank> SOCC </a> | 12.May.2025 | 29.Sep.2025-01.Oct.2025 | Dubai | UAE <span class='emoji'>🇦🇪</span> | 
  | <a href='https://asic-chile.cl/vlsisoc/' target=_blank> VLSI-SoC </a> | <span style='color: #d3d3d3; text-decoration: line-through;'>18.Apr.2025</span> | 12.Oct.2025-15.Oct.2025 | Enjoy Puerto Varas | Chile <span class='emoji'>🇱🇻</span> | 
  | <a href='https://isocc.org' target=_blank> ISOCC </a> | 13.Jun.2025 | 15.Oct.2025-18.Oct.2025 | Paradise Hotel Busan | South Korea <span class='emoji'>🇰🇷</span> | 
  | <a href='https://2025.ieee-biocas.org' target=_blank> BIOCAS </a> | 23.May.2025 | 16.Oct.2025-18.Oct.2025 | Khalifa University | UAE <span class='emoji'>🇦🇪</span> | 
  | <a href='https://2025.ieee-isicas.org' target=_blank> ISICAS </a> | <span style='color: #d3d3d3; text-decoration: line-through;'>06.Mar.2025</span> | 24.Oct.2025-26.Oct.2025 | Hyatt Regency Qingdao | China <span class='emoji'>🇨🇳</span> | 
  | <a href='https://events.tuni.fi/norcas/' target=_blank> NORCAS </a> | 15.Aug.2025 | 28.Oct.2025-29.Oct.2025 | Riga Technical University | Latvia <span class='emoji'>🇱🇻</span> | 
+ | <a href='https://ieee-icecs2025.org' target=_blank> ICECS </a> | 09.Jun.2025 | 17.Nov.2025-19.Nov.2025 | Marrakech | Morocco <span class='emoji'>🇲🇦</span> | 
  

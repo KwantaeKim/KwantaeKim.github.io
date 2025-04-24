@@ -39,7 +39,7 @@ toc_title: TSirc Group
 <span style="display: block; height: 0.5em;"></span>
 <span style="color: #485fc7">
 <i class="fa-solid fa-envelope fa-lg"></i>
-kwantae.kim at aalto.fi
+firstname.lastname@aalto.fi
 </span>
 
 <a href="https://maps.app.goo.gl/iH7DGpqSJaBYeT1Z8" target="_blank">

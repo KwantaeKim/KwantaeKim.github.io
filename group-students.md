@@ -66,6 +66,8 @@ toc_title: TSirc Group
     <!-- Second Tab -->
       <div style="font-size: 1.5em; font-weight: bold;">Soujanya Bhowmick</div>
       <span style="display: block; height: 0.5em;"></span>
+      Funded by <a href="https://www.microelectronics.fi/mieli" target="_blank">MIELi Doctoral Pilot Program</a>
+      <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/soujanya-bhowmick/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 2em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
