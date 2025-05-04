@@ -8,6 +8,7 @@ sections:
     items:
       - title: Integrating Jupyter Notebook in VS Code
       - title: Setting Up Open Source Tools with Docker
+      - title: Seamless Host-Side Control of Docker
   - label: Try It Out
     items:
       - title: Generate Analog Layouts in VS Code

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Setting Up Open Source Tools with Docker
+title_darken: true
 date: 2024-05-25 00:00:00
-hero_image: /img/tutto/IMG_3508.jpeg
-image: /{{ site.image_dir }}/blog/{{ post-date }}/2024-05-29-21-31-52.png
+hero_image: /img/tutto/IMG_6361.jpeg
 
 menubar_toc: true
 show_sidebar: false
@@ -60,7 +60,7 @@ show_sidebar: false
 We can run place-and-route (PnR) and arrive GDS file generation as introduced in <a href="{{ site.baseurl }}{{ post[0].url }}">this post</a>,
 using open-source chip design tool with <i class="fa-brands fa-python fa-lg"></i> Python scripts, in <i class="fa-brands fa-google fa-lg"></i> **Google Colab** environment.
 
-In this post, I am gonna share a GUI-based tool setup, more familiar with analog circuit designers.
+In this post, I am going to share a GUI-based tool setup, more familiar with analog circuit designers.
 
 A research team led by <a href="https://github.com/hpretl" target="_blank">Harald Pretl</a> from **Johannes Kepler University (JKU)** developed a <i class="fa-brands fa-docker fa-lg"></i> Docker container, **IIC-OSIC-TOOLS**. Using this container, we can easily setup open-source tools and access to it through **Virtual Network Computing (VNC)**.
 
@@ -133,15 +133,26 @@ Follow the steps introduced in the above video and install **XQuartz** (from 1:5
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-26-46.png' style='width:50%'>
 
-Upcom installation, open **XQuartz** with spotlight (`⌘ + Space`), and execute `xhost + 127.0.0.1` on **XQuartz** terminal to allow network connections. Then you will get the following output:
+Upcom installation, open **XQuartz** with spotlight (`⌘ + Space`), and execute:
 
->127.0.0.1 being added to access control list
+```zsh
+xhost + 127.0.0.1
+```
+
+on **XQuartz** terminal to allow network connections.<br>
+Then you will get the output of "127.0.0.1 being added to access control list".
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-29-31.png' style='width:50%'>
 
 The fonts will be broken in **XQuartz** terminal if you are using custom styling on your terminal (ex. oh-my-zsh) but it is not a big problem and thus you can ignore it.
 
-In addition, run `sudo chmod 666 /var/run/docker.sock` on your terminal to make sure the <i class="fa-brands fa-docker fa-lg"></i> **Docker** can run on our terminal.
+In addition, run:
+
+```zsh
+sudo chmod 666 /var/run/docker.sock
+```
+
+on your terminal to make sure the <i class="fa-brands fa-docker fa-lg"></i> **Docker** can run on our terminal.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-24-00-36-36.png' style='width:50%'>
 
@@ -151,7 +162,13 @@ In addition, run `sudo chmod 666 /var/run/docker.sock` on your terminal to make 
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-21-51.png' style='width:50%'>
 
-Open terminal using spotlight (`⌘ + Space`), and execute `which git` to check whether your <i class="fa-brands fa-apple fa-lg"></i> MacOS has <i class="fa-brands fa-git-alt fa-lg"></i> Git installed.
+Open terminal using spotlight (`⌘ + Space`), and execute:
+
+```zsh
+which git
+```
+
+to check whether your <i class="fa-brands fa-apple fa-lg"></i> MacOS has <i class="fa-brands fa-git-alt fa-lg"></i> Git installed.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-05-28-14-25-39.png' style='width:50%'>
 
@@ -214,12 +231,18 @@ Be patient! This process can take several 10s of minutes depending on your PC.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/av0UQy6g2FA?si=fzr3kkpEet6A-mUi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Next, you have to install **Windows Subsystem for Linux (WSL)**. I found a really helpful <i class="fa-brands fa-youtube fa-lg"></i> YouTube video for this. Please check and follow the instructions until 3:52.
+Next, you have to install **Windows Subsystem for Linux (WSL)**. I found a really helpful <i class="fa-brands fa-youtube fa-lg"></i> YouTube video for this. Please check and follow the instructions until **3:52**.
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2025-02-01-2.png' style='width:70%'><br>
 During the installation process, if you happen to see the above error, just restart your Windows and try again.
 
-If you have done all the things in the above video until 3:52, open **PowerShell** by <i class="fa-brands fa-windows"></i> `Start → Windows PowerShell`. Run `wsl -l -v`, then you should see that your <i class="fa-brands fa-ubuntu"></i> **Ubuntu** version is 2, like the below screenshot (you can ignore `docker-desktop-data` in the below screenshot).
+If you have done everything in the video until **3:52**, open **PowerShell** by <i class="fa-brands fa-windows"></i> `Start → Windows PowerShell`. Run:
+
+```powershell
+wsl -l -v
+```
+
+then you should see that your <i class="fa-brands fa-ubuntu"></i> **Ubuntu** version is 2, like the below screenshot (you can ignore `docker-desktop-data` in the below screenshot).
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2024-06-23-20-30-36.png' style='width:70%'>
 

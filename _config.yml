@@ -1,7 +1,8 @@
 # Site Settings
 lang: en
+title: "TSirc Group"
 description: >
-  Kwantae Kim's Personal Webpage
+  TSirc Group's Webpage
 baseurl: ""
 # baseurl: "/bulma-clean-theme"
 url: "https://kwantaekim.github.io"
@@ -11,7 +12,7 @@ favicon: ./favicon.png
 #hide_share_buttons: true
 theme_color: '#02343F'
 fixed_navbar: top
-timezone: Europe/Zurich
+timezone: Europe/Helsinki
 #direction: one of <ltr, rtl, auto>, default: ltr
 
 paginate: 5
