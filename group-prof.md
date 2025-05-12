@@ -254,15 +254,6 @@ toc_title: TSirc Group
 
 #### Service
 
-<!-- Chair -->
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;">
-    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Vice Chair
-  </div>
-  <div class="tab-cell" style="flex: 4;">IEEE CAS Finland Chapter</div>
-  <div class="tab-cell" style="flex: 1;">2024 ~</div>
-</div>
-
 <!-- TPC -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.5;">

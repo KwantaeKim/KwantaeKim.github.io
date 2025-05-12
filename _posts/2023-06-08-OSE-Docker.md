@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Setting Up Open Source Tools with Docker
-title_darken: true
+# title_darken: true
 date: 2024-05-25 00:00:00
-hero_image: /img/tutto/IMG_6361.jpeg
+hero_image: /img/tutto/IMG_6459.jpeg
 
 menubar_toc: true
 show_sidebar: false

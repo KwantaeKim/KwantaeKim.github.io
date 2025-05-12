@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Seamless Host-Side Control of Docker
-title_darken: true
+# title_darken: true
 date: 2025-05-03 00:00:00
-hero_image: /img/tutto/IMG_6361.jpeg
+hero_image: /img/tutto/IMG_6459.jpeg
 
 menubar_toc: true
 show_sidebar: false

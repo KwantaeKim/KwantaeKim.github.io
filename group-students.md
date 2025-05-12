@@ -87,12 +87,6 @@ toc_title: TSirc Group
   <div class="tab-cell" style="flex: 4;">SemiQon Technologies Oy, Finland <span class='emoji'>🇫🇮</span></div>
   <div class="tab-cell" style="flex: 1;">2023 ~ 2024</div>
 </div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;">
-    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Engineer</div>
-  <div class="tab-cell" style="flex: 4;">IIEST Shibpur, India <span class='emoji'>🇮🇳</span></div>
-  <div class="tab-cell" style="flex: 1;">2018 ~ 2020</div>
-</div>
 
 <span style="display: block;"></span>
 <div style="font-size: 1.5em; font-weight: bold;">Education</div>
