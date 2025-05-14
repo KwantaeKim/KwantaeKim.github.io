@@ -60,6 +60,8 @@ toc_title: TSirc Group
       <span style="margin-right: 0.2em;"></span>
       <a href="https://scholar.google.com/citations?user=YcWEaGIAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar fa-xl"></i></a>
       <span style="margin-right: 0.2em;"></span>
+      <a href="https://orcid.org/0000-0001-8962-4554" target="_blank"><i class="fa-brands fa-orcid fa-xl"></i></a>
+      <span style="margin-right: 0.2em;"></span>
       <a href="https://github.com/KwantaeKim" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
       <span style="margin-right: 0.2em;"></span>
       <a href="https://youtube.com/@KwantaeKim" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
