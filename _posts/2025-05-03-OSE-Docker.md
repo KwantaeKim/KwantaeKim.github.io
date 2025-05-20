@@ -116,6 +116,8 @@ Note that your **X11 Forwarding** must be enabled to run this. **X11 Forwarding*
 
 Now we can run open-source tools natively from our host **VS Code** terminal!
 
+<center><img src='{{ site.base_url }}{{ site.image_dir }}/applause.gif' style='width:60%'></center>
+
 <br><br>
 
 ---

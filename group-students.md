@@ -255,6 +255,24 @@ toc_title: TSirc Group
 <div style="font-size: 1.5em; font-weight: bold;">Education</div>
 <span style="display: block;"></span>
 
+<!-- Others -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;">
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> Visiting Researcher
+  </div>
+  <div class="tab-cell" style="flex: 4;">KU Leuven, Belgium <span class='emoji'>🇧🇪</span></div>
+  <div class="tab-cell" style="flex: 1;">Oct 2024 ~</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 4;">
+    Hosted by <a href="https://micas.esat.kuleuven.be/team/marian-verhelst" target="_blank">Prof. Marian Verhelst</a>
+  </div>
+  <div class="tab-cell" style="flex: 1;">Jan 2025</div>
+</div>
+
+<span style="display: block;"></span>
+
 <!-- PhD -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.5;">
