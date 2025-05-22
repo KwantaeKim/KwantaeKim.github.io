@@ -60,11 +60,15 @@ details > summary::marker {display: none;}
 
 ## News
 
-### 🎉 15.Apr.2025
+### ✈️ 22.May.2025
+
+{% include news-20250522.md %}
+
+### 📚 15.Apr.2025
 
 {% include news-20250415.md %}
 
-### 🎉 03.Apr.2025
+### <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie fa-lg"></i><span style="margin-right: 0.2em;"></span> 03.Apr.2025
 
 {% include news-20250403.md %}
 

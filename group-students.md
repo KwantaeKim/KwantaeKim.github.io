@@ -432,6 +432,11 @@ toc_title: TSirc Group
       <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
       <br><span style="margin-right: 1.4em;"></span>
       <span style="color: #485fc7">IEEE NEWCAS 2025 (accepted)</span>
+      <span style="display: block; height: 0.5em;"></span>
+      <span style="margin-right: 0.1em;"></span><i class="fa-regular fa-award fa-lg"></i><span style="margin-right: 0.1em;"></span>
+      <span style="font-weight: bold;">Honors</span>
+      <br><span style="margin-right: 1.4em;"></span>
+      IEEE CAS Student Travel Grant 2025
     </div>
   </div>
   </td></tr>
