@@ -89,20 +89,30 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
+    Introduction to TSirc Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
+    KAIST
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">May. 2025</div>
+        <div class="tab-cell" style="flex: 1.5;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
+        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://ccs.kaist.ac.kr" target="_blank">Prof. Seonghwan Cho</a>'s group</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--skku.svg" class="hover-skku"></div>
     Sungkyunkwan University (SKKU)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Dec. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 1.5;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 2.5;">Closed to Prof. Yoonmyung Lee's group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei"></div>
     Yonsei University
     <div class="tab-row">
@@ -111,9 +121,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--seoultech.png" class="hover-seoultech"></div>
     SeoulTech
     <div class="tab-row">
@@ -122,9 +131,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--kyunghee.png" class="hover-kyunghee"></div>
     Kyung Hee University
     <div class="tab-row">
@@ -133,20 +141,19 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Hardware-Algorithm Co-Optimizations for Audio Signal Processing
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
     KAIST
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 1.5;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://ssl.kaist.ac.kr" target="_blank">Prof. Hoi-Jun Yoo</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Ultra-Low-Power AI-Enabled Keyword Spotting Chips for Edge IoT
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--tsmc-oip24.jpg" class="hover-tsmc-oip24"></div>
     Open Innovation Platform Ecosystem Forum
     <br>
@@ -171,9 +178,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
     KAIST
     <div class="tab-row">
@@ -186,9 +192,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--jbnu.svg" class="hover-jbnu"></div>
     Jeonbuk National University
     <div class="tab-row">
@@ -202,16 +207,15 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
     </a></span><br>
     <div class="img-container"><img src="./../img/icons/logo--ucsc.png" class="hover-ucsc"></div>
-    University of California, Santa Cruz (UC Santa Cruz)
+    UC Santa Cruz
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2024</div>
         <div class="tab-cell" style="flex: 4;">Santa Cruz, California, United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Next 10 Years in Research
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     Aalto University
     <div class="tab-row">
@@ -220,9 +224,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Event-Driven Bio-Inspired Audio Sensor Front End for Edge TinyML: When Time-Domain Analog Circuits Meet Neuromorphic Audio Sensors in TinyML Applications
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--tudelft.png" class="hover-tudelft"></div>
     TU Delft
     <div class="tab-row">
@@ -231,31 +234,30 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Time-Domain Audio Feature Extraction Circuits for μW-Scale TinyML Applications
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
     KAIST
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2021</div>
-        <div class="tab-cell" style="flex: 4;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
+        <div class="tab-cell" style="flex: 1.5;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
+        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://ssl.kaist.ac.kr" target="_blank">Prof. Hoi-Jun Yoo</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     Low Power & Low Distortion Sinusoidal Current Generator IC for Bio-Impedance Sensing
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--knu.svg" class="hover-knu"></div>
     Kangwon National University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2021</div>
-        <div class="tab-cell" style="flex: 4;">Chuncheon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 1.5;">Chuncheon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://sites.google.com/view/kwbics" target="_blank">Prof. Joonsung Bae</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC with 0.55° Overall Phase Error
-    </span><br>
+    <br>
     <div class="img-container"><img src="./../img/icons/logo--abbott.svg" class="hover-abbott"></div>
     <div class="img-container"><img src="./../img/icons/logo--stjude.svg" class="hover-stjude"></div>
     St. Jude Medical (Abbott)
@@ -364,9 +366,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     A 0.5V, 6.2μW, 0.059mm2 Sinusoidal Current Generator IC with 0.088% THD for Bio-Impedance Sensing
-    </span><br>
+    <br>
     IDEC Congress Chip Design Contest (Oral)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2021</div>
@@ -374,9 +375,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC with 0.55° Overall Phase Error
-    </span><br>
+    <br>
     IDEC Congress Chip Design Contest (Poster)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jun. 2019</div>
@@ -384,9 +384,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     A 54-μW Fast-settling Arterial Pulse Wave Sensor for Wrist Watch Type System
-    </span><br>
+    <br>
     KAIST-Keio-Tsinghua (KKT) Workshop (Oral)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Aug. 2016</div>
@@ -394,9 +393,8 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
     A Wearable EEG-HEG-HRV Multimodal System with Real-Time tES Monitoring for Mental Health Management
-    </span><br>
+    <br>
     KAIST-Keio-Tsinghua (KKT) Workshop (Poster)
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Aug. 2015</div>
