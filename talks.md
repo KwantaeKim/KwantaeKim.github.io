@@ -41,8 +41,9 @@ tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; h
 tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-tsmc-oip24 {left: -350px; top:calc(50% - 35px); visibility: visible; height: 70px;}
 
-tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-aalto {left: -140px; top:calc(50% - 50px); visibility: visible; height: 100px;}
+tr:hover .hover-tampere {left: -290px; top:calc(50% - 50px); visibility: visible; height: 110px;}
+tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-tudelft {left: -180px; top:calc(50% - 40px); visibility: visible; height: 70px;}
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-kyunghee {left: -150px; top:calc(50% - 40px); visibility: visible; height: 80px;}
@@ -53,6 +54,8 @@ tr:hover .hover-knu {left: -120px; top:calc(50% - 40px); visibility: visible; he
 tr:hover .hover-jbnu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-abbott {left: -190px; top:calc(50% - 15px); visibility: visible; height: 40px;}
 tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible; height: 40px;}
+tr:hover .hover-murata {left: -180px; top:calc(50% - 20px); visibility: visible; height: 50px;}
+tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; height: 40px;}
 
 /* Hyperlink */
 .pub-hover {
@@ -84,10 +87,22 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 <!-- Body Part -->
 <!-- --------- -->
 
-## Invited Talks
+## Talks
+
+### 2025
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    Introduction to TSirc Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--murata.png" class="hover-murata"></div>
+    Murata
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Jun. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Kyoto, Japan <span class='emoji'>🇯🇵</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     Introduction to TSirc Group
     <br>
@@ -99,6 +114,25 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
         <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://ccs.kaist.ac.kr" target="_blank">Prof. Seonghwan Cho</a>'s group</div>
     </div>
   </td></tr>
+  <tr><td class="tg-desc">
+    Research Activities of IC Design
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Aalto Microelectronics Fair
+    <br>
+    Aalto University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Mar. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+</tbody>
+</table>
+
+### 2024
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
     <br>
@@ -178,6 +212,26 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
     </div>
   </td></tr>
   <tr><td class="tg-desc">
+    Introduction to TSirc Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--nokia.png" class="hover-nokia"></div>
+    Nokia
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Introduction to TSirc Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--murata.png" class="hover-murata"></div>
+    Murata Oy
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Vantaa, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
     <br>
     <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
@@ -223,6 +277,13 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
         <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
+</tbody>
+</table>
+
+### ~2023
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     Event-Driven Bio-Inspired Audio Sensor Front End for Edge TinyML: When Time-Domain Analog Circuits Meet Neuromorphic Audio Sensors in TinyML Applications
     <br>
@@ -269,7 +330,9 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 </tbody>
 </table>
 
-## Tutorial Talks
+<br><br>
+
+## Tutorials
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
@@ -288,7 +351,9 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 </tbody>
 </table>
 
-## Conference Presentations
+<br><br>
+
+## Conferences
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
@@ -361,7 +426,9 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 </tbody>
 </table>
 
-## Other Talks
+<br><br>
+
+## Others
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>

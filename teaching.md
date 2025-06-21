@@ -82,7 +82,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Jan. 2025 ~</div>
+      <div class="tab-cell" style="flex: 2;">Jan. 2025 ~ May. 2025</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
