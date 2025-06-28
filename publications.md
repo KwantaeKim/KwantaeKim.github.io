@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Publications
 show_sidebar: false
-hero_image: /img/kwantaekim/IMG_3632.JPG
+hero_image: /img/group/travel/IMG_6679.jpeg
 menubar_toc: true
 toc_title: Contents
 ---
