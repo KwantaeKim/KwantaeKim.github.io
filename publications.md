@@ -101,6 +101,8 @@ span.venue {font-style: italic;}
 
 ## Accepted
 
+<center><img src='{{ site.base_url }}/img/group/travel/IMG_6681.jpeg' style='width:70%;'></center>
+
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
@@ -121,7 +123,9 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--newcas25.png" class="hover-newcas25" style="background-color: #2C2C66; padding: 10px; border-radius: 10px;"></div>
     <span class="venue">IEEE International NEWCAS Conference (NEWCAS)</span>, 2025
     <br><span style='color: black;'>
-    📚 Open-Sourced Design Parameters </span>
+    📚 Open-Sourced Design Parameters <br>
+    📚 Invited to IEEE TCAS-I
+    </span>
   </td></tr>
 </tbody>
 </table>

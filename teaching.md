@@ -151,7 +151,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     </div>
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;"></div>
-      <div class="tab-cell" style="flex: 4;"></div>
+      <div class="tab-cell" style="flex: 4;">→ MIT (Postdoc), United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -170,7 +170,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       <div class="tab-cell" style="flex: 2;"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank">AICAS 2023</a> (<a href="https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html" target="_blank">Best Poster Award</a>) /
-        <span style='color: #485fc7;'>ISSCC 2025</span>
+        <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank">ISSCC 2025</a>
       </div>
     </div>
   </td></tr>
