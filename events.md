@@ -34,7 +34,7 @@ hero_image: /img/aalto/IMG_6346.jpeg
 </style>
 
 <div style="text-align: center; margin: 1em 0;">
-  <a href="{{ '/assets/Kor-Fin-flyer_20250730.pdf' | relative_url }}"
+  <a href="{{ '/assets/Kor-Fin-flyer.pdf' | relative_url }}"
      target="_blank"
      class="btn-show">
     <i class="fa-solid fa-file-pdf" style="margin-right: 0.1em;"></i>
