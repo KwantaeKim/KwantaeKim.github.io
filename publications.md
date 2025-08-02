@@ -37,6 +37,7 @@ tr:hover .hover-iscas19 {left: -250px; top:calc(50% - 30px); visibility: visible
 tr:hover .hover-iscas16 {left: -210px; top:calc(50% - 30px); visibility: visible; height: 70px;}
 tr:hover .hover-aicas23 {left: -260px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-newcas25 {left: -210px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-biocas25 {left: -210px; top:calc(50% - 25px); visibility: visible; height: 40px;}
 tr:hover .hover-hotchips {left: -150px; top:calc(50% - 30px); visibility: visible; height: 60px;}
 tr:hover .hover-embc {left: -170px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; height: 80px;}
@@ -85,7 +86,7 @@ span.venue {font-style: italic;}
     $("span.venue").each(function() {
       var text = $(this).html();
       // Make specified strings bold and black
-      text = text.replace(/\((ISSCC|S.VLSI|CICC|A-SSCC|ESSCIRC|JSSC|ISCAS|AICAS|MCAS|IEDM|HCS|EMBC|TCASAI|NEWCAS|)\)/g, "<b style='color: black;'>($1)</b>");
+      text = text.replace(/\((ISSCC|S.VLSI|CICC|A-SSCC|ESSCIRC|JSSC|ISCAS|AICAS|MCAS|IEDM|HCS|EMBC|TCASAI|NEWCAS|BIOCAS|)\)/g, "<b style='color: black;'>($1)</b>");
       $(this).html(text);
     });
   });
@@ -105,6 +106,16 @@ span.venue {font-style: italic;}
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <span style="color: #485fc7">
+    A Unipolar IGZO TFT-Based 9.23 μW Operational Amplifier Achieving 73.7 dB Loop Gain and 554.6 kHz Bandwidth    
+    </span><br>
+    Zhenhan Wang, Kwantae Kim
+    <div class="img-container"><img src="./../img/icons/logo--biocas25.png" class="hover-biocas25"></div>
+    <span class="venue">IEEE Biomedical Circuits and Systems (BIOCAS)</span>, 2025
+    <br><span style='color: black;'>
+    📚 Open-Sourced Design Parameters </span>
+  </td></tr>
   <tr><td class="tg-desc">
     <span style="color: #485fc7">
     A 2.3nA-to-205nA Clock-Tunable Dynamic Current Reference with a Built-in 2nd-Order Current-Mode Low-Pass Filter and Coarse-Fine Regulation    
