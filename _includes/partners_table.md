@@ -27,6 +27,6 @@ th, td {
 | **Kyung-Sik Choi** | <a href = 'https://sites.google.com/view/year-yonsei/home?authuser=0' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | Yonsei University | South Korea <span class='emoji'>🇰🇷</span> |
 | **Woojun Choi** | <a href = 'https://sites.google.com/view/ysicsl/' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | Yonsei University | South Korea <span class='emoji'>🇰🇷</span> |
 | **Youngwoo Ji** | <a href = 'https://lab.hanbat.ac.kr/cats' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | Hanbat<br>National University | South Korea <span class='emoji'>🇰🇷</span> |
-| **Sohmyung Ha** | <a href = 'https://wp.nyu.edu/sohmyung/' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Senior Member | NYU Abu Dhabi | UAE <span class='emoji'>🇦🇪</span> |
+| **Sohmyung Ha** | <a href = 'https://wp.nyu.edu/sohmyung/' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Associate Professor | IEEE Senior Member | NYU Abu Dhabi | UAE <span class='emoji'>🇦🇪</span> |
 | <i class='fa-solid fa-location-dot fa-lg' style='color: #4c5dbe;'></i><span style='margin-right: 0.15em;'></span> **America** | 
 | **Jason Eshraghian** | <a href = 'https://ncg.ucsc.edu' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | UC Santa Cruz | United States <span class='emoji'>🇺🇸</span> |
