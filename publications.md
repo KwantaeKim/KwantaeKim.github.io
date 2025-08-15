@@ -117,9 +117,9 @@ span.venue {font-style: italic;}
     📚 Open-Sourced Design Parameters </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style="color: #485fc7">
+    <a href="https://doi.org/10.1109/NewCAS64648.2025.11107089" target="_blank" class="pub-hover">
     A 2.3nA-to-205nA Clock-Tunable Dynamic Current Reference with a Built-in 2nd-Order Current-Mode Low-Pass Filter and Coarse-Fine Regulation    
-    </span><br>
+    </a><br>
     Kaiyuan Jiang, Youngwoo Ji, Marko Kosunen, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--newcas25.png" class="hover-newcas25" style="background-color: #2C2C66; padding: 10px; border-radius: 10px;"></div>
     <span class="venue">IEEE International NEWCAS Conference (NEWCAS)</span>, 2025
@@ -127,9 +127,9 @@ span.venue {font-style: italic;}
     📚 Open-Sourced Design Parameters </span>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style="color: #485fc7">
+    <a href="https://doi.org/10.1109/NewCAS64648.2025.11107006" target="_blank" class="pub-hover">
     A 2.48 μW 33.13 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors with Source Degenerated Current Mirror and DTMOS Transistor
-    </span><br>
+    </a><br>
     Yu Xue, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--newcas25.png" class="hover-newcas25" style="background-color: #2C2C66; padding: 10px; border-radius: 10px;"></div>
     <span class="venue">IEEE International NEWCAS Conference (NEWCAS)</span>, 2025

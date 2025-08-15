@@ -49,7 +49,7 @@ IEEE ISSCC is a flagship conference for IC design where thousands people gather 
 
 ## Double-Blind Review
 
-According to this strict double-blind review guideline, you as a paper author, must not reveal yourself in such a way that you can be identified by the review committees. This can be typically found in the PDF document of the <a href="https://submissions.mirasmart.com/ISSCC2025/PDF/ISSCC2025CFP.pdf" target="_blank">*Call for Papers*</a> on the ISSCC official <a href="https://www.isscc.org/call-for-papers-overview" target="_blank">Website</a>.
+According to this strict double-blind review guideline, you as a paper author, must not reveal yourself in such a way that you can be identified by the review committees. This can be typically found in the PDF document of the *Call for Papers* on the ISSCC official <a href="https://www.isscc.org/call-for-papers-overview" target="_blank">Website</a>.
 
 - Remove any <u>logos, code names, or other marks</u> from the chip photo or PCB.
   - Typically, a white rectangular box is added over the specific area of the photo.
@@ -63,7 +63,7 @@ According to this strict double-blind review guideline, you as a paper author, m
   - In <i class="fa-brands fa-windows"></i> Windows, you can remove metadata by `Right Click → Properties → Details → Remove Properties and Personal Information`.
   - This can be checked by sending the file to another computer and opening it there. If you cannot recognize your username from the PDF opened on another computer, then it means it is good to go.
   - In <i class="fa-brands fa-apple fa-lg"></i> MacOS or <i class="fa-brands fa-linux fa-xl"></i> Linux, unfortunately I have no idea how to remove metadata ... <i class="fa-regular fa-face-sad-tear fa-lg"></i> (it would be appreciated if someone can let me know how to do it <i class="fa-regular fa-face-laugh fa-lg"></i>).
-- Although it is written in the <a href="https://submissions.mirasmart.com/ISSCC2025/PDF/ISSCC2025CFP.pdf" target="_blank">*Call for Papers*</a> that<br>
+- Although it is written in the *Call for Papers* that<br>
   *"The submission site allows authors to modify the title (“Paper Title (blinded)”) if the intended title would reveal the authors or their affiliation"*,<br>
   it is a good practice to replace your project code with some other letters (like 'XXXX')
   - For example, my prior research <a href="http://ssl.kaist.ac.kr" target="_blank">Group</a> at KAIST (led by Prof. Hoi-Jun Yoo) published <a href="https://doi.org/10.1109/ISSCC.2017.7870350" target="_blank">DNPU</a> at ISSCC'17, <a href="https://doi.org/10.1109/ISSCC.2018.8310262" target="_blank">UNPU</a> at ISSCC'18, <a href="https://doi.org/10.1109/ISSCC.2019.8662302" target="_blank">LNPU</a> at ISSCC'19, <a href="https://doi.org/10.1109/ISSCC19947.2020.9062989" target="_blank">GANPU</a> at ISSCC'20.
@@ -71,7 +71,7 @@ According to this strict double-blind review guideline, you as a paper author, m
   - So, when the manuscript of the <a href="https://doi.org/10.1109/ISSCC.2019.8662302" target="_blank">LNPU</a> paper was submitted, Dr. <a href="https://www.linkedin.com/in/jinsulee/" target="_blank">Jinsu Lee</a>, who was the leading author of the paper, formulated the title as "XXXX: A 25.3TFLOPS/W Sparse Deep-Neural-Network Learning Processor with Fine-Grained Mixed Precision of FP8-FP16" without 'NPU' term to anonymize the manuscript.
 - Citing your / your group's previous work is **Okay**.
   - But you must not refer your paper in a way that may reveal your identity, for example using "Our previous work" or a similar expression.
-  - As also stated in the <a href="https://submissions.mirasmart.com/ISSCC2025/PDF/ISSCC2025CFP.pdf" target="_blank">*Call for Papers*</a>, you can cite your work in the third person, for example, "XX technique was used in [2]" or "The XX architecture achieves higher XX performance than [3] ..".
+  - As also stated in the *Call for Papers*, you can cite your work in the third person, for example, "XX technique was used in [2]" or "The XX architecture achieves higher XX performance than [3] ..".
 
 <br><br>
 
