@@ -102,13 +102,19 @@ span.venue {font-style: italic;}
 
 ## Accepted
 
-<center><img src='{{ site.base_url }}/img/group/travel/IMG_6681.jpeg' style='width:70%;'></center>
-
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <span style="color: #485fc7">
-    A Unipolar IGZO TFT-Based 9.23 μW Operational Amplifier Achieving 73.7 dB Loop Gain and 554.6 kHz Bandwidth    
+    An 8.62-µW 75-dB DR<sub>SoC</sub> Fully-Integrated SoC for Spoken Language Understanding
+    </span><br>
+    Sheng Zhou, Zixiao Li, Longbiao Cheng, Jérôme Hadorn, Chang Gao, Qinyu Chen, Tobi Delbruck, Kwantae Kim, Shih-Chii Liu
+    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style="color: #485fc7">
+    A Unipolar IGZO TFT-Based 9.23 μW Operational Amplifier Achieving 73.7 dB Loop Gain and 554.6 kHz Bandwidth
     </span><br>
     Zhenhan Wang, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--biocas25.png" class="hover-biocas25"></div>
@@ -116,6 +122,15 @@ span.venue {font-style: italic;}
     <br><span style='color: black;'>
     📚 Open-Sourced Design Parameters </span>
   </td></tr>
+</tbody>
+</table>
+
+## 2025
+
+<center><img src='{{ site.base_url }}/img/group/travel/IMG_6681.jpeg' style='width:70%;'></center>
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/NewCAS64648.2025.11107089" target="_blank" class="pub-hover">
     A 2.3nA-to-205nA Clock-Tunable Dynamic Current Reference with a Built-in 2nd-Order Current-Mode Low-Pass Filter and Coarse-Fine Regulation    
@@ -138,13 +153,6 @@ span.venue {font-style: italic;}
     📚 Invited to IEEE TCAS-I
     </span>
   </td></tr>
-</tbody>
-</table>
-
-## 2025
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/TCASAI.2024.3507694" target="_blank" class="pub-hover">
     DeltaKWS: A 65nm 36nJ/Decision Bio-inspired Temporal-Sparsity-Aware Digital Keyword Spotting IC with 0.6V Near-Threshold SRAM
