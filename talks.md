@@ -111,16 +111,14 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">May. 2025</div>
         <div class="tab-cell" style="flex: 1.5;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
-        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://ccs.kaist.ac.kr" target="_blank">Prof. Seonghwan Cho</a>'s group</div>
+        <div class="tab-cell" style="flex: 2.5;"><a href="https://ccs.kaist.ac.kr" target="_blank">Prof. Seonghwan Cho</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
     Research Activities of IC Design
     <br>
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
-    Aalto Microelectronics Fair
-    <br>
-    Aalto University
+    Aalto Microelectronics Fair, Aalto University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Mar. 2025</div>
         <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
@@ -141,7 +139,7 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Dec. 2024</div>
         <div class="tab-cell" style="flex: 1.5;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
-        <div class="tab-cell" style="flex: 2.5;">Closed to Prof. Yoonmyung Lee's group</div>
+        <div class="tab-cell" style="flex: 2.5;"><a href="https://sites.google.com/view/skkuicas/home" target="_blank">Prof. Yoonmyung Lee</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -182,7 +180,7 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
         <div class="tab-cell" style="flex: 1.5;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
-        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://ssl.kaist.ac.kr" target="_blank">Prof. Hoi-Jun Yoo</a>'s group</div>
+        <div class="tab-cell" style="flex: 2.5;"><a href="https://ssl.kaist.ac.kr" target="_blank">Prof. Hoi-Jun Yoo</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -302,7 +300,7 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2021</div>
         <div class="tab-cell" style="flex: 1.5;">Daejeon, Korea <span class='emoji'>🇰🇷</span> (Virtual)</div>
-        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://ssl.kaist.ac.kr" target="_blank">Prof. Hoi-Jun Yoo</a>'s group</div>
+        <div class="tab-cell" style="flex: 2.5;"><a href="https://ssl.kaist.ac.kr" target="_blank">Prof. Hoi-Jun Yoo</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -311,9 +309,9 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
     <div class="img-container"><img src="./../img/icons/logo--knu.svg" class="hover-knu"></div>
     Kangwon National University
     <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Jun. 2021</div>
+        <div class="tab-cell" style="flex: 1;">Jun. 2019</div>
         <div class="tab-cell" style="flex: 1.5;">Chuncheon, Korea <span class='emoji'>🇰🇷</span></div>
-        <div class="tab-cell" style="flex: 2.5;">Closed to <a href="https://sites.google.com/view/kwbics" target="_blank">Prof. Joonsung Bae</a>'s group</div>
+        <div class="tab-cell" style="flex: 2.5;"><a href="https://sites.google.com/view/kwbics" target="_blank">Prof. Joonsung Bae</a>'s group</div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
