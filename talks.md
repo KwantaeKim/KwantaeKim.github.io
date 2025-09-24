@@ -30,6 +30,7 @@ tr:hover .hover-vlsic {left: -140px; top:calc(50% - 45px); visibility: visible; 
 tr:hover .hover-esscirc {left: -230px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-a-sscc {left: -180px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-cicc {left: -200px; top:calc(50% - 35px); visibility: visible; height: 60px;}
+tr:hover .hover-ekc25 {left: -220px; top:calc(50% - 20px); visibility: visible; height: 40px;}
 tr:hover .hover-iscas23 {left: -220px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-iscas19 {left: -250px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-iscas16 {left: -210px; top:calc(50% - 30px); visibility: visible; height: 70px;}
@@ -41,8 +42,9 @@ tr:hover .hover-sscs {left: -130px; top:calc(50% - 40px); visibility: visible; h
 tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-tsmc-oip24 {left: -350px; top:calc(50% - 35px); visibility: visible; height: 70px;}
 
-tr:hover .hover-aalto {left: -140px; top:calc(50% - 50px); visibility: visible; height: 100px;}
+tr:hover .hover-aalto {left: -140px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-tampere {left: -290px; top:calc(50% - 50px); visibility: visible; height: 110px;}
+tr:hover .hover-ucl {left: -240px; top:calc(50% - 35px); visibility: visible; height: 70px;}
 tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-tudelft {left: -180px; top:calc(50% - 40px); visibility: visible; height: 70px;}
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
@@ -93,6 +95,16 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--ucl.png" class="hover-ucl"></div>
+    University College London (UCL)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Sep. 2025</div>
+        <div class="tab-cell" style="flex: 4;">London, United Kingdom <span class='emoji'>🇬🇧</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     Introduction to TSirc Group
     <br>
@@ -351,10 +363,21 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
 
 <br><br>
 
-## Conferences
+## Conference Presentations
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <a href="https://www.ekc2025.org" target="_blank" class="pub-hover">
+    Low-Power Design Innovations in Integrated Circuits for Bioimpedance Sensors
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--ekc25.png" class="hover-ekc25"></div>
+    Europe-Korea Conference on Science and Technology (EKC)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Aug. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Vienna, Austria <span class='emoji'>🇦🇹</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank" class="pub-hover">
     A 3.11 μW 40 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors Exploiting Positive-Feedback-Assisted Gain Boosting

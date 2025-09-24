@@ -105,9 +105,9 @@ span.venue {font-style: italic;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <span style="color: #485fc7">
+    <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank" class="pub-hover">
     An 8.62-µW 75-dB DR<sub>SoC</sub> Fully-Integrated SoC for Spoken Language Understanding
-    </span><br>
+    </a><br>
     Sheng Zhou, Zixiao Li, Longbiao Cheng, Jérôme Hadorn, Chang Gao, Qinyu Chen, Tobi Delbruck, Kwantae Kim, Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
     <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>
@@ -168,6 +168,9 @@ span.venue {font-style: italic;}
     Sheng Zhou, Zixiao Li, Tobi Delbruck, Kwantae Kim, Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
     <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2025
+    <br><span style='color: black;'>
+    📚 Invited to IEEE JSSC
+    </span>
   </td></tr>
 </tbody>
 </table>

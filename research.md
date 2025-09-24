@@ -135,3 +135,5 @@ We focus on power-efficient analog/mixed-signal ICs for <b><i class="fa-solid fa
 
 <div style="margin-top: -1em;"></div>
 <img src="{{ site.base_url }}/img/icons/logo--okm-fin.png" width="50%">
+<br>
+<img src="{{ site.base_url }}/img/icons/logo--rcf.png" width="30%">

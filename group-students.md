@@ -157,6 +157,8 @@ toc_title: TSirc Group
       <div style="font-size: 1.5em; font-weight: bold;">Zhenhan Wang</div>
       <span style="display: block; height: 0.5em;"></span>
       Co-Supervised by <a href="https://www.aalto.fi/en/department-of-electronics-and-nanoengineering/kari-halonen-group" target="_blank">Prof. Kari Halonen</a>
+      <br>
+      Funded by <a href="https://research.fi/en/results/funding/81397" target="_blank">Research Council of Finland</a>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/zhenhan-wang-332837232/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 2em;"></span>
@@ -490,9 +492,13 @@ toc_title: TSirc Group
       <a href="https://www.linkedin.com/in/宇-薛-5018712bb/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 2em;"></span>
       <i class="fa-solid fa-graduation-cap"></i> <span style="font-weight: bold;">MSc in 2025</span>
+      <br>
+      <span style="margin-right: 1.4em;"></span>
+      → Firstack, China 🇨🇳
       <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
-      <br><span style="margin-right: 1.4em;"></span>
+      <br>
+      <span style="margin-right: 1.4em;"></span>
       <a href="https://doi.org/10.1109/NewCAS64648.2025.11107006" target="_blank" class="pub-hover">IEEE NEWCAS 2025</a>
       <span style="display: block; height: 0.5em;"></span>
       <span style="margin-right: 0.1em;"></span><i class="fa-regular fa-award fa-lg"></i><span style="margin-right: 0.1em;"></span>
