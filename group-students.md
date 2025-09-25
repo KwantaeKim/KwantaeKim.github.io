@@ -158,10 +158,19 @@ toc_title: TSirc Group
       <span style="display: block; height: 0.5em;"></span>
       Co-Supervised by <a href="https://www.aalto.fi/en/department-of-electronics-and-nanoengineering/kari-halonen-group" target="_blank">Prof. Kari Halonen</a>
       <br>
-      Funded by <a href="https://research.fi/en/results/funding/81397" target="_blank">Research Council of Finland</a>
+      Funded by <a href="https://research.fi/en/results/funding/81397" target="_blank">RCF Academy Project</a>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/zhenhan-wang-332837232/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-      <span style="display: block; height: 2em;"></span>
+      <span style="display: block; height: 1em;"></span>
+      <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
+      <br><span style="margin-right: 1.4em;"></span>
+      IEEE BioCAS 2025
+      <span style="display: block; height: 0.5em;"></span>
+      <span style="margin-right: 0.1em;"></span><i class="fa-regular fa-award fa-lg"></i><span style="margin-right: 0.1em;"></span>
+      <span style="font-weight: bold;">Honors</span>
+      <br><span style="margin-right: 1.4em;"></span>
+      IEEE CAS Student Travel Grant 2025
+      <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
       <br><span style="margin-right: 1.4em;"></span>Flexible Integrated Circuits
       <br><span style="margin-right: 1.4em;"></span>Voltage-to-Time Converter
@@ -243,6 +252,8 @@ toc_title: TSirc Group
       <div style="font-size: 1.5em; font-weight: bold;">Lingyun Yao</div>
       <span style="display: block; height: 0.5em;"></span>
       Co-Supervised by <a href="https://martinandraud.github.io" target="_blank">Prof. Martin Andraud</a>
+      <br>
+      Funded by <a href="https://cordis.europa.eu/project/id/101071179" target="_blank">EIC Pathfinder</a>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/lingyun-y-a4a38b200/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 2em;"></span>

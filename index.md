@@ -60,6 +60,14 @@ details > summary::marker {display: none;}
 
 ## News
 
+### ✈️ 24.Sep.2025
+
+{% include news-20250924.md %}
+
+### <i class="fa-solid fa-microchip fa-lg"></i> 12.Sep.2025
+
+{% include news-20250912.md %}
+
 ### 📚 02.Aug.2025
 
 {% include news-20250802.md %}
