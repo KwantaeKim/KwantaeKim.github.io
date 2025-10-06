@@ -120,7 +120,9 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--biocas25.png" class="hover-biocas25"></div>
     <span class="venue">IEEE Biomedical Circuits and Systems (BIOCAS)</span>, 2025
     <br><span style='color: black;'>
-    📚 Open-Sourced Design Parameters </span>
+    📚 Open-Sourced Design Parameters <br>
+    <i class="fa-solid fa-trophy fa-lg"></i> IEEE CASS Student Travel Grant Award
+    </span>
   </td></tr>
 </tbody>
 </table>
@@ -150,7 +152,12 @@ span.venue {font-style: italic;}
     <span class="venue">IEEE International NEWCAS Conference (NEWCAS)</span>, 2025
     <br><span style='color: black;'>
     📚 Open-Sourced Design Parameters <br>
-    📚 Invited to IEEE TCAS-I
+    <span style="margin-right: 0.15em;"></span>
+    <i class="fa-solid fa-envelope"></i>
+    <span style="margin-right: 0.15em;"></span>
+    Invited to IEEE TCAS-I
+    <br>
+    <i class="fa-solid fa-trophy fa-lg"></i> IEEE CASS Student Travel Grant Award
     </span>
   </td></tr>
   <tr><td class="tg-desc">

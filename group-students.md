@@ -548,6 +548,9 @@ toc_title: TSirc Group
       <a href="https://www.linkedin.com/in/kaiyuan-jiang-55ba652a2/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 2em;"></span>
       <i class="fa-solid fa-graduation-cap"></i> <span style="font-weight: bold;">MSc in 2025</span>
+      <br>
+      <span style="margin-right: 1.4em;"></span>
+      → Huawei, China 🇨🇳
       <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
       <br><span style="margin-right: 1.4em;"></span>

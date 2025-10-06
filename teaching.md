@@ -60,7 +60,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
-    How to use Microsoft Visio for academic drawing (1)
+    How to Use Microsoft Visio for Academic Drawing
     </span>
     <br>
     {% include youtube_thumbnail.html url="https://www.youtube.com/watch?v=RYU7SMZm3eo" width="20" %}
@@ -78,7 +78,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
-    Supervision of Master's Thesis
+    Supervision of Master's Thesis (3 ECTS)
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
@@ -170,7 +170,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       <div class="tab-cell" style="flex: 2;"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank">AICAS 2023</a> (<a href="https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html" target="_blank">Best Poster Award</a>) /
-        <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank">ISSCC 2025</a>
+        <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank">ISSCC 2025</a> / <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank">JSSC 2025</a>
       </div>
     </div>
   </td></tr>
@@ -293,6 +293,10 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;">Jun. 2018 ~ Aug. 2018</div>
       <div class="tab-cell" style="flex: 4;">BSc Student, KAIST, South Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;"></div>
+      <div class="tab-cell" style="flex: 4;">→ Apple, United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
 </tbody>
