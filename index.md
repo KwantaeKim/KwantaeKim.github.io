@@ -49,6 +49,18 @@ details > summary::marker {display: none;}
   outline: 2px solid #2fa093; /* a more subdued teal */
   outline-offset: 2px;
 }
+
+/* Emoji */
+@font-face {
+  font-family: NotoColorEmojiLimited;
+  unicode-range: U+1F1E6-1F1FF;
+  src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+.emoji {
+  font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+}
 </style>
 
 <link href="{{ site.base_url }}/emoji.css" rel="stylesheet" type='text/css'>
@@ -64,7 +76,7 @@ details > summary::marker {display: none;}
 
 {% include news-20250924.md %}
 
-### <i class="fa-solid fa-microchip fa-lg"></i> 12.Sep.2025
+### <i class="fa-regular fa-handshake"></i> 12.Sep.2025
 
 {% include news-20250912.md %}
 
@@ -84,7 +96,7 @@ details > summary::marker {display: none;}
 
 {% include news-20250403.md %}
 
-### <i class="fa-regular fa-handshake fa-lg"></i> 04.Mar.2025
+### <i class="fa-regular fa-handshake"></i> 04.Mar.2025
 
 {% include news-20250304.md %}
 

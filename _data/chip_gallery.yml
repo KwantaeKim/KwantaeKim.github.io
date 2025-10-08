@@ -1,9 +1,27 @@
+- title: 2024
+  images:
+    - link: /img/chips/2024-FENNEC.png
+      description: |-
+        ### FENNEC
+        TSMC 65nm CMOS <br>
+        Spoken Language Understanding <br>
+        **Kwantae**: Advisor, Designer (LNA)
+
+        <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank">ISSCC 2025</a>
+        <span style="margin-right: 1em;"></span>
+        <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank">JSSC 2025</a>
+
+        Tape-out: Feb. 2024 <br>
+        Fab-out: Jun. 2024
+      ratio: is-16by9
+
 - title: 2023
   images:
-    - link: /img/chips/2023-IIR-DRNN.png
+    - link: /img/chips/2023-DeltaKWS.png
       description: |-
-        ### IIR-DRNN
+        ### DeltaKWS
         TSMC 65nm CMOS <br>
+        Audio Keyword Spotting <br>
         **Kwantae**: Designer (Full-Custom SRAM)
 
         <a href="https://doi.org/10.1109/TCASAI.2024.3507694" target="_blank">TCASAI 2025</a>
@@ -18,6 +36,7 @@
       description: |-
         ### CochClass
         TSMC 65nm CMOS <br>
+        Audio Keyword Spotting <br>
         **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank">ISSCC 2022</a>
@@ -34,6 +53,7 @@
       description: |-
         ### BioZ2
         Samsung 65nm CMOS <br>
+        Bioimpedance Sensor <br>
         **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank">VLSI 2020</a>
@@ -52,6 +72,7 @@
       description: |-
         ### GLY
         Samsung 65nm CMOS <br>
+        Bioimpedance Sensor <br>
         **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank">ISSCC 2019</a>
@@ -68,6 +89,7 @@
       description: |-
         ### IOT
         TSMC 180nm HV CMOS <br>
+        Optical-Electrical Dual Tomography <br>
         **Kwantae**: Designer (Boost Converter)
 
         <a href="https://doi.org/10.1109/ISSCC.2019.8662504" target="_blank">ISSCC 2019</a>
@@ -82,6 +104,7 @@
       description: |-
         ### TOF TEST
         SMIC 180nm CMOS <br>
+        Bioimpedance Sensor <br>
         **Kwantae**: Top Architect
 
         <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank">ESSCIRC 2017</a>
@@ -93,6 +116,7 @@
       description: |-
         ### WIT
         Samsung 65nm CMOS <br>
+        Electrical Impedance Tomography <br>
         **Kwantae**: Layout Engineer (SAR ADC)
 
         <a href="https://doi.org/10.1109/ISSCC.2017.7870407" target="_blank">ISSCC 2017</a>
@@ -107,6 +131,7 @@
       description: |-
         ### ANES
         Samsung 65nm CMOS <br>
+        EEG-NIRS Multimodal Monitoring <br>
         **Kwantae**: Layout Engineer (SAR ADC)
 
         <a href="https://doi.org/10.1109/ISSCC.2017.7870455" target="_blank">ISSCC 2017</a>
