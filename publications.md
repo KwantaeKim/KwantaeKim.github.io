@@ -170,7 +170,7 @@ span.venue {font-style: italic;}
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank" class="pub-hover">
-    A 8.62μW, 75dB DR<sub>SoC</sub> End-to-End Spoken Language Understanding SoC with Channel-Level AGC and Temporal-Sparsity-Aware Streaming-Mode RNN
+    An 8.62μW, 75dB DR<sub>SoC</sub> End-to-End Spoken Language Understanding SoC with Channel-Level AGC and Temporal-Sparsity-Aware Streaming-Mode RNN
     </a><br>
     Sheng Zhou, Zixiao Li, Tobi Delbruck, Kwantae Kim, Shih-Chii Liu
     <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
