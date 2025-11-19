@@ -331,90 +331,6 @@ toc_title: TSirc Group
 
 <!-- ----------------------------------------------------------------------- -->
 
-### Bingzheng Qiu {#bingzheng-qiu}
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
-  <tr><td class="tg-desc">
-  <div class="tab-row" style="display: flex; align-items: center;">
-    <div class="tab-cell" style="flex: 2;">
-    <!-- First Tab -->
-    <center><img src="./../img/group/Bingzheng_Qiu.jpg" style='
-      height: 200px;
-      width: 100%;
-      max-width: 200px;
-      height: auto;
-      border-radius: 10px;'>
-    </center>
-    </div>
-    <div class="tab-cell" style="flex: 0.5;"></div>
-    <div class="tab-cell" style="flex: 5;">
-    <!-- Second Tab -->
-      <div style="font-size: 1.5em; font-weight: bold;">Bingzheng Qiu</div>
-      <span style="display: block; height: 0.5em;"></span>
-      <a href="https://www.linkedin.com/in/bingzheng-qiu-6976a2253/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-      <span style="display: block; height: 2em;"></span>
-      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
-      <br><span style="margin-right: 1.4em;"></span>Delay-Locked Loop (DLL)
-    </div>
-  </div>
-  </td></tr>
-</tbody>
-</table>
-
-<div style="font-size: 1.5em; font-weight: bold;">Employment</div>
-<span style="display: block;"></span>
-
-<!-- Internship -->
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;">
-    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Internship</div>
-  <div class="tab-cell" style="flex: 4;">Murata, Finland <span class='emoji'>🇫🇮</span></div>
-  <div class="tab-cell" style="flex: 1;">May 2024 ~</div>
-</div>
-
-<span style="display: block;"></span>
-<div style="font-size: 1.5em; font-weight: bold;">Education</div>
-<span style="display: block;"></span>
-
-<!-- MSc -->
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;">
-    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> MSc
-  </div>
-  <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
-  <div class="tab-cell" style="flex: 1;">Sep 2023 ~</div>
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"></div>
-  <div class="tab-cell" style="flex: 5;">Electronics and Nanotechnology</div>
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"></div>
-  <div class="tab-cell" style="flex: 5;">Full Scholarship</div>
-</div>
-
-<span style="display: block;"></span>
-
-<!-- BSc -->
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"><i class="fa-solid fa-graduation-cap"></i> BSc</div>
-  <div class="tab-cell" style="flex: 4;">SUSTech, China <span class='emoji'>🇨🇳</span></div>
-  <div class="tab-cell" style="flex: 1;">2023</div>
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"></div>
-  <div class="tab-cell" style="flex: 5;">Microelectronics Science and Engineering</div>
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"></div>
-  <div class="tab-cell" style="flex: 5;">Outstanding Undergraduate Thesis Award</div>
-</div>
-
-<br>
-
-<!-- ----------------------------------------------------------------------- -->
-
 ### Samuel Roeung {#samuel-roeung}
 
 <table class="tg">
@@ -505,7 +421,7 @@ toc_title: TSirc Group
       <i class="fa-solid fa-graduation-cap"></i> <span style="font-weight: bold;">MSc in 2025</span>
       <br>
       <span style="margin-right: 1.4em;"></span>
-      → Firstack, China 🇨🇳
+      → Firstack, China <span class='emoji'>🇨🇳</span>
       <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
       <br>
@@ -550,11 +466,46 @@ toc_title: TSirc Group
       <i class="fa-solid fa-graduation-cap"></i> <span style="font-weight: bold;">MSc in 2025</span>
       <br>
       <span style="margin-right: 1.4em;"></span>
-      → Huawei, China 🇨🇳
+      → Huawei, China <span class='emoji'>🇨🇳</span>
       <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
       <br><span style="margin-right: 1.4em;"></span>
       <a href="https://doi.org/10.1109/NewCAS64648.2025.11107089" target="_blank" class="pub-hover">IEEE NEWCAS 2025</a>
+    </div>
+  </div>
+  </td></tr>
+</tbody>
+</table>
+
+<!-- ----------------------------------------------------------------------- -->
+
+### Bingzheng Qiu {#bingzheng-qiu}
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+  <div class="tab-row" style="display: flex; align-items: center;">
+    <div class="tab-cell" style="flex: 2;">
+    <!-- First Tab -->
+    <center><img src="./../img/group/Bingzheng_Qiu.jpg" style='
+      height: 200px;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;'>
+    </center>
+    </div>
+    <div class="tab-cell" style="flex: 0.5;"></div>
+    <div class="tab-cell" style="flex: 5;">
+    <!-- Second Tab -->
+      <div style="font-size: 1.5em; font-weight: bold;">Bingzheng Qiu</div>
+      <span style="display: block; height: 0.5em;"></span>
+      <a href="https://www.linkedin.com/in/bingzheng-qiu-6976a2253/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-solid fa-graduation-cap"></i> <span style="font-weight: bold;">MSc in 2025</span>
+      <br>
+      <span style="margin-right: 1.4em;"></span>
+      → Murata, Finland <span class='emoji'>🇫🇮</span>
     </div>
   </div>
   </td></tr>

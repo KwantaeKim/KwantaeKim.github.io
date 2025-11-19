@@ -52,6 +52,9 @@ tr:hover .hover-kyunghee {left: -150px; top:calc(50% - 40px); visibility: visibl
 tr:hover .hover-seoultech {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 tr:hover .hover-yonsei {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 tr:hover .hover-skku {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-hanyang {left: -120px; top:calc(50% - 45px); visibility: visible; height: 95px;}
+tr:hover .hover-ajou {left: -120px; top:calc(50% - 45px); visibility: visible; height: 95px;}
+tr:hover .hover-dgist {left: -125px; top:calc(50% - 55px); visibility: visible; height: 110px;}
 tr:hover .hover-knu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-jbnu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-abbott {left: -190px; top:calc(50% - 15px); visibility: visible; height: 40px;}
@@ -95,6 +98,46 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    Innovations in Power-Efficient Bioimpedance Sensor ICs with Open-Source Approaches
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--dgist.png" class="hover-dgist"></div>
+    DGIST
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Daegu, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Innovations in Power-Efficient Bioimpedance Sensor ICs with Open-Source Approaches
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--ajou.png" class="hover-ajou"></div>
+    Ajou University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--hanyang.png" class="hover-hanyang"></div>
+    Hanyang University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Innovations in Power-Efficient Bioimpedance Sensor ICs with Open-Source Approaches
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei"></div>
+    Yonsei University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
     <br>

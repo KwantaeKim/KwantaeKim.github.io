@@ -11,6 +11,17 @@
         <span style="margin-right: 1em;"></span>
         <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank">JSSC 2025</a>
 
+        <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+        <a href="https://github.com/SensorsINI/fennec" target="_blank">
+        <i class="fa-brands fa-github fa-lg"></i>
+        Github
+        </a>
+        <br>
+        <a href="https://sensorsini.github.io/fennec/#introducing-fennec" target="_blank">
+        <i class="fa-solid fa-house"></i>
+        Webpage
+        </a>
+
         Tape-out: Feb. 2024 <br>
         Fab-out: Jun. 2024
       ratio: is-16by9
