@@ -54,7 +54,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 <!-- Body Part -->
 <!-- --------- -->
 
-## Lectures
+## Courses
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
@@ -68,6 +68,13 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;">Jan. 2026 ~ Apr. 2026</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 1;">
+        <a href="./../assets/ELEC-E3530/aliasing.html" target="_blank">
+          <i class="fa-solid fa-file-code"></i> Aliasing Demo
+        </a>
+      </div>
     </div>
   </td></tr>
 </tbody>

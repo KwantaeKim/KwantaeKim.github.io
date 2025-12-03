@@ -105,14 +105,6 @@ span.venue {font-style: italic;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank" class="pub-hover">
-    An 8.62-µW 75-dB DR<sub>SoC</sub> Fully-Integrated SoC for Spoken Language Understanding
-    </a><br>
-    Sheng Zhou, Zixiao Li, Longbiao Cheng, Jérôme Hadorn, Chang Gao, Qinyu Chen, Tobi Delbruck, Kwantae Kim, Shih-Chii Liu
-    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
-    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>
-  </td></tr>
-  <tr><td class="tg-desc">
     <span style="color: #485fc7">
     A Unipolar IGZO TFT-Based 9.23 μW Operational Amplifier Achieving 73.7 dB Loop Gain and 554.6 kHz Bandwidth
     </span><br>
@@ -133,6 +125,14 @@ span.venue {font-style: italic;}
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank" class="pub-hover">
+    An 8.62-µW 75-dB DR<sub>SoC</sub> Fully-Integrated SoC for Spoken Language Understanding
+    </a><br>
+    Sheng Zhou, Zixiao Li, Longbiao Cheng, Jérôme Hadorn, Chang Gao, Qinyu Chen, Tobi Delbruck, Kwantae Kim, Shih-Chii Liu
+    <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
+    <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2025
+  </td></tr>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/NewCAS64648.2025.11107089" target="_blank" class="pub-hover">
     A 2.3nA-to-205nA Clock-Tunable Dynamic Current Reference with a Built-in 2nd-Order Current-Mode Low-Pass Filter and Coarse-Fine Regulation    
@@ -288,7 +288,7 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--sscs.png" class="hover-sscs"></div>
     <span class="venue">IEEE Journal of Solid-State Circuits (JSSC)</span>, 2022
     <br><span style='color: black;'>
-    <i class="fa-solid fa-file-code fa-bounce fa-lg"></i> MATLAB/Verilog Code in <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">PhD Thesis</a> <br>
+    <i class="fa-solid fa-file-code fa-bounce fa-lg"></i> Open-Sourced MATLAB/Verilog Code in <a href="./../assets/KwantaeKim_PhD_Thesis.pdf#page=63" target="_blank">PhD Thesis</a> <br>
     <i class="fa-solid fa-file-pdf fa-lg"></i> <a href="https://doi.org/10.1109/TCSII.2023.3261062" target="_blank">Relevant Publication</a> </span>
   </td></tr>
   <tr><td class="tg-desc">

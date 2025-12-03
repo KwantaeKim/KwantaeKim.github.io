@@ -1,0 +1,207 @@
+<!--
+Aliasing Demo
+https://kwantaekim.github.io
+MIT License
+
+Copyright (c) 2025 Kwantae Kim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Aliasing Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js"></script>
+</head>
+
+<body style="margin:0; background:black; color:white; font-family:sans-serif;">
+
+  <h2 style="text-align:center;">Aliasing Demo</h2>
+  <h2 id="fpsGlobal" style="text-align:center; margin-top:-10px; margin-bottom:-10px; color:#bbb;">Detecting...</h2>
+  <h3 style="text-align:center; margin-bottom:-10px;">FPS: frame/s</h3>
+  <h3 style="text-align:center;">RPS: rotation/s</h3>
+
+  <!-- Canvas -->
+  <div style="display:flex; justify-content:center; margin-top:10px;">
+    <div id="canvas-holder"></div>
+  </div>
+
+  <!-- Controls (sliders removed, textboxes kept) -->
+  <div style="margin-top:20px; display:flex; justify-content:center; gap:80px;">
+
+    <!-- LEFT -->
+    <div>
+      <h3 style="text-align:center;">Left Clock</h3>
+
+      <label>Enter RPS:</label><br>
+      <input type="number" id="inputL" placeholder="1" value="1" step="1" style="width:80px;"><br>
+
+      <div id="infoL" style="margin-top:8px; font-size:1em; color:lightgray;"></div>
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+      <h3 style="text-align:center;">Right Clock</h3>
+
+      <label>Enter RPS:</label><br>
+      <input type="number" id="inputR" placeholder="30" value="30" step="1" style="width:80px;"><br>
+
+      <div id="infoR" style="margin-top:8px; font-size:1em; color:lightgray;"></div>
+    </div>
+
+  </div>
+
+  <br><br>
+
+  <!-- RESET BUTTON -->
+  <div style="text-align:center; margin-bottom:10px;">
+    <button id="resetBtn" 
+            style="padding:6px 18px; font-size:16px; border-radius:6px; cursor:pointer;">
+      Restart Clocks
+    </button>
+  </div>
+
+<script>
+  let angleL = 0;
+  let angleR = 0;
+
+  // Default RPS values (since sliders removed)
+  let userRPS_L = 1;
+  let userRPS_R = 30;
+
+  let fpsSamples = [];
+  let fpsCap = null;
+  let capStart = null;
+  let lastFrameTime = 0;
+
+  function setup() {
+    const canvas = createCanvas(700, 300);
+    canvas.parent("canvas-holder");
+
+    angleMode(RADIANS);
+    frameRate(240);
+    capStart = millis();
+
+    // Textbox handler for LEFT clock
+    document.getElementById("inputL").addEventListener("input", e => {
+      const v = parseFloat(e.target.value);
+      if (!isNaN(v) && v >= 0) userRPS_L = v;
+    });
+
+    // Textbox handler for RIGHT clock
+    document.getElementById("inputR").addEventListener("input", e => {
+      const v = parseFloat(e.target.value);
+      if (!isNaN(v) && v >= 0) userRPS_R = v;
+    });
+
+    // RESET
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      angleL = 0;
+      angleR = 0;
+    });
+  }
+
+  function draw() {
+    background(0);
+
+    // FPS detection
+    let now = millis();
+    let dt = now - lastFrameTime;
+    lastFrameTime = now;
+    let fps = dt > 0 ? 1000/dt : 0;
+
+    if (fpsCap === null && millis() - capStart < 2000) {
+      if (fps < 400) fpsSamples.push(fps);
+    }
+    if (fpsCap === null && millis() - capStart >= 2000 && fpsSamples.length > 0) {
+      let avg = fpsSamples.reduce((a,b)=>a+b,0) / fpsSamples.length;
+      fpsCap = Math.round(avg / 10) * 10;
+    }
+
+    let effectiveFPS = fpsCap ?? fps;
+
+    // Update global FPS text
+    const fpsText = fpsCap ? `🖥 ${fpsCap} fps` : "🖥 Detecting frame/sec ...";
+    document.getElementById("fpsGlobal").innerText = fpsText;
+
+    // Draw clocks
+    drawClock(175, 150, userRPS_L, "infoL", effectiveFPS, "L");
+    drawClock(525, 150, userRPS_R, "infoR", effectiveFPS, "R");
+  }
+
+  function drawClock(cx, cy, rps, infoId, fps, side) {
+    push();
+    translate(cx, cy);
+
+    stroke(255);
+    strokeWeight(2);
+    noFill();
+    ellipse(0, 0, 200, 200);
+
+    const radPerSec = rps * TWO_PI;
+    const radPerFrame = radPerSec / fps;
+
+    if (side === "L") angleL += radPerFrame;
+    else angleR += radPerFrame;
+
+    const angle = (side === "L") ? angleL : angleR;
+
+    stroke(255, 204, 0);
+    strokeWeight(4);
+    const r = 100;
+    const x = r * Math.cos(angle);
+    const y = r * Math.sin(angle);
+    line(0, 0, x, y);
+
+    noStroke();
+    fill(255, 204, 0);
+    ellipse(x, y, 12, 12);
+
+    pop();
+
+    // Update RPS text
+    document.getElementById(infoId).innerText = `🎯 RPS: ${rps.toFixed(2)}`;
+  }
+</script>
+
+<!-- Group Logo Footer -->
+<span style="display: block; height: 100px;"></span>
+<div style="
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    gap:10px; 
+    margin:10px 0;
+">
+  <a href="https://kwantaekim.github.io" target="_blank">
+  <img src="./../../favicon-rounded.png"
+       alt="TSirc Logo"
+       style="height:80px; opacity:0.95;">
+  </a>
+</div>
+
+<!-- Copyright Footer -->
+<div style="text-align:center; margin-bottom:30px; color:#777;">
+  <small>Copyright (c) 2025 Kwantae Kim</small>
+</div>
+
+</body>
+</html>
