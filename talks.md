@@ -47,6 +47,7 @@ tr:hover .hover-tampere {left: -290px; top:calc(50% - 50px); visibility: visible
 tr:hover .hover-ucl {left: -240px; top:calc(50% - 35px); visibility: visible; height: 70px;}
 tr:hover .hover-ucsc {left: -270px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-tudelft {left: -180px; top:calc(50% - 40px); visibility: visible; height: 70px;}
+tr:hover .hover-imec {left: -210px; top:calc(50% - 55px); visibility: visible; height: 110px;}
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-kyunghee {left: -150px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-seoultech {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
@@ -98,6 +99,16 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--imec.svg" class="hover-imec"></div>
+    imec
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Dec. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Leuven, Belgium <span class='emoji'>🇧🇪</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     Innovations in Power-Efficient Bioimpedance Sensor ICs with Open-Source Approaches
     <br>
