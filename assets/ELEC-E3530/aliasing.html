@@ -52,15 +52,15 @@ THE SOFTWARE.
     gap:10px;
     padding:10px 12px;
     border:1px solid var(--border);
-    border-radius:10px;               /* NVIDIA-ish: not super round */
-    background: var(--panel);         /* flat */
+    border-radius:10px;               
+    background: var(--panel);         
   }
 
-  /* Buttons: flat, crisp, green hover */
+  /* Buttons */
   .btn{
     appearance:none;
     border:1px solid var(--border);
-    background: var(--panel2);        /* flat */
+    background: var(--panel2);        
     color: var(--text);
     border-radius:10px;
     padding:9px 12px;
@@ -88,36 +88,25 @@ THE SOFTWARE.
     box-shadow: 0 0 0 3px rgba(118,185,0,0.25);
   }
 
-  /* PLUS buttons: neutral by default */
-  .btn.plus{
-    border-color: var(--border);
-  }
-
-  /* Green ONLY when hovered/focused */
+  /* PLUS buttons */
+  .btn.plus{ border-color: var(--border); }
   .btn.plus:hover{
     border-color: rgba(118,185,0,0.85);
     box-shadow: 0 0 0 3px rgba(118,185,0,0.25);
   }
 
-  .btn.plus:focus-visible{
-    outline: none;
-    border-color: rgba(118,185,0,0.85);
-    box-shadow: 0 0 0 3px rgba(118,185,0,0.25);
-  }
-
   .btn-reset{
-    font-size: 1.05rem;   /* or 17px */
+    font-size: 1.05rem;   
     font-weight: 700;
     padding: 12px 28px;
     min-width: 220px;
     letter-spacing: 0.3px;
   }
 
-  /* Fine-step buttons slightly narrower */
   .btn.fine{ min-width:70px; }
   .btn.coarse{ min-width:58px; }
 
-  /* Input: flat, green focus ring */
+  /* Input */
   .rps-input{
     width:92px;
     text-align:center;
@@ -135,21 +124,16 @@ THE SOFTWARE.
   .rps-current{
     display: inline-flex;
     align-items: center;
-
     margin-top: 10px;
     padding: 6px 12px;
-
     border-left: 3px solid var(--nv);
     background: rgba(255,255,255,0.03);
-
     color: rgba(255,255,255,0.92);
     font-weight: 650;
     letter-spacing: 0.2px;
-
     border-radius: 6px;
   }
 
-  /* Optional: label style to match */
   label{
     color: #fff;
     font-weight: 600;
@@ -163,59 +147,44 @@ THE SOFTWARE.
   <h3 style="text-align:center; margin-bottom:-10px;">FPS: frame/s</h3>
   <h3 style="text-align:center;">RPS: rotation/s</h3>
 
-  <!-- Canvas -->
   <div style="display:flex; justify-content:center; margin-top:10px;">
     <div id="canvas-holder"></div>
   </div>
 
-  <!-- Controls -->
   <div style="margin-top:20px; display:flex; justify-content:center; gap:80px;">
 
-    <!-- LEFT -->
     <div>
       <h3 style="text-align:center;">Left Clock</h3>
       <div class="rps-current"><span id="infoL"></span></div>
-
       <br><br>
-
       <label>Control RPS:</label><br>
       <div class="ctrl-row">
-        <button id="minus1L"  type="button" class="btn minus coarse">−1</button>
-        <button id="minus01L" type="button" class="btn minus fine">−0.1</button>
-      
+        <button id="minus1L"  type="button" class="btn minus coarse">-1</button>
+        <button id="minus01L" type="button" class="btn minus fine">-0.1</button>
         <input type="number" id="inputL" value="1" step="0.1" class="rps-input">
-      
         <button id="plus01L"  type="button" class="btn plus fine">+0.1</button>
         <button id="plus1L"   type="button" class="btn plus coarse">+1</button>
       </div>
-
     </div>
 
-    <!-- RIGHT -->
     <div>
       <h3 style="text-align:center;">Right Clock</h3>
       <div class="rps-current"><span id="infoR"></span></div>
-
       <br><br>
-
       <label>Control RPS:</label><br>
       <div class="ctrl-row">
-        <button id="minus1R"  type="button" class="btn minus coarse">−1</button>
-        <button id="minus01R" type="button" class="btn minus fine">−0.1</button>
-      
+        <button id="minus1R"  type="button" class="btn minus coarse">-1</button>
+        <button id="minus01R" type="button" class="btn minus fine">-0.1</button>
         <input type="number" id="inputR" value="30" step="0.1" class="rps-input">
-      
         <button id="plus01R"  type="button" class="btn plus fine">+0.1</button>
         <button id="plus1R"   type="button" class="btn plus coarse">+1</button>
       </div>
-
     </div>
 
   </div>
 
   <br><br>
 
-  <!-- RESET BUTTON -->
   <div style="text-align:center; margin-bottom:10px;">
     <button id="resetBtn" type="button" class="btn btn-reset">
       Restart Clocks
@@ -223,13 +192,15 @@ THE SOFTWARE.
   </div>
 
 <script>
-  let waveL = [];
-  let waveR = [];
+  let waveCosL = [];
+  let waveSinL = [];
+  
+  let waveCosR = [];
+  let waveSinR = [];
 
   let angleL = 0;
   let angleR = 0;
 
-  // Default RPS values (since sliders removed)
   let userRPS_L = 1;
   let userRPS_R = 30;
 
@@ -259,17 +230,13 @@ THE SOFTWARE.
     setRPS(side, +(v + delta).toFixed(2));
   }
 
-  function pushWaveSample(side, sample, maxLen) {
-    if (side === "L") {
-      waveL.push(sample);
-      if (waveL.length > maxLen) waveL.shift();
-    } else {
-      waveR.push(sample);
-      if (waveR.length > maxLen) waveR.shift();
-    }
+  // Generic helper to push to an array and limit size
+  function pushToBuffer(arr, val, maxLen) {
+    arr.push(val);
+    if (arr.length > maxLen) arr.shift();
   }
 
-  function drawWavePlot(x0, y0, w, h, data, label = "cos(x)") {
+  function drawWavePlot(x0, y0, w, h, data, label, lineColor) {
     push();
 
     // frame
@@ -282,31 +249,32 @@ THE SOFTWARE.
     line(x0, y0 + h/2, x0 + w, y0 + h/2);
 
     // label background
-    const labelText = label;
-    textSize(14);
+    textSize(12);
     textAlign(LEFT, TOP);
-
-    const pad = 4;
-    const tw = textWidth(labelText);
-    const th = 16;
+    const pad = 3;
+    const tw = textWidth(label);
+    const th = 14;
 
     noStroke();
-    fill(255); // white background
-    rect(x0 + 4 - pad, y0 + 4 - pad, tw + 2*pad, th + 2*pad, 4);
+    fill(255); // white bg for label
+    rect(x0 + 4 - pad, y0 + 4 - pad, tw + 2*pad, th + 2*pad, 3);
 
     // label text
-    fill(0); // black text
-    text(labelText, x0 + 4, y0 + 4);
+    fill(0);
+    text(label, x0 + 4, y0 + 4);
 
     // waveform
-    stroke(255, 204, 0);
+    stroke(lineColor);
+    strokeWeight(1.5);
     noFill();
     beginShape();
     const n = data.length;
     if (n >= 2) {
       for (let i = 0; i < n; i++) {
         const v = data[i]; // [-1, +1]
-        const x = x0 + (i * (w / (n - 1)));   // <-- stretch to full width
+        // stretch to full width
+        const x = x0 + (i * (w / (n - 1)));   
+        // map value to height
         const y = y0 + h/2 - v * (h * 0.45);
         vertex(x, y);
       }
@@ -317,7 +285,8 @@ THE SOFTWARE.
   }
 
   function setup() {
-    const canvas = createCanvas(700, 480);
+    // Increased height slightly to accommodate 2 stacked graphs
+    const canvas = createCanvas(700, 450);
     canvas.parent("canvas-holder");
 
     angleMode(RADIANS);
@@ -327,14 +296,13 @@ THE SOFTWARE.
     const inputL = document.getElementById("inputL");
     const inputR = document.getElementById("inputR");
 
-    // Attach button handlers AFTER DOM exists
-    // LEFT
+    // LEFT Controls
     document.getElementById("minus1L").addEventListener("click", () => adjustRPS("L", -1));
     document.getElementById("plus1L").addEventListener("click",  () => adjustRPS("L", +1));
     document.getElementById("minus01L").addEventListener("click", () => adjustRPS("L", -0.1));
     document.getElementById("plus01L").addEventListener("click",  () => adjustRPS("L", +0.1));
 
-    // RIGHT
+    // RIGHT Controls
     document.getElementById("minus1R").addEventListener("click", () => adjustRPS("R", -1));
     document.getElementById("plus1R").addEventListener("click",  () => adjustRPS("R", +1));
     document.getElementById("minus01R").addEventListener("click", () => adjustRPS("R", -0.1));
@@ -350,11 +318,14 @@ THE SOFTWARE.
       if (!isNaN(v) && v >= 0) userRPS_R = v;
     });
 
-
     // RESET
     document.getElementById("resetBtn").addEventListener("click", () => {
       angleL = 0;
       angleR = 0;
+      waveCosL = [];
+      waveSinL = [];
+      waveCosR = [];
+      waveSinR = [];
     });
   }
 
@@ -377,27 +348,43 @@ THE SOFTWARE.
 
     let effectiveFPS = fpsCap ?? fps;
 
-    // Update global FPS text
+    // FPS Text
     const fpsText = fpsCap ? `🖥 ${fpsCap} fps` : "🖥 Detecting frame/sec ...";
     document.getElementById("fpsGlobal").innerText = fpsText;
 
     // Draw clocks
-    drawClock(175, 150, userRPS_L, "infoL", effectiveFPS, "L");
-    drawClock(525, 150, userRPS_R, "infoR", effectiveFPS, "R");
-    // plots under each clock
-    drawWavePlot(175 - 150, 330, 300, 130, waveL); // left plot
-    drawWavePlot(525 - 150, 330, 300, 130, waveR); // right plot
+    // Shifted Y up slightly to make room for graphs below
+    drawClock(175, 130, userRPS_L, "infoL", effectiveFPS, "L");
+    drawClock(525, 130, userRPS_R, "infoR", effectiveFPS, "R");
+
+    // Colors
+    const colCos = color(255, 204, 0); // Yellow
+    const colSin = color(118, 185, 0); // Nvidia Green
+
+    // --- LEFT GRAPHS ---
+    // Top: Cos
+    drawWavePlot(25, 270, 300, 80, waveCosL, "cos(ɸ)", colCos);
+    // Bottom: Sin
+    drawWavePlot(25, 370, 300, 80, waveSinL, "sin(ɸ)", colSin);
+
+    // --- RIGHT GRAPHS ---
+    // Top: Cos
+    drawWavePlot(375, 270, 300, 80, waveCosR, "cos(ɸ)", colCos);
+    // Bottom: Sin
+    drawWavePlot(375, 370, 300, 80, waveSinR, "sin(ɸ)", colSin);
   }
 
   function drawClock(cx, cy, rps, infoId, fps, side) {
     push();
     translate(cx, cy);
 
+    // Clock Ring
     stroke(255);
     strokeWeight(2);
     noFill();
     ellipse(0, 0, 200, 200);
 
+    // Update Angle
     const radPerSec = rps * TWO_PI;
     const radPerFrame = radPerSec / fps;
 
@@ -405,10 +392,19 @@ THE SOFTWARE.
     else angleR += radPerFrame;
 
     const angle = (side === "L") ? angleL : angleR;
-    // Record cos(angle) into a rolling buffer (one sample per pixel of plot width)
-    const plotW = 100;
-    pushWaveSample(side, Math.cos(angle), plotW);
 
+    // Update Data Buffers
+    const plotW = 100; // number of samples to keep
+    
+    if (side === "L") {
+      pushToBuffer(waveCosL, Math.cos(angle), plotW);
+      pushToBuffer(waveSinL, Math.sin(angle), plotW);
+    } else {
+      pushToBuffer(waveCosR, Math.cos(angle), plotW);
+      pushToBuffer(waveSinR, Math.sin(angle), plotW);
+    }
+
+    // Draw Hand
     stroke(255, 204, 0);
     strokeWeight(4);
     const r = 100;
@@ -416,13 +412,14 @@ THE SOFTWARE.
     const y = r * Math.sin(angle);
     line(0, 0, x, y);
 
+    // Draw Dot
     noStroke();
     fill(255, 204, 0);
     ellipse(x, y, 12, 12);
 
     pop();
 
-    // Update RPS text
+    // Update Text info
     document.getElementById(infoId).innerText = `🎯 RPS: ${rps.toFixed(2)}`;
   }
 </script>
