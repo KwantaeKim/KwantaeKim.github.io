@@ -63,6 +63,9 @@ tr:hover .hover-stjude {left: -450px; top:calc(50% - 15px); visibility: visible;
 tr:hover .hover-murata {left: -180px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; height: 40px;}
 
+tr:hover .hover-koses {left: -130px; top:calc(50% - 35px); visibility: visible; height: 70px;}
+tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; height: 90px;}
+
 /* Hyperlink */
 .pub-hover {
   /* color: black; default #4E4E4E */
@@ -93,7 +96,7 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
 <!-- Body Part -->
 <!-- --------- -->
 
-## Talks
+## Seminar Talks
 
 ### 2025
 
@@ -507,6 +510,36 @@ tr:hover .hover-nokia {left: -200px; top:calc(50% - 20px); visibility: visible; 
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    AI, Memory, Energy, and Chip Design
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--koses.png" class="hover-koses"></div>
+    Korean Scientists and Engineers in Finland (KOSES)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Helsinki, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Faculty Job Hunting in Europe/US
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--koses.png" class="hover-koses"></div>
+    Korean Scientists and Engineers in Finland (KOSES)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Faculty Job Hunting in Europe/US
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--kseas.png" class="hover-kseas"></div>
+    Korean Scientist and Engineers Association in Switzerland (KSEAS)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">May. 2024</div>
+        <div class="tab-cell" style="flex: 4;">Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     A 0.5V, 6.2μW, 0.059mm2 Sinusoidal Current Generator IC with 0.088% THD for Bio-Impedance Sensing
     <br>
