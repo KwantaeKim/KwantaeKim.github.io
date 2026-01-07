@@ -177,6 +177,8 @@ span.venue {font-style: italic;}
     <span class="venue">IEEE International Solid-State Circuits Conference (ISSCC)</span>, 2025
     <br><span style='color: black;'>
     📚 Invited to IEEE JSSC
+    <br>
+    <i class="fa-solid fa-trophy fa-lg"></i> Demonstration Session Award
     </span>
   </td></tr>
 </tbody>

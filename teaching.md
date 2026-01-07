@@ -70,11 +70,12 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 1;">
+      <div class="tab-cell" style="flex: 2;">
         <a href="./../assets/ELEC-E3530/aliasing.html" target="_blank">
           <i class="fa-solid fa-file-code"></i> Aliasing Demo
         </a>
       </div>
+      <div class="tab-cell" style="flex: 4;"><a href="https://youtube.com/playlist?list=PLmK06TkPUUKo-2LmZfhBpbcLTjFOxk2WJ" target="_blank"><i class="fa-brands fa-youtube fa-bounce fa-lg"></i> Video</a></div>
     </div>
   </td></tr>
 </tbody>
