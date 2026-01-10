@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_0b0bedb993de789aa40d06ff8fb68c82 {
+                #map_81f6fb60970e3e8a399e8658942aca42 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -44,16 +44,16 @@
     
     <style>.leaflet-container { height: 100% !important; }</style>
     
-            <div class="folium-map" id="map_0b0bedb993de789aa40d06ff8fb68c82" ></div>
+            <div class="folium-map" id="map_81f6fb60970e3e8a399e8658942aca42" ></div>
         
 </body>
 <script>
     
     
-            var map_0b0bedb993de789aa40d06ff8fb68c82 = L.map(
-                "map_0b0bedb993de789aa40d06ff8fb68c82",
+            var map_81f6fb60970e3e8a399e8658942aca42 = L.map(
+                "map_81f6fb60970e3e8a399e8658942aca42",
                 {
-                    center: [40.0, 10.0],
+                    center: [40.0, -15.0],
                     crs: L.CRS.EPSG3857,
                     zoom: 2,
                     zoomControl: true,
@@ -66,43 +66,28 @@
 
         
     
-            var tile_layer_3b1772dbfd1657743933f3faec1c4b33 = L.tileLayer(
+            var tile_layer_c456f0fb1a013e447bd14f69c0512fd0 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_3b1772dbfd1657743933f3faec1c4b33.addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+            tile_layer_c456f0fb1a013e447bd14f69c0512fd0.addTo(map_81f6fb60970e3e8a399e8658942aca42);
         
     
-            var marker_55142f98926bc1f0425a24bc67f29fd4 = L.marker(
+            var marker_1bc8817029de9ad0d281cbbfc8a92d1a = L.marker(
                 [37.785426, -122.404493],
                 {}
-            ).addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+            ).addTo(map_81f6fb60970e3e8a399e8658942aca42);
         
     
-            var icon_a0271e3f28305c68b79780f2de16ea6a = L.AwesomeMarkers.icon(
+            var icon_58bd4ce2a3b5f7c71e9bba7a1eac1c15 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
             );
-            marker_55142f98926bc1f0425a24bc67f29fd4.setIcon(icon_a0271e3f28305c68b79780f2de16ea6a);
+            marker_1bc8817029de9ad0d281cbbfc8a92d1a.setIcon(icon_58bd4ce2a3b5f7c71e9bba7a1eac1c15);
         
     
-        var popup_2b3ea40f02c032c180e75c756e958597 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_6726fdacf6b119331d9c9c845b064b92 = $(`<div id="html_6726fdacf6b119331d9c9c845b064b92" style="width: 100.0%; height: 100.0%;"><a href="https://www.isscc.org" target="_blank"><img src="./img/icons/logo--isscc.png" style="width: 100px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
-                popup_2b3ea40f02c032c180e75c756e958597.setContent(html_6726fdacf6b119331d9c9c845b064b92);
-            
-        
-
-        marker_55142f98926bc1f0425a24bc67f29fd4.bindPopup(popup_2b3ea40f02c032c180e75c756e958597)
-        ;
-
-        
-    
-    
-            marker_55142f98926bc1f0425a24bc67f29fd4.bindTooltip(
+            marker_1bc8817029de9ad0d281cbbfc8a92d1a.bindTooltip(
                 `<div>
                      <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE ISSCC 2026</b><br>San Francisco<br>United States <span class="emoji">🇺🇸</span></div></div>
                  </div>`,
@@ -110,139 +95,79 @@
             );
         
     
-            var marker_283684ead13a2b4b2e79db73b55415f0 = L.marker(
-                [42.359208, -71.027212],
+            var marker_140e045e31d04c28b155db5a8f8d6b2e = L.marker(
+                [47.613711, -122.334167],
                 {}
-            ).addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+            ).addTo(map_81f6fb60970e3e8a399e8658942aca42);
         
     
-            var icon_0f4c274dc8413aa0a1deeec37b5cd2e2 = L.AwesomeMarkers.icon(
+            var icon_6cf2ad8a72036aa745d6c0993abc75c3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
             );
-            marker_283684ead13a2b4b2e79db73b55415f0.setIcon(icon_0f4c274dc8413aa0a1deeec37b5cd2e2);
+            marker_140e045e31d04c28b155db5a8f8d6b2e.setIcon(icon_6cf2ad8a72036aa745d6c0993abc75c3);
         
     
-        var popup_fa014074f9343c9e342b1dbfbca8ded8 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_253696074557ea9a76110f05058a4a57 = $(`<div id="html_253696074557ea9a76110f05058a4a57" style="width: 100.0%; height: 100.0%;"><a href="https://www.ieee-cicc.org" target="_blank"><img src="./img/icons/logo--cicc.png" style="width: 150px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
-                popup_fa014074f9343c9e342b1dbfbca8ded8.setContent(html_253696074557ea9a76110f05058a4a57);
-            
-        
-
-        marker_283684ead13a2b4b2e79db73b55415f0.bindPopup(popup_fa014074f9343c9e342b1dbfbca8ded8)
-        ;
-
-        
-    
-    
-            marker_283684ead13a2b4b2e79db73b55415f0.bindTooltip(
+            marker_140e045e31d04c28b155db5a8f8d6b2e.bindTooltip(
                 `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE CICC 2025</b><br>Boston<br>United States <span class="emoji">🇺🇸</span></div></div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE CICC 2026</b><br>Seattle<br>United States <span class="emoji">🇺🇸</span></div></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_83b25cdeb1051fd9dac3d15c23bbc0a6 = L.marker(
-                [34.986206, 135.752487],
+            var marker_3b1ea1e4b7aeccf4ac1221be41f4fd38 = L.marker(
+                [21.283041, -157.837055],
                 {}
-            ).addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+            ).addTo(map_81f6fb60970e3e8a399e8658942aca42);
         
     
-            var icon_f9b652ba534ba0c8139a508abbb99c41 = L.AwesomeMarkers.icon(
+            var icon_677422430ffee946d79b5ad0cb155af6 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
             );
-            marker_83b25cdeb1051fd9dac3d15c23bbc0a6.setIcon(icon_f9b652ba534ba0c8139a508abbb99c41);
+            marker_3b1ea1e4b7aeccf4ac1221be41f4fd38.setIcon(icon_677422430ffee946d79b5ad0cb155af6);
         
     
-        var popup_bd98320aa8dd11b508587c38d4d783e2 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_d0aa5fc21be6cea873b29bdd129609ce = $(`<div id="html_d0aa5fc21be6cea873b29bdd129609ce" style="width: 100.0%; height: 100.0%;"><a href="https://www.vlsisymposium.org" target="_blank"><img src="./img/icons/logo--vlsi.png" style="width: 110px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
-                popup_bd98320aa8dd11b508587c38d4d783e2.setContent(html_d0aa5fc21be6cea873b29bdd129609ce);
-            
-        
-
-        marker_83b25cdeb1051fd9dac3d15c23bbc0a6.bindPopup(popup_bd98320aa8dd11b508587c38d4d783e2)
-        ;
-
-        
-    
-    
-            marker_83b25cdeb1051fd9dac3d15c23bbc0a6.bindTooltip(
+            marker_3b1ea1e4b7aeccf4ac1221be41f4fd38.bindTooltip(
                 `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE VLSI Symposium 2025</b><br>Kyoto<br>Japan <span class="emoji">🇯🇵</span></div></div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE VLSI Symposium 2026</b><br>Hawaii<br>United States <span class="emoji">🇺🇸</span></div></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_4ae3c757aa86359809cf650f6069acde = L.marker(
-                [48.149555, 11.567753],
+            var marker_5979f555dbccc3bddcae8167e8b15848 = L.marker(
+                [39.567384, 2.629082],
                 {}
-            ).addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+            ).addTo(map_81f6fb60970e3e8a399e8658942aca42);
         
     
-            var icon_2cb9091dee04e04944c2140d2a9ccce6 = L.AwesomeMarkers.icon(
+            var icon_be0340e25a815220575dca98e642f08e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
             );
-            marker_4ae3c757aa86359809cf650f6069acde.setIcon(icon_2cb9091dee04e04944c2140d2a9ccce6);
+            marker_5979f555dbccc3bddcae8167e8b15848.setIcon(icon_be0340e25a815220575dca98e642f08e);
         
     
-        var popup_077cc52f099d80f4565c8d5fd17d6445 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_9099421d7aa36a70c03c9ad72e4e3b78 = $(`<div id="html_9099421d7aa36a70c03c9ad72e4e3b78" style="width: 100.0%; height: 100.0%;"><a href="https://www.esserc2025.org" target="_blank"><img src="./img/icons/logo--esserc25.png" style="width: 200px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
-                popup_077cc52f099d80f4565c8d5fd17d6445.setContent(html_9099421d7aa36a70c03c9ad72e4e3b78);
-            
-        
-
-        marker_4ae3c757aa86359809cf650f6069acde.bindPopup(popup_077cc52f099d80f4565c8d5fd17d6445)
-        ;
-
-        
-    
-    
-            marker_4ae3c757aa86359809cf650f6069acde.bindTooltip(
+            marker_5979f555dbccc3bddcae8167e8b15848.bindTooltip(
                 `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE ESSERC 2025</b><br>Munich<br>Germany <span class="emoji">🇩🇪</span></div></div>
+                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE ESSERC 2026</b><br>Palma<br>Spain <span class="emoji">🇪🇸</span></div></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_b680e8baa0b0f91edee828033e577a35 = L.marker(
+            var marker_5e621e92884497812e0e4bd05178ad47 = L.marker(
                 [36.37496, 127.391453],
                 {}
-            ).addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+            ).addTo(map_81f6fb60970e3e8a399e8658942aca42);
         
     
-            var icon_cc562c66a62ac76f477a382e4f697435 = L.AwesomeMarkers.icon(
+            var icon_dcae9db48a46442269d5b3e025d32aaf = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
             );
-            marker_b680e8baa0b0f91edee828033e577a35.setIcon(icon_cc562c66a62ac76f477a382e4f697435);
+            marker_5e621e92884497812e0e4bd05178ad47.setIcon(icon_dcae9db48a46442269d5b3e025d32aaf);
         
     
-        var popup_9651400f28c7823b9ae96272fa74f7b9 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_33bc4a5d50470d03e7591b69ded48db9 = $(`<div id="html_33bc4a5d50470d03e7591b69ded48db9" style="width: 100.0%; height: 100.0%;"><a href="https://a-sscc2025.org" target="_blank"><img src="./img/icons/logo--a-sscc.png" style="width: 150px; height: auto; background-color:False; border-radius: 5px;"></a></div>`)[0];
-                popup_9651400f28c7823b9ae96272fa74f7b9.setContent(html_33bc4a5d50470d03e7591b69ded48db9);
-            
-        
-
-        marker_b680e8baa0b0f91edee828033e577a35.bindPopup(popup_9651400f28c7823b9ae96272fa74f7b9)
-        ;
-
-        
-    
-    
-            marker_b680e8baa0b0f91edee828033e577a35.bindTooltip(
+            marker_5e621e92884497812e0e4bd05178ad47.bindTooltip(
                 `<div>
                      <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>IEEE A-SSCC 2025</b><br>Daejeon<br>South Korea <span class="emoji">🇰🇷</span></div></div>
                  </div>`,
@@ -251,28 +176,28 @@
         
     
 
-            var geocoderOpts_geocoder_2e78552ca4050b22739f4894fc942e14 = {"collapsed": false, "defaultMarkGeocode": true, "position": "topright", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
+            var geocoderOpts_geocoder_d1d4b15c1d8d5090949d067f7e7b6573 = {"collapsed": false, "defaultMarkGeocode": true, "position": "topright", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
 
             // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_2e78552ca4050b22739f4894fc942e14 = geocoderOpts_geocoder_2e78552ca4050b22739f4894fc942e14["provider"];
+            var geocoderName_geocoder_d1d4b15c1d8d5090949d067f7e7b6573 = geocoderOpts_geocoder_d1d4b15c1d8d5090949d067f7e7b6573["provider"];
 
-            var customGeocoder_geocoder_2e78552ca4050b22739f4894fc942e14 = L.Control.Geocoder[ geocoderName_geocoder_2e78552ca4050b22739f4894fc942e14 ](
-                geocoderOpts_geocoder_2e78552ca4050b22739f4894fc942e14['providerOptions']
+            var customGeocoder_geocoder_d1d4b15c1d8d5090949d067f7e7b6573 = L.Control.Geocoder[ geocoderName_geocoder_d1d4b15c1d8d5090949d067f7e7b6573 ](
+                geocoderOpts_geocoder_d1d4b15c1d8d5090949d067f7e7b6573['providerOptions']
             );
-            geocoderOpts_geocoder_2e78552ca4050b22739f4894fc942e14["geocoder"] = customGeocoder_geocoder_2e78552ca4050b22739f4894fc942e14;
+            geocoderOpts_geocoder_d1d4b15c1d8d5090949d067f7e7b6573["geocoder"] = customGeocoder_geocoder_d1d4b15c1d8d5090949d067f7e7b6573;
 
             L.Control.geocoder(
-                geocoderOpts_geocoder_2e78552ca4050b22739f4894fc942e14
+                geocoderOpts_geocoder_d1d4b15c1d8d5090949d067f7e7b6573
             ).on('markgeocode', function(e) {
-                var zoom = geocoderOpts_geocoder_2e78552ca4050b22739f4894fc942e14['zoom'] || map_0b0bedb993de789aa40d06ff8fb68c82.getZoom();
-                map_0b0bedb993de789aa40d06ff8fb68c82.setView(e.geocode.center, zoom);
-            }).addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+                var zoom = geocoderOpts_geocoder_d1d4b15c1d8d5090949d067f7e7b6573['zoom'] || map_81f6fb60970e3e8a399e8658942aca42.getZoom();
+                map_81f6fb60970e3e8a399e8658942aca42.setView(e.geocode.center, zoom);
+            }).addTo(map_81f6fb60970e3e8a399e8658942aca42);
 
         
     
             L.control.fullscreen(
                 {"forceSeparateButton": true, "position": "topright", "title": "Expand me", "titleCancel": "Exit me"}
-            ).addTo(map_0b0bedb993de789aa40d06ff8fb68c82);
+            ).addTo(map_81f6fb60970e3e8a399e8658942aca42);
         
 </script>
 </html>

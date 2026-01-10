@@ -319,6 +319,29 @@ toc_title: TSirc Group
   <div class="underline"></div>
 </div>
 
+<!-- ISSCC -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.3;">
+    <b>Demo Session Award</b>
+  </div>
+  <div class="tab-cell" style="flex: 2.7;">
+    <span style="margin-right: 0.2em;"></span>
+    <i class="fa-solid fa-user"></i>
+    <span style="margin-right: 0.2em;"></span>
+    Co-Recipient
+  </div>
+  <div class="tab-cell" style="flex: 2;">2025</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1;">
+    <span style="margin-right: 2em;"></span>
+    • <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank" class="pub-hover">
+    IEEE ISSCC 2025</a>
+  </div>
+</div>
+
+<span style="display: block;"></span>
+
 <!-- Event Hosting Grant -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.3;">
@@ -520,7 +543,7 @@ toc_title: TSirc Group
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
     <span style="margin-right: 2em;"></span>
-    • IEEE JSSC, TBioCAS, TCAS-I, TCAS-II, TCASAI, SSC-L, TIM, Sensors Journal
+    • IEEE JSSC, TBioCAS, TCAS-I, TCAS-II, TCASAI, TVLSI, SSC-L, TIM, Sensors Journal
   </div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
