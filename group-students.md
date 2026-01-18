@@ -327,69 +327,7 @@ toc_title: TSirc Group
 
 <span style="display: block; height: 10em;"></span>
 
-## MSc Students
-
-<!-- ----------------------------------------------------------------------- -->
-
-### Samuel Roeung {#samuel-roeung}
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
-  <tr><td class="tg-desc">
-  <div class="tab-row" style="display: flex; align-items: center;">
-    <div class="tab-cell" style="flex: 2;">
-    <!-- First Tab -->
-    <center><img src="./../img/group/Samuel_Roeung.jpg" style='
-      height: 200px;
-      width: 100%;
-      max-width: 200px;
-      height: auto;
-      border-radius: 10px;'>
-    </center>
-    </div>
-    <div class="tab-cell" style="flex: 0.5;"></div>
-    <div class="tab-cell" style="flex: 5;">
-    <!-- Second Tab -->
-      <div style="font-size: 1.5em; font-weight: bold;">Samuel Roeung</div>
-      <span style="display: block; height: 2em;"></span>
-      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
-      <br><span style="margin-right: 1.4em;"></span>Temperature Sensor
-    </div>
-  </div>
-  </td></tr>
-</tbody>
-</table>
-
-<span style="display: block;"></span>
-<div style="font-size: 1.5em; font-weight: bold;">Education</div>
-<span style="display: block;"></span>
-
-<!-- MSc -->
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;">
-    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> MSc</div>
-  <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
-  <div class="tab-cell" style="flex: 1;">2021 ~</div>
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"></div>
-  <div class="tab-cell" style="flex: 5;">Micro and Nanoelectronic Circuit Design</div>
-</div>
-
-<span style="display: block;"></span>
-
-<!-- BSc -->
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"><i class="fa-solid fa-graduation-cap"></i> BSc</div>
-  <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
-  <div class="tab-cell" style="flex: 1;">2021</div>
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.5;"></div>
-  <div class="tab-cell" style="flex: 5;">Electrical Engineering + Industrial Engineering</div>
-</div>
-
-<span style="display: block; height: 10em;"></span>
+<!-- ## MSc Students -->
 
 ## Alunmi
 
