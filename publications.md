@@ -100,7 +100,24 @@ span.venue {font-style: italic;}
 \*Co-First Authors
 <!-- <span style="color: #485fc7"> -->
 
-## Accepted
+## 2026
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
+  <tr><td class="tg-desc">
+    <span style="color: #485fc7">
+    A 1.92µm Pitch Current-Controlled Oscillator ADC Array Featuring Charge-Injection-Based Two-Stage Conversion for In-Memory Computing
+    </span><br>
+    David Iselin, Kyeongwon Jeong, Tim Keller, Giorgio Cristiano, Kwantae Kim, Woojun Choi, Oscar Toomey, Abhairaj Singh, Athanasios Vasilopoulos, Abu Sebastian, Manuel Le Gallo, Taekwang Jang
+    <div class="img-container"><img src="./../img/icons/logo--cicc.png" class="hover-cicc"></div>
+    <span class="venue">IEEE Custom Integrated Circuits Conference (CICC)</span>, 2026
+  </td></tr>
+</tbody>
+</table>
+
+## 2025
+
+<center><img src='{{ site.base_url }}/img/group/travel/IMG_6681.jpeg' style='width:70%;'></center>
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
@@ -116,15 +133,6 @@ span.venue {font-style: italic;}
     <i class="fa-solid fa-trophy fa-lg"></i> IEEE CASS Student Travel Grant Award
     </span>
   </td></tr>
-</tbody>
-</table>
-
-## 2025
-
-<center><img src='{{ site.base_url }}/img/group/travel/IMG_6681.jpeg' style='width:70%;'></center>
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank" class="pub-hover">
     An 8.62-µW 75-dB DR<sub>SoC</sub> Fully-Integrated SoC for Spoken Language Understanding
