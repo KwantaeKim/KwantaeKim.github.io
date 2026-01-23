@@ -199,7 +199,13 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       <div class="tab-cell" style="flex: 2;"></div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://doi.org/10.1109/AICAS57966.2023.10168561" target="_blank">AICAS 2023</a> (<a href="https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html" target="_blank">Best Poster Award</a>) /
-        <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank">ISSCC 2025</a> / <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank">JSSC 2025</a>
+        <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank">ISSCC 2025 (Best Demo Award)</a>
+      </div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;"></div>
+      <div class="tab-cell" style="flex: 4;">
+        <a href="https://doi.org/10.1109/JSSC.2025.3602936" target="_blank">JSSC 2025</a>
       </div>
     </div>
   </td></tr>
@@ -214,6 +220,12 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     <div class="tab-row">
       <div class="tab-cell" style="flex: 2;">Mar. 2024 ~ Jul. 2024</div>
       <div class="tab-cell" style="flex: 4;">MSc Student, ETH Zurich, Switzerland <span class='emoji'>🇨🇭</span></div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;"></div>
+      <div class="tab-cell" style="flex: 4;">
+        CICC 2026
+      </div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
