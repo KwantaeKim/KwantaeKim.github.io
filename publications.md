@@ -122,9 +122,9 @@ span.venue {font-style: italic;}
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
-    <span style="color: #485fc7">
+    <a href="https://doi.org/10.1109/BioCAS67066.2025.00109" target="_blank" class="pub-hover">
     A Unipolar IGZO TFT-Based 9.23 μW Operational Amplifier Achieving 73.7 dB Loop Gain and 554.6 kHz Bandwidth
-    </span><br>
+    </a><br>
     Zhenhan Wang, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--biocas25.png" class="hover-biocas25"></div>
     <span class="venue">IEEE Biomedical Circuits and Systems (BIOCAS)</span>, 2025
