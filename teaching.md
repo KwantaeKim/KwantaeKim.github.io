@@ -75,7 +75,16 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
           <i class="fa-solid fa-file-code"></i> Aliasing Demo
         </a>
       </div>
-      <div class="tab-cell" style="flex: 4;"><a href="https://youtube.com/playlist?list=PLmK06TkPUUKo-2LmZfhBpbcLTjFOxk2WJ" target="_blank"><i class="fa-brands fa-youtube fa-bounce fa-lg"></i> Video</a></div>
+      <div class="tab-cell" style="flex: 0.6;">
+        <a href="https://youtube.com/playlist?list=PLmK06TkPUUKo-2LmZfhBpbcLTjFOxk2WJ" target="_blank">
+          <i class="fa-brands fa-youtube fa-bounce fa-lg"></i> Video
+        </a>
+      </div>
+      <div class="tab-cell" style="flex: 3.4;">
+        <a href="https://github.com/KwantaeKim" target="_blank">
+          <i class="fa-brands fa-github fa-bounce fa-lg"></i> Github
+        </a>
+      </div>
     </div>
   </td></tr>
 </tbody>
