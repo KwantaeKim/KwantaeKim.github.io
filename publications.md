@@ -186,7 +186,7 @@ span.venue {font-style: italic;}
     <br><span style='color: black;'>
     📚 Invited to IEEE JSSC
     <br>
-    <i class="fa-solid fa-trophy fa-lg"></i> Demonstration Session Award
+    <i class="fa-solid fa-trophy fa-lg"></i> ISSCC Demonstration Award
     </span>
   </td></tr>
 </tbody>
