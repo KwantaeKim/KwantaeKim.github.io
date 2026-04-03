@@ -31,6 +31,7 @@ toc_title: Contents
 tr:hover .hover-aalto {left: -140px; top:calc(50% - 50px); visibility: visible; height: 100px;}
 tr:hover .hover-kaist {left: -200px; top:calc(50% - 20px); visibility: visible; height: 50px;}
 tr:hover .hover-ethz {left: -245px; top:calc(50% - 20px); visibility: visible; height: 50px;}
+tr:hover .hover-ucsd {left: -110px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 tr:hover .hover-iitbombay {left: -105px; top:calc(50% - 35px); visibility: visible; height: 80px;}
 tr:hover .hover-iitindore {left: -100px; top:calc(50% - 35px); visibility: visible; height: 80px;}
 tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: visible; height: 90px;}
@@ -114,6 +115,16 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    Teaching in Executive Education (2 ECTS)
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    </span>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Apr. 2026 ~ May. 2026</div>
+      <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
     Supervision of Master's Thesis (3 ECTS)
@@ -356,6 +367,19 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <div class="tab-row" style='color: #4A61C8;'>
+      <div class="tab-cell" style="flex: 2;">Srijith Pakala</div>
+      <div class="img-container"><img src="./../img/icons/logo--ucsd.svg" class="hover-ucsd"></div>
+      <div class="tab-cell" style="flex: 4;">
+        <a href="https://www.linkedin.com/in/srijith-reddy-pakala/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      </div>
+    </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Mar. 2026 ~ </div>
+      <div class="tab-cell" style="flex: 4;">MSc Student, UC San Diego, United States <span class='emoji'>🇺🇸</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     <div class="tab-row" style='color: #4A61C8;'>
       <div class="tab-cell" style="flex: 2;">Rahul Sharma</div>
