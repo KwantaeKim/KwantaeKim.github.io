@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_761af73289fae59bda9743d07d73a587 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+<link rel="stylesheet" type="text/css" href="../emoji.css"></head>
+<body>
+    
+    <style>.leaflet-container { height: 100% !important; }</style>
+    
+            <div class="folium-map" id="map_761af73289fae59bda9743d07d73a587" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_761af73289fae59bda9743d07d73a587 = L.map(
+                "map_761af73289fae59bda9743d07d73a587",
+                {
+                    center: [40.0, -15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: true,
+                    lang: "en",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d7a6a30330491fdfc5bf3da5fe9a6a3f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_d7a6a30330491fdfc5bf3da5fe9a6a3f.addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var marker_3083c32ad98843eb05d221f1b3bfa574 = L.marker(
+                [20.959511, 107.060459],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_075169b27d6fdc3c664c1f021a0dea99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_3083c32ad98843eb05d221f1b3bfa574.setIcon(icon_075169b27d6fdc3c664c1f021a0dea99);
+        
+    
+            marker_3083c32ad98843eb05d221f1b3bfa574.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE AICAS 2026</b><br>Ha Long Bay<br>Vietnam <span class="emoji">🇻🇳</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da742586780366bf8689c87ee450c66c = L.marker(
+                [31.241452, 121.492453],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_0b96c2ae8b48582e8530363500af925b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_da742586780366bf8689c87ee450c66c.setIcon(icon_0b96c2ae8b48582e8530363500af925b);
+        
+    
+            marker_da742586780366bf8689c87ee450c66c.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ISCAS 2026</b><br>Shanghai<br>China <span class="emoji">🇨🇳</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab2630cac8a9dac6c115f1c916c9ae1b = L.marker(
+                [48.430327, -71.060518],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_4e31bc892ac5616378263ec36d61c989 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_ab2630cac8a9dac6c115f1c916c9ae1b.setIcon(icon_4e31bc892ac5616378263ec36d61c989);
+        
+    
+            marker_ab2630cac8a9dac6c115f1c916c9ae1b.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE NEWCAS 2026</b><br>Chicoutimi<br>Canada <span class="emoji">🇨🇦</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1b4800ecaa6aa79f7451f280cc2cd01 = L.marker(
+                [51.049329, 13.738144],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_f5c4f75524f5afe6672ad148102df80a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_c1b4800ecaa6aa79f7451f280cc2cd01.setIcon(icon_f5c4f75524f5afe6672ad148102df80a);
+        
+    
+            marker_c1b4800ecaa6aa79f7451f280cc2cd01.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE SMACD 2026</b><br>Dresden<br>Germany <span class="emoji">🇩🇪</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_218ff10d7c135af3cec1cc69ff2dae04 = L.marker(
+                [22.528593, 88.350746],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_5acad0afff74da6ee03afde3b2060565 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_218ff10d7c135af3cec1cc69ff2dae04.setIcon(icon_5acad0afff74da6ee03afde3b2060565);
+        
+    
+            marker_218ff10d7c135af3cec1cc69ff2dae04.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ISVLSI 2026</b><br>Kolkata<br>India <span class="emoji">🇮🇳</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_929847a72b6586c45222dc0037026fc2 = L.marker(
+                [52.511016, 13.326954],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_797c9bbf7d1c98bb2fd44aea8938ad96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_929847a72b6586c45222dc0037026fc2.setIcon(icon_797c9bbf7d1c98bb2fd44aea8938ad96);
+        
+    
+            marker_929847a72b6586c45222dc0037026fc2.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE PRIME 2026</b><br>Berlin<br>Germany <span class="emoji">🇩🇪</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea872255ababbdc8277ed939cf848440 = L.marker(
+                [45.062528, 7.662651],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_4cf7ad77e8ae8a9ea8aaaadce8b76002 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_ea872255ababbdc8277ed939cf848440.setIcon(icon_4cf7ad77e8ae8a9ea8aaaadce8b76002);
+        
+    
+            marker_ea872255ababbdc8277ed939cf848440.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ISICAS 2026</b><br>Torino<br>Italy <span class="emoji">🇮🇹</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fe56ad3e7f0998f499c2c206139cbaa = L.marker(
+                [24.447951, 54.395527],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_ed16d7c1c9042aa7b4f4a12e0a30c355 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_0fe56ad3e7f0998f499c2c206139cbaa.setIcon(icon_ed16d7c1c9042aa7b4f4a12e0a30c355);
+        
+    
+            marker_0fe56ad3e7f0998f499c2c206139cbaa.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE BIOCAS 2025</b><br>Abu Dhabi<br>UAE <span class="emoji">🇦🇪</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e05bc85701aedd4fa4799a29c739164 = L.marker(
+                [56.952642, 24.08068],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_6e6d1e45cdf6dad2ff7a2f5303890285 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_3e05bc85701aedd4fa4799a29c739164.setIcon(icon_6e6d1e45cdf6dad2ff7a2f5303890285);
+        
+    
+            marker_3e05bc85701aedd4fa4799a29c739164.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE NORCAS 2025</b><br>Riga<br>Latvia <span class="emoji">🇱🇻</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_336ac5c710211da902b0bb6699ddfcea = L.marker(
+                [64.140183, -21.953963],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_38967a95e88569a843485a5e9f69bc02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_336ac5c710211da902b0bb6699ddfcea.setIcon(icon_38967a95e88569a843485a5e9f69bc02);
+        
+    
+            marker_336ac5c710211da902b0bb6699ddfcea.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ISLPED 2025</b><br>Reykjavík<br>Iceland <span class="emoji">🇮🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d127a454cc320618982f9eac309685e3 = L.marker(
+                [39.100739, -84.513969],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_1d0fff06e31edb085cb15bb5421dcb09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_d127a454cc320618982f9eac309685e3.setIcon(icon_1d0fff06e31edb085cb15bb5421dcb09);
+        
+    
+            marker_d127a454cc320618982f9eac309685e3.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE MWSCAS 2026</b><br>Cincinnati<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c44b33bd4c94adc1ba763ab48b7c1c2a = L.marker(
+                [34.714258, 33.168197],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_58703b1c6bd6411579dff9add50345a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_c44b33bd4c94adc1ba763ab48b7c1c2a.setIcon(icon_58703b1c6bd6411579dff9add50345a4);
+        
+    
+            marker_c44b33bd4c94adc1ba763ab48b7c1c2a.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE VLSI-SoC 2026</b><br>Limassol<br>Cyprus <span class="emoji">🇨🇾</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e408b844a21700df8d7e6d4e56660c53 = L.marker(
+                [51.027618, 13.727793],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_8cff4cf957ad65d138c43f8b05ad988c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_e408b844a21700df8d7e6d4e56660c53.setIcon(icon_8cff4cf957ad65d138c43f8b05ad988c);
+        
+    
+            marker_e408b844a21700df8d7e6d4e56660c53.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE MOCAST 2025</b><br>Dresden<br>Germany <span class="emoji">🇩🇪</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f682d3cf8b5d05d155c4560fb4b1751 = L.marker(
+                [-23.559122, -46.727717],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_41679d01fbffafe2edebb35630e16390 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_7f682d3cf8b5d05d155c4560fb4b1751.setIcon(icon_41679d01fbffafe2edebb35630e16390);
+        
+    
+            marker_7f682d3cf8b5d05d155c4560fb4b1751.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE SBCCI 2026</b><br>São Paulo<br>Brazil <span class="emoji">🇧🇷</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a5edd5aef38444b58491036d220697b = L.marker(
+                [13.743111, 100.532875],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_ed7a25db2723bb6f2dcf35561e625700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_0a5edd5aef38444b58491036d220697b.setIcon(icon_ed7a25db2723bb6f2dcf35561e625700);
+        
+    
+            marker_0a5edd5aef38444b58491036d220697b.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ICCSS 2026</b><br>Bangkok<br>Thailand <span class="emoji">🇹🇭</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cb079d5357c8df8723027edf0ffccc5 = L.marker(
+                [49.41137, 8.706173],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_3a5abd36816cafe406dfbc7e1d911cc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_2cb079d5357c8df8723027edf0ffccc5.setIcon(icon_3a5abd36816cafe406dfbc7e1d911cc9);
+        
+    
+            marker_2cb079d5357c8df8723027edf0ffccc5.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE SOCC 2026</b><br>Heidelberg<br>Germany <span class="emoji">🇩🇪</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7830b3b1da0b997869591ae94f4fbb0f = L.marker(
+                [35.160204, 129.165207],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_43264848791452d8139ff0017fdd3fd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_7830b3b1da0b997869591ae94f4fbb0f.setIcon(icon_43264848791452d8139ff0017fdd3fd0);
+        
+    
+            marker_7830b3b1da0b997869591ae94f4fbb0f.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ISOCC 2025</b><br>Busan<br>South Korea <span class="emoji">🇰🇷</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c5ddb760e0352b474b4aaf7cffeb84f = L.marker(
+                [40.636123, 22.930089],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_cd27766325ac06fc3810cde62ed1ba3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_2c5ddb760e0352b474b4aaf7cffeb84f.setIcon(icon_cd27766325ac06fc3810cde62ed1ba3b);
+        
+    
+            marker_2c5ddb760e0352b474b4aaf7cffeb84f.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ICECS 2026</b><br>Thessaloniki<br>Greece <span class="emoji">🇬🇷</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d72bd021191c1872da2be0f0ae49987a = L.marker(
+                [33.592167, 130.402852],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_0dd9f71709dbc973c6415783106ca21d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_d72bd021191c1872da2be0f0ae49987a.setIcon(icon_0dd9f71709dbc973c6415783106ca21d);
+        
+    
+            marker_d72bd021191c1872da2be0f0ae49987a.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE APCCAS 2026</b><br>Fukuoka<br>Japan <span class="emoji">🇯🇵</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f99ffcc5a381b5877362ba443de4e4ef = L.marker(
+                [-16.389276, -71.532616],
+                {}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+    
+            var icon_447e5611362451a93abe5b62e5ddd134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_f99ffcc5a381b5877362ba443de4e4ef.setIcon(icon_447e5611362451a93abe5b62e5ddd134);
+        
+    
+            marker_f99ffcc5a381b5877362ba443de4e4ef.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE LASCAS 2026</b><br>Arequipa<br>Perú <span class="emoji">🇵🇪</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+            var geocoderOpts_geocoder_184088198c2a960db28f613683c4a500 = {"collapsed": false, "defaultMarkGeocode": true, "position": "topright", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
+
+            // note: geocoder name should start with lowercase
+            var geocoderName_geocoder_184088198c2a960db28f613683c4a500 = geocoderOpts_geocoder_184088198c2a960db28f613683c4a500["provider"];
+
+            var customGeocoder_geocoder_184088198c2a960db28f613683c4a500 = L.Control.Geocoder[ geocoderName_geocoder_184088198c2a960db28f613683c4a500 ](
+                geocoderOpts_geocoder_184088198c2a960db28f613683c4a500['providerOptions']
+            );
+            geocoderOpts_geocoder_184088198c2a960db28f613683c4a500["geocoder"] = customGeocoder_geocoder_184088198c2a960db28f613683c4a500;
+
+            L.Control.geocoder(
+                geocoderOpts_geocoder_184088198c2a960db28f613683c4a500
+            ).on('markgeocode', function(e) {
+                var zoom = geocoderOpts_geocoder_184088198c2a960db28f613683c4a500['zoom'] || map_761af73289fae59bda9743d07d73a587.getZoom();
+                map_761af73289fae59bda9743d07d73a587.setView(e.geocode.center, zoom);
+            }).addTo(map_761af73289fae59bda9743d07d73a587);
+
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": true, "position": "topright", "title": "Expand me", "titleCancel": "Exit me"}
+            ).addTo(map_761af73289fae59bda9743d07d73a587);
+        
+</script>
+</html>

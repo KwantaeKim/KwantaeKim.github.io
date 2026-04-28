@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ec5448a501ab5835d98c5a5dec23bba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+<link rel="stylesheet" type="text/css" href="../emoji.css"></head>
+<body>
+    
+    <style>.leaflet-container { height: 100% !important; }</style>
+    
+            <div class="folium-map" id="map_5ec5448a501ab5835d98c5a5dec23bba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ec5448a501ab5835d98c5a5dec23bba = L.map(
+                "map_5ec5448a501ab5835d98c5a5dec23bba",
+                {
+                    center: [40.0, -15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: true,
+                    lang: "en",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1483c06d9ff46e9eb73cbc066fc57a58 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_1483c06d9ff46e9eb73cbc066fc57a58.addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+        
+    
+            var marker_f61b532804a40381b8b784828e941a1b = L.marker(
+                [37.785426, -122.404493],
+                {}
+            ).addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+        
+    
+            var icon_9a1cd847a816a7e43ebcdcf43ba86b10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_f61b532804a40381b8b784828e941a1b.setIcon(icon_9a1cd847a816a7e43ebcdcf43ba86b10);
+        
+    
+            marker_f61b532804a40381b8b784828e941a1b.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ISSCC 2026</b><br>San Francisco<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a0c30d9f162e2b8e9404ec03fc07b83 = L.marker(
+                [47.613711, -122.334167],
+                {}
+            ).addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+        
+    
+            var icon_5c0ad422728c3422f8abec237fcab31c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_6a0c30d9f162e2b8e9404ec03fc07b83.setIcon(icon_5c0ad422728c3422f8abec237fcab31c);
+        
+    
+            marker_6a0c30d9f162e2b8e9404ec03fc07b83.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE CICC 2026</b><br>Seattle<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dba40ae2e8d414f0afb2bdbdd8f637eb = L.marker(
+                [21.283041, -157.837055],
+                {}
+            ).addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+        
+    
+            var icon_d5fcf048cf4545b7022393380b665f7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_dba40ae2e8d414f0afb2bdbdd8f637eb.setIcon(icon_d5fcf048cf4545b7022393380b665f7b);
+        
+    
+            marker_dba40ae2e8d414f0afb2bdbdd8f637eb.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE VLSI Symposium 2026</b><br>Hawaii<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e6177a022f0b254d6bec3cd5c7bc959 = L.marker(
+                [39.567384, 2.629082],
+                {}
+            ).addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+        
+    
+            var icon_811cae3c2b240db879809b05c218870b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_5e6177a022f0b254d6bec3cd5c7bc959.setIcon(icon_811cae3c2b240db879809b05c218870b);
+        
+    
+            marker_5e6177a022f0b254d6bec3cd5c7bc959.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ESSERC 2026</b><br>Palma<br>Spain <span class="emoji">🇪🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a0286af87903fbc7f33cc6854dbedbc = L.marker(
+                [36.37496, 127.391453],
+                {}
+            ).addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+        
+    
+            var icon_7fb86e48e10d1817ea7e563511909ea3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_0a0286af87903fbc7f33cc6854dbedbc.setIcon(icon_7fb86e48e10d1817ea7e563511909ea3);
+        
+    
+            marker_0a0286af87903fbc7f33cc6854dbedbc.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE A-SSCC 2025</b><br>Daejeon<br>South Korea <span class="emoji">🇰🇷</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+            var geocoderOpts_geocoder_396836321039c37330aca801e7647b6e = {"collapsed": false, "defaultMarkGeocode": true, "position": "topright", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
+
+            // note: geocoder name should start with lowercase
+            var geocoderName_geocoder_396836321039c37330aca801e7647b6e = geocoderOpts_geocoder_396836321039c37330aca801e7647b6e["provider"];
+
+            var customGeocoder_geocoder_396836321039c37330aca801e7647b6e = L.Control.Geocoder[ geocoderName_geocoder_396836321039c37330aca801e7647b6e ](
+                geocoderOpts_geocoder_396836321039c37330aca801e7647b6e['providerOptions']
+            );
+            geocoderOpts_geocoder_396836321039c37330aca801e7647b6e["geocoder"] = customGeocoder_geocoder_396836321039c37330aca801e7647b6e;
+
+            L.Control.geocoder(
+                geocoderOpts_geocoder_396836321039c37330aca801e7647b6e
+            ).on('markgeocode', function(e) {
+                var zoom = geocoderOpts_geocoder_396836321039c37330aca801e7647b6e['zoom'] || map_5ec5448a501ab5835d98c5a5dec23bba.getZoom();
+                map_5ec5448a501ab5835d98c5a5dec23bba.setView(e.geocode.center, zoom);
+            }).addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": true, "position": "topright", "title": "Expand me", "titleCancel": "Exit me"}
+            ).addTo(map_5ec5448a501ab5835d98c5a5dec23bba);
+        
+</script>
+</html>

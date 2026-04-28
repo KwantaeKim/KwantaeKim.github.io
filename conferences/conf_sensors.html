@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83c80c3deb858bc89d2c4fb9abd6710b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+<link rel="stylesheet" type="text/css" href="../emoji.css"></head>
+<body>
+    
+    <style>.leaflet-container { height: 100% !important; }</style>
+    
+            <div class="folium-map" id="map_83c80c3deb858bc89d2c4fb9abd6710b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_83c80c3deb858bc89d2c4fb9abd6710b = L.map(
+                "map_83c80c3deb858bc89d2c4fb9abd6710b",
+                {
+                    center: [40.0, -15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: true,
+                    lang: "en",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_09d2f075366de20448237af415b25bb7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_09d2f075366de20448237af415b25bb7.addTo(map_83c80c3deb858bc89d2c4fb9abd6710b);
+        
+    
+            var marker_d623793e1c12b666ebde8af50adb32c9 = L.marker(
+                [51.402895, 5.413861],
+                {}
+            ).addTo(map_83c80c3deb858bc89d2c4fb9abd6710b);
+        
+    
+            var icon_9c2c0b125bad9334932cb2031c9ed397 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_d623793e1c12b666ebde8af50adb32c9.setIcon(icon_9c2c0b125bad9334932cb2031c9ed397);
+        
+    
+            marker_d623793e1c12b666ebde8af50adb32c9.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE SIM 2025</b><br>Veldhoven<br>Netherlands <span class="emoji">🇳🇱</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be7b2dcf66b7a149bb98b391667dc8a7 = L.marker(
+                [51.9205, 4.480365],
+                {}
+            ).addTo(map_83c80c3deb858bc89d2c4fb9abd6710b);
+        
+    
+            var icon_74a243edb669fa590b1f6619a8ace0b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_be7b2dcf66b7a149bb98b391667dc8a7.setIcon(icon_74a243edb669fa590b1f6619a8ace0b0);
+        
+    
+            marker_be7b2dcf66b7a149bb98b391667dc8a7.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE Sensors 2026</b><br>Rotterdam<br>Netherlands <span class="emoji">🇳🇱</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75f59340bb8a8939a14c11455dad7c70 = L.marker(
+                [33.778889, -84.398662],
+                {}
+            ).addTo(map_83c80c3deb858bc89d2c4fb9abd6710b);
+        
+    
+            var icon_dcfbdb5384c8753260ee85e53dafe112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_75f59340bb8a8939a14c11455dad7c70.setIcon(icon_dcfbdb5384c8753260ee85e53dafe112);
+        
+    
+            marker_75f59340bb8a8939a14c11455dad7c70.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE FLEPS 2026</b><br>Atlanta<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a52f48263a31a108e6ac243a78a4dc66 = L.marker(
+                [32.707996, -117.160792],
+                {}
+            ).addTo(map_83c80c3deb858bc89d2c4fb9abd6710b);
+        
+    
+            var icon_becc226741a45b890a0f96267e960ba2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-user", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_a52f48263a31a108e6ac243a78a4dc66.setIcon(icon_becc226741a45b890a0f96267e960ba2);
+        
+    
+            marker_a52f48263a31a108e6ac243a78a4dc66.bindTooltip(
+                `<div>
+                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE Biosensors 2025</b><br>San Diego<br>United States <span class="emoji">🇺🇸</span></div></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+            var geocoderOpts_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1 = {"collapsed": false, "defaultMarkGeocode": true, "position": "topright", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
+
+            // note: geocoder name should start with lowercase
+            var geocoderName_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1 = geocoderOpts_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1["provider"];
+
+            var customGeocoder_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1 = L.Control.Geocoder[ geocoderName_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1 ](
+                geocoderOpts_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1['providerOptions']
+            );
+            geocoderOpts_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1["geocoder"] = customGeocoder_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1;
+
+            L.Control.geocoder(
+                geocoderOpts_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1
+            ).on('markgeocode', function(e) {
+                var zoom = geocoderOpts_geocoder_9a8ccd49b889b3659d3a81dd53ffd4d1['zoom'] || map_83c80c3deb858bc89d2c4fb9abd6710b.getZoom();
+                map_83c80c3deb858bc89d2c4fb9abd6710b.setView(e.geocode.center, zoom);
+            }).addTo(map_83c80c3deb858bc89d2c4fb9abd6710b);
+
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": true, "position": "topright", "title": "Expand me", "titleCancel": "Exit me"}
+            ).addTo(map_83c80c3deb858bc89d2c4fb9abd6710b);
+        
+</script>
+</html>
