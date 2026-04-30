@@ -24,7 +24,7 @@ details > summary::-webkit-details-marker {display: none;}
 details > summary::marker {display: none;}
 
 /* News Button */
-.btn-show-2024 {
+.btn-show-news {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
@@ -39,13 +39,13 @@ details > summary::marker {display: none;}
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
-.btn-show-2024:hover {
+.btn-show-news:hover {
   background-color: #22474f; /* slightly different teal for hover */
 }
 
 /* Less bright outline for focus/active */
-.btn-show-2024:focus,
-.btn-show-2024:active {
+.btn-show-news:focus,
+.btn-show-news:active {
   outline: 2px solid #2fa093; /* a more subdued teal */
   outline-offset: 2px;
 }
@@ -72,93 +72,59 @@ details > summary::marker {display: none;}
 
 ## News
 
+### <i class="fa-brands fa-github"></i> 21.Mar.2026
+
+{% include news-20260321.md %}
+
 ### 🎉 20.Feb.2026
 
 {% include news-20260220.md %}
 
-### ✈️ 24.Sep.2025
-
-{% include news-20250924.md %}
-
-### <i class="fa-regular fa-handshake"></i> 12.Sep.2025
-
-{% include news-20250912.md %}
-
-### 📚 02.Aug.2025
-
-{% include news-20250802.md %}
-
-### ✈️ 22.May.2025
-
-{% include news-20250522.md %}
-
-### 📚 15.Apr.2025
-
-{% include news-20250415.md %}
-
-### <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie fa-lg"></i><span style="margin-right: 0.2em;"></span> 03.Apr.2025
-
-{% include news-20250403.md %}
-
-### <i class="fa-regular fa-handshake"></i> 04.Mar.2025
-
-{% include news-20250304.md %}
-
 <!-- Old News -->
 
 <div style="text-align: center; margin: 1em 0;">
-  <button id="toggle-2024-news-btn" class="btn-show-2024" onclick="toggle2024News()">
+  <button id="toggle-2025-news-btn" class="btn-show-news" onclick="toggleYearNews(2025)">
+    <i class="fa-solid fa-newspaper"></i>
+    Show 2025 News
+  </button>
+  <button id="toggle-2024-news-btn" class="btn-show-news" onclick="toggleYearNews(2024)">
     <i class="fa-solid fa-newspaper"></i>
     Show 2024 News
   </button>
 </div>
 <br><br><br>
 
-<div id="older-news-container"></div>
+<div id="older-news-2025-container"></div>
+<div id="older-news-2024-container"></div>
 
 <script>
-  let news2024Html = null;  // cache for the fetched content
-  let showing2024 = false;  // track whether 2024 news is currently visible
+  const newsCache = {};
 
-  function toggle2024News() {
-    const btn = document.getElementById('toggle-2024-news-btn');
-    const container = document.getElementById('older-news-container');
+  async function toggleYearNews(year) {
+    const btn = document.getElementById(`toggle-${year}-news-btn`);
+    const container = document.getElementById(`older-news-${year}-container`);
+    const shown = container.innerHTML !== '';
 
-    // If currently hidden, show it
-    if (!showing2024) {
-      // If we've already fetched it before, just re-inject
-      if (news2024Html !== null) {
-        container.innerHTML = news2024Html;
-        showing2024 = true;
-        btn.innerHTML = '<i class="fa-solid fa-newspaper"></i> Hide 2024 News';
-      } else {
-        // First time fetch
-        btn.disabled = true;
-        fetch('/news-2024.html')
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.text();
-          })
-          .then(html => {
-            news2024Html = html;       // cache the result
-            container.innerHTML = html; 
-            showing2024 = true;
-            btn.disabled = false;
-            btn.innerHTML = '<i class="fa-solid fa-newspaper"></i> Hide 2024 News';
-          })
-          .catch(error => {
-            console.error('Error fetching 2024 news:', error);
-            btn.disabled = false;
-          });
-      }
-    } 
-    // If currently shown, hide it
-    else {
+    if (shown) {
       container.innerHTML = '';
-      showing2024 = false;
-      btn.innerHTML = '<i class="fa-solid fa-newspaper"></i> Show 2024 News';
+      btn.innerHTML = `<i class="fa-solid fa-newspaper"></i> Show ${year} News`;
+      return;
     }
+
+    if (newsCache[year] === undefined) {
+      btn.disabled = true;
+      try {
+        const res = await fetch(`/news-${year}.html`);
+        if (!res.ok) throw new Error(res.statusText);
+        newsCache[year] = await res.text();
+      } catch (err) {
+        console.error(`Error fetching ${year} news:`, err);
+        return;
+      } finally {
+        btn.disabled = false;
+      }
+    }
+    container.innerHTML = newsCache[year];
+    btn.innerHTML = `<i class="fa-solid fa-newspaper"></i> Hide ${year} News`;
   }
 </script>

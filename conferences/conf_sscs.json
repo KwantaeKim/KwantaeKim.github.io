@@ -66,17 +66,17 @@
   {
     "organization": "IEEE",
     "name": "A-SSCC",
-    "year": 2025,
-    "city": "Daejeon",
-    "region": "South Korea",
-    "region_flag": "🇰🇷",
+    "year": 2026,
+    "city": "Taichung",
+    "region": "Taiwan",
+    "region_flag": "🇹🇼",
     "color": "gray",
     "bg_color": "false",
-    "submission": "2025-06-04",
-    "date_start": "2025-11-02",
-    "date_end": "2025-11-05",
-    "venue": "Daejeon Convention Center",
-    "coordinate": "36.374960, 127.391453",
-    "webpage": "https://a-sscc2025.org"
+    "submission": "2026-06-03",
+    "date_start": "2026-11-01",
+    "date_end": "2026-11-04",
+    "venue": "The Lin Hotel Taichung",
+    "coordinate": "24.163579, 120.638721",
+    "webpage": "https://www.a-sscc2026.org"
   }
 ]

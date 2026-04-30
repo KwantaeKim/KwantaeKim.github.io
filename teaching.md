@@ -61,13 +61,33 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
+    ELEC-E9520 Analog Integrated Circuits II D
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    </span>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Jan. ~ Apr. 2027</div>
+      <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    ELEC-E9510 Analog Integrated Circuits I
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    </span>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">Oct. ~ Nov. 2026</div>
+      <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
     <a href="https://mycourses.aalto.fi/enrol/index.php?id=48372" target="_blank">
     ELEC-E3530 Integrated Analog Systems D (5 ECTS)
     </a>
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Jan. 2026 ~ Apr. 2026</div>
+      <div class="tab-cell" style="flex: 2;">Jan. ~ Apr. 2026</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
     <div class="tab-row">
@@ -121,7 +141,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Apr. 2026 ~ May. 2026</div>
+      <div class="tab-cell" style="flex: 2;">Apr. ~ May. 2026</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
@@ -131,7 +151,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Jan. 2025 ~ May. 2025</div>
+      <div class="tab-cell" style="flex: 2;">Jan. ~ May. 2025</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
@@ -141,7 +161,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     </a>
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~ Nov. 2024</div>
+      <div class="tab-cell" style="flex: 2;">Sep. ~ Nov. 2024</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
@@ -158,7 +178,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
     </span>
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Sep. 2024 ~ Nov. 2024</div>
+      <div class="tab-cell" style="flex: 2;">Sep. ~ Nov. 2024</div>
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
@@ -363,7 +383,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 </tbody>
 </table>
 
-## IEEE SSCS Mentor
+## IEEE SSCS Mentoring
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
@@ -376,7 +396,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Mar. 2026 ~ </div>
+      <div class="tab-cell" style="flex: 2;">Mar. ~ Apr. 2026 </div>
       <div class="tab-cell" style="flex: 4;">MSc Student, UC San Diego, United States <span class='emoji'>🇺🇸</span></div>
     </div>
   </td></tr>
@@ -415,7 +435,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       </div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;">Jan. 2023 ~ Jul. 2023</div>
+      <div class="tab-cell" style="flex: 2;">Jan. ~ Jul. 2023</div>
       <div class="tab-cell" style="flex: 4;">PhD Student, IIT Bombay, India <span class='emoji'>🇮🇳</span></div>
     </div>
   </td></tr>

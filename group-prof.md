@@ -490,6 +490,13 @@ toc_title: TSirc Group
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 4;">
     <span style="margin-right: 2em;"></span>
+    • IEEE AICAS Neuromorphic Circuits and Systems Track (Co-Chair) <br>
+  </div>
+  <div class="tab-cell" style="flex: 2;">2026 ~</div>  
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 4;">
+    <span style="margin-right: 2em;"></span>
     • IEEE SSCS Open-Source Ecosystem <br>
   </div>
   <div class="tab-cell" style="flex: 2;">2023 ~ 2024</div>  
