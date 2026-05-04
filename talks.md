@@ -98,6 +98,33 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
 
 ## Seminar Talks
 
+### 2026
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    IC Design Activities at the Tiny Systems and Circuits (TSirc) Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    ELEC Research Day, Aalto University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Apr. 2026</div>
+        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    IC Design Activities at the Tiny Systems and Circuits (TSirc) Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Aalto Microelectronics Fair, Aalto University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Mar. 2026</div>
+        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
+    </div>
+  </td></tr>
+</tbody>
+</table>
+
 ### 2025
 
 <table class="tg">

@@ -30,6 +30,10 @@
         <span style="margin-right: 0.3em;"></span>
         Visitor Statistics <br>
         <span style="margin-right: 0.3em;"></span>
+        <i class="fa-solid fa-globe fa-lg"></i>
+        <span style="margin-right: 0.4em;"></span>
+        <span id="total-visitors"></span> <br>
+        <span style="margin-right: 0.3em;"></span>
         <i class="fa-regular fa-calendar-check fa-lg"></i>
         <span style="margin-right: 0.4em;"></span>
         <span id="last-update"></span>
@@ -37,13 +41,16 @@
 
     <script>
         // Read the last_update parameter from the JSON file
-        fetch('./visitor_last_update.json')
+        fetch('./visitor_last_update.json?t=' + Date.now())
             .then(response => response.json())
             .then(data => {
                 // Extract the last_update parameter
                 var lastUpdate = data.last_update;
                 // Display the last_update parameter on the HTML page
                 document.getElementById('last-update').innerHTML = 'Last Update: ' + lastUpdate;
+                // Display the total visitor count, with thousands separators
+                var totalVisitors = Number(data.total_visitors).toLocaleString('en-US');
+                document.getElementById('total-visitors').innerHTML = 'Total Visitors: ' + totalVisitors;
             })
             .catch(error => console.error('Error:', error));
     </script>

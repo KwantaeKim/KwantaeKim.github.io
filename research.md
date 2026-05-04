@@ -117,6 +117,19 @@ We focus on power-efficient analog/mixed-signal ICs for <b><i class="fa-solid fa
   - Without increase of network size
 - <i class="fa-solid fa-trophy fa-lg"></i> <a href='https://ee.ethz.ch/news-and-events/d-itet-news-channel/2023/08/the-sensors-research-group-ini-won-the-best-poster-award-2023.html#:~:text=Poster%20Award%202023-,The%20Sensors%20Research%20Group%20INI%20won%20the%20Best%20Poster%20Award,renowned%20IEEE%20AICAS%202023%20event.' target="_blank">Best Poster Award</a> in AICAS 2023
 
+<br><br><br><br><br>
+
+## <i class="fa-solid fa-laptop-code" style="color: #4a90e2;"></i> Design Automation
+
+### <i class="fa-solid fa-microchip"></i> cdl_gen
+
+<a href="https://github.com/KwantaeKim/cdl_gen" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+
+- <span class='bold'>Python-to-Schematic</span> generator for Cadence Virtuoso
+- Enables <span class='bold'>AI-Assisted</span> analog/mixed-signal circuit design
+  - e.g., Claude generates a 4-bit cap DAC with 2% mismatch (<a href="https://www.youtube.com/watch?v=7LoztY1kjZs" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>)
+- 📚 <span class='bold'>Open-Sourced</span> for the analog/mixed-signal design community
+
 <!-- ## <i class="fa-solid fa-hand-holding-dollar"></i> Approved Grants -->
 
 <br><br><br><br><br>

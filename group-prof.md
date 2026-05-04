@@ -319,6 +319,32 @@ toc_title: TSirc Group
   <div class="underline"></div>
 </div>
 
+<!-- Event Hosting Grant -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.3;">
+    <b>Event Hosting Grant</b>
+  </div>
+  <div class="tab-cell" style="flex: 2.7;">
+    <span style="margin-right: 0.2em;"></span>
+    <i class="fa-solid fa-user"></i>
+    <span style="margin-right: 0.2em;"></span>
+    Organizer
+  </div>
+  <div class="tab-cell" style="flex: 2;">2025 ~ 2026</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1;">
+    <span style="margin-right: 2em;"></span>
+    • <a href="https://kwantaekim.github.io/assets/Kor-Fin-flyer.pdf" target="_blank" class="pub-hover">Korea-Finland Chip Design Symposium</a> <br>
+    <span style="margin-right: 2em;"></span>
+    • The Ministry of Foreign Affairs, South Korea <span class='emoji'>🇰🇷</span> <br>
+    <span style="margin-right: 2em;"></span>
+    • $13,800
+  </div>
+</div>
+
+<span style="display: block;"></span>
+
 <!-- ISSCC -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.3;">
@@ -337,32 +363,6 @@ toc_title: TSirc Group
     <span style="margin-right: 2em;"></span>
     • <a href="https://doi.org/10.1109/ISSCC49661.2025.10904788" target="_blank" class="pub-hover">
     IEEE ISSCC 2025</a>
-  </div>
-</div>
-
-<span style="display: block;"></span>
-
-<!-- Event Hosting Grant -->
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Event Hosting Grant</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
-    <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
-    Organizer
-  </div>
-  <div class="tab-cell" style="flex: 2;">2025</div>
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1;">
-    <span style="margin-right: 2em;"></span>
-    • <a href="https://kwantaekim.github.io/assets/Kor-Fin-flyer.pdf" target="_blank" class="pub-hover">Korea-Finland Chip Design Symposium</a> <br>
-    <span style="margin-right: 2em;"></span>
-    • The Ministry of Foreign Affairs, South Korea <span class='emoji'>🇰🇷</span> <br>
-    <span style="margin-right: 2em;"></span>
-    • $6,800
   </div>
 </div>
 
@@ -483,13 +483,6 @@ toc_title: TSirc Group
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 4;">
     <span style="margin-right: 2em;"></span>
-    • IEEE CASS Sensory Systems <br>
-  </div>
-  <div class="tab-cell" style="flex: 2;">2023 ~</div>  
-</div>
-<div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
-    <span style="margin-right: 2em;"></span>
     • IEEE AICAS Neuromorphic Circuits and Systems Track (Co-Chair) <br>
   </div>
   <div class="tab-cell" style="flex: 2;">2026 ~</div>  
@@ -497,9 +490,16 @@ toc_title: TSirc Group
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 4;">
     <span style="margin-right: 2em;"></span>
+    • IEEE CASS Sensory Systems <br>
+  </div>
+  <div class="tab-cell" style="flex: 2;">2023 ~</div>  
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 4;">
+    <span style="margin-right: 2em;"></span>
     • IEEE SSCS Open-Source Ecosystem <br>
   </div>
-  <div class="tab-cell" style="flex: 2;">2023 ~ 2024</div>  
+  <div class="tab-cell" style="flex: 2;">2023 ~ 2025</div>  
 </div>
 
 <span style="display: block;"></span>
@@ -570,10 +570,11 @@ toc_title: TSirc Group
   <div class="tab-cell" style="flex: 4.7;"></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1;">
+  <div class="tab-cell" style="flex: 4;">
     <span style="margin-right: 2em;"></span>
-    • <a href="https://kwantaekim.github.io/assets/Kor-Fin-flyer.pdf" target="_blank" class="pub-hover">Korea-Finland Chip Design Symposium</a>
+    • <a href="https://kwantaekim.github.io/events/" target="_blank" class="pub-hover">Korea-Finland Chip Design Symposium</a>
   </div>
+  <div class="tab-cell" style="flex: 2;">2025 ~ 2026</div>  
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">

@@ -102,7 +102,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
         </a>
       </div>
       <div class="tab-cell" style="flex: 3.4;">
-        <a href="https://github.com/KwantaeKim" target="_blank">
+        <a href="https://github.com/KwantaeKim/ELEC-E3530" target="_blank">
           <i class="fa-brands fa-github fa-bounce fa-lg"></i> Github
         </a>
       </div>
