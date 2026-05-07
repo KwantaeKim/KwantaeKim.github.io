@@ -83,6 +83,7 @@ First, find the **Container ID** of **IIC-OSIC-TOOLS** in <i class="fa-brands fa
 
 Create a file named `run_doc.sh` under a directory that you chose for your **Design Path** of **IIC-OSIC-TOOLS**, like the below screenshot. Paste your **Container ID** into the script.
 
+{% raw %}
 ```shell
 #!/bin/bash
 container_id={your container ID}  # there must not be any spaces!
@@ -94,6 +95,7 @@ fi
 # Run interactive bash shell
 docker exec -it "$container_id" bash
 ```
+{% endraw %}
 
 <img src='{{ site.base_url }}{{ site.image_dir }}/blog/{{ post-date }}/2025-05-04-21.17.50.gif' style='width:100%'>
 
