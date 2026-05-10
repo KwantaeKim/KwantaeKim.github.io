@@ -12,3 +12,9 @@ OSE:
     - "Getting Started"
     - "Install Open Source Tools"
     - "Try It Out"
+
+Others:
+  title: Others
+  collection: posts
+  sections:
+    - ""
