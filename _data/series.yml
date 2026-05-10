@@ -1,0 +1,14 @@
+conference:
+  title: Conferences
+  collection: posts_conference
+  sections:
+    - ""
+    - "IEEE International Solid-State Circuit Conference (ISSCC)"
+
+OSE:
+  title: Open Source Chip Design
+  collection: posts
+  sections:
+    - "Getting Started"
+    - "Install Open Source Tools"
+    - "Try It Out"

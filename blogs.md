@@ -6,8 +6,12 @@ hero_image: /img/kwantaekim/IMG_7810.JPEG
 show_sidebar: false
 ---
 
-{% include series-OSE.html %}
+{% include series.html key="conference" %}
 
 <br><br>
 
-{% include series-conference.html %}
+{% include series.html key="OSE" %}
+
+<br><br>
+
+{% include series.html key="Others" %}

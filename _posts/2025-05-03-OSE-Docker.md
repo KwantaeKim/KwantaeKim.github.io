@@ -4,6 +4,9 @@ title: Seamless Host-Side Control of Docker
 # title_darken: true
 date: 2025-05-03 00:00:00
 hero_image: /img/tutto/IMG_6459.jpeg
+series: OSE
+series_section: "Install Open Source Tools"
+series_order: 3
 
 menubar_toc: true
 show_sidebar: false
@@ -14,7 +17,7 @@ show_sidebar: false
 <br>
 
 <!-- Series -->
-{% include series-OSE.html %}
+{% include series.html key="OSE" %}
 
 <!-- CSS -->
 <style>

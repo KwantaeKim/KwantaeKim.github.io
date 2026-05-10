@@ -3,6 +3,9 @@ layout: post
 title: Things to Know Regarding ISSCC Paper Submission
 date: 2024-08-28 00:00:00
 hero_image: /img/tutto/IMG_6459.jpeg
+series: conference
+series_section: "IEEE International Solid-State Circuit Conference (ISSCC)"
+series_order: 1
 
 menubar_toc: true
 show_sidebar: false
@@ -13,7 +16,7 @@ show_sidebar: false
 <br>
 
 <!-- Series -->
-{% include series-conference.html %}
+{% include series.html key="conference" %}
 
 <!-- CSS -->
 <style>
