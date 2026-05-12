@@ -56,6 +56,20 @@ tr:hover .hover-skku {left: -120px; top:calc(50% - 45px); visibility: visible; h
 tr:hover .hover-hanyang {left: -120px; top:calc(50% - 45px); visibility: visible; height: 95px;}
 tr:hover .hover-ajou {left: -120px; top:calc(50% - 45px); visibility: visible; height: 95px;}
 tr:hover .hover-dgist {left: -125px; top:calc(50% - 55px); visibility: visible; height: 110px;}
+/* merged Korean univ. talk: same title + month (Oct. 2025), logos offset along x */
+tr:hover .hover-dgist-m {left: -135px; top:calc(50% - 55px); visibility: visible; height: 110px;}
+tr:hover .hover-ajou-m {left: -230px; top:calc(50% - 47px); visibility: visible; height: 95px;}
+tr:hover .hover-yonsei-m {left: -325px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+/* merged Korean univ. talk: same title + month (Nov. 2024), logos offset along x */
+tr:hover .hover-yonsei-m2 {left: -110px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-seoultech-m {left: -205px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-kyunghee-m {left: -330px; top:calc(50% - 40px); visibility: visible; height: 80px;}
+/* merged TSirc intro talk: same title + month (Oct. 2024), logos offset along x */
+tr:hover .hover-nokia-m {left: -170px; top:calc(50% - 18px); visibility: visible; height: 35px;}
+tr:hover .hover-murata-m {left: -320px; top:calc(50% - 22px); visibility: visible; height: 44px;}
+/* merged Korean univ. talk: same title + month (Apr. 2024), logos offset along x */
+tr:hover .hover-kaist-m {left: -200px; top:calc(50% - 25px); visibility: visible; height: 50px;}
+tr:hover .hover-jbnu-m {left: -310px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 tr:hover .hover-knu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-jbnu {left: -120px; top:calc(50% - 40px); visibility: visible; height: 90px;}
 tr:hover .hover-abbott {left: -190px; top:calc(50% - 15px); visibility: visible; height: 40px;}
@@ -142,21 +156,13 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
   <tr><td class="tg-desc">
     Innovations in Power-Efficient Bioimpedance Sensor ICs with Open-Source Approaches
     <br>
-    <div class="img-container"><img src="./../img/icons/logo--dgist.png" class="hover-dgist"></div>
-    DGIST
+    <div class="img-container"><img src="./../img/icons/logo--dgist.png" class="hover-dgist-m"></div>
+    <div class="img-container"><img src="./../img/icons/logo--ajou.png" class="hover-ajou-m"></div>
+    <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei-m"></div>
+    DGIST / Ajou University / Yonsei University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
-        <div class="tab-cell" style="flex: 4;">Daegu, Korea <span class='emoji'>🇰🇷</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    Innovations in Power-Efficient Bioimpedance Sensor ICs with Open-Source Approaches
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--ajou.png" class="hover-ajou"></div>
-    Ajou University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
-        <div class="tab-cell" style="flex: 4;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 4;">Daegu / Suwon / Seoul, Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -164,16 +170,6 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
     <br>
     <div class="img-container"><img src="./../img/icons/logo--hanyang.png" class="hover-hanyang"></div>
     Hanyang University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
-        <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    Innovations in Power-Efficient Bioimpedance Sensor ICs with Open-Source Approaches
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei"></div>
-    Yonsei University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2025</div>
         <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
@@ -241,31 +237,13 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
   <tr><td class="tg-desc">
     Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
     <br>
-    <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei"></div>
-    Yonsei University
+    <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei-m2"></div>
+    <div class="img-container"><img src="./../img/icons/logo--seoultech.png" class="hover-seoultech-m"></div>
+    <div class="img-container"><img src="./../img/icons/logo--kyunghee.png" class="hover-kyunghee-m"></div>
+    Yonsei University / SeoulTech / Kyung Hee University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--seoultech.png" class="hover-seoultech"></div>
-    SeoulTech
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Seoul, Korea <span class='emoji'>🇰🇷</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--kyunghee.png" class="hover-kyunghee"></div>
-    Kyung Hee University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Suwon, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 4;">Seoul / Suwon, Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
@@ -308,45 +286,27 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
   <tr><td class="tg-desc">
     Introduction to TSirc Group
     <br>
-    <div class="img-container"><img src="./../img/icons/logo--nokia.png" class="hover-nokia"></div>
-    Nokia
+    <div class="img-container"><img src="./../img/icons/logo--nokia.png" class="hover-nokia-m"></div>
+    <div class="img-container"><img src="./../img/icons/logo--murata.png" class="hover-murata-m"></div>
+    Nokia / Murata Oy
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Oct. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    Introduction to TSirc Group
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--murata.png" class="hover-murata"></div>
-    Murata Oy
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Oct. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Vantaa, Finland <span class='emoji'>🇫🇮</span></div>
+        <div class="tab-cell" style="flex: 4;">Espoo / Vantaa, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
     The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
     <br>
-    <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist"></div>
-    KAIST
+    <div class="img-container"><img src="./../img/icons/logo--kaist.png" class="hover-kaist-m"></div>
+    <div class="img-container"><img src="./../img/icons/logo--jbnu.svg" class="hover-jbnu-m"></div>
+    KAIST / Jeonbuk National University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Apr. 2024</div>
-        <div class="tab-cell" style="flex: 1;">Daejeon, Korea <span class='emoji'>🇰🇷</span></div>
-        <div class="tab-cell" style="flex: 3;">
+        <div class="tab-cell" style="flex: 1.5;">Daejeon / Jeonju, Korea <span class='emoji'>🇰🇷</span></div>
+        <div class="tab-cell" style="flex: 2.5;">
           <i class="fa-solid fa-file-pdf fa-bounce fa-lg"></i>
           <a href="{{ site.base_url }}/assets/KwantaeKim-KAIST-20240423.pdf" target="_blank">Slide</a>
         </div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    The Era of Tiny IoT Platforms: Integrated Circuits for Intelligent Biomedical/Neuromorphic Sensors
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--jbnu.svg" class="hover-jbnu"></div>
-    Jeonbuk National University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Apr. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Jeonju, Korea <span class='emoji'>🇰🇷</span></div>
     </div>
   </td></tr>
   <tr><td class="tg-desc">
