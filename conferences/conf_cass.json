@@ -129,6 +129,22 @@
   },
   {
     "organization": "IEEE",
+    "name": "BIOCAS",
+    "year": 2026,
+    "city": "Incheon",
+    "region": "South Korea",
+    "region_flag": "🇰🇷",
+    "color": "gray",
+    "bg_color": "false",
+    "submission": "2026-05-25",
+    "date_start": "2026-10-08",
+    "date_end": "2026-10-10",
+    "venue": "false",
+    "coordinate": "37.456256, 126.705206",
+    "webpage": "https://2026.ieee-biocas.org"
+  },
+  {
+    "organization": "IEEE",
     "name": "NORCAS",
     "year": 2025,
     "city": "Riga",
