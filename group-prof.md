@@ -335,7 +335,7 @@ toc_title: TSirc Group
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
     <span style="margin-right: 2em;"></span>
-    • <a href="https://kwantaekim.github.io/assets/Kor-Fin-flyer.pdf" target="_blank" class="pub-hover">Korea-Finland Chip Design Symposium</a> <br>
+    • <a href="https://kwantaekim.github.io/events/" target="_blank" class="pub-hover">Korea-Finland Chip Design Symposium</a> <br>
     <span style="margin-right: 2em;"></span>
     • The Ministry of Foreign Affairs, South Korea <span class='emoji'>🇰🇷</span> <br>
     <span style="margin-right: 2em;"></span>

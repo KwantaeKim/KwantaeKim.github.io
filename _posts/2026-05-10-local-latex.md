@@ -84,17 +84,15 @@ Open your `JSON` settings file in **VS Code** and add the following. Note that *
   "editor.formatOnSave": true,
   "latex-workshop.latex.outDir": "%DIR%/tmp",
   "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.view.pdf.viewer": "tab"
 }
 ```
 
-These five lines do the following:
+These four lines do the following:
 
 - Reformats `.tex` on save.
 - Redirects outputs (`.pdf`, `.aux`, `.log`, etc.) to a `./tmp` folder for a clean working directory.
 - Cleans up artifacts after every successful build.
-- Jumps the PDF viewer to your cursor location after every build.
 - Opens the compiled PDF as a **VS Code** tab next to your source.
 
 <br><br>
