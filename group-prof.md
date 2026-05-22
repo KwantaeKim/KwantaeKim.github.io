@@ -339,7 +339,7 @@ toc_title: TSirc Group
     <span style="margin-right: 2em;"></span>
     • The Ministry of Foreign Affairs, South Korea <span class='emoji'>🇰🇷</span> <br>
     <span style="margin-right: 2em;"></span>
-    • $13,800
+    • $14,400
   </div>
 </div>
 
