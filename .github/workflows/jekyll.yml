@@ -11,6 +11,11 @@ on:
   push:
     branches: ["main"]
 
+  # Daily rebuild so past-date strikethrough in the conference tables advances
+  # even on days without a push (uses the runner's UTC date).
+  schedule:
+    - cron: '0 6 * * *'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -42,6 +47,16 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Regenerate conference maps and tables from JSON
+        # Source of truth is conferences/conf_*.json; this writes the
+        # conf_*.html maps and _includes/conferences_*_table.md tables.
+        run: |
+          pip install pandas folium
+          cd conferences && python conferences.py
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"

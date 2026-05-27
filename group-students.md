@@ -17,6 +17,7 @@ toc_title: TSirc Group
 #soujanya-bhowmick {visibility: hidden; height: 0; overflow: hidden;}
 #zhenhan-wang {visibility: hidden; height: 0; overflow: hidden;}
 #lingyun-yao {visibility: hidden; height: 0; overflow: hidden;}
+#jiayu-hu {visibility: hidden; height: 0; overflow: hidden;}
 #bingzheng-qiu {visibility: hidden; height: 0; overflow: hidden;}
 #yu-xue {visibility: hidden; height: 0; overflow: hidden;}
 #kaiyuan-jiang {visibility: hidden; height: 0; overflow: hidden;}
@@ -71,7 +72,7 @@ toc_title: TSirc Group
       <a href="https://www.linkedin.com/in/soujanya-bhowmick/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 2em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
-      <br><span style="margin-right: 1.4em;"></span>Neural Network Accelerators
+      <br><span style="margin-right: 1.4em;"></span>Low-Footprint AI Models
     </div>
   </div>
   </td></tr>
@@ -162,18 +163,17 @@ toc_title: TSirc Group
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/zhenhan-wang-332837232/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 1em;"></span>
-      <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
+      <i class="fa-solid fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
       <br><span style="margin-right: 1.4em;"></span>
-      IEEE BioCAS 2025
+      <a href="https://doi.org/10.1109/BioCAS67066.2025.00109" target="_blank" class="pub-hover">IEEE BioCAS 2025</a>
       <span style="display: block; height: 0.5em;"></span>
-      <span style="margin-right: 0.1em;"></span><i class="fa-regular fa-award fa-lg"></i><span style="margin-right: 0.1em;"></span>
+      <span style="margin-right: 0.1em;"></span><i class="fa-solid fa-award fa-lg"></i><span style="margin-right: 0.1em;"></span>
       <span style="font-weight: bold;">Honors</span>
       <br><span style="margin-right: 1.4em;"></span>
       IEEE CAS Student Travel Grant 2025
       <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
-      <br><span style="margin-right: 1.4em;"></span>Flexible Integrated Circuits
-      <br><span style="margin-right: 1.4em;"></span>Voltage-to-Time Converter
+      <br><span style="margin-right: 1.4em;"></span>Flexible Integrated Circuits (Analog)
     </div>
   </div>
   </td></tr>
@@ -327,7 +327,71 @@ toc_title: TSirc Group
 
 <span style="display: block; height: 10em;"></span>
 
-<!-- ## MSc Students -->
+## MSc Students
+
+<!-- ----------------------------------------------------------------------- -->
+
+### Jiayu Hu {#jiayu-hu}
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+  <div class="tab-row" style="display: flex; align-items: center;">
+    <div class="tab-cell" style="flex: 2;">
+    <!-- First Tab -->
+    <center><img src="./../img/group/Jiayu_Hu.jpg" style='
+      height: 200px;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;'>
+    </center>
+    </div>
+    <div class="tab-cell" style="flex: 0.5;"></div>
+    <div class="tab-cell" style="flex: 5;">
+    <!-- Second Tab -->
+      <div style="font-size: 1.5em; font-weight: bold;">Jiayu Hu</div>
+      <span style="display: block; height: 0.5em;"></span>
+      Funded by Aalto SemiSummer2026
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
+      <br><span style="margin-right: 1.4em;"></span>Flexible Integrated Circuits (Digital)
+    </div>
+  </div>
+  </td></tr>
+</tbody>
+</table>
+
+<div style="font-size: 1.5em; font-weight: bold;">Education</div>
+<span style="display: block;"></span>
+
+<!-- MSc -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;">
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> MSc
+  </div>
+  <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+  <div class="tab-cell" style="flex: 1;">Sep 2025 ~</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 5;">Electronics and Nanotechnology</div>
+</div>
+
+<span style="display: block;"></span>
+
+<!-- BEng -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"><i class="fa-solid fa-graduation-cap"></i> BEng</div>
+  <div class="tab-cell" style="flex: 4;">Tongji University, China <span class='emoji'>🇨🇳</span></div>
+  <div class="tab-cell" style="flex: 1;">2018</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 5;">Electronic Science and Technology</div>
+</div>
+
+<span style="display: block; height: 10em;"></span>
 
 ## Alunmi
 
@@ -361,12 +425,12 @@ toc_title: TSirc Group
       <span style="margin-right: 1.4em;"></span>
       → Firstack, China <span class='emoji'>🇨🇳</span>
       <span style="display: block; height: 0.5em;"></span>
-      <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
+      <i class="fa-solid fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
       <br>
       <span style="margin-right: 1.4em;"></span>
       <a href="https://doi.org/10.1109/NewCAS64648.2025.11107006" target="_blank" class="pub-hover">IEEE NEWCAS 2025</a>
       <span style="display: block; height: 0.5em;"></span>
-      <span style="margin-right: 0.1em;"></span><i class="fa-regular fa-award fa-lg"></i><span style="margin-right: 0.1em;"></span>
+      <span style="margin-right: 0.1em;"></span><i class="fa-solid fa-award fa-lg"></i><span style="margin-right: 0.1em;"></span>
       <span style="font-weight: bold;">Honors</span>
       <br><span style="margin-right: 1.4em;"></span>
       IEEE CAS Student Travel Grant 2025
@@ -406,7 +470,7 @@ toc_title: TSirc Group
       <span style="margin-right: 1.4em;"></span>
       → Huawei, China <span class='emoji'>🇨🇳</span>
       <span style="display: block; height: 0.5em;"></span>
-      <i class="fa-regular fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
+      <i class="fa-solid fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
       <br><span style="margin-right: 1.4em;"></span>
       <a href="https://doi.org/10.1109/NewCAS64648.2025.11107089" target="_blank" class="pub-hover">IEEE NEWCAS 2025</a>
     </div>
