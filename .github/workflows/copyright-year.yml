@@ -1,0 +1,40 @@
+name: Bump copyright year
+
+# Runs on Jan 1 each year (00:15 UTC), on every push to main, and on manual
+# dispatch. Push trigger means a stale year is fixed the moment you push
+# anything in the new year, not only when the cron fires.
+# Replaces the trailing year in the README.md copyright string with the
+# current year, commits if anything actually changed.
+on:
+  schedule:
+    - cron: '15 0 1 1 *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Replace trailing year in README.md
+        run: |
+          YEAR=$(date -u +%Y)
+          # Match: "Copyright (c) 2024-<4 digits> KwantaeKim", capture the
+          # prefix and suffix, swap the year in between.
+          sed -i -E "s/(Copyright \(c\) 2024-)[0-9]{4}( KwantaeKim)/\1${YEAR}\2/" README.md
+
+      - name: Commit if the year changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "README.md already on current year; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: bump copyright year to $(date -u +%Y)"
+          git push

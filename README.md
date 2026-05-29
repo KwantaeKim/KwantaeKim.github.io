@@ -8,8 +8,9 @@ It is built with bulma-clean-theme, developed by [C.S. Rhymes](https://www.csrhy
 
 <!-- Copyright (c) 2018 chrisrhymes -->
 
-<img src='./img/copyright-bulma-clean-theme.png'>
+<span style="display:inline-block; background:#02343F; color:#fff; padding:2px 10px; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size:12px; letter-spacing:0.02em;">Copyright (c) 2018 chrisrhymes</span>
 
-<img src='./img/copyright-kwantae.png'>
+<!-- The trailing year below is auto-bumped on Jan 1 by .github/workflows/copyright-year.yml -->
+<span style="display:inline-block; background:#02343F; color:#fff; padding:2px 10px; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size:12px; letter-spacing:0.02em;">Copyright (c) 2024-2026 KwantaeKim</span>
 
 MIT Licence unless otherwise specified. See <a href="./LICENSE.txt" target="_blank">License</a> file for details.
