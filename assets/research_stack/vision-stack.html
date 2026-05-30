@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TSirc — Vision Stack</title>
+  <link rel="stylesheet" href="vision-stack.css" />
+</head>
+<body>
+  <div class="root">
+    <div class="layout">
+      <div class="stage-col">
+        <div id="stage" class="stage">
+          <div id="world" class="world"></div>
+        </div>
+      </div>
+      <!-- Middle zone: flat enlarged copy of the hovered sub-motif -->
+      <div id="callout" class="callout" aria-live="polite">
+        <div class="callout-hint">
+          <svg class="hint-cursor" viewBox="0 0 44 50" aria-hidden="true">
+            <circle class="hint-ripple" cx="13" cy="13" r="9" />
+            <path class="hint-arrow"
+              d="M6 3 L6 31 L13.5 24 L18.5 35 L23 33 L18 22.5 L28 22.5 Z" />
+          </svg>
+          <span>Hover a labelled part for a closer look</span>
+        </div>
+      </div>
+      <aside id="panel" class="panel panel--application"></aside>
+    </div>
+    <!-- leader line from a highlighted sub-motif to its callout card -->
+    <svg id="connector" class="connector" aria-hidden="true"></svg>
+  </div>
+
+  <div id="tooltip" class="tooltip" role="tooltip"></div>
+
+  <script src="vision-stack.js"></script>
+</body>
+</html>

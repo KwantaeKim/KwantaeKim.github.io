@@ -1,0 +1,70 @@
+{
+  "application": [
+    {
+      "tag": "audio",
+      "title": "Time-Domain Audio Feature Extractor",
+      "authors": "K. Kim et al.",
+      "venue": "IEEE JSSC",
+      "year": "2022",
+      "doi": "10.1109/JSSC.2022.3195610"
+    },
+    {
+      "tag": "biomedical",
+      "title": "Current Generator for BioZ Sensing",
+      "authors": "K. Kim et al.",
+      "venue": "IEEE JSSC",
+      "year": "2022",
+      "doi": "10.1109/JSSC.2021.3100716"
+    },
+    {
+      "tag": "biomedical",
+      "title": "Instrumentation Amplifier for BioZ Sensing",
+      "authors": "Y. Xue et al.",
+      "venue": "IEEE NEWCAS",
+      "year": "2025",
+      "doi": "10.1109/NewCAS64648.2025.11107006"
+    }
+  ],
+  "system": [
+    {
+      "tag": "flexible",
+      "title": "OpAmp in Flexible Substrate",
+      "authors": "Z. Wang et al.",
+      "venue": "IEEE BioCAS",
+      "year": "2025",
+      "doi": "10.1109/BioCAS67066.2025.00109"
+    },
+    {
+      "tag": "algorithm",
+      "title": "Low-footprint GRU architecture",
+      "authors": "S. Bhowmick et al.",
+      "status": "ongoing"
+    }
+  ],
+  "circuit": [
+    {
+      "tag": "analog",
+      "title": "Dynamic Current Reference",
+      "authors": "K. Jiang et al.",
+      "venue": "IEEE NEWCAS",
+      "year": "2025",
+      "doi": "10.1109/NewCAS64648.2025.11107089"
+    },
+    {
+      "tag": "digital",
+      "title": "Near-Threshold SRAM",
+      "authors": "Q. Chen et al.",
+      "venue": "IEEE TCASAI",
+      "year": "2025",
+      "doi": "10.1109/TCASAI.2024.3507694",
+      "coFirst": 3
+    },
+    {
+      "tag": "automation",
+      "title": "cdl_gen: Python-based schematic generator",
+      "authors": "K. Kim",
+      "status": "repo",
+      "repo": "https://github.com/KwantaeKim/cdl_gen"
+    }
+  ]
+}

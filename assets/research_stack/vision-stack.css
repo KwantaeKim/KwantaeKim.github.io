@@ -1,0 +1,1065 @@
+/* ============================================================
+   TSirc Vision Stack — transparent, embeddable iframe content
+   Light, teal-accented to match the host academic page.
+   ============================================================ */
+
+:root {
+  /* Single teal — the site's only chromatic accent */
+  --teal: #02343F;
+  --teal-2: #14535F;
+  --teal-soft: rgba(2, 52, 63, 0.55);
+  --teal-mute: rgba(2, 52, 63, 0.35);
+  --teal-tint: rgba(2, 52, 63, 0.06);
+  --teal-tint-2: rgba(2, 52, 63, 0.12);
+
+  /* Body / outline neutrals — match host charcoal */
+  --text: #363636;
+  --text-soft: #5a5a5a;
+  --text-mute: #8a8a8a;
+
+  /* Surface paper (planes / panels) — near-white, slight warm tint */
+  --paper: rgba(255, 255, 255, 0.96);
+  --paper-2: rgba(255, 255, 255, 0.85);
+
+  /* Outlines */
+  --line: rgba(2, 52, 63, 0.18);
+  --line-soft: rgba(2, 52, 63, 0.08);
+
+  /* Legacy alias map — the rest of the stylesheet still
+     references --ink / --paper etc. Point them at the new palette. */
+  --ink: var(--teal);
+  --ink-2: var(--teal-2);
+  --ink-soft: var(--text-soft);
+  --ink-mute: var(--text-mute);
+
+  /* Per-layer accents — all teal now, no more per-layer hue */
+  --app: var(--teal);
+  --app-soft: var(--teal-soft);
+  --sys: var(--teal);
+  --sys-soft: var(--teal-soft);
+  --cir: var(--teal);
+  --cir-soft: var(--teal-soft);
+
+  /* Tag colors — teal-on-tint, no more coral/amber */
+  --t-audio: var(--teal);
+  --t-biomedical: var(--teal);
+  --t-algorithm: var(--teal);
+  --t-analog: var(--teal);
+  --t-digital: var(--teal);
+
+  --font-serif: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  --font-display: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  --font-sans: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  --font-mono: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body { overflow: hidden; }
+
+a { color: inherit; }
+
+.root {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 12px 16px 16px;
+  position: relative;            /* anchor for the connector overlay */
+}
+
+/* ============================================================
+   Layout — three zones: 3D stack | enlarged callout | projects panel
+   ============================================================ */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 340px) minmax(286px, 312px);
+  gap: 20px;
+  align-items: stretch;
+  min-height: 720px;
+}
+
+/* Connector overlay: dashed leader from the highlighted sub-motif to the card */
+.connector {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  color: var(--teal);
+  z-index: 4;
+}
+
+/* ============================================================
+   CALLOUT — flat, enlarged copy of the hovered sub-motif (middle zone)
+   ============================================================ */
+.callout {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 720px;
+  padding: 0 2px;
+}
+.callout-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--ink-mute);
+  text-align: center;
+}
+.callout-hint span { white-space: nowrap; opacity: 0.7; }
+.callout.is-active .callout-hint { display: none; }
+
+/* animated cursor: a "tap + ripple" telling users the diagram is hoverable */
+.hint-cursor { width: 64px; height: 72px; overflow: visible; }
+.hint-arrow {
+  fill: var(--teal);
+  stroke: #fff;
+  stroke-width: 1.2;
+  animation: hint-tap 2.1s ease-in-out infinite;
+}
+.hint-ripple {
+  fill: none;
+  stroke: var(--teal);
+  stroke-width: 2;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hint-ripple 2.1s ease-out infinite;
+}
+@keyframes hint-tap {
+  0%, 12%, 34%, 100% { transform: translateY(0); }
+  20%               { transform: translateY(4px); }
+}
+@keyframes hint-ripple {
+  0%, 14% { opacity: 0;    transform: scale(0.5); }
+  24%     { opacity: 0.55; transform: scale(0.75); }
+  60%, 100% { opacity: 0;  transform: scale(1.7); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hint-arrow, .hint-ripple { animation: none; }
+  .hint-ripple { opacity: 0; }
+}
+/* framed card around the zoomed figure */
+.callout-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 40px -26px rgba(2, 52, 63, 0.4);
+  padding: 10px 12px 12px;
+  animation: callout-in .2s ease;
+}
+.callout-cap {
+  /* dark pill + white text, same family as the panel tag badges */
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin: 0 0 10px;
+}
+.callout-svg {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  color: var(--teal);            /* currentColor for the cloned motif */
+  display: block;
+}
+@keyframes callout-in {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Sub-motif hover: finer-grained selection on top of the layer hover ── */
+.submotif { pointer-events: auto; cursor: pointer; transition: opacity .2s ease; }
+.submotif > rect:first-child { transition: fill .2s ease; }
+.submotif.is-dim { opacity: 0.3; }                 /* the other motifs on this plane */
+.submotif.is-hi > rect:first-child {               /* hovered: faint tint + dashed outline */
+  fill: rgba(2, 52, 63, 0.07);
+  stroke: var(--teal);
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+}
+
+/* ============================================================
+   STAGE — isometric 3D planes
+   ============================================================ */
+.stage-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
+  /* Nudge the diagram up slightly relative to the right-hand projects panel */
+  transform: translateY(-28px);
+}
+
+.stage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4px 0 14px;
+}
+.stage-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.stage-eyebrow .blip {
+  display: inline-block;
+  width: 6px; height: 6px;
+  background: var(--app);
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: 1px;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+.stage-counter {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--ink-mute);
+}
+.stage-counter b { color: var(--ink); font-weight: 500; }
+
+.stage {
+  flex: 1;
+  position: relative;
+  min-height: 660px;
+  /* Planes stay orthographic (each is flattened under the flat #world), so
+     plane overlap is still governed by z-index, not 3D depth-sort. This
+     perspective applies only to #world's own subtle mouse-driven tilt —
+     it leans the whole composited stack toward the cursor. */
+  perspective: 2400px;
+  perspective-origin: 50% 42%;
+}
+
+.world {
+  position: absolute;
+  inset: 0;
+  /* Flat (default transform-style) → child planes composite by z-index.
+     Each plane carries its own isometric rotation in its own transform.
+     The whole flattened stack leans slightly toward the cursor (JS
+     setupParallax); z-index + per-plane zoom are unaffected. */
+  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transform-origin: 50% 50%;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+}
+
+/* vertical guide rod through the stack */
+.rod {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 540px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--line) 12%,
+    var(--line) 88%,
+    transparent 100%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.rod::before, .rod::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 8px; height: 8px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.rod::before { top: 0; }
+.rod::after { top: 100%; }
+
+/* ---------- Plane ---------- */
+.plane {
+  /* Sized so the rotated isometric stack fits inside the (narrower) stack
+     column of the 3-zone layout without its left corner being clipped. */
+  --plane-w: 378px;
+  --plane-h: 182px;
+  --plane-thick: 12px;
+  --step: 128px;            /* vertical screen gap between adjacent planes */
+  --accent: var(--app);
+  --accent-soft: var(--app-soft);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--plane-w);
+  height: var(--plane-h);
+  margin-left: calc(var(--plane-w) / -2);
+  margin-top: calc(var(--plane-h) / -2);
+  /* OUTER layer: flat 2D only — a vertical screen offset to stack the planes
+     plus the hover zoom. The scale is a pure 2D transform here (NO 3D rotation
+     on this element), so it interpolates as a clean uniform zoom with no
+     perspective shift/skew during the transition. The isometric 3D tilt lives
+     on the inner .plane-3d below. Inter-plane overlap is decided by z-index. */
+  transform:
+    translateY(calc((var(--i) - 1) * var(--step)))
+    scale(var(--zoom, 1));        /* hover zoom — pure 2D, decoupled from the 3D tilt */
+  transform-origin: 50% 50%;      /* scale about the plane centre → no shift */
+  z-index: calc(10 - var(--i));   /* rest order: App(0) front … Circuit(2) back */
+  transition:
+    transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1),
+    filter 0.45s,
+    opacity 0.45s;
+  background: none;
+  border: none;
+  padding: 0;
+  /* The flat .plane box is NOT the hit target — pointer events go to the
+     rotated .plane-top below, so the hit area matches the visible isometric
+     face (otherwise the flat boxes overlap and block neighbouring planes). */
+  pointer-events: none;
+  font: inherit;
+  color: inherit;
+}
+.plane--application { --accent: var(--app); --accent-soft: var(--app-soft); }
+.plane--system { --accent: var(--sys); --accent-soft: var(--sys-soft); }
+.plane--circuit { --accent: var(--cir); --accent-soft: var(--cir-soft); }
+
+/* INNER layer: the static isometric 3D tilt + preserve-3d (for the extruded
+   side faces). It is kept OFF the animated 2D scale above, so the hover zoom
+   never interpolates together with the rotation. No transition here. */
+.plane-3d {
+  position: absolute;
+  inset: 0;
+  transform: rotateX(58deg) rotateZ(-38deg);
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+}
+
+/* Allow Circuit's hit-zone to spill above its visible top face.
+   Combined with manual hit-testing in JS (see vision-stack.js)
+   the Circuit plane reliably captures hover/click anywhere over
+   its visible top face, including the screen-space wedge near
+   System's bottom edge. */
+.plane--circuit { overflow: visible; }
+
+.plane-top {
+  position: absolute;
+  inset: 0;
+  background: var(--paper);
+  border: 1px solid var(--teal);
+  display: block;
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 12px 28px -16px rgba(2, 52, 63, 0.35);
+  /* Sync with the 0.45s hover zoom so the active-state fill/shadow don't
+     animate on a mismatched timing while the plane scales. Border-width is
+     NOT animated (kept constant 1px) — see .plane--active .plane-top. */
+  transition: background .45s ease, box-shadow .45s ease, border-color .45s ease;
+  color: var(--teal);
+  /* Interactive surface: this rotated face is hit-tested as the drawn
+     parallelogram, so hover/selection matches the visible plane exactly. */
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* extruded sides for depth — decorative only, do not catch pointer */
+.plane-side {
+  position: absolute;
+  background: var(--teal);
+  pointer-events: none;
+}
+.plane-side--right {
+  width: var(--plane-thick);
+  height: 100%;
+  right: 0; top: 0;
+  transform-origin: left center;
+  transform: translateX(100%) rotateY(90deg);
+  background: linear-gradient(to bottom, var(--teal-2), var(--teal));
+}
+.plane-side--front {
+  width: 100%;
+  height: var(--plane-thick);
+  left: 0; bottom: 0;
+  transform-origin: center top;
+  transform: translateY(100%) rotateX(-90deg);
+  background: linear-gradient(to right, var(--teal), var(--teal-2) 30%, var(--teal));
+}
+
+/* Subtle teal glow beneath each plane */
+.plane-glow {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(
+    ellipse at center,
+    var(--teal) 0%,
+    transparent 65%
+  );
+  transform: translateZ(-180px);
+  pointer-events: none;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* Plane content */
+.plane-pattern-wrap {
+  position: absolute;
+  inset: 0;
+  color: var(--teal);
+  opacity: 0.32;
+  transition: opacity .5s, color .5s, transform .8s;
+  pointer-events: none;
+}
+.plane-pattern {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.plane-label {
+  position: absolute;
+  left: 28px;
+  bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+  z-index: 2;
+  pointer-events: none;
+}
+.plane-code {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-soft);
+  transition: color .5s;
+}
+.plane-code b { color: var(--teal); font-weight: 600; }
+.plane-name {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--teal);
+  font-style: italic;
+  /* No visible pill — instead, a stacked white halo around the
+     glyphs pushes back the teal pattern strokes behind it so the
+     text reads cleanly without a discrete background box. */
+  text-shadow:
+    0 0 6px #fff,
+    0 0 6px #fff,
+    0 0 6px #fff,
+    0 0 6px #fff,
+    0 0 3px #fff,
+    0 0 3px #fff;
+}
+.plane-tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+.plane-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--teal-soft);
+  background: transparent;
+  transition: all .4s;
+}
+
+/* ---- Active state ----
+   Bring the hovered plane to the front via z-index, and zoom it in slightly.
+   The zoom is a uniform scale composed onto the isometric transform chain
+   (via --zoom), so the tilt/angle and position are preserved. */
+.plane--active {
+  z-index: 100;
+  --zoom: 1.03;
+}
+.plane--active .plane-top {
+  /* Active edge stays a constant 1px border (NO width change → no mid-zoom
+     re-rasterization twitch). Active state is signalled by the tinted fill
+     and the deeper lift shadow only. */
+  background:
+    linear-gradient(135deg, var(--teal-tint-2) 0%, var(--teal-tint) 100%),
+    var(--paper);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 24px 50px -16px rgba(2, 52, 63, 0.45);
+}
+.plane--active .plane-pattern-wrap {
+  opacity: 0.6;
+  color: var(--teal);
+}
+.plane--active .plane-tag {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+.plane--active .plane-code { color: var(--teal); }
+.plane--active .plane-glow { opacity: 0.18; }
+
+/* ---- Dimmed (not selected) ---- */
+.plane--dimmed { opacity: 0.7; }
+.plane--dimmed .plane-top {
+  background: var(--paper-2);
+  border-color: var(--line);
+}
+.plane--dimmed .plane-pattern-wrap { opacity: 0.22; }
+.plane--dimmed .plane-name,
+.plane--dimmed .plane-code b { color: var(--teal-soft); }
+
+.plane:focus-visible { outline: none; }
+.plane:focus-visible .plane-top {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+}
+
+/* ============================================================
+   Axis legend on the left
+   ============================================================ */
+.axis {
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 60px 0;
+  pointer-events: none;
+}
+.axis-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  transition: color .3s;
+}
+.axis-step::before {
+  content: "";
+  width: 14px; height: 1px;
+  background: var(--line);
+}
+.axis-step.is-active { color: var(--ink); }
+.axis-step.is-active::before { background: var(--ink); width: 22px; }
+
+/* ============================================================
+   PANEL — projects
+   ============================================================ */
+.panel {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--app);
+  padding: 24px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  transition: border-top-color .5s;
+  box-shadow: 0 30px 50px -30px rgba(2, 52, 63, 0.18);
+}
+.panel--application { border-top-color: var(--app); }
+.panel--system { border-top-color: var(--sys); }
+.panel--circuit { border-top-color: var(--cir); }
+
+.panel-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.panel-code {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  padding: 5px 8px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.panel-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.015em;
+  margin: -4px 0 4px;
+  line-height: 1;
+}
+.panel-blurb {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+  /* nicer scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.project {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  /* Geometry matches .is-emphasised so toggling the inverted state only swaps
+     colours — the card's box doesn't grow/shift under the cursor (dizzying). */
+  padding: 14px 14px;
+  margin: 6px 0;
+  border-radius: 4px;
+  border-bottom: 1px solid var(--line-soft);
+  position: relative;
+  transition: transform .25s, background-color .25s, color .25s;
+}
+.project:last-child { border-bottom: none; }
+
+/* Emphasised: matching cards when a sub-motif is hovered/pinned — inverted
+   colour treatment only (geometry already baked into .project above). */
+.project.is-emphasised {
+  background-color: #02343F !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+  border-bottom-color: transparent;
+}
+.project.is-emphasised .project-title,
+.project.is-emphasised .project-venue,
+.project.is-emphasised .project-authors,
+.project.is-emphasised .project-doi { color: rgba(255, 255, 255, 0.96) !important; }
+.project.is-emphasised .project-tag,
+.project.is-emphasised .project-doi-key {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  color: #02343F !important;
+}
+.project::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 14px;
+  bottom: 14px;
+  width: 3px;
+  background: var(--accent, var(--app));
+  opacity: 0;
+  transition: opacity .25s;
+}
+.project--application { --accent: var(--app); }
+.project--system { --accent: var(--sys); }
+.project--circuit { --accent: var(--cir); }
+.project:hover { transform: translateX(2px); }
+.project:hover::before { opacity: 1; }
+.project:hover .project-doi-arrow { transform: translate(2px, -2px); }
+
+.project-tag-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.project-tag {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 2px;
+  color: white;
+}
+.project-tag--audio { background: var(--t-audio); }
+.project-tag--biomedical { background: var(--t-biomedical); }
+.project-tag--flexible { background: var(--teal); }
+.project-tag--algorithm { background: var(--t-algorithm); }
+.project-tag--analog { background: var(--t-analog); }
+.project-tag--digital { background: var(--t-digital); }
+.project-tag--automation { background: var(--teal); }
+
+.project-venue {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.project-title {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 3px 0 5px;
+}
+.project-foot {
+  /* Column layout in both states so emphasising doesn't grow the card's
+     height (the inverted dark fill cramped the row layout horizontally). */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 11.5px;
+}
+.project-authors {
+  color: var(--ink-soft);
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+.project-doi {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--accent, var(--app));
+  text-decoration: none;
+}
+.project-doi-key {
+  background: var(--accent, var(--app));
+  color: white;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+.project-doi-val { letter-spacing: 0.02em; }
+.project-doi-arrow { transition: transform .2s; }
+
+.empty {
+  font-size: 13px;
+  color: var(--ink-soft);
+  padding: 24px 0;
+  font-style: italic;
+}
+
+.panel-foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-soft);
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.panel-foot .badge {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.dot-sep { opacity: 0.5; }
+
+/* ============================================================
+   TOOLTIP — DOI preview (CrossRef-fed)
+   ============================================================ */
+.tooltip {
+  position: fixed;
+  z-index: 100;
+  width: 340px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 4px;
+  padding: 14px 16px 14px;
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity .18s, transform .18s;
+}
+.tooltip.is-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px; height: 10px;
+  background: var(--ink);
+  transform: rotate(45deg);
+  right: -5px;
+  top: 24px;
+}
+
+.tooltip-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.tooltip-source {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+.tooltip-source .dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  background: currentColor;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: 1px;
+}
+.tooltip-loading {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tooltip-title {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  line-height: 1.3;
+  font-weight: 500;
+  margin: 2px 0 8px;
+  color: #fff;
+}
+.tooltip-meta {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.7);
+  margin: 0 0 8px;
+  font-style: italic;
+  font-family: var(--font-serif);
+  white-space: pre-line;     /* render \n between authors and venue */
+}
+.tooltip-meta .kk-author {
+  color: rgba(255, 255, 255, 0.96);
+  font-weight: 600;
+  font-style: normal;        /* pop against the italic surrounding text */
+}
+.tooltip-abstract {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.78);
+  margin: 0 0 10px;
+  line-height: 1.55;
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+  text-wrap: pretty;
+}
+.tooltip-abstract.is-clipped::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, var(--ink));
+  pointer-events: none;
+}
+.tooltip-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+}
+.tooltip-doi {
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.02em;
+}
+.tooltip-cta-link {
+  color: var(--app-soft);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+/* Embed-friendly breakpoint: keep side-by-side until 800 px (was 1024 px),
+   so the iframe in research.md doesn't drop to stacked on typical content
+   columns. Standalone v3.html stays side-by-side until 800 px too. */
+@media (max-width: 800px) {
+  .layout {
+    /* single column: stack, then callout row, then panel (DOM order) */
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .stage-col { min-height: 540px; }
+  .stage { min-height: 500px; }
+  .plane {
+    --plane-w: 440px;
+    --plane-h: 220px;
+    --step: 150px;
+  }
+  .axis { display: none; }
+  /* callout reflows to a centred full-width band between stack and panel;
+     the connector leader is dropped (proximity makes the relation clear). */
+  .callout { min-height: 0; padding: 4px 0 8px; }
+  .callout:not(.is-active) { display: none; }   /* hide empty hint band when idle */
+  .callout-card { max-width: 420px; margin: 0 auto; }
+  .callout-svg { max-height: 240px; margin: 0 auto; }
+  .connector { display: none; }
+}
+
+@media (max-width: 600px) {
+  .root { padding: 8px; }
+  .stage { min-height: 420px; }
+  .plane {
+    --plane-w: 320px;
+    --plane-h: 170px;
+    --step: 118px;
+  }
+  .plane-name { font-size: 28px; }
+  .panel-title { font-size: 26px; }
+  .callout-svg { max-height: 160px; max-width: 280px; }
+}
+
+/* ============================================================
+   Layout comparison variants — used by v2_1/v2_2/v2_3.html via
+   ?layout=a|b|c (applied as .root.lay-* in JS). All three enlarge
+   the stack to v1 size and move the project panel to the bottom.
+   ============================================================ */
+.lay-a .plane, .lay-b .plane, .lay-c .plane {
+  /* Responsive plane sizing for embeds. The iframe in research.md spans the
+     bulma container (~960 px desktop, 1152 px widescreen, 1344 px fullhd);
+     the stack column inside lay-c is iframe − right-rail (360–440 px) − ~52 px
+     of padding/gap. clamp() lets the plane scale 400→540 with the iframe so
+     the stack neither overflows at 960 nor looks dwarfed at fullhd. */
+  --plane-w: clamp(400px, 45vw, 540px);
+  --plane-h: clamp(200px, 22vw, 260px);
+  --plane-thick: 14px;
+  --step: clamp(140px, 16vw, 188px);
+}
+.lay-a .stage, .lay-b .stage, .lay-c .stage { min-height: 560px; }
+
+/* A — big stack (top-left) + callout (top-right); panel full-width below */
+.lay-a .layout {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 380px);
+  grid-template-areas: "stack callout" "panel panel";
+  min-height: auto;
+}
+.lay-a .stage-col { grid-area: stack; }
+.lay-a .callout   { grid-area: callout; min-height: 560px; }
+.lay-a .panel     { grid-area: panel; }
+
+/* B — full-width stack on top; callout + panel together at the bottom */
+.lay-b .layout {
+  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+  grid-template-areas: "stack stack" "callout panel";
+  min-height: auto;
+}
+.lay-b .stage-col { grid-area: stack; }
+.lay-b .callout   { grid-area: callout; min-height: 320px; }
+.lay-b .panel     { grid-area: panel; }
+
+/* C — big stack on the left defines the height; a right rail holds the callout
+   (top) with the project panel directly beneath it. Everything stays within
+   the stack's height (the panel scrolls internally if its list is long). */
+.lay-c .layout {
+  grid-template-columns: minmax(0, 1fr) clamp(360px, 34%, 440px);
+  grid-template-rows: 240px minmax(0, 1fr);   /* callout space reserved up-front */
+  grid-template-areas:
+    "stack callout"
+    "stack panel";
+  /* Definite height: the panel row is the leftover of a FIXED total, so a
+     longer/shorter project list can no longer grow the grid and shove the
+     vertically-centred stack around when hovering between layers. Sized so the
+     panel fits up to 3 articles (~364px after dropping chips + brief) below the
+     300px callout with no scroll, and tall enough to contain the ~665px stack
+     PLUS the active state's drop shadow (~50px) so the bottom isn't clipped. */
+  height: 760px;
+  min-height: auto;
+  align-items: stretch;
+}
+.lay-c .stage-col { grid-area: stack; min-height: 0; }
+.lay-c .stage { height: 100%; min-height: 0; }
+.lay-c .callout {
+  grid-area: callout;
+  min-height: 0;
+  height: 100%;                 /* always fills its reserved row → panel never shifts */
+  overflow: hidden;
+  padding: 0;
+}
+/* idle: the reserved area reads as a dashed placeholder frame */
+.lay-c .callout:not(.is-active) {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: rgba(2, 52, 63, 0.015);
+}
+/* Card fills the reserved placeholder box exactly, so callouts don't jump in
+   size when toggling on/off. The pill sits on top, the SVG fills the rest. */
+.lay-c .callout-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;     /* keep the pill shrink-wrapped; svg sets its own width */
+  overflow: hidden;
+}
+.lay-c .callout-svg {
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+  width: 100%;
+}
+.lay-c .panel {
+  grid-area: panel;
+  min-height: 0;
+  overflow: hidden;             /* row is sized to fit the list → no scrollbars */
+}
+.lay-c .projects { overflow: hidden; }   /* inner list also fits, no inner scroll */
+
+/* keep the variants single-column with narrow planes on small screens
+   (breakpoint lowered to 800 px to match the default-layout block above). */
+@media (max-width: 800px) {
+  .lay-a .layout, .lay-b .layout, .lay-c .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-template-areas: "stack" "callout" "panel";
+    height: auto;
+  }
+  .lay-a .plane, .lay-b .plane, .lay-c .plane {
+    --plane-w: 440px; --plane-h: 220px; --step: 150px;
+  }
+  .lay-a .stage, .lay-b .stage, .lay-c .stage { min-height: 500px; }
+  .lay-c .stage { height: auto; }
+  .lay-c .callout { height: auto; overflow: visible; }
+  .lay-c .panel, .lay-c .projects { overflow: visible; }
+}

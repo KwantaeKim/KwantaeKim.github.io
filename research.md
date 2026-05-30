@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: research
 # hero_height: is-large
 show_sidebar: false
 hero_image: /img/research/hero_image.png
@@ -18,10 +18,6 @@ menubar_toc: true
 ## <i class="fa-solid fa-star"></i> Vision
 
 The rapid advancement of <i class="fa-solid fa-wifi"></i> <b>Internet-of-Things (IoT)</b> sensor platform has been penetrating all corners of our lives, presenting unprecedented levels of demands for power efficiency, computation latency, task complexity, and form factors. The next evolutionary phase of IoT platform will be realized with the following four key features toward further enriching our daily lives: <b>Tiny</b>, <b>Sensory</b>, <b>Intelligent</b>, and <b>Wireless</b>.
-
-<center>
-<img src='{{ site.base_url }}/img/research/vision.png' style='width: 90%;' class='center'>
-</center>
 <br>
 
 <b>TSirc Group</b> aims to <i>Democratize</i> these features of IoT platform, envisioning a future where everyone can enjoy the benefits. To arrive at this goal, the <b><i class="fa-solid fa-microchip fa-lg" style="color: black;"></i> Integrated Circuit (IC)</b> designers will need to develop highly integrated <b>System-on-Chips (SoCs)</b> that operate efficiently within constrained energy sources and silicon area.

@@ -3,7 +3,7 @@
 
 # README
 
-This repository is about Kwantae Kim's personal [webpage](https://kwantaekim.github.io).<br>
+This repository hosts the TSirc Group [website](https://kwantaekim.github.io).<br>
 It is built with bulma-clean-theme, developed by [C.S. Rhymes](https://www.csrhymes.com/).
 
 <!-- Copyright (c) 2018 chrisrhymes -->

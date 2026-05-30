@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% comment %}
+  Page-specific layout for /research.
+  Duplicates _layouts/default.html exactly, with two additions:
+    1. A full-container-width vision-stack iframe injected ABOVE the
+       TOC + content columns (so the interactive research stack spans
+       the whole content area, with the TOC starting below it).
+    2. The content is wrapped in <div class="content"> to preserve the
+       behaviour of _layouts/page.html, which research.md previously
+       used as its layout.
+  If you change default.html or page.html, mirror the changes here.
+{% endcomment %}
+{% if page.menubar or page.menubar_toc %}
+{% assign has_left_sidebar = true %}
+{% endif %}
+
+{% if page.show_sidebar and has_left_sidebar  %}
+{% assign content_width = 'is-4' %}
+{% elsif page.show_sidebar or has_left_sidebar %}
+{% assign content_width = 'is-8' %}
+{% else %}
+{% assign content_width = 'is-12' %}
+{% endif %}
+
+<html
+ dir="{{ site.direction | default: 'ltr' }}"
+ lang="{{ site.lang | default: 'en' }}"
+ {% if site.fixed_navbar %}class="has-navbar-fixed-{{ site.fixed_navbar }}"{% endif %}>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    {% unless page.hide_hero %}
+        {% include hero.html %}
+    {% endunless %}
+    {% include callouts.html %}
+    <section class="section">
+        <div class="container">
+            <!-- Full-container-width interactive research stack.
+                 lay-c puts the project panel as a rail on the right of the
+                 stack. Heights fall back to taller values when the inner
+                 layout collapses to a single column at narrow widths. -->
+            <style>
+              .vision-stack-embed { margin-bottom: 2rem; }
+              .vision-stack-embed iframe { height: 810px; }
+              @media (max-width: 799px) {
+                .vision-stack-embed iframe { height: 1280px; }
+              }
+              @media (max-width: 600px) {
+                .vision-stack-embed iframe { height: 1100px; }
+              }
+            </style>
+            <div class="vision-stack-embed">
+              <iframe
+                src="{{ '/assets/research_stack/vision-stack.html' | relative_url }}?layout=c"
+                title="TSirc research, layered by abstraction"
+                loading="lazy"
+                style="width:100%; border:0; background:transparent; display:block;"
+                scrolling="no"
+              ></iframe>
+            </div>
+            <div class="columns is-multiline">
+                {% if page.menubar_toc %}
+                <div class="column is-3-desktop is-3-tablet">
+                    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+                    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+                </div>
+                {% elsif page.menubar %}
+                <div class="column is-4-desktop is-4-tablet">
+                    {% include menubar.html %}
+                </div>
+                {% endif %}
+                <div class="column {{ content_width }}">
+                    {% include tabs.html %}
+                    {% include showcase.html %}
+                    {% include sponsors.html %}
+                    {% include gallery.html %}
+                    <div class="content">
+                        {{ content }}
+                    </div>
+                </div>
+                {% if site.posts and page.show_sidebar %}
+                <div class="column is-4-desktop is-4-tablet">
+                    {% include latest-posts.html %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    {% unless page.hide_footer %}
+        {% include footer.html %}
+    {% endunless %}
+    <script src="{{ site.baseurl }}/assets/js/app.js" type="text/javascript"></script>
+    {%- include footer-scripts.html -%}
+  </body>
+</html>
