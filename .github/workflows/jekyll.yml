@@ -57,6 +57,13 @@ jobs:
         run: |
           pip install pandas folium
           cd conferences && python conferences.py
+      - name: Regenerate visitor stats from the Google Analytics sheet
+        # Fetches the public GA "connected report" sheet and writes visitor.html
+        # + visitor_last_update.json. The daily cron above refreshes these
+        # without a push; on fetch failure the previous files are kept.
+        run: |
+          pip install pandas plotly emoji-country-flag
+          python visitor.py
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
