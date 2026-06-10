@@ -64,6 +64,12 @@ jobs:
         run: |
           pip install pandas plotly emoji-country-flag
           python visitor.py
+      - name: Regenerate citation plot from Google Scholar
+        # Writes img/citation_plot.html + citation_last_update.json. Refreshed by
+        # the daily cron; keeps last good files on fetch failure (Scholar blocks CI).
+        run: |
+          pip install scholarly pandas plotly
+          python google_scholar.py
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
