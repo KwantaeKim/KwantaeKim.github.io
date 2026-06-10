@@ -602,6 +602,20 @@ toc_title: TSirc Group
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 4;">
     <span style="margin-right: 2em;"></span>
+    • Member, Korea Technology Advisory Group (K-TAG)
+  </div>
+  <div class="tab-cell" style="flex: 2;">2025 ~</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 4;">
+    <span style="margin-right: 2em;"></span>
+    • Senior Member, IEEE
+  </div>
+  <div class="tab-cell" style="flex: 2;">2025 ~</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 4;">
+    <span style="margin-right: 2em;"></span>
     • Co-Director, <a href="https://metka.aalto.fi/" target="_blank" class="pub-hover">Aalto Microelectronics Research Center (METKA)</a>
   </div>
   <div class="tab-cell" style="flex: 2;">2024 ~</div>
