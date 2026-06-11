@@ -72,6 +72,10 @@ details > summary::marker {display: none;}
 
 ## News
 
+### 🎉 11.Jun.2026
+
+{% include news-20260611.md %}
+
 ### <i class="fa-brands fa-github"></i> 21.Mar.2026
 
 {% include news-20260321.md %}
