@@ -15,7 +15,7 @@ toc_title: TSirc Group
 /* TOC */
 .contents {position: sticky; top: 10%;}
 #soujanya-bhowmick {visibility: hidden; height: 0; overflow: hidden;}
-#zhenhan-wang {visibility: hidden; height: 0; overflow: hidden;
+#zhenhan-wang {visibility: hidden; height: 0; overflow: hidden;}
 #lingyun-yao {visibility: hidden; height: 0; overflow: hidden;}
 #jiayu-hu {visibility: hidden; height: 0; overflow: hidden;}
 #bingzheng-qiu {visibility: hidden; height: 0; overflow: hidden;}

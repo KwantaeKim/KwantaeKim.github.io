@@ -319,6 +319,34 @@ toc_title: TSirc Group
   <div class="underline"></div>
 </div>
 
+<!-- Academy Research Fellowship -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.3;">
+    <b>Academy Research Fellowship</b>
+  </div>
+  <div class="tab-cell" style="flex: 2.7;">
+    <span style="margin-right: 0.2em;"></span>
+    <i class="fa-solid fa-user"></i>
+    <span style="margin-right: 0.2em;"></span>
+    Principal Investigator (PI)
+  </div>
+  <div class="tab-cell" style="flex: 2;">2026 ~ 2030</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1;">
+    <span style="margin-right: 2em;"></span>
+    • <a href="https://research.fi/en/results/funding/88755" target="_blank" class="pub-hover">"HolistIC: Analog-Digital-Algorithm Co-Optimized System-on-Chip for Intelligent Audio IoT Sensors"</a> <br>
+    <span style="margin-right: 2em;"></span>
+    • Ranked 1<sup>st</sup> in the <em>Communications Engineering and Electronics</em> panel <br>
+    <span style="margin-right: 2em;"></span>
+    • Research Council of Finland <span class='emoji'>🇫🇮</span> <br>
+    <span style="margin-right: 2em;"></span>
+    • €999,998
+  </div>
+</div>
+
+<span style="display: block;"></span>
+
 <!-- Event Hosting Grant -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1.3;">
@@ -340,6 +368,23 @@ toc_title: TSirc Group
     • The Ministry of Foreign Affairs, South Korea <span class='emoji'>🇰🇷</span> <br>
     <span style="margin-right: 2em;"></span>
     • $14,400
+  </div>
+</div>
+
+<span style="display: block;"></span>
+
+<!-- Young Professionals Mentoring Program Award -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.3;">
+    <b>Young Professionals Mentoring Program Award</b>
+  </div>
+  <div class="tab-cell" style="flex: 2.7;"></div>
+  <div class="tab-cell" style="flex: 2;">2026</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1;">
+    <span style="margin-right: 2em;"></span>
+    • IEEE Solid-State Circuits Society
   </div>
 </div>
 
