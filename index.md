@@ -72,6 +72,10 @@ details > summary::marker {display: none;}
 
 ## News
 
+### 📚 29.Jun.2026
+
+{% include news-20260629.md %}
+
 ### 🎉 11.Jun.2026
 
 {% include news-20260611.md %}

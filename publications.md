@@ -36,6 +36,7 @@ tr:hover .hover-iscas23 {left: -220px; top:calc(50% - 30px); visibility: visible
 tr:hover .hover-iscas19 {left: -250px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-iscas16 {left: -210px; top:calc(50% - 30px); visibility: visible; height: 70px;}
 tr:hover .hover-aicas23 {left: -260px; top:calc(50% - 30px); visibility: visible; height: 50px;}
+tr:hover .hover-aicas26 {left: -305px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-newcas25 {left: -210px; top:calc(50% - 45px); visibility: visible; height: 90px;}
 tr:hover .hover-biocas25 {left: -210px; top:calc(50% - 25px); visibility: visible; height: 40px;}
 tr:hover .hover-hotchips {left: -150px; top:calc(50% - 30px); visibility: visible; height: 60px;}
@@ -106,8 +107,16 @@ span.venue {font-style: italic;}
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <span style="color: #485fc7">
-    A 1.92µm Pitch Current-Controlled Oscillator ADC Array Featuring Charge-Injection-Based Two-Stage Conversion for In-Memory Computing
+    Monarch-GRU for Low-Footprint Keyword Spotting
     </span><br>
+    Soujanya Bhowmick, Sangyeob Kim, Qinyu Chen, Chang Gao, Kwantae Kim
+    <div class="img-container"><img src="./../img/icons/logo--aicas26.png" class="hover-aicas26"></div>
+    <span class="venue">IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)</span>, 2026
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://ieeexplore.ieee.org/abstract/document/11509519" target="_blank" class="pub-hover">
+    A 1.92µm Pitch Current-Controlled Oscillator ADC Array Featuring Charge-Injection-Based Two-Stage Conversion for In-Memory Computing
+    </a><br>
     David Iselin, Kyeongwon Jeong, Tim Keller, Giorgio Cristiano, Kwantae Kim, Woojun Choi, Oscar Toomey, Abhairaj Singh, Athanasios Vasilopoulos, Abu Sebastian, Manuel Le Gallo, Taekwang Jang
     <div class="img-container"><img src="./../img/icons/logo--cicc.png" class="hover-cicc"></div>
     <span class="venue">IEEE Custom Integrated Circuits Conference (CICC)</span>, 2026

@@ -70,7 +70,11 @@ toc_title: TSirc Group
       Funded by <a href="https://www.microelectronics.fi/mieli" target="_blank">MIELi Doctoral Pilot Program</a>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/soujanya-bhowmick/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-      <span style="display: block; height: 2em;"></span>
+      <span style="display: block; height: 1em;"></span>
+      <i class="fa-solid fa-book fa-lg"></i> <span style="font-weight: bold;">Publications</span>
+      <br><span style="margin-right: 1.4em;"></span>
+      IEEE AICAS 2026
+      <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
       <br><span style="margin-right: 1.4em;"></span>Low-Footprint AI Models
     </div>
