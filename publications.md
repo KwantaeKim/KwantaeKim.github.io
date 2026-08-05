@@ -53,6 +53,10 @@ tr:hover .hover-cas {left: -120px; top:calc(50% - 40px); visibility: visible; he
 
 /* Venue */
 span.venue {font-style: italic;}
+
+/* Citations chart */
+.citations-frame {height: 450px;}
+@media (max-width: 800px) {.citations-frame {height: 640px;}}
 </style>
 
 <!-- jQuery -->
@@ -96,7 +100,7 @@ span.venue {font-style: italic;}
 
 ## Citations
 
-<iframe src="{{ site.base_url }}/img/citation_plot_overlay.html" width="100%" height="450" style="padding: 0; margin: 0; border: none;"></iframe>
+<iframe class="citations-frame" src="{{ site.base_url }}/img/citation_plot_overlay.html" width="100%" height="450" style="padding: 0; margin: 0; border: none;"></iframe>
 
 \*Co-First Authors
 <!-- <span style="color: #485fc7"> -->

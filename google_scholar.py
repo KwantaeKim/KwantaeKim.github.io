@@ -37,7 +37,7 @@ fig = go.Figure(go.Bar(
 fig.update_layout(
   xaxis=dict(title='Year', tickmode='linear'),
   yaxis=dict(title='Citations', gridcolor='lightgray', griddash='dash', gridwidth=2),
-  margin=dict(t=5, b=5),
+  margin=dict(t=5, b=5, l=55, r=12),
   font=dict(family="Trebuchet MS", size=16, color="black"),
   plot_bgcolor='rgba(0, 0, 0, 0)',
   hoverlabel_font_family='Trebuchet MS',
@@ -47,7 +47,7 @@ fig.update_layout(
 fig.update_xaxes(linewidth=2, linecolor='black', mirror=True, ticks='outside', tickwidth=2, showline=True)
 fig.update_yaxes(linewidth=2, linecolor='black', mirror=True, ticks='outside', tickwidth=2, showline=True)
 
-Path("./img/citation_plot.html").write_text(fig.to_html(config={'displayModeBar': False}))
+Path("./img/citation_plot.html").write_text(fig.to_html(config={'displayModeBar': False, 'responsive': True}))
 
 last_update = datetime.now().strftime("%b. %Y")
 Path("./img/citation_last_update.json").write_text(json.dumps({

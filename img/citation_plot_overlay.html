@@ -34,6 +34,16 @@
             #hyper:hover{
               color: black;
             }
+            @media (max-width: 752px) {
+              #text-overlay {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                width: fit-content;
+                max-width: calc(100% - 8px);
+                margin: 0 auto 12px;
+              }
+            }
     </style>
 </head>
 <body>
@@ -70,7 +80,7 @@
     </script>
 
     <!-- Iframe with generated HTML -->
-    <iframe src="./citation_plot.html" width="90%" height="400" style="padding: 0; margin: 0; border: none;"></iframe>
+    <iframe src="./citation_plot.html" width="100%" height="400" style="padding: 0; margin: 0; border: none;"></iframe>
 
 </body>
 </html>
