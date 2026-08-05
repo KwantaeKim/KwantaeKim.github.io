@@ -111,7 +111,7 @@ span.venue {font-style: italic;}
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
     <span style="color: #485fc7">
-    Monarch-GRU for Low-Footprint Keyword Spotting
+    MonarchGRU: A Low-Footprint Recurrent Neural Network for Audio Keyword Spotting System
     </span><br>
     Soujanya Bhowmick, Sangyeob Kim, Qinyu Chen, Chang Gao, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--aicas26.png" class="hover-aicas26"></div>
