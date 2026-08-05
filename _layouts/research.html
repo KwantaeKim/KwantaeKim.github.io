@@ -1,15 +1,5 @@
 <!DOCTYPE html>
-{% comment %}
-  Page-specific layout for /research.
-  Duplicates _layouts/default.html exactly, with two additions:
-    1. A full-container-width vision-stack iframe injected ABOVE the
-       TOC + content columns (so the interactive research stack spans
-       the whole content area, with the TOC starting below it).
-    2. The content is wrapped in <div class="content"> to preserve the
-       behaviour of _layouts/page.html, which research.md previously
-       used as its layout.
-  If you change default.html or page.html, mirror the changes here.
-{% endcomment %}
+{% comment %}default.html + vision-stack iframe above the TOC/content columns; mirror changes to default.html/page.html here.{% endcomment %}
 {% if page.menubar or page.menubar_toc %}
 {% assign has_left_sidebar = true %}
 {% endif %}
@@ -35,10 +25,6 @@
     {% include callouts.html %}
     <section class="section">
         <div class="container">
-            <!-- Full-container-width interactive research stack.
-                 lay-c puts the project panel as a rail on the right of the
-                 stack. Heights fall back to taller values when the inner
-                 layout collapses to a single column at narrow widths. -->
             <style>
               .vision-stack-embed { margin-bottom: 2rem; }
               .vision-stack-embed iframe { height: 810px; }
@@ -58,6 +44,14 @@
                 scrolling="no"
               ></iframe>
             </div>
+            <script>
+              window.addEventListener("message", function (e) {
+                var d = e.data;
+                if (d && d.type === "tsirc-vision-stack-ready" && d.height > 0) {
+                  document.querySelector(".vision-stack-embed iframe").style.height = d.height + "px";
+                }
+              });
+            </script>
             <div class="columns is-multiline">
                 {% if page.menubar_toc %}
                 <div class="column is-3-desktop is-3-tablet">
