@@ -108,17 +108,13 @@ toc_title: TSirc Group
 
 <!-- Aalto -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Aalto University</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>Aalto University</b>,
     <i class="fa-solid fa-user-tie"></i>
-    <span style="margin-right: 0.2em;"></span>
     Assistant Professor
   </div>
   <div class="tab-cell" style="flex: 1;">Aug 2024 ~</div>
-  <div class="tab-cell" style="flex: 1;">Finland <span class='emoji'>🇫🇮</span></div>
+  <div class="tab-cell" style="flex: 1.5;">Finland <span class='emoji'>🇫🇮</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -131,17 +127,13 @@ toc_title: TSirc Group
 
 <!-- ETH -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>ETH Zurich</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>ETH Zurich</b>,
     <i class="fa-solid fa-user-tie"></i>
-    <span style="margin-right: 0.2em;"></span>
     Established Researcher
   </div>
   <div class="tab-cell" style="flex: 1;">2023 ~ 2024</div>
-  <div class="tab-cell" style="flex: 1;">Switzerland <span class='emoji'>🇨🇭</span></div>
+  <div class="tab-cell" style="flex: 1.5;">Switzerland <span class='emoji'>🇨🇭</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -154,17 +146,13 @@ toc_title: TSirc Group
 
 <!-- INI -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>UZH/ETH Zurich</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>UZH/ETH Zurich</b>,
     <i class="fa-solid fa-user-tie"></i>
-    <span style="margin-right: 0.2em;"></span>
     Postdoctoral Researcher
   </div>
   <div class="tab-cell" style="flex: 1;">2021 ~ 2023</div>
-  <div class="tab-cell" style="flex: 1;">Switzerland <span class='emoji'>🇨🇭</span></div>
+  <div class="tab-cell" style="flex: 1.5;">Switzerland <span class='emoji'>🇨🇭</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -177,17 +165,13 @@ toc_title: TSirc Group
 
 <!-- Healthrian -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Healthrian Co., Ltd.</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>Healthrian Co., Ltd.</b>,
     <i class="fa-solid fa-user-tie"></i>
-    <span style="margin-right: 0.2em;"></span>
     R&D Researcher
   </div>
   <div class="tab-cell" style="flex: 1;">2015 ~ 2017</div>
-  <div class="tab-cell" style="flex: 1;">South Korea <span class='emoji'>🇰🇷</span></div>
+  <div class="tab-cell" style="flex: 1.5;">South Korea <span class='emoji'>🇰🇷</span></div>
 </div>
 
 <br><br>
@@ -202,15 +186,13 @@ toc_title: TSirc Group
 
 <!-- PhD -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>KAIST</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>KAIST</b>,
     <i class="fa-solid fa-graduation-cap"></i>
     PhD
   </div>
   <div class="tab-cell" style="flex: 1;">2021</div>
-  <div class="tab-cell" style="flex: 1;">South Korea <span class='emoji'>🇰🇷</span></div>
+  <div class="tab-cell" style="flex: 1.5;">South Korea <span class='emoji'>🇰🇷</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -223,17 +205,13 @@ toc_title: TSirc Group
 
 <!-- Visiting Student -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>UZH/ETH Zurich</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>UZH/ETH Zurich</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Visiting Student
   </div>
   <div class="tab-cell" style="flex: 1;">2020</div>
-  <div class="tab-cell" style="flex: 1;">Switzerland <span class='emoji'>🇨🇭</span></div>
+  <div class="tab-cell" style="flex: 1.5;">Switzerland <span class='emoji'>🇨🇭</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -246,15 +224,13 @@ toc_title: TSirc Group
 
 <!-- MSc -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>KAIST</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>KAIST</b>,
     <i class="fa-solid fa-graduation-cap"></i>
     MSc
   </div>
   <div class="tab-cell" style="flex: 1;">2017</div>
-  <div class="tab-cell" style="flex: 1;">South Korea <span class='emoji'>🇰🇷</span></div>
+  <div class="tab-cell" style="flex: 1.5;">South Korea <span class='emoji'>🇰🇷</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -269,15 +245,13 @@ toc_title: TSirc Group
 
 <!-- BSc -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>KAIST</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>KAIST</b>,
     <i class="fa-solid fa-graduation-cap"></i>
     BSc
   </div>
   <div class="tab-cell" style="flex: 1;">2015</div>
-  <div class="tab-cell" style="flex: 1;">South Korea <span class='emoji'>🇰🇷</span></div>
+  <div class="tab-cell" style="flex: 1.5;">South Korea <span class='emoji'>🇰🇷</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -290,17 +264,13 @@ toc_title: TSirc Group
 
 <!-- Summer Session -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>UC Berkeley</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 3.5;">
+    <b>UC Berkeley</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Summer Session
   </div>
   <div class="tab-cell" style="flex: 1;">2013</div>
-  <div class="tab-cell" style="flex: 1;">United States <span class='emoji'>🇺🇸</span></div>
+  <div class="tab-cell" style="flex: 1.5;">United States <span class='emoji'>🇺🇸</span></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -321,16 +291,12 @@ toc_title: TSirc Group
 
 <!-- Academy Research Fellowship -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Academy Research Fellowship</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 5;">
+    <b>Academy Research Fellowship</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Principal Investigator (PI)
   </div>
-  <div class="tab-cell" style="flex: 2;">2026 ~ 2030</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2026 ~ 2030</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -349,16 +315,12 @@ toc_title: TSirc Group
 
 <!-- Event Hosting Grant -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Event Hosting Grant</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 5;">
+    <b>Event Hosting Grant</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Organizer
   </div>
-  <div class="tab-cell" style="flex: 2;">2025 ~ 2026</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2025 ~ 2026</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -375,11 +337,10 @@ toc_title: TSirc Group
 
 <!-- Young Professionals Mentoring Program Award -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
+  <div class="tab-cell" style="flex: 5;">
     <b>Young Professionals Mentoring Program Award</b>
   </div>
-  <div class="tab-cell" style="flex: 2.7;"></div>
-  <div class="tab-cell" style="flex: 2;">2026</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2026</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -392,16 +353,12 @@ toc_title: TSirc Group
 
 <!-- ISSCC -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Demo Session Award</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 5;">
+    <b>Demo Session Award</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Co-Recipient
   </div>
-  <div class="tab-cell" style="flex: 2;">2025</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2025</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -415,16 +372,12 @@ toc_title: TSirc Group
 
 <!-- Travel Grant -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Travel Grant</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 5;">
+    <b>Travel Grant</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Supervisor
   </div>
-  <div class="tab-cell" style="flex: 2;">2025</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2025</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -439,16 +392,12 @@ toc_title: TSirc Group
 
 <!-- UZH Postdoc Grant -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Postdoc Grant</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 5;">
+    <b>Postdoc Grant</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     PI
   </div>
-  <div class="tab-cell" style="flex: 2;">2023</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2023</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -463,16 +412,12 @@ toc_title: TSirc Group
 
 <!-- AICAS -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Best Poster Award</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 5;">
+    <b>Best Poster Award</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Co-Recipient
   </div>
-  <div class="tab-cell" style="flex: 2;">2023</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2023</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -486,16 +431,12 @@ toc_title: TSirc Group
 
 <!-- HumanTech -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Silver Award</b>
-  </div>
-  <div class="tab-cell" style="flex: 2.7;">
-    <span style="margin-right: 0.2em;"></span>
+  <div class="tab-cell" style="flex: 5;">
+    <b>Silver Award</b>,
     <i class="fa-solid fa-user"></i>
-    <span style="margin-right: 0.2em;"></span>
     Main Recipient
   </div>
-  <div class="tab-cell" style="flex: 2;">2019</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2019</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -520,59 +461,63 @@ toc_title: TSirc Group
 
 <!-- TPC -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
+  <div class="tab-cell" style="flex: 1;">
     <b>Technical Committee</b>
   </div>
-  <div class="tab-cell" style="flex: 4.7;"></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
+    <span style="margin-right: 2em;"></span>
+    • IEEE CICC Biomedical Technologies and Applications <br>
+  </div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2026 ~</div>  
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • IEEE AICAS Neuromorphic Circuits and Systems Track (Co-Chair) <br>
   </div>
-  <div class="tab-cell" style="flex: 2;">2026 ~</div>  
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2026 ~</div>  
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
-    • IEEE CASS Sensory Systems <br>
+    • IEEE CASS Sensory Systems (ISCAS Committee) <br>
   </div>
-  <div class="tab-cell" style="flex: 2;">2023 ~</div>  
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2023 ~</div>  
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • IEEE SSCS Open-Source Ecosystem <br>
   </div>
-  <div class="tab-cell" style="flex: 2;">2023 ~ 2025</div>  
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2023 ~ 2025</div>  
 </div>
 
 <span style="display: block;"></span>
 
 <!-- Guest Editor -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
+  <div class="tab-cell" style="flex: 1;">
     <b>Guest Editor</b>
   </div>
-  <div class="tab-cell" style="flex: 4.7;"></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • <a href="https://doi.org/10.1109/MDAT.2024.3445831" target="_blank" class="pub-hover">
     IEEE Design＆Test </a>
   </div>
-  <div class="tab-cell" style="flex: 2;">2023</div>  
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2023</div>  
 </div>
 
 <span style="display: block;"></span>
 
 <!-- Reviewer -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
+  <div class="tab-cell" style="flex: 1;">
     <b>Reviewer</b>
   </div>
-  <div class="tab-cell" style="flex: 4.7;"></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -607,19 +552,33 @@ toc_title: TSirc Group
 
 <span style="display: block;"></span>
 
-<!-- Organizer / Lead -->
+<!-- Review Committee Member -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
-    <b>Organizer / Lead</b>
+  <div class="tab-cell" style="flex: 1;">
+    <b>Review Committee Member</b>
   </div>
-  <div class="tab-cell" style="flex: 4.7;"></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 1;">
+    <span style="margin-right: 2em;"></span>
+    • IEEE ISCAS 2025, BioCAS 2026
+  </div>
+</div>
+
+<span style="display: block;"></span>
+
+<!-- Organizer / Lead -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1;">
+    <b>Organizer / Lead</b>
+  </div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • <a href="https://kwantaekim.github.io/events/" target="_blank" class="pub-hover">Korea-Finland Chip Design Symposium</a>
   </div>
-  <div class="tab-cell" style="flex: 2;">2025 ~ 2026</div>  
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2025 ~ 2026</div>  
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 1;">
@@ -632,50 +591,49 @@ toc_title: TSirc Group
 
 <!-- Other -->
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 1.3;">
+  <div class="tab-cell" style="flex: 1;">
     <b>Other Activities</b>
   </div>
-  <div class="tab-cell" style="flex: 4.7;"></div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • Deputy Member, Degree Programme Committee for Electronics and Nanotechnology (MSc), Aalto University
   </div>
-  <div class="tab-cell" style="flex: 2;">2026 ~</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2026 ~</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • Member, Korea Technology Advisory Group (K-TAG)
   </div>
-  <div class="tab-cell" style="flex: 2;">2025 ~</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2025 ~</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • Senior Member, IEEE
   </div>
-  <div class="tab-cell" style="flex: 2;">2025 ~</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2025 ~</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • Co-Director, <a href="https://metka.aalto.fi/" target="_blank" class="pub-hover">Aalto Microelectronics Research Center (METKA)</a>
   </div>
-  <div class="tab-cell" style="flex: 2;">2024 ~</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2024 ~</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • Co-Organizer, IEEE SSCS Women in Circuits event in IEEE ISSCC
   </div>
-  <div class="tab-cell" style="flex: 2;">2022 ~</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2022 ~</div>
 </div>
 <div class="tab-row" style="display: flex; align-items: center;">
-  <div class="tab-cell" style="flex: 4;">
+  <div class="tab-cell" style="flex: 5;">
     <span style="margin-right: 2em;"></span>
     • Volunteer, IEEE Swiss Women in CAS-ED Symposium
   </div>
-  <div class="tab-cell" style="flex: 2;">2022</div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2022</div>
 </div>
