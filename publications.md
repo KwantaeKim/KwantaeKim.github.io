@@ -116,6 +116,9 @@ span.venue {font-style: italic;}
     Soujanya Bhowmick, Sangyeob Kim, Qinyu Chen, Chang Gao, Kwantae Kim
     <div class="img-container"><img src="./../img/icons/logo--aicas26.png" class="hover-aicas26"></div>
     <span class="venue">IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)</span>, 2026
+    <br><span style='color: black;'>
+    <i class="fa-solid fa-trophy fa-lg"></i> IEEE CASS Student Travel Grant Award
+    </span>
   </td></tr>
   <tr><td class="tg-desc">
     <a href="https://ieeexplore.ieee.org/abstract/document/11509519" target="_blank" class="pub-hover">
