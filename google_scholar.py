@@ -49,7 +49,7 @@ fig.update_yaxes(linewidth=2, linecolor='black', mirror=True, ticks='outside', t
 
 Path("./img/citation_plot.html").write_text(fig.to_html(config={'displayModeBar': False, 'responsive': True}))
 
-last_update = datetime.now().strftime("%b. %Y")
+last_update = datetime.now().strftime("%d.%b.%Y")
 Path("./img/citation_last_update.json").write_text(json.dumps({
   'last_update': last_update,
   'citations': str(author.get('citedby', 0)),
