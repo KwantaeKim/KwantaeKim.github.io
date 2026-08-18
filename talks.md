@@ -57,10 +57,10 @@ tr:hover .hover-hanyang {left: -120px; top:calc(50% - 45px); visibility: visible
 tr:hover .hover-ajou {left: -120px; top:calc(50% - 45px); visibility: visible; height: 95px;}
 tr:hover .hover-dgist {left: -125px; top:calc(50% - 55px); visibility: visible; height: 110px;}
 /* merged Korean univ. talk: same title + month (Jul. 2026), logos offset along x */
-tr:hover .hover-yonsei-m3 {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
-tr:hover .hover-snu-m3 {left: -215px; top:calc(50% - 45px); visibility: visible; height: 90px;}
-tr:hover .hover-ajou-m3 {left: -305px; top:calc(50% - 47px); visibility: visible; height: 95px;}
-tr:hover .hover-dgist-m3 {left: -415px; top:calc(50% - 55px); visibility: visible; height: 110px;}
+tr:hover .hover-yonsei-m3 {left: -457px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-snu-m3 {left: -352px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-ajou-m3 {left: -250px; top:calc(50% - 47px); visibility: visible; height: 95px;}
+tr:hover .hover-dgist-m3 {left: -140px; top:calc(50% - 55px); visibility: visible; height: 110px;}
 /* merged Korean univ. talk: same title + month (Oct. 2025), logos offset along x */
 tr:hover .hover-dgist-m {left: -135px; top:calc(50% - 55px); visibility: visible; height: 110px;}
 tr:hover .hover-ajou-m {left: -230px; top:calc(50% - 47px); visibility: visible; height: 95px;}
