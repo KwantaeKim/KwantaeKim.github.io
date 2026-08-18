@@ -56,6 +56,11 @@ tr:hover .hover-skku {left: -120px; top:calc(50% - 45px); visibility: visible; h
 tr:hover .hover-hanyang {left: -120px; top:calc(50% - 45px); visibility: visible; height: 95px;}
 tr:hover .hover-ajou {left: -120px; top:calc(50% - 45px); visibility: visible; height: 95px;}
 tr:hover .hover-dgist {left: -125px; top:calc(50% - 55px); visibility: visible; height: 110px;}
+/* merged Korean univ. talk: same title + month (Jul. 2026), logos offset along x */
+tr:hover .hover-yonsei-m3 {left: -120px; top:calc(50% - 45px); visibility: visible; height: 90px;}
+tr:hover .hover-snu-m3 {left: -210px; top:calc(50% - 42px); visibility: visible; height: 85px;}
+tr:hover .hover-ajou-m3 {left: -290px; top:calc(50% - 47px); visibility: visible; height: 95px;}
+tr:hover .hover-dgist-m3 {left: -400px; top:calc(50% - 55px); visibility: visible; height: 110px;}
 /* merged Korean univ. talk: same title + month (Oct. 2025), logos offset along x */
 tr:hover .hover-dgist-m {left: -135px; top:calc(50% - 55px); visibility: visible; height: 110px;}
 tr:hover .hover-ajou-m {left: -230px; top:calc(50% - 47px); visibility: visible; height: 95px;}
@@ -116,6 +121,19 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
 
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    Low-Footprint Audio Keyword Spotting for Tiny IoT Systems
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--yonsei.svg" class="hover-yonsei-m3"></div>
+    <div class="img-container"><img src="./../img/icons/logo--snu.svg" class="hover-snu-m3"></div>
+    <div class="img-container"><img src="./../img/icons/logo--ajou.png" class="hover-ajou-m3"></div>
+    <div class="img-container"><img src="./../img/icons/logo--dgist.png" class="hover-dgist-m3"></div>
+    Yonsei University / Seoul National University / Ajou University / DGIST
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Jul. 2026</div>
+        <div class="tab-cell" style="flex: 4;">Seoul / Suwon / Daegu, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
   <tr><td class="tg-desc">
     IC Design Activities at the Tiny Systems and Circuits (TSirc) Group
     <br>
