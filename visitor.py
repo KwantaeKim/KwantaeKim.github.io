@@ -18,7 +18,8 @@ try:
   if not {'country', 'countryId', 'active1DayUsers'}.issubset(df.columns):
     raise ValueError(f"unexpected columns: {list(df.columns)}")
 except Exception as e:
-  sys.exit(f"visitor.py: keeping last good output, fetch/parse failed: {e}")
+  print(f"visitor.py: keeping last good output, fetch/parse failed: {e}")
+  sys.exit(0)
 
 df = df.dropna(subset=['countryId'])
 total_visitors = int(df['active1DayUsers'].sum())
