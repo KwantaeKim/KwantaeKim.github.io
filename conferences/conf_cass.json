@@ -334,5 +334,21 @@
     "venue": "Hotel Costa del Sol Arequipa",
     "coordinate": "-16.389276, -71.532616",
     "webpage": "https://www.ieee-lascas.org"
+  },
+  {
+    "organization": "IEEE",
+    "name": "LASCAS",
+    "year": 2027,
+    "city": "Panama City",
+    "region": "Panama",
+    "region_flag": "🇵🇦",
+    "color": "gray",
+    "bg_color": "false",
+    "submission": "2026-09-01",
+    "date_start": "2027-02-23",
+    "date_end": "2027-02-26",
+    "venue": "Hotel Riu Plaza Panama",
+    "coordinate": "8.981017, -79.520973",
+    "webpage": "https://attend.ieee.org/lascas-2027"
   }
 ]
