@@ -4,9 +4,9 @@
   let PROJECTS = { application: [], system: [], circuit: [] };
   async function loadProjects() {
     try {
-      const res = await fetch("v3_list.json", { cache: "no-cache" });
+      const res = await fetch("projects.json", { cache: "no-cache" });
       if (res.ok) PROJECTS = await res.json();
-    } catch (e) { console.warn("v3_list.json load failed:", e); }
+    } catch (e) { console.warn("projects.json load failed:", e); }
   }
 
   const LAYERS = [
@@ -41,7 +41,7 @@
 
   const TAG_LABELS = {
     audio: "Audio",
-    biomedical: "Biomedical",
+    biomedical: "Bioimpedance",
     flexible: "Flexible",
     algorithm: "Algorithm",
     analog: "Analog",
@@ -93,8 +93,8 @@
 
   const MOTIF_BOX = {};
   const MOTIF_NAME = {
-    "audio-ai": "Audio AI", "bioimpedance": "Bioimpedance",
-    "gru": "GRU", "flexible": "Flexible",
+    "audio-ai": "Audio", "bioimpedance": "Bioimpedance",
+    "gru": "Algorithm", "flexible": "Flexible",
     "analog": "Analog", "automation": "Automation", "digital": "Digital",
   };
 
@@ -105,10 +105,10 @@
   };
 
   const MOTIF_CBOX = {
-    "gru": [10, 36, 268, 132],
-    "audio-ai": [4, 46, 290, 98],
-    "bioimpedance": [336, 14, 244, 138],
-    "flexible": [298, 66, 282, 140],
+    "gru": [56.7, 46, 194.7, 124.2],
+    "audio-ai": [46.2, 59.8, 215.6, 69.1],
+    "bioimpedance": [337.9, 56, 212.3, 98.3],
+    "flexible": [279, 41.5, 291.6, 157],
   };
   function submotifGroup(svg, id, box) {
     MOTIF_BOX[id] = box;
@@ -127,14 +127,6 @@
       preserveAspectRatio: "none",
       class: "plane-pattern",
     });
-    const STROKE = {
-      fill: "none", stroke: "currentColor", "stroke-width": "1.5",
-      "stroke-linecap": "round", "stroke-linejoin": "round",
-    };
-    const path = (d, o) => svgEl("path", Object.assign({ d }, STROKE, o || {}));
-    const rect = (x, y, w, h, o) => svgEl("rect", Object.assign({ x, y, width: w, height: h }, STROKE, o || {}));
-    const circle = (cx, cy, r, o) => svgEl("circle", Object.assign({ cx, cy, r }, STROKE, o || {}));
-    const tri = (d) => svgEl("path", { d, fill: "currentColor", stroke: "none" });
     const label = (x, y, str, fs) => {
       const t = svgEl("text", { x, y, "font-size": fs || 12, "text-anchor": "middle", fill: "currentColor" });
       t.textContent = str;
@@ -143,43 +135,13 @@
     let cur = svg;
     const add = (el) => cur.appendChild(el);
 
-    cur = submotifGroup(svg, "audio-ai", [4, 22, 290, 122]);
-    add(label(150, 38, "audio AI", 16)).setAttribute("class", "motif-title");
+    cur = submotifGroup(svg, "audio-ai", [44, 26, 220, 107]);
+    add(label(154, 38, "Audio", 16)).setAttribute("class", "motif-title");
+    add(svgEl("image", { href: "audio.svg", x: 46.2, y: 59.8, width: 215.6, height: 69.1 }));
 
-    const headG = svgEl("g", { transform: "translate(80 56) scale(-1 1)" });
-    headG.appendChild(svgEl("image", { href: "speaking-teal-outline.png", x: 0, y: 0, width: 72, height: 66 }));
-    add(headG);
-
-    add(path("M104,96 H128")); add(tri("M128,96 L120,92 L120,100 Z"));
-
-    const La = [[152, 74], [152, 96], [152, 118]];
-    const Lb = [[190, 74], [190, 96], [190, 118]];
-    const Lc = [[228, 74], [228, 96], [228, 118]];
-    La.forEach((a) => Lb.forEach((b) => add(path(`M${a[0]},${a[1]} L${b[0]},${b[1]}`, { "stroke-width": "0.7" }))));
-    Lb.forEach((b) => Lc.forEach((c) => add(path(`M${b[0]},${b[1]} L${c[0]},${c[1]}`, { "stroke-width": "0.7" }))));
-    [...La, ...Lb, ...Lc].forEach((p) => add(circle(p[0], p[1], 4.2, { fill: "#ffffff" })));
-
-    const audioClasses = ["speech", "music", "noise"];
-    Lc.forEach((c, i) => {
-      add(path(`M${c[0] + 6},${c[1]} H250`)); add(tri(`M250,${c[1]} L244,${c[1] - 3.5} L244,${c[1] + 3.5} Z`));
-      add(label(272, c[1] + 3.5, audioClasses[i], 10.5));
-    });
-
-    cur = submotifGroup(svg, "bioimpedance", [336, 14, 244, 156]);
-    add(rect(348, 104, 200, 34, { rx: 8, ry: 8 }));
-    add(path("M378,121 H512")); add(tri("M512,121 L504,117 L504,125 Z"));
-    [366, 430, 470, 534].forEach((ex) => add(rect(ex - 7, 96, 14, 8, { rx: 1, ry: 1 })));
-
-    add(circle(450, 48, 13));
-    add(path("M442,48 q4,-7 8,0 t8,0", { "stroke-width": "1.2" }));
-    add(label(450, 28, "I", 11));
-    add(path("M439,56 C408,76 384,82 366,96"));
-    add(path("M461,56 C492,76 516,82 534,96"));
-
-    add(circle(450, 84, 10));
-    add(label(450, 88, "V", 11));
-    add(path("M444,92 L432,96")); add(path("M456,92 L468,96"));
-    add(label(450, 158, "bioimpedance", 12)).setAttribute("class", "motif-title");
+    cur = submotifGroup(svg, "bioimpedance", [336, 26, 216, 130]);
+    add(label(444, 38, "Bioimpedance", 16)).setAttribute("class", "motif-title");
+    add(svgEl("image", { href: "bioz.svg", x: 337.9, y: 56, width: 212.3, height: 98.3 }));
 
     return svg;
   }
@@ -190,13 +152,6 @@
       preserveAspectRatio: "none",
       class: "plane-pattern",
     });
-    const STROKE = {
-      fill: "none", stroke: "currentColor", "stroke-width": "1.5",
-      "stroke-linecap": "round", "stroke-linejoin": "round",
-    };
-    const path = (d, o) => svgEl("path", Object.assign({ d }, STROKE, o || {}));
-    const rect = (x, y, w, h, o) => svgEl("rect", Object.assign({ x, y, width: w, height: h }, STROKE, o || {}));
-    const tri = (d) => svgEl("path", { d, fill: "currentColor", stroke: "none" });
     const label = (x, y, str, fs) => {
       const t = svgEl("text", {
         x, y, "font-size": fs || 12, "text-anchor": "middle", fill: "currentColor",
@@ -207,167 +162,13 @@
     let cur = svg;
     const add = (el) => cur.appendChild(el);
 
-    cur = submotifGroup(svg, "gru", [-30, 22, 308, 178]);
-    add(label(150, 30, "GRU", 13)).setAttribute("class", "motif-title");
-    const SW = { "stroke-width": "1.1" };
+    cur = submotifGroup(svg, "gru", [52, 28, 204, 146]);
+    add(label(154, 40, "GRU", 16)).setAttribute("class", "motif-title");
+    add(svgEl("image", { href: "gru.svg", x: 56.7, y: 46, width: 194.7, height: 124.2 }));
 
-    const ACCENT = "currentColor";
-    const ASW = {};
-    const circ = (cx, cy) => svgEl("circle", Object.assign({ cx, cy, r: 6.5 }, STROKE, SW));
-    const mult = (cx, cy) => { add(circ(cx, cy));
-      add(path(`M${cx - 3},${cy - 3} L${cx + 3},${cy + 3} M${cx + 3},${cy - 3} L${cx - 3},${cy + 3}`, SW)); };
-    const plus = (cx, cy) => { add(circ(cx, cy));
-      add(path(`M${cx},${cy - 3.6} V${cy + 3.6} M${cx - 3.6},${cy} H${cx + 3.6}`, SW)); };
-    const gbox = (cx, cy, txt, fs) => { add(rect(cx - 14, cy - 9, 28, 18, Object.assign({ rx: 3, ry: 3 }, SW)));
-      add(label(cx, cy + 3.5, txt, fs)); };
-    const jdot = (cx, cy) => add(svgEl("circle", { cx, cy, r: 1.9, fill: "currentColor", stroke: "none" }));
-    const acdot = (cx, cy) => add(svgEl("circle", { cx, cy, r: 1.9, fill: ACCENT, stroke: "none" }));
-    const apath = (d) => add(path(d, ASW));
-
-    const YT    = 70;
-    const YMID  = 104;
-    const YB    = 170;
-
-    const YX    = 184;
-    const YXL   = 192;
-
-    add(rect(22, 50, 222, 132, {
-      rx: 4, ry: 4,
-      fill: "rgba(2, 52, 63, 0.04)",
-      "stroke-width": "0.8",
-      "stroke-opacity": "0.35",
-    }));
-
-    gbox(60,  YT,   "σ",    11);
-    gbox(60,  YB,   "σ",    11);
-    mult(110, YB);
-    gbox(155, YB,   "tanh", 8.5);
-    mult(215, YB);
-    mult(150, YT);
-    gbox(150, YMID, "1-z",  8);
-    plus(215, YT);
-
-    add(label(-20, 40,  "hₜ₋₁", 10));
-    add(label(263, YT,  "hₜ",   10));
-    add(label(28,  YXL, "xₜ",   10));
-
-    add(label(94,  92,     "zₜ", 10));
-    add(label(88,  YB - 6, "rₜ", 10));
-    add(label(194, YB - 6, "cₜ", 10));
-
-    apath(`M-20,44 H232 V${YT}`);
-    apath(`M10,44 V${YB}`);
-    apath(`M10,55 H150 V${YT - 6.5}`);
-    apath(`M110,55 V${YB - 6.5}`);
-    apath(`M10,${YT} H46`);
-    apath(`M10,${YB} H46`);
-
-    add(tri(`M46,${YT} L40,${YT - 3} L40,${YT + 3} Z`));
-    add(tri(`M46,${YB} L40,${YB - 3} L40,${YB + 3} Z`));
-    add(tri(`M150,${YT - 6.5} L147,${YT - 12.5} L153,${YT - 12.5} Z`));
-    add(tri(`M110,${YB - 6.5} L107,${YB - 12.5} L113,${YB - 12.5} Z`));
-
-    acdot(10, 44); acdot(10, 55); acdot(10, YT);
-    acdot(110, 55);
-    acdot(232, YT);
-
-    add(path(`M74,${YT} H80 V120`));
-    add(path(`M80,104 H136`));
-    add(path(`M80,120 H215 V${YB - 6.5}`));
-    jdot(80, 104);
-
-    add(path(`M74,${YB} H103.5`));
-    add(path(`M116.5,${YB} H138`));
-    add(tri(`M141,${YB} L135,${YB - 3} L135,${YB + 3} Z`));
-
-    add(path(`M169,${YB} H205.5`));
-    add(tri(`M208.5,${YB} L202.5,${YB - 3} L202.5,${YB + 3} Z`));
-
-    add(path(`M150,${YMID - 9} V${YT + 6.5}`));
-
-    add(path(`M156.5,${YT} H208.5`));
-
-    add(path(`M215,${YB - 6.5} V${YT + 6.5}`));
-
-    add(path(`M221.5,${YT} H257`));
-    add(tri(`M257,${YT} L251,${YT - 3} L251,${YT + 3} Z`));
-
-    add(path(`M30,${YX} H155`));
-    add(path(`M30,${YX} V75`));
-    add(path(`M30,75 H40`));
-    add(tri(`M46,75 L40,72 L40,78 Z`));
-    add(path(`M30,175 H40`));
-    add(tri(`M46,175 L40,172 L40,178 Z`));
-    add(path(`M155,${YX} V${YB + 9}`));
-    jdot(30, 175);
-
-    cur = submotifGroup(svg, "flexible", [298, 66, 282, 158]);
-    const FX0 = 302, FX1 = 578, fskew = 13;
-    const fyc = (u) => 128 + 26 * Math.sin(2 * Math.PI * 0.92 * u + 0.5);
-    const fhw = (u) => 29 - 9 * u;
-    const FP = (u, v) => {
-      const x = FX0 + (FX1 - FX0) * u, yC = fyc(u), h = fhw(u);
-      const xf = x + fskew, yf = yC - h;
-      const xn = x,         yn = yC + h;
-      return [xf + (xn - xf) * v, yf + (yn - yf) * v];
-    };
-    const samp = (fn, n) => {
-      let d = "";
-      for (let i = 0; i <= n; i++) { const [x, y] = fn(i / n); d += `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)} `; }
-      return d;
-    };
-    const alongU = (v, u0, u1, o) => path(samp((t) => FP(u0 + (u1 - u0) * t, v), 22), o);
-    const acrossV = (u, v0, v1, o) => path(samp((t) => FP(u, v0 + (v1 - v0) * t), 6), o);
-    const blockUV = (u0, u1, v0, v1, o) => {
-      let d = samp((t) => FP(u0 + (u1 - u0) * t, v0), 8);
-      d += samp((t) => FP(u1, v0 + (v1 - v0) * t), 6).replace("M", "L");
-      d += samp((t) => FP(u1 - (u1 - u0) * t, v1), 8).replace("M", "L");
-      d += samp((t) => FP(u0, v1 - (v1 - v0) * t), 6).replace("M", "L") + "Z";
-      return path(d, o);
-    };
-    const THIN = { "stroke-width": "1" };
-    const outlineD = samp((t) => FP(t, 0), 64) + samp((t) => FP(1 - t, 1), 64).replace("M", "L") + "Z";
-    const rid = Math.random().toString(36).slice(2, 8);
-
-    const fdefs = svgEl("defs", {});
-    const blur = svgEl("filter", { id: `fsh-${rid}`, x: "-15%", y: "-15%", width: "140%", height: "170%" });
-    blur.appendChild(svgEl("feGaussianBlur", { in: "SourceGraphic", stdDeviation: "4.5" }));
-    fdefs.appendChild(blur);
-    add(fdefs);
-    add(svgEl("path", { d: outlineD, transform: "translate(8,16)", fill: "currentColor", opacity: "0.22", filter: `url(#fsh-${rid})`, stroke: "none" }));
-
-    add(svgEl("path", { d: outlineD, fill: "#ffffff", "fill-opacity": "0.82", stroke: "none" }));
-
-    const VT = 0.17, VB = 0.83;
-    const FINE = { "stroke-width": "0.7" };
-    [0.30, 0.50, 0.72].forEach((u) => add(acrossV(u, VT, VB, { "stroke-width": "0.9" })));
-    add(alongU(0.50, 0.06, 0.94, { "stroke-width": "0.9" }));
-
-    add(blockUV(0.07, 0.28, VT, VB, THIN));
-    [0.30, 0.42, 0.58, 0.70].forEach((v) => add(alongU(v, 0.085, 0.265, FINE)));
-
-    for (let r = 0; r < 3; r++) for (let c = 0; c < 4; c++) {
-      const u0 = 0.325 + c * 0.038, v0 = 0.24 + r * 0.20;
-      add(blockUV(u0, u0 + 0.026, v0, v0 + 0.13, FINE));
-    }
-
-    for (let k = 0; k <= 12; k++) {
-      const u = 0.525 + (0.705 - 0.525) * (k / 12);
-      add(acrossV(u, 0.20, 0.46, { "stroke-width": "0.8" }));
-      add(acrossV(u, 0.54, 0.80, { "stroke-width": "0.8" }));
-    }
-
-    add(blockUV(0.74, 0.93, VT, VB, THIN));
-    for (let r = 0; r < 2; r++) for (let c = 0; c < 2; c++) {
-      const u0 = 0.77 + c * 0.075, v0 = 0.27 + r * 0.28;
-      add(blockUV(u0, u0 + 0.05, v0, v0 + 0.18, FINE));
-    }
-
-    add(path(outlineD, { "stroke-width": "1.6" }));
-    add(path(samp((t) => { const [x, y] = FP(t, 1); return [x, y + 3.5]; }, 64), { "stroke-width": "1.2" }));
-    [0, 1].forEach((u) => { const [x, y] = FP(u, 1); add(path(`M${x.toFixed(1)},${y.toFixed(1)} L${x.toFixed(1)},${(y + 3.5).toFixed(1)}`, { "stroke-width": "1.2" })); });
-
-    add(label(440, 214, "flexible", 12)).setAttribute("class", "motif-title");
+    cur = submotifGroup(svg, "flexible", [277, 39, 296, 179]);
+    add(svgEl("image", { href: "flexible.svg", x: 261.4, y: 24.7, width: 319.5, height: 184.2 }));
+    add(label(440, 214, "Flexible Chip", 16)).setAttribute("class", "motif-title");
 
     return svg;
   }
@@ -414,172 +215,19 @@
     }
 
     const gA = submotifGroup(svg, "analog", [78, 58, 144, 144]);
-    { const svg = gA;
-    const A = { x: 80, y: 60, w: 140, h: 140 };
-    svg.appendChild(rect(A.x, A.y, A.w, A.h, { rx: 2, ry: 2 }));
-
-    const SCH = Object.assign({}, STROKE, { "stroke-width": "1.7" });
-    const sch = (d) => svgEl("path", Object.assign({ d }, SCH));
-
-    {
-      const cx = A.x + 30;
-      const cy = A.y + 30;
-      const peakW = 2.5;
-      const peakH = 4.5;
-      const peaks = 6;
-      const half = (peakW * peaks) / 2;
-
-      const d = [`M${cx - half - 7},${cy}`, `L${cx - half},${cy}`];
-      let dir = -1;
-      for (let i = 0; i < peaks; i++) {
-        d.push(`L${cx - half + (i + 0.5) * peakW},${cy + dir * peakH}`);
-        d.push(`L${cx - half + (i + 1) * peakW},${cy}`);
-        dir *= -1;
-      }
-
-      d.push(`L${cx + half + 7},${cy}`);
-      svg.appendChild(sch(d.join(" ")));
-    }
-
-    {
-      const cx = A.x + 70;
-      const cy = A.y + 30;
-      const r = 9;
-      svg.appendChild(svgEl("circle", {
-        cx, cy, r,
-        fill: "none",
-        stroke: "currentColor",
-        "stroke-width": "1.7",
-        "stroke-linecap": "round",
-      }));
-
-      svg.appendChild(sch(`M${cx},${cy + r - 3} L${cx},${cy - r + 4}`));
-      svg.appendChild(tri(
-        `M${cx},${cy - r + 2} L${cx - 3},${cy - r + 6} L${cx + 3},${cy - r + 6} Z`
-      ));
-
-      svg.appendChild(sch(`M${cx},${cy - r} L${cx},${cy - r - 6}`));
-      svg.appendChild(sch(`M${cx},${cy + r} L${cx},${cy + r + 6}`));
-    }
-
-    {
-      const cx = A.x + 110;
-      const cy = A.y + 30;
-      const gap = 2.5;
-      const plateW = 10;
-
-      svg.appendChild(sch(`M${cx - plateW},${cy - gap} L${cx + plateW},${cy - gap}`));
-      svg.appendChild(sch(`M${cx - plateW},${cy + gap} L${cx + plateW},${cy + gap}`));
-
-      svg.appendChild(sch(`M${cx},${cy - gap} L${cx},${cy - gap - 8}`));
-      svg.appendChild(sch(`M${cx},${cy + gap} L${cx},${cy + gap + 8}`));
-    }
-
-    {
-      const cx = A.x + 70;
-      const cy = A.y + 70;
-      const w = 36;
-      const h = 30;
-
-      svg.appendChild(sch(
-        `M${cx - w / 2},${cy - h / 2} L${cx + w / 2},${cy} L${cx - w / 2},${cy + h / 2} Z`
-      ));
-
-      const inX0 = cx - w / 2 - 12;
-      const inXEnd = cx - w / 2;
-      const inYTop = cy - h / 4;
-      const inYBot = cy + h / 4;
-      svg.appendChild(sch(`M${inX0},${inYTop} L${inXEnd},${inYTop}`));
-      svg.appendChild(sch(`M${inX0},${inYBot} L${inXEnd},${inYBot}`));
-
-      svg.appendChild(sch(`M${inXEnd + 3},${inYTop - 3} L${inXEnd + 7},${inYTop - 3}`));
-
-      svg.appendChild(sch(`M${inXEnd + 3},${inYBot - 3} L${inXEnd + 7},${inYBot - 3}`));
-      svg.appendChild(sch(`M${inXEnd + 5},${inYBot - 5} L${inXEnd + 5},${inYBot - 1}`));
-
-      svg.appendChild(sch(`M${cx + w / 2},${cy} L${cx + w / 2 + 12},${cy}`));
-    }
-
-    {
-      const wfY0 = A.y + 118;
-      const wfX0 = A.x + 18;
-      const wfX1 = A.x + A.w - 18;
-      const wfPts = [];
-      const wfW = wfX1 - wfX0;
-      for (let i = 0; i <= 100; i++) {
-        const t = i / 100;
-        const x = wfX0 + t * wfW;
-        const y = wfY0 - Math.sin(t * Math.PI * 4) * 9;
-        wfPts.push(`${x.toFixed(1)},${y.toFixed(1)}`);
-      }
-      svg.appendChild(svgEl("polyline", {
-        points: wfPts.join(" "),
-        fill: "none",
-        stroke: "currentColor",
-        "stroke-width": "1.7",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round",
-      }));
-    }
-    }
+    gA.appendChild(svgEl("image", { href: "analog.svg", x: 80, y: 60, width: 140, height: 140 }));
 
     const gC = submotifGroup(svg, "automation", [230, 60, 140, 140]);
-    { const svg = gC;
-    const C = { x: 230, y: 60, w: 140, h: 140 };
-    svg.appendChild(rect(C.x, C.y, C.w, C.h, { rx: 2, ry: 2 }));
-
-    const px = C.x + C.w / 2;
-    const py = C.y + 22;
-    const pySize = 32;
-    const pyScale = pySize / 32;
-    const pyG = svgEl("g", {
-      transform:
-        "translate(" + (px - pySize / 2) + " " + (py - pySize / 2) + ") " +
-        "scale(" + pyScale + ")",
-    });
-    pyG.appendChild(svgEl("path", {
-      d: "M14.5 1.07c-7.42 0-6.93 3.22-6.93 3.22V7.59h7.05v1H4.75S0 8.06 0 15.55C0 23.03 4.15 22.77 4.15 22.77H6.6V19.34s-0.13-4.15 4.07-4.15h6.99s3.96 0.06 3.96-3.83V4.95s0.6-3.88-7.12-3.88zM10.71 3.16c0.7 0 1.27 0.57 1.27 1.27 0 0.7-0.57 1.27-1.27 1.27-0.7 0-1.27-0.57-1.27-1.27 0-0.7 0.57-1.27 1.27-1.27z",
-      fill: "currentColor",
-      "fill-rule": "evenodd",
-    }));
-    pyG.appendChild(svgEl("path", {
-      d: "M17.5 30.93c7.42 0 6.93-3.22 6.93-3.22V24.41h-7.05v-1h9.87s4.75 0.54 4.75-6.95c0-7.48-4.15-7.22-4.15-7.22h-2.45v3.43s0.13 4.15-4.07 4.15h-6.99s-3.96-0.06-3.96 3.83v6.41s-0.6 3.88 7.12 3.88zM21.29 28.84c-0.7 0-1.27-0.57-1.27-1.27 0-0.7 0.57-1.27 1.27-1.27 0.7 0 1.27 0.57 1.27 1.27 0 0.7-0.57 1.27-1.27 1.27z",
-      fill: "currentColor",
-      "fill-rule": "evenodd",
-    }));
-    svg.appendChild(pyG);
-
-    const codeLines = [
-      "import cdl_gen",
-      "sram = cdl_gen.sram(",
-      "  banks=12, cell=\"8T\",",
-      "  vdd=0.6)",
-      "sram.to_cdl()",
-      "# \u2192 Cadence schematic",
-    ];
-    const codeX0 = C.x + 8;
-    const codeY0 = C.y + 56;
-    const lineH = 8.5;
-    codeLines.forEach((line, i) => {
-      const t = svgEl("text", {
-        x: codeX0,
-        y: codeY0 + i * lineH,
-        "font-size": "7",
-        "font-family": "ui-monospace, 'SF Mono', Menlo, Consolas, 'Courier New', monospace",
-        fill: "currentColor",
-      });
-      t.textContent = line;
-      svg.appendChild(t);
-    });
-
-    }
+    gC.appendChild(svgEl("image", { href: "automation.svg", x: 230, y: 60, width: 140, height: 140 }));
 
     const gB = submotifGroup(svg, "digital", [378, 58, 144, 144]);
     { const svg = gB;
     const B = { x: 380, y: 60, w: 140, h: 140 };
-    svg.appendChild(rect(B.x, B.y, B.w, B.h, { rx: 2, ry: 2 }));
+    svg.appendChild(rect(B.x, B.y, B.w, B.h, {
+      rx: 4.1, ry: 4.1, "stroke-width": "1.95",
+    }));
 
-    const pe = { x: B.x + 14, y: B.y + 18, cols: 2, rows: 3, w: 22, h: 32, gap: 5 };
+    const pe = { x: B.x + 14, y: B.y + 18, cols: 2, rows: 3, w: 24, h: 30, gap: 5 };
     for (let r = 0; r < pe.rows; r++) {
       for (let c = 0; c < pe.cols; c++) {
         const cx = pe.x + c * (pe.w + pe.gap);
@@ -587,27 +235,27 @@
         svg.appendChild(rect(cx, cy, pe.w, pe.h, { rx: 2, ry: 2 }));
 
         const mx = cx + pe.w / 2;
-        const mulY = cy + 10;
-        const addY = cy + 23;
-        const r0 = 4;
+        const mulY = cy + 9.5;
+        const addY = cy + 21;
+        const r0 = 4.5;
 
         svg.appendChild(svgEl("circle", Object.assign({ cx: mx, cy: mulY, r: r0 }, STROKE)));
         svg.appendChild(path(
-          `M${mx - 2.5},${mulY - 2.5} L${mx + 2.5},${mulY + 2.5} ` +
-          `M${mx + 2.5},${mulY - 2.5} L${mx - 2.5},${mulY + 2.5}`
+          `M${mx - 2.8},${mulY - 2.8} L${mx + 2.8},${mulY + 2.8} ` +
+          `M${mx + 2.8},${mulY - 2.8} L${mx - 2.8},${mulY + 2.8}`
         ));
 
         svg.appendChild(path(`M${mx},${mulY + r0} V${addY - r0}`));
 
         svg.appendChild(svgEl("circle", Object.assign({ cx: mx, cy: addY, r: r0 }, STROKE)));
         svg.appendChild(path(
-          `M${mx - 2.5},${addY} H${mx + 2.5} ` +
-          `M${mx},${addY - 2.5} V${addY + 2.5}`
+          `M${mx - 2.8},${addY} H${mx + 2.8} ` +
+          `M${mx},${addY - 2.8} V${addY + 2.8}`
         ));
       }
     }
 
-    const ram = { x: B.x + 82, y: B.y + 22, cols: 4, rows: 6, w: 10, h: 13, gap: 2 };
+    const ram = { x: B.x + 82, y: B.y + 22, cols: 3, rows: 4, w: 14, h: 17, gap: 3 };
     const arrW = ram.cols * ram.w + (ram.cols - 1) * ram.gap;
     const arrH = ram.rows * ram.h + (ram.rows - 1) * ram.gap;
 
@@ -617,7 +265,7 @@
 
     const thin = (d) => svgEl("path", {
       d, fill: "none", stroke: "currentColor",
-      "stroke-width": "0.8", "stroke-linecap": "round",
+      "stroke-width": "1", "stroke-linecap": "round",
     });
 
     svg.appendChild(rect(rowDec.x, rowDec.y, rowDec.w, rowDec.h, { rx: 1, ry: 1 }));
@@ -647,7 +295,7 @@
       const lx = ram.x + c * (ram.w + ram.gap);
       svg.appendChild(rect(
         lx + 1.5, ioReg.y + 2, ram.w - 3, ioReg.h - 4,
-        { rx: 0.5, ry: 0.5, "stroke-width": "0.8" }
+        { rx: 0.5, ry: 0.5, "stroke-width": "1" }
       ));
     }
     }
@@ -768,8 +416,9 @@
   function makeProjectCard(p) {
     const ongoing = p.status === "ongoing";
     const repo = p.status === "repo";
+    const accepted = p.status === "accepted";
 
-    const card = ongoing
+    const card = (ongoing || accepted)
       ? h("div", { class: "project project--" + selectedLayer, "data-tag": p.tag })
       : h("a", {
           class: "project project--" + selectedLayer,
@@ -812,6 +461,9 @@
     if (ongoing) {
       doi.appendChild(h("span", { class: "project-doi-key" }, "ONGOING"));
       doi.appendChild(h("span", { class: "project-doi-val" }, "in progress"));
+    } else if (accepted) {
+      doi.appendChild(h("span", { class: "project-doi-key" }, "ACCEPTED"));
+      doi.appendChild(h("span", { class: "project-doi-val" }, "to appear"));
     } else if (repo) {
 
       const tail = (p.repo || "").replace(/^https?:\/\/(?:www\.)?github\.com\//i, "");
@@ -826,7 +478,7 @@
     foot.appendChild(doi);
     card.appendChild(foot);
 
-    if (ongoing) return card;
+    if (ongoing || accepted) return card;
 
     const motifId = Object.keys(MOTIF_TAG).find((id) => MOTIF_TAG[id] === p.tag);
     const motifEl = motifId ? document.querySelector('.submotif[data-motif="' + motifId + '"]') : null;
@@ -1173,10 +825,13 @@
       cap.className = "callout-cap";
       cap.textContent = MOTIF_NAME[id] || id;
       card.appendChild(cap);
+      const IMAGE_MOTIF = id === "gru" || id === "analog" || id === "flexible" || id === "automation" || id === "digital" || id === "audio-ai" || id === "bioimpedance";
       const cs = svgEl("svg", {
-        class: "callout-svg",
+        class: "callout-svg" + (IMAGE_MOTIF ? " callout-svg--tall" : ""),
         preserveAspectRatio: "xMidYMid meet",
       });
+      // per-motif caps chosen so both Visio drawings display at the same scale
+      if (IMAGE_MOTIF) cs.style.setProperty("--callout-maxh", id === "gru" ? "354px" : "520px");
       const clone = g.cloneNode(true);
       clone.classList.remove("is-hi", "is-dim");
       const hit = clone.querySelector("rect");
@@ -1188,13 +843,17 @@
       callout.appendChild(card);
       callout.classList.add("is-active");
 
-      const PAD = 12;
+      const PAD = IMAGE_MOTIF ? 4 : 12;
       let vb = MOTIF_CBOX[id] || box;
-      try {
-        const bb = clone.getBBox();
-        if (bb.width > 1 && bb.height > 1)
-          vb = [bb.x - PAD, bb.y - PAD, bb.width + 2 * PAD, bb.height + 2 * PAD];
-      } catch (e) {  }
+      // flexible.svg has canvas margins inside the image element, so its
+      // MOTIF_CBOX is the measured artwork box — don't widen it to the bbox
+      if (id !== "flexible") {
+        try {
+          const bb = clone.getBBox();
+          if (bb.width > 1 && bb.height > 1)
+            vb = [bb.x - PAD, bb.y - PAD, bb.width + 2 * PAD, bb.height + 2 * PAD];
+        } catch (e) {  }
+      }
       cs.setAttribute("viewBox", vb.join(" "));
 
       if (!skipEmphasis) {

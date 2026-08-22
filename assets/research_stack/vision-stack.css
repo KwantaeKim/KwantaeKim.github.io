@@ -170,6 +170,7 @@ a { color: inherit; }
   color: var(--teal);
   display: block;
 }
+.callout-svg--tall { max-height: var(--callout-maxh, 520px); }
 @keyframes callout-in {
   from { opacity: 0; transform: scale(0.97); }
   to   { opacity: 1; transform: scale(1); }
@@ -858,6 +859,7 @@ a { color: inherit; }
   .callout:not(.is-active) { display: none; }
   .callout-card { max-width: 420px; margin: 0 auto; }
   .callout-svg { max-height: 240px; margin: 0 auto; }
+  .callout-svg--tall { max-height: 320px; }
   .connector { display: none; }
 }
 
@@ -866,6 +868,7 @@ a { color: inherit; }
   .plane-name { font-size: 28px; }
   .panel-title { font-size: 26px; }
   .callout-svg { max-height: 160px; max-width: 280px; }
+  .callout-svg--tall { max-height: 224px; }
 }
 
 @media (hover: none) {

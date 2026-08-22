@@ -38,7 +38,9 @@
       "tag": "algorithm",
       "title": "Low-footprint GRU architecture",
       "authors": "S. Bhowmick et al.",
-      "status": "ongoing"
+      "venue": "IEEE AICAS",
+      "year": "2026",
+      "status": "accepted"
     }
   ],
   "circuit": [
