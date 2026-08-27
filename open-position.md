@@ -126,6 +126,11 @@ toc_title: Contents
   <span>Applicants who do not meet the following are respectfully declined.</span>
 </p>
 
+<p class="intro-line">
+  <i class="fa-solid fa-envelope"></i>
+  <span>Please note that email enquiries are read with the same criteria.</span>
+</p>
+
 <div class="value-grid">
   <div class="value-card">
     <h5><i class="fa-solid fa-clipboard-check"></i>&nbsp; Attention to Instructions</h5>
