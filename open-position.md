@@ -162,12 +162,12 @@ toc_title: Contents
 
 <ul class="pos-list">
   <li class="pos-item">
-    <div class="pos-title">PhD Student<span class="pos-closed">closed</span><span class="pos-closed pos-progress">review in progress</span></div>
+    <div class="pos-title">PhD Student<span class="pos-closed">closed</span></div>
     <div class="pos-meta">
       <a href="https://research.fi/en/results/funding/88755" target="_blank">HolistIC project</a>
       &middot; 7 August 2026
     </div>
-    <div class="pos-stats"><b>128</b> applications &middot; <b>8</b> invited to interview</div>
+    <div class="pos-stats"><b>128</b> applications &middot; <b>8</b> invited to interview &middot; <b>1</b> hired</div>
   </li>
   <li class="pos-item">
     <div class="pos-title">Research Assistant<span class="pos-closed">closed</span></div>
