@@ -47,7 +47,7 @@ fig.update_layout(
 
 for _, r in df.iterrows():
   n = r['active1DayUsers']
-  png = Path('./images/country-flags') / f"{r['countryId']}.png"
+  png = Path('./img/flags') / f"{r['countryId']}.png"
   if png.exists():
     uri = 'data:image/png;base64,' + base64.b64encode(png.read_bytes()).decode()
     fig.add_layout_image(dict(source=uri, xref='x', yref='y', x=n + 170, y=r['country'],
