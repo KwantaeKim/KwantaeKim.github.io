@@ -40,7 +40,7 @@ fig.update_layout(
   xaxis=dict(showgrid=False, showticklabels=False,
              range=[0, df['active1DayUsers'].max() * 1.4]),  # headroom so enlarged mobile flags aren't clipped
   yaxis=dict(autorange='reversed'),
-  margin=dict(t=0, b=0),
+  margin=dict(t=12, b=12),  # breathing room so the first/last bar isn't flush against the edge
   font=dict(family='Trebuchet MS', size=16, color='black'),
   plot_bgcolor='rgba(0,0,0,0)', dragmode=False,
 )
@@ -60,6 +60,9 @@ for _, r in df.iterrows():
                      font=dict(color='white', size=20), xanchor='left', yanchor='middle')
 
 emoji_css = '''<style>
+/* The plot div is height:100%; the default body margin pushed it past the iframe
+   and produced a scrollbar, which cropped the chart. */
+html, body { margin: 0; padding: 0; overflow: hidden; }
 .emoji { font-family: "NotoColorEmojiLimited", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 /* Dark outline keeps the white count readable when a short bar lets it spill onto the page. */
 .annotation-text { paint-order: stroke; stroke: #02343F; stroke-width: 3px; stroke-linejoin: round; }

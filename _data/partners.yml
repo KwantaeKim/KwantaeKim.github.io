@@ -1,0 +1,177 @@
+# Research partners. Single source for the map + side panel in worldmap.html.
+# Partners sharing lat/lon are merged into one map pin automatically.
+# Order within a continent is the display order in the panel.
+# Optional `popup_pad:` is the gap in px between the building and its popup (default 4).
+# Optional `bearing:`/`pitch:` override the landing camera (defaults -25 / 55).
+# Optional `zoom:` overrides the map's landing zoom for that pin (default 16.5).
+# Higher is closer; 17.5 fills the screen with one building, 15 shows a campus.
+
+- name: Marko Kosunen
+  url: https://metka.aalto.fi
+  title: Associate Professor
+  ieee: IEEE Senior Member
+  institution: Aalto University
+  country: Finland
+  flag: 🇫🇮
+  continent: Europe
+  lat: 60.187153
+  lon: 24.819305
+  zoom: 15
+
+- name: Tobi Delbruck
+  url: https://sensors.ini.ch
+  title: Professor
+  ieee: IEEE Fellow
+  institution: UZH/ETH Zurich
+  country: Switzerland
+  flag: 🇨🇭
+  continent: Europe
+  lat: 47.398424
+  lon: 8.550454
+  zoom: 16
+
+- name: Shih-Chii Liu
+  url: https://sensors.ini.ch
+  title: Professor
+  ieee: IEEE Fellow
+  institution: UZH
+  country: Switzerland
+  flag: 🇨🇭
+  continent: Europe
+  lat: 47.398424
+  lon: 8.550454
+  zoom: 16
+
+- name: Taekwang Jang
+  url: https://circuit.ee.ethz.ch
+  title: Associate Professor
+  ieee: IEEE Senior Member
+  institution: ETH Zurich
+  country: Switzerland
+  flag: 🇨🇭
+  continent: Europe
+  lat: 47.377739
+  lon: 8.552812
+  zoom: 16
+
+- name: Chang Gao
+  url: https://www.tudemi.com
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: TU Delft
+  country: Netherlands
+  flag: 🇳🇱
+  continent: Europe
+  lat: 51.998879
+  lon: 4.373485
+  zoom: 16.1
+  bearing: 19
+  popup_pad: 60
+
+- name: Qinyu Chen
+  url: https://sites.google.com/view/qinyu/
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: Leiden University
+  country: Netherlands
+  flag: 🇳🇱
+  continent: Europe
+  lat: 52.169447
+  lon: 4.456637
+  zoom: 16
+
+- name: Martin Andraud
+  url: https://martinandraud.github.io
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: UCLouvain
+  country: Belgium
+  flag: 🇧🇪
+  continent: Europe
+  lat: 50.668792
+  lon: 4.624241
+  zoom: 16
+
+- name: Hoi-Jun Yoo
+  url: http://ssl.kaist.ac.kr
+  title: Professor
+  ieee: IEEE Fellow
+  institution: KAIST
+  country: South Korea
+  flag: 🇰🇷
+  continent: Asia
+  lat: 36.368719
+  lon: 127.365687
+  zoom: 16.5
+
+- name: Sangyeob Kim
+  url: https://sites.google.com/view/sangyeobkim/
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: Yonsei University
+  country: South Korea
+  flag: 🇰🇷
+  continent: Asia
+  lat: 37.381805
+  lon: 126.670578
+  zoom: 15.5
+
+- name: Kyung-Sik Choi
+  url: https://sites.google.com/view/year-yonsei/home?authuser=0
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: Yonsei University
+  country: South Korea
+  flag: 🇰🇷
+  continent: Asia
+  lat: 37.56176
+  lon: 126.93513
+  zoom: 16
+
+- name: Woojun Choi
+  url: https://sites.google.com/view/ysicsl/
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: Yonsei University
+  country: South Korea
+  flag: 🇰🇷
+  continent: Asia
+  lat: 37.56176
+  lon: 126.93513
+  zoom: 16
+
+- name: Youngwoo Ji
+  url: https://lab.hanbat.ac.kr/cats
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: Hanbat National University
+  country: South Korea
+  flag: 🇰🇷
+  continent: Asia
+  lat: 36.352087
+  lon: 127.301388
+  zoom: 15.5
+
+- name: Sohmyung Ha
+  url: https://wp.nyu.edu/sohmyung/
+  title: Associate Professor
+  ieee: IEEE Senior Member
+  institution: NYU Abu Dhabi
+  country: UAE
+  flag: 🇦🇪
+  continent: Asia
+  lat: 24.525281
+  lon: 54.433230
+  zoom: 17.4
+
+- name: Jason Eshraghian
+  url: https://ncg.ucsc.edu
+  title: Assistant Professor
+  ieee: IEEE Member
+  institution: UC Santa Cruz
+  country: United States
+  flag: 🇺🇸
+  continent: America
+  lat: 37.000359
+  lon: -122.063195
+  zoom: 17.5

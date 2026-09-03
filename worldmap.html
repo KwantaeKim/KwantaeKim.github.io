@@ -1,558 +1,430 @@
+---
+# Front matter makes Jekyll render this file, so the partner list below comes
+# straight from _data/partners.yml. MapLibre's {fontstack}/{range} placeholders
+# are single-brace and untouched by Liquid.
+# permalink pins the output path: the site uses `permalink: pretty`, which would
+# otherwise publish this as /worldmap/index.html and break the iframe src.
+permalink: /worldmap.html
+---
 <!DOCTYPE html>
 <html>
 <head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_c2463569698adaf3de325e34f0e5308e {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-                .leaflet-container { font-size: 1rem; }
-            </style>
-        
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
-<link rel="stylesheet" type="text/css" href="./emoji.css"></head>
+<meta charset="utf-8">
+<title>Research Partners</title>
+<link href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+<script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
+<style>
+  /* Colour flag emoji on platforms whose default font has none. */
+  @font-face { font-family: NotoColorEmojiLimited; unicode-range: U+1F1E6-1F1FF;
+    src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf); }
+  .emoji { font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+
+  html, body { margin:0; padding:0; overflow:hidden; }
+  #wrap { display:flex; flex-direction:column; height:100vh; background:#0B0F14; color:#E8EDF2;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+
+  /* Partner strip across the top: cards scroll sideways so the map keeps its height. */
+  #panel { flex:none; border-bottom:1px solid rgba(255,255,255,.10); }
+  #panel h2 { margin:0; padding:12px 18px 8px; font-size:12px; letter-spacing:.16em;
+    text-transform:uppercase; color:#00E0C6; font-weight:600; }
+  /* One row per continent: label on the left, cards scrolling sideways. */
+  .crow { display:flex; border-top:1px solid rgba(255,255,255,.10); }
+  .crow .cards { display:flex; flex:1; overflow-x:auto; overflow-y:hidden; scrollbar-width:thin; }
+  .crow .cards::-webkit-scrollbar { height:8px; }
+  .crow .cards::-webkit-scrollbar-thumb { background:rgba(255,255,255,.18); border-radius:4px; }
+  .grp { flex:none; width:26px; padding:12px 6px 0; writing-mode:vertical-rl;
+    font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#00E0C6;
+    border-right:1px solid rgba(255,255,255,.12); }
+  .loc { flex:none; width:196px; padding:9px 16px 10px; cursor:pointer;
+    border-left:1px solid rgba(255,255,255,.07); transition:background .15s; }
+  .loc:hover { background:rgba(255,255,255,.05); }
+  .loc.active { background:rgba(255,255,255,.08); box-shadow:inset 0 3px 0 #00E0C6; }
+  .loc .country { font-size:10.5px; letter-spacing:.12em; text-transform:uppercase;
+    color:#00E0C6; margin-bottom:5px; }
+  .loc .name { font-size:14px; font-weight:600; margin-bottom:3px; }
+  .loc .addr { font-size:12px; line-height:1.4; opacity:.66; }
+  .loc .role { font-size:11.5px; line-height:1.4; margin-top:3px; color:#B9C6D2; }
+  .loc a { color:#00E0C6; text-decoration:none; }
+  .loc a:hover { text-decoration:underline; }
+  #map { flex:1; position:relative; }
+
+  /* Caption carried over from the previous overlay, restyled for the dark map. */
+  #hint { position:absolute; left:18px; bottom:22px; z-index:5;
+    background:rgba(11,15,20,.88); border:1px solid rgba(255,255,255,.15);
+    border-radius:9px; padding:12px 16px; font-size:13px; line-height:2;
+    box-shadow:0 6px 26px rgba(0,0,0,.6); pointer-events:none; }
+  #hint i { color:#00E0C6; width:1.2em; margin-right:.5em; }
+
+  /* Live camera readout, for tuning the zoom values in _data/partners.yml. */
+  #cam { position:absolute; right:12px; bottom:12px; z-index:5;
+    background:rgba(11,15,20,.85); border:1px solid rgba(255,255,255,.15);
+    border-radius:6px; padding:5px 9px; font-size:11.5px; color:#B9C6D2;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+
+  .pin { width:14px; height:14px; border-radius:50%; background:#00E0C6; cursor:pointer;
+    box-shadow:0 0 0 6px #00E0C633, 0 0 0 13px #00E0C61a, 0 0 22px #00E0C6; }
+  .maplibregl-popup-content { background:#0B0F14; color:#E8EDF2; border:1px solid rgba(255,255,255,.15);
+    border-radius:9px; padding:14px 16px; box-shadow:0 6px 26px rgba(0,0,0,.6);
+    font-family:inherit; font-size:14px; line-height:1.5; }
+  .maplibregl-popup-content a { color:#00E0C6; text-decoration:none; }
+  .maplibregl-popup-content a:hover { text-decoration:underline; }
+  .maplibregl-popup-content .place { opacity:.7; font-size:12.5px; }
+  .maplibregl-popup-content .inst { margin-top:8px; padding-top:8px;
+    border-top:1px solid rgba(255,255,255,.15); opacity:.7; font-size:12.5px; }
+  .maplibregl-popup-content .sep { height:9px; }
+  .maplibregl-popup-tip { border-top-color:#0B0F14; border-bottom-color:#0B0F14; }
+  .maplibregl-popup-close-button { color:#E8EDF2; font-size:17px; padding:2px 7px; }
+</style>
+</head>
 <body>
-    
-    <style>.leaflet-container { height: 100% !important; }</style>
-    
-            <div class="folium-map" id="map_c2463569698adaf3de325e34f0e5308e" ></div>
-        
-</body>
+<div id="wrap">
+  <div id="panel"><h2>Research Partners</h2><div id="list"></div></div>
+  <div id="map">
+    <div id="hint">
+      <i class="fa-solid fa-magnifying-glass fa-beat-fade fa-lg"></i> Find our collaborators, <br>
+      <i class="fa-solid fa-hand-pointer fa-lg"></i> Click their names, <br>
+      <i class="fa-solid fa-up-right-from-square fa-bounce fa-lg"></i> Visit their webpages!
+      <i class="fa-solid fa-house-user"></i>
+    </div>
+    <div id="cam"></div>
+  </div>
+</div>
 <script>
-    
-    
-            var map_c2463569698adaf3de325e34f0e5308e = L.map(
-                "map_c2463569698adaf3de325e34f0e5308e",
-                {
-                    center: [50.0, 10.0],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 2,
-                    zoomControl: true,
-                    preferCanvas: true,
-                    lang: "en",
-                }
-            );
+const C = { bg:"#0B0F14", water:"#122430", road:"#1B2733",
+            bldLow:"#16202B", bldHigh:"#33475C", bldHl:"#14BFA8",
+            // Flight timings copied from map_Kor-Fin/office_map.html.
+            zoom:16.5, pitch:55, bearing:-25, popupPad:4,   // default; a partner may override zoom
+            riseMs:3000, panMs:300, holdMin:0, holdMax:800, diveMs:4000, nearMs:2500,
+            // At or above this altitude (zoom <= value) the whole route is already on
+            // screen, so rising and panning would only zoom IN to a midpoint first.
+            highZoom:4,
+            tiles:"https://tiles.openfreemap.org/planet",
+            glyphs:"https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf" };
 
-            
+// Single source of truth: _data/partners.yml
+const PARTNERS = {{ site.data.partners | jsonify }};
 
-        
-    
-            var tile_layer_561cbbf80f432192fa013f11a76d06c6 = L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
-            );
-        
-    
-            tile_layer_561cbbf80f432192fa013f11a76d06c6.addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var marker_006bd1e5608e8ddc8df3c87a416796b4 = L.marker(
-                [51.99887857685981, 4.373485475717208],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_906a5b330497f77d02723b681ff0d7b2 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_006bd1e5608e8ddc8df3c87a416796b4.setIcon(icon_906a5b330497f77d02723b681ff0d7b2);
-        
-    
-        var popup_3a4977c6ee37e2f971a9e70df35cf0d3 = L.popup({"maxWidth": "100%"});
+// Partners at the same address share one pin (the two INI professors, the two
+// Yonsei Sinchon groups), so the map has no stacked markers.
+const LOCS = [];
+PARTNERS.forEach(p => {
+  const key = p.lat.toFixed(5) + "," + p.lon.toFixed(5);
+  let loc = LOCS.find(l => l.key === key);
+  if (!loc) { loc = { key, lat:p.lat, lon:p.lon, people:[] }; LOCS.push(loc); }
+  loc.people.push(p);
+  p.pin = LOCS.indexOf(loc);
+});
 
-        
-            
-                var html_3c3f55218a5265637277c6381a15dc61 = $(`<div id="html_3c3f55218a5265637277c6381a15dc61" style="width: 100.0%; height: 100.0%;"><a href = "https://www.tudemi.com" target=_blank><img src="./img/icons/logo--tudelft.png" style="width: 100px; height: auto;"></a></div>`)[0];
-                popup_3a4977c6ee37e2f971a9e70df35cf0d3.setContent(html_3c3f55218a5265637277c6381a15dc61);
-            
-        
+// Building outlines fetched from OpenStreetMap by partner_footprints.py. Keys are
+// "lat,lon" to 5dp; matched with a tolerance so JS/Python rounding cannot disagree.
+const FOOT = {{ site.data.partner_footprints | jsonify }};
+const FOOT_KEYS = Object.keys(FOOT).map(k => {
+  const [la, lo] = k.split(",").map(Number);
+  return { k, la, lo };
+});
+const footFor = loc => {
+  const hit = FOOT_KEYS.find(f => Math.abs(f.la - loc.lat) < 2e-5 && Math.abs(f.lo - loc.lon) < 2e-5);
+  return hit ? FOOT[hit.k] : null;
+};
 
-        marker_006bd1e5608e8ddc8df3c87a416796b4.bindPopup(popup_3a4977c6ee37e2f971a9e70df35cf0d3)
-        ;
+// A highlighted footprint is grown 2% about its centroid and raised 2 m so none of
+// its faces coincide with the underlying building's, which would flicker.
+function grow(feature) {
+  const ring = feature.geometry.coordinates[0];
+  const cx = ring.reduce((s, q) => s + q[0], 0) / ring.length;
+  const cy = ring.reduce((s, q) => s + q[1], 0) / ring.length;
+  return { type:"Feature",
+    properties:{ h:(feature.properties.h || 4) + 2, b: feature.properties.b || 0, i: feature.properties.i },
+    geometry:{ type:"Polygon",
+      coordinates: feature.geometry.coordinates.map(r => r.map(([x, y]) => [cx + (x - cx) * 1.02, cy + (y - cy) * 1.02])) } };
+}
 
-        
-    
-    
-            marker_006bd1e5608e8ddc8df3c87a416796b4.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Chang Gao</b><br>Assistant Professor<br>TU Delft<br>Netherlands <span class="emoji">🇳🇱</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_42cb67446a3e18cbfec9b8d8828f739d = L.marker(
-                [52.16944708942925, 4.456637141409791],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_cf6d7d17e6d5ccec331690c5033d592b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_42cb67446a3e18cbfec9b8d8828f739d.setIcon(icon_cf6d7d17e6d5ccec331690c5033d592b);
-        
-    
-        var popup_6de257b9b3532ac974c59351402a07ac = L.popup({"maxWidth": "100%"});
+const hlFeatures = [];
+LOCS.forEach((loc, i) => {
+  const f = footFor(loc);
+  if (f) hlFeatures.push(grow({ type:"Feature", properties:{ h:f.h, b:f.b, i },
+                                geometry:{ type:"Polygon", coordinates:f.rings } }));
+});
 
-        
-            
-                var html_5f2428f698db6c15269e537f9ef9c8a4 = $(`<div id="html_5f2428f698db6c15269e537f9ef9c8a4" style="width: 100.0%; height: 100.0%;"><a href = "https://sites.google.com/view/qinyu/" target=_blank><img src="./img/icons/logo--leiden.png" style="width: 100px; height: auto;"></a></div>`)[0];
-                popup_6de257b9b3532ac974c59351402a07ac.setContent(html_5f2428f698db6c15269e537f9ef9c8a4);
-            
-        
+// Dark vector style on OpenFreeMap tiles — no API key, so no watermark.
+const style = {
+  version: 8,
+  glyphs: C.glyphs,
+  sources: {
+    of: { type:"vector", url: C.tiles },
+    hl: { type:"geojson", data: { type:"FeatureCollection", features: hlFeatures } },
+  },
+  layers: [
+    { id:"bg", type:"background", paint:{ "background-color": C.bg } },
+    { id:"water", type:"fill", source:"of", "source-layer":"water",
+      paint:{ "fill-color":["interpolate",["linear"],["zoom"], 6,"#1B3A52", 12,C.water] } },
+    { id:"landcover", type:"fill", source:"of", "source-layer":"landcover", maxzoom:13,
+      filter:["in",["get","class"],["literal",["wood","forest","grass","farmland","wetland"]]],
+      paint:{ "fill-color":"#12211C",
+        "fill-opacity":["interpolate",["linear"],["zoom"], 8,0.85, 12,0] } },
+    { id:"towns", type:"fill", source:"of", "source-layer":"landuse", maxzoom:13,
+      filter:["in",["get","class"],["literal",["residential","commercial","industrial","retail"]]],
+      paint:{ "fill-color":"#24374A",
+        "fill-opacity":["interpolate",["linear"],["zoom"], 6,0.9, 12,0] } },
+    { id:"borders", type:"line", source:"of", "source-layer":"boundary",
+      filter:["all",["<=",["get","admin_level"],4],["!=",["get","maritime"],1]],
+      paint:{ "line-color":"#31424F",
+        "line-width":["case",["<=",["get","admin_level"],2], 1.2, 0.5],
+        "line-opacity":["case",["<=",["get","admin_level"],2], 1, 0.4] } },
+    { id:"roads", type:"line", source:"of", "source-layer":"transportation", minzoom:6,
+      paint:{ "line-color":C.road,
+        "line-width":["interpolate",["linear"],["zoom"], 6,0.4, 12,1.0, 18,4] } },
+    { id:"buildings", type:"fill-extrusion", source:"of", "source-layer":"building", minzoom:13,
+      filter:["!=",["get","hide_3d"],true],
+      paint:{ "fill-extrusion-color":["interpolate",["linear"],["get","render_height"],
+                                        0,C.bldLow, 60,C.bldHigh],
+        "fill-extrusion-height":["interpolate",["linear"],["zoom"], 13,0, 15.5,["get","render_height"]],
+        "fill-extrusion-opacity":0.9 } },
+    { id:"hl-bld", type:"fill-extrusion", source:"hl", minzoom:13,
+      paint:{ "fill-extrusion-color": C.bldHl,
+        "fill-extrusion-height":["interpolate",["linear"],["zoom"], 13,0, 15.5,["get","h"]],
+        "fill-extrusion-base":["get","b"], "fill-extrusion-opacity":1 } },
+    { id:"places", type:"symbol", source:"of", "source-layer":"place",
+      filter:["in",["get","class"],["literal",["country","city"]]],
+      layout:{ "text-field":["get","name"], "text-font":["Noto Sans Regular"],
+        "text-size":["interpolate",["linear"],["zoom"], 2,10, 8,13] },
+      paint:{ "text-color":"#7E92A3", "text-halo-color":C.bg, "text-halo-width":1.2 } },
+  ],
+};
 
-        marker_42cb67446a3e18cbfec9b8d8828f739d.bindPopup(popup_6de257b9b3532ac974c59351402a07ac)
-        ;
+const map = new maplibregl.Map({
+  container:"map", style: style, center:[40, 35], zoom: 1,
+  attributionControl:{ compact:true },
+});
+map.addControl(new maplibregl.NavigationControl({ showCompass:true, visualizePitch:true }), "top-left");
+map.addControl(new maplibregl.FullscreenControl(), "top-right");
+map.scrollZoom.disable();  // let the page scroll past the iframe instead of zooming
 
-        
-    
-    
-            marker_42cb67446a3e18cbfec9b8d8828f739d.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Qinyu Chen</b><br>Assistant Professor<br>Leiden University<br>Netherlands <span class="emoji">🇳🇱</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_6031c4bf2f2e247e9c410f89318c88b3 = L.marker(
-                [36.352087, 127.301388],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_a8d66118e47469a2030890b96df74818 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_6031c4bf2f2e247e9c410f89318c88b3.setIcon(icon_a8d66118e47469a2030890b96df74818);
-        
-    
-        var popup_a202edd7cbc60a57b852fed58f585703 = L.popup({"maxWidth": "100%"});
+// --- pins ---------------------------------------------------------------
+const popupHtml = [], popups = [], markers = [], bounds = new maplibregl.LngLatBounds();
+LOCS.forEach((loc, i) => {
+  bounds.extend([loc.lon, loc.lat]);
+  const names = loc.people.map(p =>
+    '<b><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">' + p.name +
+    ' <i class="fa-solid fa-house-user"></i></a></b>' +
+    // plain "IEEE Member" is not worth the line; Senior Member and Fellow are
+    '<br><span class="place">' + p.title +
+      (/senior|fellow/i.test(p.ieee || "") ? '<br>' + p.ieee : '') + '</span>'
+  ).join('<div class="sep"></div>');
+  // The popup is built on open (see openPopup) so it can sit above the building.
+  popupHtml.push(names + '<div class="inst">' + loc.people[0].institution + '</div>');
+  popups.push(null);
 
-        
-            
-                var html_79b5314063a718ba8ea3c620994169fd = $(`<div id="html_79b5314063a718ba8ea3c620994169fd" style="width: 100.0%; height: 100.0%;"><a href = "https://lab.hanbat.ac.kr/cats" target=_blank><img src="./img/icons/logo--hanbat.jpg" style="width: 100px; height: auto;"></a></div>`)[0];
-                popup_a202edd7cbc60a57b852fed58f585703.setContent(html_79b5314063a718ba8ea3c620994169fd);
-            
-        
+  const el = document.createElement("div");
+  el.className = "pin";
+  el.addEventListener("click", e => { e.stopPropagation(); select(i); });
+  markers.push(new maplibregl.Marker({ element: el }).setLngLat([loc.lon, loc.lat]).addTo(map));
+});
+map.fitBounds(bounds, { padding: 60, maxZoom: 3, duration: 0 });
 
-        marker_6031c4bf2f2e247e9c410f89318c88b3.bindPopup(popup_a202edd7cbc60a57b852fed58f585703)
-        ;
+// Start the attribution collapsed to the "i" button; it still opens on click.
+map.on("load", () => {
+  document.querySelectorAll(".maplibregl-ctrl-attrib.maplibregl-compact")
+    .forEach(el => el.classList.remove("maplibregl-compact-show"));
+});
 
-        
-    
-    
-            marker_6031c4bf2f2e247e9c410f89318c88b3.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Youngwoo Ji</b><br>Assistant Professor<br>Hanbat National University<br>South Korea <span class="emoji">🇰🇷</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_aaf46343036deadd6302dd064adf1f19 = L.marker(
-                [36.36905994623712, 127.36527975092365],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_9aada4fa00082e494bd2ae77d6cb6ece = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_aaf46343036deadd6302dd064adf1f19.setIcon(icon_9aada4fa00082e494bd2ae77d6cb6ece);
-        
-    
-        var popup_214e6638ec86e7debc8607012ec4064d = L.popup({"maxWidth": "100%"});
+// Safari inside an iframe can miss the container resize after the panel lays out,
+// leaving an oversized canvas that overflows the pane (scene center ends up below
+// the visible middle). Resize explicitly once everything settles, and per flight.
+window.addEventListener("load", () => map.resize());
+window.addEventListener("resize", () => map.resize());
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => map.resize());
 
-        
-            
-                var html_65a934bcf83af27e50ee8e76be55cdeb = $(`<div id="html_65a934bcf83af27e50ee8e76be55cdeb" style="width: 100.0%; height: 100.0%;"><a href = "http://ssl.kaist.ac.kr" target=_blank><img src="./img/icons/logo--kaist.png" style="width: 100px; height: auto;"></a></div>`)[0];
-                popup_214e6638ec86e7debc8607012ec4064d.setContent(html_65a934bcf83af27e50ee8e76be55cdeb);
-            
-        
+// Camera readout: drag with right mouse button (or the compass) to rotate and tilt.
+const cam = document.getElementById("cam");
+const showCam = () => { cam.textContent =
+  "zoom " + map.getZoom().toFixed(2) +
+  "  bearing " + map.getBearing().toFixed(0) +
+  "  pitch " + map.getPitch().toFixed(0); };
+map.on("move", showCam); showCam();
 
-        marker_aaf46343036deadd6302dd064adf1f19.bindPopup(popup_214e6638ec86e7debc8607012ec4064d)
-        ;
+// --- side panel ---------------------------------------------------------
+const list = document.getElementById("list"), cards = [], strips = {};
+PARTNERS.forEach((p, i) => {
+  if (!strips[p.continent]) {
+    const row = document.createElement("div");
+    row.className = "crow";
+    const g = document.createElement("div");
+    g.className = "grp";
+    g.textContent = p.continent;
+    const strip = document.createElement("div");
+    strip.className = "cards";
+    row.append(g, strip);
+    list.appendChild(row);
+    strips[p.continent] = strip;
+  }
+  const card = document.createElement("div");
+  card.className = "loc";
+  card.innerHTML = '<div class="country">' + p.country +
+                     ' <span class="emoji">' + p.flag + '</span></div>' +
+                   '<div class="name">' + p.name + '</div>' +
+                   '<div class="addr">' + p.institution + '</div>' +
+                   '<div class="role">' + p.title + '</div>';
+  card.addEventListener("click", e => { if (!e.target.closest("a")) select(p.pin); });
+  strips[p.continent].appendChild(card);
+  cards.push(card);
+});
 
-        
-    
-    
-            marker_aaf46343036deadd6302dd064adf1f19.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Hoi-Jun Yoo</b><br>Professor<br>KAIST<br>South Korea <span class="emoji">🇰🇷</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_a3d28151c303b8d25d908c46abb7584b = L.marker(
-                [47.398674219459984, 8.55053897975897],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_9f6529ec2430ac777e63bcd5dbfde367 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_a3d28151c303b8d25d908c46abb7584b.setIcon(icon_9f6529ec2430ac777e63bcd5dbfde367);
-        
-    
-        var popup_51f21e26af7efea0fc44cf4f1db8e6ab = L.popup({"maxWidth": "100%"});
+function markActive(pin) {
+  cards.forEach((c, j) => c.classList.toggle("active", PARTNERS[j].pin === pin));
+  // The strip scrolls sideways, so bring the card the pin belongs to into view.
+  const first = cards.find((c, j) => PARTNERS[j].pin === pin);
+  if (first) first.scrollIntoView({ behavior:"smooth", block:"nearest", inline:"center" });
+}
 
-        
-            
-                var html_5271014fedc16704246268564e8f5657 = $(`<div id="html_5271014fedc16704246268564e8f5657" style="width: 100.0%; height: 100.0%;"><a href = "https://sensors.ini.ch" target=_blank><img src="./img/icons/logo--ini.png" style="width: 150px; height: auto;"></a></div>`)[0];
-                popup_51f21e26af7efea0fc44cf4f1db8e6ab.setContent(html_5271014fedc16704246268564e8f5657);
-            
-        
+// --- building highlight -------------------------------------------------
+// Fallback for a pin with no pre-fetched outline: find the footprint under it in the
+// rendered tiles on arrival.
+function inRing(pt, ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if ((yi > pt[1]) !== (yj > pt[1]) &&
+        pt[0] < (xj - xi) * (pt[1] - yi) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+// On arrival, find the building footprint under the pin in the rendered tiles.
+// Buildings arrive as merged MultiPolygons, so only the polygon containing the
+// point is taken — never a neighbour. Found footprints are kept.
+function highlight(loc, i) {
+  if (hlFeatures.some(f => f.properties.i === i)) return;
+  const pt = [loc.lon, loc.lat], p = map.project(pt);
+  const feats = map.queryRenderedFeatures([[p.x - 12, p.y - 12], [p.x + 12, p.y + 12]],
+                                          { layers: ["buildings"] });
+  let best = null;
+  for (const f of feats) {
+    const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+    for (const poly of polys) {
+      if (inRing(pt, poly[0])) { best = { poly, props: f.properties }; break; }
+    }
+    if (best) break;
+  }
+  if (!best) return;
+  hlFeatures.push(grow({ type:"Feature",
+    properties:{ h: best.props.render_height, b: best.props.render_min_height, i },
+    geometry:{ type:"Polygon", coordinates: best.poly } }));
+  map.getSource("hl").setData({ type:"FeatureCollection", features: hlFeatures });
+}
 
-        marker_a3d28151c303b8d25d908c46abb7584b.bindPopup(popup_51f21e26af7efea0fc44cf4f1db8e6ab)
-        ;
+// Anchor the popup above the highlighted footprint's top edge so the building stays
+// fully visible, then pan if the box would clip outside the map pane.
+function openPopup(i) {
+  const loc = LOCS[i];
+  popups.forEach(p => p && p.remove());
+  const m = map.project([loc.lon, loc.lat]);
+  let top = m.y;
+  const fp = hlFeatures.find(f => f.properties.i === i);
+  if (fp) {
+    const ys = fp.geometry.coordinates[0].map(c => map.project(c).y);
+    const mpp = 156543.03 * Math.cos(loc.lat * Math.PI / 180) / Math.pow(2, map.getZoom());
+    // The roof rises above the footprint's top edge on screen; clear its full height
+    // so a tall building (ETZ) is not covered while a flat one keeps a small gap.
+    top = Math.min(...ys) - (fp.properties.h || 10) / mpp;
+  }
+  const pad = loc.people[0].popup_pad ?? C.popupPad;   // optional per-partner override
+  // No map panning here: the building stays exactly where the flight centered it,
+  // and the popup takes whatever space there is above.
+  const p = new maplibregl.Popup({ anchor:"bottom", closeOnClick:false, maxWidth:"600px" })
+    .setLngLat(map.unproject([m.x, top - pad])).setHTML(popupHtml[i]).addTo(map);
+  popups[i] = p;
+}
 
-        
-    
-    
-            marker_a3d28151c303b8d25d908c46abb7584b.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Tobi Delbruck, Shih-Chii Liu</b><br>Professors<br>Institute of Neuroinformatics, UZH/ETH Zurich<br>Switzerland <span class="emoji">🇨🇭</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_3e989fa57e3549c306790721468b3183 = L.marker(
-                [47.37773920561239, 8.552812436204693],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_0c2ebd36dd2cb88ece6ac32196291a59 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_3e989fa57e3549c306790721468b3183.setIcon(icon_0c2ebd36dd2cb88ece6ac32196291a59);
-        
-    
-        var popup_13a8c35b47f97ccabbadcd0840c5a747 = L.popup({"maxWidth": "100%"});
+// --- flight -------------------------------------------------------------
+let flightSeq = 0;
+const kmTo = loc => {
+  const c = map.getCenter(), R = 6371;
+  const dLat = (loc.lat - c.lat) * Math.PI / 180;
+  const dLng = (((loc.lon - c.lng + 540) % 360) - 180) * Math.PI / 180;
+  const a = Math.sin(dLat / 2) ** 2 +
+            Math.cos(c.lat * Math.PI / 180) * Math.cos(loc.lat * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.min(1, Math.sqrt(a)));
+};
 
-        
-            
-                var html_b10d839d0d32a54781904d22753c1257 = $(`<div id="html_b10d839d0d32a54781904d22753c1257" style="width: 100.0%; height: 100.0%;"><a href = "https://circuit.ee.ethz.ch" target=_blank><img src="./img/icons/logo--ethz.png" style="width: 150px; height: auto;"></a></div>`)[0];
-                popup_13a8c35b47f97ccabbadcd0840c5a747.setContent(html_b10d839d0d32a54781904d22753c1257);
-            
-        
+// Same three-stage flight as map_Kor-Fin/office_map.html: a single flyTo arc rushes
+// through zoom levels whose tiles have not downloaded and shows black, so the camera
+// rises over loaded ground, pans at altitude, then dives with imagery underneath.
+function select(i) {
+  map.resize();   // guard against a stale canvas size (Safari iframe)
+  const seq = ++flightSeq;
+  const alive = () => seq === flightSeq;
+  markActive(i);
+  popups.forEach(p => p && p.remove());
+  const tgt = [LOCS[i].lon, LOCS[i].lat];
+  // Optional per-partner camera overrides in partners.yml.
+  const cam0 = LOCS[i].people[0];
+  const z = cam0.zoom || C.zoom;
+  const brg = cam0.bearing ?? C.bearing;
+  const pit = cam0.pitch ?? C.pitch;
+  const arrive = () => map.once("moveend", () => {
+    if (!alive()) return;
+    openPopup(i);
+    // Footprints only exist once the tiles have finished rendering; one found on
+    // arrival moves the popup clear of the building.
+    map.once("idle", () => {
+      if (!alive()) return;
+      const had = hlFeatures.some(f => f.properties.i === i);
+      highlight(LOCS[i], i);
+      if (!had && hlFeatures.some(f => f.properties.i === i)) openPopup(i);
+    });
+  });
 
-        marker_3e989fa57e3549c306790721468b3183.bindPopup(popup_13a8c35b47f97ccabbadcd0840c5a747)
-        ;
+  if (kmTo(LOCS[i]) < 25) {
+    map.flyTo({ center: tgt, zoom: z, pitch: pit, bearing: brg,
+                duration: C.nearMs, essential: true });
+    arrive();
+    return;
+  }
 
-        
-    
-    
-            marker_3e989fa57e3549c306790721468b3183.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Taekwang Jang</b><br>Associate Professor<br>ETH Zurich<br>Switzerland <span class="emoji">🇨🇭</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_e2e27644d00ffdce531bc52525048324 = L.marker(
-                [60.187153, 24.819305],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_2f79cca58e2f841b3a07bce8664cf135 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_e2e27644d00ffdce531bc52525048324.setIcon(icon_2f79cca58e2f841b3a07bce8664cf135);
-        
-    
-        var popup_5621e5aa24b63a97ff098ec352c4930e = L.popup({"maxWidth": "100%"});
+  // Already high enough (the initial world view, or after zooming out): dive straight
+  // down, with no rise and no pan through an intermediate view.
+  if (map.getZoom() <= C.highZoom) {
+    map.flyTo({ center: tgt, zoom: z, pitch: pit, bearing: brg,
+                duration: C.diveMs, essential: true });
+    arrive();
+    return;
+  }
 
-        
-            
-                var html_724a4eb7022061da3617d7fa49b31ba7 = $(`<div id="html_724a4eb7022061da3617d7fa49b31ba7" style="width: 100.0%; height: 100.0%;"><a href = "https://metka.aalto.fi" target=_blank><img src="./img/icons/logo--aalto.png" style="width: 80px; height: auto;"></a></div>`)[0];
-                popup_5621e5aa24b63a97ff098ec352c4930e.setContent(html_724a4eb7022061da3617d7fa49b31ba7);
-            
-        
+  // Overview camera: midpoint along the SHORTEST longitude path, at a zoom that fits
+  // both endpoints with margin (a LngLatBounds box would route Korea -> USA the long
+  // way through Europe).
+  const from = map.getCenter();
+  const dLng = ((tgt[0] - from.lng + 540) % 360) - 180;
+  const midLat = (from.lat + tgt[1]) / 2;
+  const mercY = lat => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
+  const box = map.getContainer();
+  const W = Math.max(box.clientWidth - 240, 200), H = Math.max(box.clientHeight - 240, 200);
+  const zLng = Math.log2(W / 512 * 360 / Math.max(Math.abs(dLng), 0.01));
+  const zLat = Math.log2(H / 512 * 2 * Math.PI / Math.max(Math.abs(mercY(tgt[1]) - mercY(from.lat)), 0.001));
+  const cam = { center: [from.lng + dLng / 2, midLat], zoom: Math.max(Math.min(zLng, zLat), 0.5) };
 
-        marker_e2e27644d00ffdce531bc52525048324.bindPopup(popup_5621e5aa24b63a97ff098ec352c4930e)
-        ;
-
-        
-    
-    
-            marker_e2e27644d00ffdce531bc52525048324.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Marko Kosunen</b><br>Associate Professor<br>Aalto University<br>Finland <span class="emoji">🇫🇮</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_5bae6e30a41e21af2593f313bf21690e = L.marker(
-                [24.52528093638531, 54.433230380907695],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_f41c267203f878decdff6ed5bc217b9b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_5bae6e30a41e21af2593f313bf21690e.setIcon(icon_f41c267203f878decdff6ed5bc217b9b);
-        
-    
-        var popup_29cc69d0eb8cb9c6339aed41ef7382e4 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_f0b2ff6e0d1b67c41ea21ba5dc8599b5 = $(`<div id="html_f0b2ff6e0d1b67c41ea21ba5dc8599b5" style="width: 100.0%; height: 100.0%;"><a href = "https://wp.nyu.edu/sohmyung/" target=_blank><img src="./img/icons/logo--nyu-uae.png" style="width: 150px; height: auto;"></a></div>`)[0];
-                popup_29cc69d0eb8cb9c6339aed41ef7382e4.setContent(html_f0b2ff6e0d1b67c41ea21ba5dc8599b5);
-            
-        
-
-        marker_5bae6e30a41e21af2593f313bf21690e.bindPopup(popup_29cc69d0eb8cb9c6339aed41ef7382e4)
-        ;
-
-        
-    
-    
-            marker_5bae6e30a41e21af2593f313bf21690e.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Sohmyung Ha</b><br>Associate Professor<br>New York University Abu Dhabi<br>UAE <span class="emoji">🇦🇪</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_ea6583a1279d3dc450befe0231605070 = L.marker(
-                [37.38012, 126.672796],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_979e64551e379fdcc849832a4f141cba = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_ea6583a1279d3dc450befe0231605070.setIcon(icon_979e64551e379fdcc849832a4f141cba);
-        
-    
-        var popup_bf322501de2b9f02a431988c10492d69 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_2c7e92873b1241bc2a97f856cae2a75b = $(`<div id="html_2c7e92873b1241bc2a97f856cae2a75b" style="width: 100.0%; height: 100.0%;"><a href = "https://sites.google.com/view/sangyeobkim/" target=_blank><img src="./img/icons/logo--yonsei.svg" style="width: 150px; height: auto;"></a></div>`)[0];
-                popup_bf322501de2b9f02a431988c10492d69.setContent(html_2c7e92873b1241bc2a97f856cae2a75b);
-            
-        
-
-        marker_ea6583a1279d3dc450befe0231605070.bindPopup(popup_bf322501de2b9f02a431988c10492d69)
-        ;
-
-        
-    
-    
-            marker_ea6583a1279d3dc450befe0231605070.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Sangyeob Kim</b><br>Assistant Professor<br>Yonsei University<br>South Korea <span class="emoji">🇰🇷</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_522d15c8c263552595f1deea3d3eba1f = L.marker(
-                [37.560902, 126.93551],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_18fd99629332215c444334e0a097bdc7 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_522d15c8c263552595f1deea3d3eba1f.setIcon(icon_18fd99629332215c444334e0a097bdc7);
-        
-    
-        var popup_8e0a099f67f5d02111b23b3bc8ab378f = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_8e8ee38d79938c1abf2bf8c4a3746ca0 = $(`<div id="html_8e8ee38d79938c1abf2bf8c4a3746ca0" style="width: 100.0%; height: 100.0%;"><a href = "https://sites.google.com/view/year-yonsei/home?authuser=0" target=_blank><img src="./img/icons/logo--yonsei.svg" style="width: 150px; height: auto;"></a></div>`)[0];
-                popup_8e0a099f67f5d02111b23b3bc8ab378f.setContent(html_8e8ee38d79938c1abf2bf8c4a3746ca0);
-            
-        
-
-        marker_522d15c8c263552595f1deea3d3eba1f.bindPopup(popup_8e0a099f67f5d02111b23b3bc8ab378f)
-        ;
-
-        
-    
-    
-            marker_522d15c8c263552595f1deea3d3eba1f.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Kyung-Sik Choi</b><br>Assistant Professor<br>Yonsei University<br>South Korea <span class="emoji">🇰🇷</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_0ab6e99a4a9b70d4cb20074cc2b73a95 = L.marker(
-                [37.560902, 126.93551],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_745d9d7d5bac81fdc0216af8c093c857 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_0ab6e99a4a9b70d4cb20074cc2b73a95.setIcon(icon_745d9d7d5bac81fdc0216af8c093c857);
-        
-    
-        var popup_f92ef275f548e3b2cdf3b5746ff1caed = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_668ef751edc05697d1d9eb7141a8c5bf = $(`<div id="html_668ef751edc05697d1d9eb7141a8c5bf" style="width: 100.0%; height: 100.0%;"><a href = "https://sites.google.com/view/ysicsl/" target=_blank><img src="./img/icons/logo--yonsei.svg" style="width: 150px; height: auto;"></a></div>`)[0];
-                popup_f92ef275f548e3b2cdf3b5746ff1caed.setContent(html_668ef751edc05697d1d9eb7141a8c5bf);
-            
-        
-
-        marker_0ab6e99a4a9b70d4cb20074cc2b73a95.bindPopup(popup_f92ef275f548e3b2cdf3b5746ff1caed)
-        ;
-
-        
-    
-    
-            marker_0ab6e99a4a9b70d4cb20074cc2b73a95.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Woojun Choi</b><br>Assistant Professor<br>Yonsei University<br>South Korea <span class="emoji">🇰🇷</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_4e304a2847b91d6cd453d8ceceeef933 = L.marker(
-                [50.668792, 4.624241],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_f7a9ea10828e689201dc14bacfebdb55 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_4e304a2847b91d6cd453d8ceceeef933.setIcon(icon_f7a9ea10828e689201dc14bacfebdb55);
-        
-    
-        var popup_b7b0770f946b9dba3a86b5c596ae2f50 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_d2a323c8a4e7a9759d67528a6360b86f = $(`<div id="html_d2a323c8a4e7a9759d67528a6360b86f" style="width: 100.0%; height: 100.0%;"><a href = "https://martinandraud.github.io" target=_blank><img src="./img/icons/logo--uclouvain.svg" style="width: 150px; height: auto;"></a></div>`)[0];
-                popup_b7b0770f946b9dba3a86b5c596ae2f50.setContent(html_d2a323c8a4e7a9759d67528a6360b86f);
-            
-        
-
-        marker_4e304a2847b91d6cd453d8ceceeef933.bindPopup(popup_b7b0770f946b9dba3a86b5c596ae2f50)
-        ;
-
-        
-    
-    
-            marker_4e304a2847b91d6cd453d8ceceeef933.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Martin Andraud</b><br>Assistant Professor<br>UCLouvain<br>Belgium <span class="emoji">🇧🇪</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_305131fc3fe7c6ab80cfe2c60a5164bf = L.marker(
-                [37.000359, -122.063195],
-                {}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
-    
-            var icon_64f6e09235857136da755624171677ad = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "fa-graduation-cap", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
-            );
-            marker_305131fc3fe7c6ab80cfe2c60a5164bf.setIcon(icon_64f6e09235857136da755624171677ad);
-        
-    
-        var popup_202a16443c2bdddcb59cf9c443ca044e = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_15d964496e602d617cb8cdf36d246b93 = $(`<div id="html_15d964496e602d617cb8cdf36d246b93" style="width: 100.0%; height: 100.0%;"><a href = "https://ncg.ucsc.edu" target=_blank><img src="./img/icons/logo--ucsc.png" style="width: 100px; height: auto;"></a></div>`)[0];
-                popup_202a16443c2bdddcb59cf9c443ca044e.setContent(html_15d964496e602d617cb8cdf36d246b93);
-            
-        
-
-        marker_305131fc3fe7c6ab80cfe2c60a5164bf.bindPopup(popup_202a16443c2bdddcb59cf9c443ca044e)
-        ;
-
-        
-    
-    
-            marker_305131fc3fe7c6ab80cfe2c60a5164bf.bindTooltip(
-                `<div>
-                     <div style="display: flex; align-items: center; height: 100%;"><div style="text-align: left; font-family: Trebuchet MS; font-size: 1.5em;"><b>Jason Eshraghian</b><br>Assistant Professor<br>UC Santa Cruz<br>United States <span class="emoji">🇺🇸</span></div></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-
-            var geocoderOpts_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf = {"collapsed": false, "defaultMarkGeocode": true, "position": "topright", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
-
-            // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf = geocoderOpts_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf["provider"];
-
-            var customGeocoder_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf = L.Control.Geocoder[ geocoderName_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf ](
-                geocoderOpts_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf['providerOptions']
-            );
-            geocoderOpts_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf["geocoder"] = customGeocoder_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf;
-
-            L.Control.geocoder(
-                geocoderOpts_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf
-            ).on('markgeocode', function(e) {
-                var zoom = geocoderOpts_geocoder_0ec82e7aafb2b7d3a62847f5ce82c5bf['zoom'] || map_c2463569698adaf3de325e34f0e5308e.getZoom();
-                map_c2463569698adaf3de325e34f0e5308e.setView(e.geocode.center, zoom);
-            }).addTo(map_c2463569698adaf3de325e34f0e5308e);
-
-        
-    
-            L.control.fullscreen(
-                {"forceSeparateButton": true, "position": "topright", "title": "Expand me", "titleCancel": "Exit me"}
-            ).addTo(map_c2463569698adaf3de325e34f0e5308e);
-        
+  map.easeTo({ center: from, zoom: Math.min(cam.zoom, 6, map.getZoom()), pitch: 0, bearing: 0,
+               duration: C.riseMs, essential: true });
+  map.once("moveend", () => {
+    if (!alive()) return;
+    map.easeTo({ center: cam.center, duration: C.panMs, essential: true });
+    map.once("moveend", () => {
+      if (!alive()) return;
+      let gone = false;
+      const dive = () => {
+        if (gone || !alive()) return;
+        gone = true;
+        map.flyTo({ center: tgt, zoom: z, pitch: pit, bearing: brg,
+                    duration: C.diveMs, essential: true });
+        arrive();
+      };
+      setTimeout(dive, C.holdMax);              // hold at altitude while tiles stream in
+      map.once("idle", () => setTimeout(dive, C.holdMin));  // ... ending early once idle
+    });
+  });
+}
 </script>
+</body>
 </html>

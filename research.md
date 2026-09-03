@@ -132,11 +132,9 @@ We focus on power-efficient analog/mixed-signal ICs for <b><i class="fa-solid fa
 
 ## <i class="fa-solid fa-users"></i> Research Partners
 
-<!-- Adapt and sync the height value with the source html -->
-<iframe src="{{ site.base_url }}/worldmap_overlay.html" width="100%" height="550"></iframe>
-<div style="margin-top: -2em;"></div>
-
-{% include partners_table.md %}
+<!-- Map + partner panel are driven by _data/partners.yml -->
+<iframe src="{{ site.base_url }}/worldmap.html" width="100%" height="920"
+        style="border: none;"></iframe>
 
 <br><br><br><br><br>
 

@@ -30,3 +30,29 @@ th, td {
 | **Sohmyung Ha** | <a href = 'https://wp.nyu.edu/sohmyung/' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Associate Professor | IEEE Senior Member | NYU Abu Dhabi | UAE <span class='emoji'>🇦🇪</span> |
 | <i class='fa-solid fa-location-dot fa-lg' style='color: #4c5dbe;'></i><span style='margin-right: 0.15em;'></span> **America** | 
 | **Jason Eshraghian** | <a href = 'https://ncg.ucsc.edu' target=_blank><i class='fa-solid fa-house-user fa-lg'></i></a> | Assistant Professor | IEEE Member | UC Santa Cruz | United States <span class='emoji'>🇺🇸</span> |
+
+<style>
+/* Rows wired to the map above; the home-icon link still works on its own. */
+tr.partner-row { cursor: pointer; }
+tr.partner-row:hover { background-color: #eef3f4; }
+</style>
+
+<script>
+// Clicking a partner row flies the map to that partner. Rows are matched to pins
+// by homepage URL, so this table stays the single source of truth for who is listed.
+(function () {
+  const frame = document.querySelector('iframe[src*="worldmap_overlay"]');
+  if (!frame) return;
+  // Only the partners table: its rows carry the home-icon link.
+  document.querySelectorAll('table tr').forEach(tr => {
+    const a = tr.querySelector('a[href^="http"] i.fa-house-user') ? tr.querySelector('a[href^="http"]') : null;
+    if (!a) return;
+    tr.classList.add('partner-row');
+    tr.addEventListener('click', ev => {
+      if (ev.target.closest('a')) return;  // let the home-icon link open normally
+      frame.contentWindow.postMessage({ type: 'focusPartner', url: a.href }, '*');
+      frame.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+})();
+</script>

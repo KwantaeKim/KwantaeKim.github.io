@@ -68,7 +68,7 @@ details > summary::marker {display: none;}
 
 ## Visitors
 
-<iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="550" style="padding: 0; margin: 0; border: none;"></iframe>
+<iframe src="{{ site.base_url }}/visitor_overlay.html" width="100%" height="590" style="padding: 0; margin: 0; border: none;"></iframe>
 
 ## News
 
