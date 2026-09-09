@@ -9,11 +9,13 @@ from datetime import datetime
 from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
-from scholarly import scholarly
 
 USER_ID = "YcWEaGIAAAAJ"
 
 try:
+  # inside the guard: a broken scholarly dependency (e.g. bibtexparser 2.x,
+  # 2026-09-08) must degrade like a fetch failure, not abort the deploy
+  from scholarly import scholarly
   author = scholarly.fill(scholarly.search_author_id(USER_ID))
   yearly = author.get('cites_per_year', {})
   if not yearly:
