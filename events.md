@@ -42,6 +42,8 @@ hero_image: /img/aalto/IMG_6346.jpeg
   </a>
 </div>
 
+<iframe src="{{ '/assets/Kor-Fin-flyer26_map.html' | relative_url }}" width="100%" height="800" style="border: none;"></iframe>
+
 <div style="text-align: center; margin: 1em 0;">
   <a href="{{ '/assets/Kor-Fin-flyer25.pdf' | relative_url }}"
      target="_blank"
