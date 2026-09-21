@@ -72,6 +72,10 @@ details > summary::marker {display: none;}
 
 ## News
 
+### 🏛️ 11.Sep.2026
+
+{% include news-20260911.md %}
+
 ### ✈️ 13.Aug.2026
 
 {% include news-20260813.md %}
