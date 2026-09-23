@@ -107,6 +107,8 @@ span.venue {font-style: italic;}
 
 ## 2026
 
+<center><img src='{{ site.base_url }}/img/group/travel/NT-277.JPG' style='width:70%;'></center>
+
 <table class="tg">
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='pub'>
   <tr><td class="tg-desc">
