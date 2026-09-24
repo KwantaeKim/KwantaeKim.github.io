@@ -334,6 +334,9 @@ toc_title: TSirc Group
   <div class="tab-cell" style="flex: 5;">Microelectronics Science and Engineering</div>
 </div>
 
+<br>
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Yu Xue {#yu-xue}
 
@@ -356,7 +359,7 @@ toc_title: TSirc Group
     <!-- Second Tab -->
       <div style="font-size: 1.5em; font-weight: bold;">Yu Xue</div>
       <span style="display: block; height: 0.5em;"></span>
-      Funded by <a href="https://research.fi/en/results/funding/88755" target="_blank">HolistIC project</a>
+      Funded by <a href="https://research.fi/en/results/funding/88755" target="_blank">RCF Academy Research Fellowship</a>
       <span style="display: block; height: 0.5em;"></span>
       <a href="https://www.linkedin.com/in/宇-薛-5018712bb/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
       <span style="display: block; height: 1em;"></span>

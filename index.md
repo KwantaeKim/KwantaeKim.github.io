@@ -61,10 +61,72 @@ details > summary::marker {display: none;}
   'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol';
 }
+
+/* Open position banner */
+.open-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  border-left: 4px solid #2fa093;
+  background-color: #f5f7f7;
+  border-radius: 0 0.4em 0.4em 0;
+  padding: 1em 1.2em;
+  margin-bottom: 2em;
+  color: #1d3b44;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.open-banner:hover {background-color: #e6f2f0; color: #1d3b44;}
+.open-banner .open-bell {
+  font-size: 1.6rem;
+  color: #2fa093;
+  flex-shrink: 0;
+  transform-origin: top center;
+  animation: open-ring 2.4s ease-in-out infinite;
+}
+.open-banner .open-badge {
+  display: inline-block;
+  margin-right: 0.6em;
+  padding: 0.15em 0.7em;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2fa093;
+  border-radius: 1em;
+  animation: open-pulse 2s ease-in-out infinite;
+}
+.open-banner .open-title {font-weight: bold; font-size: 1.1rem;}
+.open-banner .open-sub {font-size: 0.9rem; color: #4a5a5e; margin-top: 0.2em;}
+@keyframes open-ring {
+  0%, 60%, 100% {transform: rotate(0);}
+  65% {transform: rotate(14deg);}
+  70% {transform: rotate(-12deg);}
+  75% {transform: rotate(10deg);}
+  80% {transform: rotate(-8deg);}
+  85% {transform: rotate(4deg);}
+  90% {transform: rotate(-2deg);}
+}
+@keyframes open-pulse {
+  0%, 100% {box-shadow: 0 0 0 0 rgba(47, 160, 147, 0.5);}
+  50% {box-shadow: 0 0 0 8px rgba(47, 160, 147, 0);}
+}
+@media (prefers-reduced-motion: reduce) {
+  .open-banner .open-bell, .open-banner .open-badge {animation: none;}
+}
 </style>
 
 <link href="{{ site.base_url }}/emoji.css" rel="stylesheet" type='text/css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+<div>
+  <a class="open-banner" href="{{ site.base_url }}/open-position/">
+    <i class="fa-solid fa-bell open-bell"></i>
+    <div>
+      <div class="open-title"><span class="open-badge">OPEN POSITION</span>We are Recruiting!</div>
+      <div class="open-sub">PhD Student in Hardware-Aware AI for Analog and RF Circuits</div>
+    </div>
+  </a>
+</div>
 
 ## Visitors
 

@@ -47,7 +47,7 @@ toc_title: Contents
 .notice-band .notice-sub {font-size: 0.9rem; color: #4a5a5e; margin-top: 0.2em;}
 
 /* Past positions list */
-.pos-list {list-style: none; margin: 0; padding: 0;}
+.content .pos-list {list-style: none; margin: 0; padding: 0;}
 .pos-item {
   border-left: 4px solid #1d3b44;
   background-color: #f5f7f7;
@@ -83,8 +83,11 @@ toc_title: Contents
 /* What we value */
 .value-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
+}
+@media (max-width: 600px) {
+  .value-grid {grid-template-columns: 1fr;}
 }
 .value-card {
   border: 1px solid #d8dedf;
@@ -93,23 +96,24 @@ toc_title: Contents
   padding: 1em 1.1em;
   background-color: #ffffff;
 }
-.value-card h5 {
-  margin: 0 0 0.4em 0;
-  font-weight: bold;
-  font-size: 1.05rem;
-  color: #1d3b44;
-}
+.value-card i {color: #1d3b44;}
 .value-card p {margin: 0; font-size: 0.95rem;}
 </style>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
 
-<div class="notice-band">
-  <i class="fa-solid fa-circle-info"></i>
-  <div>
-    <div class="notice-title">No open positions at the moment</div>
-    <div class="notice-sub">New openings are announced here and on LinkedIn.</div>
-  </div>
-</div>
+<div class="section-header"><h2 id="open-position">Open Position</h2><span class="underline"></span></div>
+
+<ul class="pos-list">
+  <li class="pos-item">
+    <div class="pos-title">PhD Student<span class="pos-closed pos-progress">open</span></div>
+    <div class="pos-meta">
+      Hardware-Aware AI for Analog and RF Circuits &middot; Apply by 9 October 2026, 23:59 EEST
+    </div>
+    <div class="pos-stats">
+      <a href="https://aalto.wd3.myworkdayjobs.com/aalto/job/Otaniemi-Espoo-Finland/Doctoral-Researcher-in-Hardware-Aware-AI-for-Analog-and-RF-Circuits_R48160-4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; Apply here</a>
+    </div>
+  </li>
+</ul>
 
 <br>
 <br>
@@ -133,25 +137,16 @@ toc_title: Contents
 
 <div class="value-grid">
   <div class="value-card">
-    <h5><i class="fa-solid fa-clipboard-check"></i>&nbsp; Attention to Instructions</h5>
-    <p>Every document in the job post, and interview slides that follow the guidelines.
-    <br>CV-only applications will be declined.</p>
+    <p><i class="fa-solid fa-clipboard-check"></i>&nbsp; All documents listed in the job post must be submitted. CV-only applications are not accepted.</p>
   </div>
   <div class="value-card">
-    <h5><i class="fa-solid fa-bullseye"></i>&nbsp; Motivation</h5>
-    <p>Genuine interest in our group's research. We look for potential teammates who can explain why our group in particular.</p>
+    <p><i class="fa-solid fa-bullseye"></i>&nbsp; Genuine interest in our group must be shown. Explain why you want to join our group in particular.</p>
   </div>
   <div class="value-card">
-    <h5><i class="fa-solid fa-pen-nib"></i>&nbsp; Authorship</h5>
-    <p>We value text and slides prepared in the applicant's own words, above AI-generated material.</p>
+    <p><i class="fa-solid fa-pen-nib"></i>&nbsp; We value the applicant's own text and slides above AI-generated material.</p>
   </div>
   <div class="value-card">
-    <h5><i class="fa-solid fa-comments"></i>&nbsp; Logical Thinking</h5>
-    <p>Answers that stay on the question asked, with reasoning that can be followed.</p>
-  </div>
-  <div class="value-card">
-    <h5><i class="fa-solid fa-layer-group"></i>&nbsp; Depth</h5>
-    <p>Ready to discuss the applicant's own results in technical detail.</p>
+    <p><i class="fa-solid fa-chalkboard-user"></i>&nbsp; Interview slides are expected to follow the given guidelines and cover technical details.</p>
   </div>
 </div>
 
