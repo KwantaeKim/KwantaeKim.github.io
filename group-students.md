@@ -22,6 +22,8 @@ toc_title: TSirc Group
 #yu-xue {visibility: hidden; height: 0; overflow: hidden;}
 #kaiyuan-jiang {visibility: hidden; height: 0; overflow: hidden;}
 #otso-lappalainen {visibility: hidden; height: 0; overflow: hidden;}
+#amos-rantalainen {visibility: hidden; height: 0; overflow: hidden;}
+#wooyoung-kim {visibility: hidden; height: 0; overflow: hidden;}
 
 /* Emoji */
 @font-face {
@@ -373,7 +375,7 @@ toc_title: TSirc Group
       IEEE CASS Student Travel Grant 2025
       <span style="display: block; height: 0.5em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
-      <br><span style="margin-right: 1.4em;"></span>Instrumentation Amplifier
+      <br><span style="margin-right: 1.4em;"></span>Low-Noise Amplifier
     </div>
   </div>
   </td></tr>
@@ -512,6 +514,67 @@ toc_title: TSirc Group
   <div class="tab-cell" style="flex: 5;">Electronic Science and Technology</div>
 </div>
 
+<br>
+
+<!-- ----------------------------------------------------------------------- -->
+
+### Amos Rantalainen {#amos-rantalainen}
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+  <div class="tab-row" style="display: flex; align-items: center;">
+    <div class="tab-cell" style="flex: 2;">
+    <!-- First Tab -->
+    <center><img src="./../img/group/Amos_Rantalainen.jpeg" style='
+      height: 200px;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;'>
+    </center>
+    </div>
+    <div class="tab-cell" style="flex: 0.5;"></div>
+    <div class="tab-cell" style="flex: 5;">
+    <!-- Second Tab -->
+      <div style="font-size: 1.5em; font-weight: bold;">Amos Rantalainen</div>
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
+      <br><span style="margin-right: 1.4em;"></span>Analog Circuits for Biomedical Applications
+    </div>
+  </div>
+  </td></tr>
+</tbody>
+</table>
+
+<div style="font-size: 1.5em; font-weight: bold;">Employment</div>
+<span style="display: block;"></span>
+
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;">
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user-tie"></i><span style="margin-right: 0.2em;"></span> Intern</div>
+  <div class="tab-cell" style="flex: 4;">GE Healthcare, Finland <span class='emoji'>🇫🇮</span></div>
+  <div class="tab-cell" style="flex: 1;">2025 ~</div>
+</div>
+
+<span style="display: block;"></span>
+
+<div style="font-size: 1.5em; font-weight: bold;">Education</div>
+<span style="display: block;"></span>
+
+<!-- MSc -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;">
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> MSc
+  </div>
+  <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
+  <div class="tab-cell" style="flex: 1;">Sep 2025 ~</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;"></div>
+  <div class="tab-cell" style="flex: 5;">Microelectronic Circuit Design</div>
+</div>
+
 <span style="display: block; height: 10em;"></span>
 
 ## BSc Students
@@ -540,7 +603,7 @@ toc_title: TSirc Group
       <div style="font-size: 1.5em; font-weight: bold;">Otso Lappalainen</div>
       <span style="display: block; height: 2em;"></span>
       <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
-      <br><span style="margin-right: 1.4em;"></span>Python-Controlled Analog Integrated Circuits
+      <br><span style="margin-right: 1.4em;"></span>Python-Controlled Analog Circuits
     </div>
   </div>
   </td></tr>
@@ -557,6 +620,51 @@ toc_title: TSirc Group
   </div>
   <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
   <div class="tab-cell" style="flex: 1;">Aug 2020 ~</div>
+</div>
+
+<br>
+
+<!-- ----------------------------------------------------------------------- -->
+
+### Wooyoung Kim {#wooyoung-kim}
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+  <div class="tab-row" style="display: flex; align-items: center;">
+    <div class="tab-cell" style="flex: 2;">
+    <!-- First Tab -->
+    <center><img src="./../img/group/Wooyoung_Kim.jpeg" style='
+      height: 200px;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;'>
+    </center>
+    </div>
+    <div class="tab-cell" style="flex: 0.5;"></div>
+    <div class="tab-cell" style="flex: 5;">
+    <!-- Second Tab -->
+      <div style="font-size: 1.5em; font-weight: bold;">Wooyoung Kim</div>
+      <span style="display: block; height: 2em;"></span>
+      <i class="fa-regular fa-lightbulb fa-xl"></i> <span style="font-weight: bold;">Research Interests</span>
+      <br><span style="margin-right: 1.4em;"></span>Analog Circuits
+    </div>
+  </div>
+  </td></tr>
+</tbody>
+</table>
+
+<div style="font-size: 1.5em; font-weight: bold;">Education</div>
+<span style="display: block;"></span>
+
+<!-- BSc -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1.5;">
+    <span style="margin-right: 0.2em;"></span><i class="fa-solid fa-user"></i><span style="margin-right: 0.2em;"></span> BSc
+  </div>
+  <div class="tab-cell" style="flex: 4;">KAIST, South Korea <span class='emoji'>🇰🇷</span>, Exchange Student</div>
+  <div class="tab-cell" style="flex: 1;">Mar 2024 ~</div>
 </div>
 
 <span style="display: block; height: 10em;"></span>
