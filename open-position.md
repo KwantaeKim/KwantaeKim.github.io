@@ -111,6 +111,7 @@ toc_title: Contents
     </div>
     <div class="pos-stats">
       <a href="https://aalto.wd3.myworkdayjobs.com/aalto/job/Otaniemi-Espoo-Finland/Doctoral-Researcher-in-Hardware-Aware-AI-for-Analog-and-RF-Circuits_R48160-4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; Apply here</a>
+      &middot; <b><i class="fa-solid fa-ban"></i>&nbsp; Applications by email are not accepted.</b>
     </div>
   </li>
 </ul>
