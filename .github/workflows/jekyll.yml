@@ -55,7 +55,7 @@ jobs:
         # Source of truth is conferences/conf_*.json; this writes the
         # conf_*.html maps and _includes/conferences_*_table.md tables.
         run: |
-          pip install pandas folium
+          pip install pandas
           cd conferences && python conferences.py
       - name: Regenerate visitor stats from the Google Analytics sheet
         # Fetches the public GA "connected report" sheet and writes visitor.html

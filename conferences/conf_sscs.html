@@ -1,300 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_907991545e9c62cb151378a15347bd12 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-                .leaflet-container { font-size: 1rem; }
-            </style>
-
-            <style>html, body {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            </style>
-
-            <style>#map {
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                }
-            </style>
-
-            <script>
-                L_NO_TOUCH = false;
-                L_DISABLE_3D = false;
-            </script>
-
-        
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
-<link rel="stylesheet" type="text/css" href="../emoji.css"></head>
+<meta charset="utf-8">
+<title>Conferences</title>
+<link href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+<link rel="stylesheet" type="text/css" href="../emoji.css">
+<style>
+  html, body { margin:0; padding:0; height:100%; overflow:hidden; background:#0B0F14; }
+  #map { position:absolute; top:0; bottom:0; left:0; right:0; }
+  .pin { width:14px; height:14px; border-radius:50%; background:#00E0C6; cursor:pointer;
+    box-shadow:0 0 0 6px #00E0C633, 0 0 0 13px #00E0C61a, 0 0 22px #00E0C6; }
+  .maplibregl-popup-content { background:#0B0F14; color:#E8EDF2; border:1px solid rgba(255,255,255,.15);
+    border-radius:9px; padding:12px 14px; box-shadow:0 6px 26px rgba(0,0,0,.6);
+    font-family:"Trebuchet MS",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:15px; line-height:1.45; }
+  .maplibregl-popup-content .place { opacity:.7; font-size:13px; }
+  .maplibregl-popup-tip { border-top-color:#0B0F14; border-bottom-color:#0B0F14; }
+</style>
+</head>
 <body>
-    
-    <style>.leaflet-container { height: 100% !important; }</style>
-    
-            <div class="folium-map" id="map_907991545e9c62cb151378a15347bd12" ></div>
-        
-</body>
+<div id="map"></div>
 <script>
-    
-    
-            var map_907991545e9c62cb151378a15347bd12 = L.map(
-                "map_907991545e9c62cb151378a15347bd12",
-                {
-                    center: [40.0, -15.0],
-                    crs: L.CRS.EPSG3857,
-                    ...{
-  "zoom": 2,
-  "zoomControl": true,
-  "preferCanvas": true,
-  "lang": "en",
-}
+const CONFS = [{"organization": "IEEE", "name": "ISSCC", "year": 2027, "city": "San Francisco", "region": "United States", "region_flag": "🇺🇸", "lat": 37.785426, "lon": -122.404493}, {"organization": "IEEE", "name": "CICC", "year": 2027, "city": "San Diego", "region": "United States", "region_flag": "🇺🇸", "lat": 32.71892, "lon": -117.16913}, {"organization": "IEEE", "name": "VLSI Symposium", "year": 2027, "city": "Kyoto", "region": "Japan", "region_flag": "🇯🇵", "lat": 34.98594, "lon": 135.75351}, {"organization": "IEEE", "name": "ESSERC", "year": 2027, "city": "Helsinki", "region": "Finland", "region_flag": "🇫🇮", "lat": 60.16662, "lon": 24.9649}, {"organization": "IEEE", "name": "A-SSCC", "year": 2026, "city": "Taichung", "region": "Taiwan", "region_flag": "🇹🇼", "lat": 24.163579, "lon": 120.638721}];
+const C = { bg:"#0B0F14", water:"#122430", road:"#1B2733",
+            tiles:"https://tiles.openfreemap.org/planet",
+            glyphs:"https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf" };
 
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_1e4233809ddbc4a5d0fe70b724187706 = L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {
-  "minZoom": 0,
-  "maxZoom": 20,
-  "maxNativeZoom": 20,
-  "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
-  "subdomains": "abcd",
-  "detectRetina": false,
-  "tms": false,
-  "opacity": 1,
-}
-
-            );
-        
-    
-            tile_layer_1e4233809ddbc4a5d0fe70b724187706.addTo(map_907991545e9c62cb151378a15347bd12);
-        
-    
-            var marker_087efd41954a5b2899f49051ac698dec = L.marker(
-                [37.785426, -122.404493],
-                {
-}
-            ).addTo(map_907991545e9c62cb151378a15347bd12);
-        
-    
-            var icon_1623c6f34524d09a186674b4f5be4cc2 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "gray",
-  "iconColor": "white",
-  "icon": "fa-user",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-            marker_087efd41954a5b2899f49051ac698dec.bindTooltip(
-                `<div>
-                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ISSCC 2026</b><br>San Francisco<br>United States <span class="emoji">🇺🇸</span></div></div>
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_087efd41954a5b2899f49051ac698dec.setIcon(icon_1623c6f34524d09a186674b4f5be4cc2);
-            
-    
-            var marker_b5e7298941ddadbdef121b4d010c8a6f = L.marker(
-                [47.613711, -122.334167],
-                {
-}
-            ).addTo(map_907991545e9c62cb151378a15347bd12);
-        
-    
-            var icon_5c559c9800f82a970443164095c9cad5 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "gray",
-  "iconColor": "white",
-  "icon": "fa-user",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-            marker_b5e7298941ddadbdef121b4d010c8a6f.bindTooltip(
-                `<div>
-                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE CICC 2026</b><br>Seattle<br>United States <span class="emoji">🇺🇸</span></div></div>
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_b5e7298941ddadbdef121b4d010c8a6f.setIcon(icon_5c559c9800f82a970443164095c9cad5);
-            
-    
-            var marker_71b52453da94826a5cc01d7c827a5777 = L.marker(
-                [21.283041, -157.837055],
-                {
-}
-            ).addTo(map_907991545e9c62cb151378a15347bd12);
-        
-    
-            var icon_18d9b51af9c5d876d014a9e76efbb209 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "gray",
-  "iconColor": "white",
-  "icon": "fa-user",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-            marker_71b52453da94826a5cc01d7c827a5777.bindTooltip(
-                `<div>
-                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE VLSI Symposium 2026</b><br>Hawaii<br>United States <span class="emoji">🇺🇸</span></div></div>
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_71b52453da94826a5cc01d7c827a5777.setIcon(icon_18d9b51af9c5d876d014a9e76efbb209);
-            
-    
-            var marker_06e1c5f270aa2432f4e91e21930f3300 = L.marker(
-                [39.567384, 2.629082],
-                {
-}
-            ).addTo(map_907991545e9c62cb151378a15347bd12);
-        
-    
-            var icon_ca42a1597b070fbfb285fd3c2da4eff1 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "gray",
-  "iconColor": "white",
-  "icon": "fa-user",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-            marker_06e1c5f270aa2432f4e91e21930f3300.bindTooltip(
-                `<div>
-                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE ESSERC 2026</b><br>Palma<br>Spain <span class="emoji">🇪🇸</span></div></div>
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_06e1c5f270aa2432f4e91e21930f3300.setIcon(icon_ca42a1597b070fbfb285fd3c2da4eff1);
-            
-    
-            var marker_d8554937ca55d065ff075fe08cbff86c = L.marker(
-                [24.163579, 120.638721],
-                {
-}
-            ).addTo(map_907991545e9c62cb151378a15347bd12);
-        
-    
-            var icon_55f7cb931a3c8e88609e46c6cecae248 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "gray",
-  "iconColor": "white",
-  "icon": "fa-user",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-            marker_d8554937ca55d065ff075fe08cbff86c.bindTooltip(
-                `<div>
-                     <div style="display:flex;align-items:center;height:100%"><div style="text-align:left;font-family:Trebuchet MS;font-size:1.5em"><b>IEEE A-SSCC 2026</b><br>Taichung<br>Taiwan <span class="emoji">🇹🇼</span></div></div>
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_d8554937ca55d065ff075fe08cbff86c.setIcon(icon_55f7cb931a3c8e88609e46c6cecae248);
-            
-    
-
-            var geocoderOpts_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8 = {
-  "collapsed": false,
-  "position": "topright",
-  "defaultMarkGeocode": true,
-  "zoom": 11,
-  "provider": "nominatim",
-  "providerOptions": {
-},
+// Dark vector style on OpenFreeMap tiles, copied from ../worldmap.html.
+const style = {
+  version: 8,
+  glyphs: C.glyphs,
+  sources: { of: { type:"vector", url: C.tiles } },
+  layers: [
+    { id:"bg", type:"background", paint:{ "background-color": C.bg } },
+    { id:"water", type:"fill", source:"of", "source-layer":"water",
+      paint:{ "fill-color":["interpolate",["linear"],["zoom"], 6,"#1B3A52", 12,C.water] } },
+    { id:"landcover", type:"fill", source:"of", "source-layer":"landcover", maxzoom:13,
+      filter:["in",["get","class"],["literal",["wood","forest","grass","farmland","wetland"]]],
+      paint:{ "fill-color":"#12211C",
+        "fill-opacity":["interpolate",["linear"],["zoom"], 8,0.85, 12,0] } },
+    { id:"towns", type:"fill", source:"of", "source-layer":"landuse", maxzoom:13,
+      filter:["in",["get","class"],["literal",["residential","commercial","industrial","retail"]]],
+      paint:{ "fill-color":"#24374A",
+        "fill-opacity":["interpolate",["linear"],["zoom"], 6,0.9, 12,0] } },
+    { id:"borders", type:"line", source:"of", "source-layer":"boundary",
+      filter:["all",["<=",["get","admin_level"],4],["!=",["get","maritime"],1]],
+      paint:{ "line-color":"#31424F",
+        "line-width":["case",["<=",["get","admin_level"],2], 1.2, 0.5],
+        "line-opacity":["case",["<=",["get","admin_level"],2], 1, 0.4] } },
+    { id:"roads", type:"line", source:"of", "source-layer":"transportation", minzoom:6,
+      paint:{ "line-color":C.road,
+        "line-width":["interpolate",["linear"],["zoom"], 6,0.4, 12,1.0, 18,4] } },
+    { id:"places", type:"symbol", source:"of", "source-layer":"place",
+      filter:["in",["get","class"],["literal",["country","city"]]],
+      layout:{ "text-field":["coalesce",["get","name:en"],["get","name"]], "text-font":["Noto Sans Regular"],
+        "text-size":["interpolate",["linear"],["zoom"], 2,10, 8,13] },
+      paint:{ "text-color":"#7E92A3", "text-halo-color":C.bg, "text-halo-width":1.2 } },
+  ],
 };
 
-            // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8 = geocoderOpts_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8["provider"];
+const map = new maplibregl.Map({
+  container:"map", style: style, center:[20, 30], zoom: 1,
+  attributionControl:{ compact:true },
+});
+map.addControl(new maplibregl.NavigationControl({ showCompass:false }), "top-left");
+map.addControl(new maplibregl.FullscreenControl(), "top-right");
+map.scrollZoom.disable();  // let the page scroll past the iframe instead of zooming
 
-            var customGeocoder_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8 = L.Control.Geocoder[ geocoderName_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8 ](
-                geocoderOpts_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8['providerOptions']
-            );
-            geocoderOpts_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8["geocoder"] = customGeocoder_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8;
+// One pin per conference; hovering shows the same text the old Folium tooltip had.
+const bounds = new maplibregl.LngLatBounds(), popups = [];
+CONFS.forEach(c => {
+  bounds.extend([c.lon, c.lat]);
+  const el = document.createElement("div");
+  el.className = "pin";
+  const popup = new maplibregl.Popup({ anchor:"bottom", offset:14, closeButton:false, closeOnClick:false })
+    .setLngLat([c.lon, c.lat])
+    .setHTML('<b>' + c.organization + ' ' + c.name + ' ' + c.year + '</b><br>' +
+             '<span class="place">' + c.city + '<br>' + c.region +
+             ' <span class="emoji">' + c.region_flag + '</span></span>');
+  popups.push(popup);
+  el.addEventListener("mouseenter", () => popup.addTo(map));
+  el.addEventListener("mouseleave", () => popup.remove());
+  new maplibregl.Marker({ element: el }).setLngLat([c.lon, c.lat]).addTo(map);
+});
+map.fitBounds(bounds, { padding: 50, maxZoom: 3, duration: 0 });
 
-            L.Control.geocoder(
-                geocoderOpts_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8
-            ).on('markgeocode', function(e) {
-                var zoom = geocoderOpts_geocoder_30d4aa50f07c78781f1e85a4c2dee9e8['zoom'] || map_907991545e9c62cb151378a15347bd12.getZoom();
-                map_907991545e9c62cb151378a15347bd12.setView(e.geocode.center, zoom);
-            }).addTo(map_907991545e9c62cb151378a15347bd12);
+// The conferences page posts {type:"conf-fly", name, year} when a table row is
+// clicked: fly to that conference's pin and show its tooltip.
+window.addEventListener("message", e => {
+  const d = e.data || {};
+  if (d.type !== "conf-fly") return;
+  const i = CONFS.findIndex(c => c.name === d.name && c.year === d.year);
+  if (i < 0) return;
+  popups.forEach(p => p.remove());
+  map.once("moveend", () => popups[i].addTo(map));
+  map.flyTo({ center:[CONFS[i].lon, CONFS[i].lat], zoom: 6, duration: 2500, essential: true });
+});
 
-        
-    
-            L.control.fullscreen(
-                {
-  "position": "topright",
-  "title": "Expand me",
-  "titleCancel": "Exit me",
-  "forceSeparateButton": true,
-}
-            ).addTo(map_907991545e9c62cb151378a15347bd12);
-        
+// Start the attribution collapsed to the "i" button; it still opens on click.
+map.on("load", () => {
+  document.querySelectorAll(".maplibregl-ctrl-attrib.maplibregl-compact")
+    .forEach(el => el.classList.remove("maplibregl-compact-show"));
+});
 </script>
+</body>
 </html>

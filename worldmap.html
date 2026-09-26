@@ -188,7 +188,7 @@ const style = {
         "fill-extrusion-base":["get","b"], "fill-extrusion-opacity":1 } },
     { id:"places", type:"symbol", source:"of", "source-layer":"place",
       filter:["in",["get","class"],["literal",["country","city"]]],
-      layout:{ "text-field":["get","name"], "text-font":["Noto Sans Regular"],
+      layout:{ "text-field":["coalesce",["get","name:en"],["get","name"]], "text-font":["Noto Sans Regular"],
         "text-size":["interpolate",["linear"],["zoom"], 2,10, 8,13] },
       paint:{ "text-color":"#7E92A3", "text-halo-color":C.bg, "text-halo-width":1.2 } },
   ],
