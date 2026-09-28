@@ -115,7 +115,7 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
 <!-- Body Part -->
 <!-- --------- -->
 
-## Seminar Talks
+## Invited Talks
 
 ### 2026
 
@@ -132,26 +132,6 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jul. 2026</div>
         <div class="tab-cell" style="flex: 4;">Incheon / Seoul / Suwon / Daegu, Korea <span class='emoji'>🇰🇷</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    IC Design Activities at the Tiny Systems and Circuits (TSirc) Group
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
-    ELEC Research Day, Aalto University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Apr. 2026</div>
-        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    IC Design Activities at the Tiny Systems and Circuits (TSirc) Group
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
-    Aalto Microelectronics Fair, Aalto University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Mar. 2026</div>
-        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
 </tbody>
@@ -224,16 +204,6 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
         <div class="tab-cell" style="flex: 2.5;"><a href="https://ccs.kaist.ac.kr" target="_blank">Prof. Seonghwan Cho</a>'s group</div>
     </div>
   </td></tr>
-  <tr><td class="tg-desc">
-    Research Activities of IC Design
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
-    Aalto Microelectronics Fair, Aalto University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Mar. 2025</div>
-        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
-    </div>
-  </td></tr>
 </tbody>
 </table>
 
@@ -288,20 +258,6 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
     </div>
   </td></tr>
   <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
-    <a href="https://prein.fi/events/photonics-flagship-finland-korea-joint-research-symposium-at-aalto-university/" target="_blank">
-    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
-    </a></span><br>
-    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
-    Photonics Flagship Finland-Korea Joint Research Symposium
-    <br>
-    Aalto University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
     Introduction to TSirc Group
     <br>
     <div class="img-container"><img src="./../img/icons/logo--nokia.png" class="hover-nokia-m"></div>
@@ -337,16 +293,6 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2024</div>
         <div class="tab-cell" style="flex: 4;">Santa Cruz, California, United States <span class='emoji'>🇺🇸</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    Next 10 Years in Research
-    <br>
-    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
-    Aalto University
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Jan. 2024</div>
-        <div class="tab-cell" style="flex: 4;">Espoo, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
   </td></tr>
 </tbody>
@@ -397,6 +343,73 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
         <div class="tab-cell" style="flex: 4;">Sunnyvale, California, United States <span class='emoji'>🇺🇸</span></div>
+    </div>
+  </td></tr>
+</tbody>
+</table>
+
+<br><br>
+
+## Internal Talks at Aalto
+
+Aalto University, Espoo, Finland <span class='emoji'>🇫🇮</span>
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    Systems and Circuits on a Semiconductor Chip
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Freshmen-Professor Buffet
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Sep. 2026</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    IC Design Activities at the Tiny Systems and Circuits (TSirc) Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    ELEC Research Day
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Apr. 2026</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    IC Design Activities at the Tiny Systems and Circuits (TSirc) Group
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Aalto Microelectronics Fair
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Mar. 2026</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Research Activities of IC Design
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Aalto Microelectronics Fair
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Mar. 2025</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <span style='color: #4A61C8;'>
+    <a href="https://prein.fi/events/photonics-flagship-finland-korea-joint-research-symposium-at-aalto-university/" target="_blank">
+    Integrated Circuits for Intelligent Neuromorphic Sensors and Beyond
+    </a></span><br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Photonics Flagship Finland-Korea Joint Research Symposium
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Nov. 2024</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    Next 10 Years in Research
+    <br>
+    <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
+    Aalto University
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Jan. 2024</div>
     </div>
   </td></tr>
 </tbody>
