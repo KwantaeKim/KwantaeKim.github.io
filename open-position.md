@@ -101,20 +101,13 @@ toc_title: Contents
 </style>
 <script src="https://kit.fontawesome.com/46ff08c48c.js" crossorigin="anonymous"></script>
 
-<div class="section-header"><h2 id="open-position">Open Position</h2><span class="underline"></span></div>
-
-<ul class="pos-list">
-  <li class="pos-item">
-    <div class="pos-title">PhD Student<span class="pos-closed pos-progress">open</span></div>
-    <div class="pos-meta">
-      Hardware-Aware AI for Analog and RF Circuits &middot; Apply by 9 October 2026, 23:59 EEST
-    </div>
-    <div class="pos-stats">
-      <a href="https://aalto.wd3.myworkdayjobs.com/aalto/job/Otaniemi-Espoo-Finland/Doctoral-Researcher-in-Hardware-Aware-AI-for-Analog-and-RF-Circuits_R48160-4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; Apply here</a>
-      &middot; <b><i class="fa-solid fa-ban"></i>&nbsp; Applications by email are not accepted.</b>
-    </div>
-  </li>
-</ul>
+<div class="notice-band">
+  <i class="fa-solid fa-circle-info"></i>
+  <div>
+    <div class="notice-title">No open positions at the moment</div>
+    <div class="notice-sub">New openings are announced here and on LinkedIn.</div>
+  </div>
+</div>
 
 <br>
 <br>
@@ -157,6 +150,13 @@ toc_title: Contents
 <div class="section-header"><h2 id="past-open-positions">Past Open Positions</h2><span class="underline"></span></div>
 
 <ul class="pos-list">
+  <li class="pos-item">
+    <div class="pos-title">PhD Student<span class="pos-closed">closed</span><span class="pos-closed pos-progress">review in progress</span></div>
+    <div class="pos-meta">
+      Hardware-Aware AI for Analog and RF Circuits &middot; 9 October 2026
+    </div>
+    <div class="pos-stats"><b>131</b> applications</div>
+  </li>
   <li class="pos-item">
     <div class="pos-title">PhD Student<span class="pos-closed">closed</span></div>
     <div class="pos-meta">

@@ -31,6 +31,7 @@ tr:hover .hover-esscirc {left: -230px; top:calc(50% - 30px); visibility: visible
 tr:hover .hover-a-sscc {left: -180px; top:calc(50% - 40px); visibility: visible; height: 80px;}
 tr:hover .hover-cicc {left: -200px; top:calc(50% - 35px); visibility: visible; height: 60px;}
 tr:hover .hover-ekc25 {left: -220px; top:calc(50% - 20px); visibility: visible; height: 40px;}
+tr:hover .hover-biocas26 {left: -220px; top:calc(50% - 20px); visibility: visible; height: 40px;}
 tr:hover .hover-iscas23 {left: -220px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-iscas19 {left: -250px; top:calc(50% - 30px); visibility: visible; height: 50px;}
 tr:hover .hover-iscas16 {left: -210px; top:calc(50% - 30px); visibility: visible; height: 70px;}
@@ -350,6 +351,114 @@ tr:hover .hover-kseas {left: -125px; top:calc(50% - 40px); visibility: visible; 
 
 <br><br>
 
+## Conference Presentations
+
+<table class="tg">
+<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
+  <tr><td class="tg-desc">
+    <a href="https://2026.ieee-biocas.org/2026/pages_program/wicas_ypcas.vm" target="_blank" class="pub-hover">
+    Lessons Learned from Building an Academic Career in Europe
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--biocas26.png" class="hover-biocas26"></div>
+    IEEE Biomedical Circuits and Systems Conference (BioCAS), WiCAS-YPCAS Luncheon
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Oct. 2026</div>
+        <div class="tab-cell" style="flex: 4;">Incheon, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://www.ekc2025.org" target="_blank" class="pub-hover">
+    Low-Power Design Innovations in Integrated Circuits for Bioimpedance Sensors
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--ekc25.png" class="hover-ekc25"></div>
+    Europe-Korea Conference on Science and Technology (EKC)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Aug. 2025</div>
+        <div class="tab-cell" style="flex: 4;">Vienna, Austria <span class='emoji'>🇦🇹</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank" class="pub-hover">
+    A 3.11 μW 40 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors Exploiting Positive-Feedback-Assisted Gain Boosting
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--iscas23.png" class="hover-iscas23"></div>
+    IEEE International Symposium on Circuits and Systems (ISCAS)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">May. 2023</div>
+        <div class="tab-cell" style="flex: 4;">Monterey, California, United States <span class='emoji'>🇺🇸</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://aicas2022.org/?page_id=192" target="_blank" class="pub-hover">
+    Event-Driven Bio-Inspired Audio Sensor Front End for EdgeTinyML
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--aicas22.png" class="hover-aicas22"></div>
+    IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS), Tutorial Talk
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Jun. 2022</div>
+        <div class="tab-cell" style="flex: 4;">Incheon, Korea <span class='emoji'>🇰🇷</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank" class="pub-hover">
+    A 23μW Solar-Powered Keyword-Spotting ASIC with Ring-Oscillator-Based Time-Domain Feature Extraction
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
+    IEEE International Solid-State Circuits Conference (ISSCC)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Feb. 2022</div>
+        <div class="tab-cell" style="flex: 4;">San Francisco, California, United States <span class='emoji'>🇺🇸</span> (Virtual)</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank" class="pub-hover">
+    A 0.5V, 6.2μW, 0.059mm<sup>2</sup> Sinusoidal Current Generator IC with 0.088% THD for Bio-Impedance Sensing
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--vlsic.png" class="hover-vlsic"></div>
+    IEEE Symposium on VLSI Circuits
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Jun. 2020</div>
+        <div class="tab-cell" style="flex: 4;">Honolulu, Hawaii, United States <span class='emoji'>🇺🇸</span> (Virtual)</div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank" class="pub-hover">
+    A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC With 0.55° Overall Phase Error
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
+    IEEE International Solid-State Circuits Conference (ISSCC)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
+        <div class="tab-cell" style="flex: 4;">San Francisco, California, United States <span class='emoji'>🇺🇸</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank" class="pub-hover">
+    A 24 μW 38.51 mΩ<sub>rms</sub> Resolution Bio-Impedance Sensor with Dual Path Instrumentation Amplifier
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--esscirc.png" class="hover-esscirc"></div>
+    IEEE European Solid State Circuits Conference (ESSCIRC)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Sep. 2017</div>
+        <div class="tab-cell" style="flex: 4;">Leuven, Belgium <span class='emoji'>🇧🇪</span></div>
+    </div>
+  </td></tr>
+  <tr><td class="tg-desc">
+    <a href="https://doi.org/10.1109/ISCAS.2016.7527432" target="_blank" class="pub-hover">
+    A 54-μW Fast-Settling Arterial Pulse Wave Sensor for Wrist Watch Type System
+    </a><br>
+    <div class="img-container"><img src="./../img/icons/logo--iscas16.png" class="hover-iscas16"></div>
+    IEEE International Symposium on Circuits and Systems (ISCAS)
+    <div class="tab-row">
+        <div class="tab-cell" style="flex: 1;">Jun. 2016</div>
+        <div class="tab-cell" style="flex: 4;">Montreal, Quebec, Canada <span class='emoji'>🇨🇦</span></div>
+    </div>
+  </td></tr>
+</tbody>
+</table>
+
+<br><br>
+
 ## Internal Talks at Aalto
 
 Aalto University, Espoo, Finland <span class='emoji'>🇫🇮</span>
@@ -410,113 +519,6 @@ Aalto University, Espoo, Finland <span class='emoji'>🇫🇮</span>
     Aalto University
     <div class="tab-row">
         <div class="tab-cell" style="flex: 1;">Jan. 2024</div>
-    </div>
-  </td></tr>
-</tbody>
-</table>
-
-<br><br>
-
-## Tutorials
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
-  <tr><td class="tg-desc">
-    <span style='color: #4A61C8;'>
-    <a href="https://aicas2022.org/?page_id=192" target="_blank">
-    Event-Driven Bio-Inspired Audio Sensor Front End for EdgeTinyML
-    </a></span><br>
-    <div class="img-container"><img src="./../img/icons/logo--aicas22.png" class="hover-aicas22"></div>
-    IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Jun. 2022</div>
-        <div class="tab-cell" style="flex: 4;">Incheon, Korea <span class='emoji'>🇰🇷</span></div>
-    </div>
-  </td></tr>
-</tbody>
-</table>
-
-<br><br>
-
-## Conference Presentations
-
-<table class="tg">
-<thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
-  <tr><td class="tg-desc">
-    <a href="https://www.ekc2025.org" target="_blank" class="pub-hover">
-    Low-Power Design Innovations in Integrated Circuits for Bioimpedance Sensors
-    </a><br>
-    <div class="img-container"><img src="./../img/icons/logo--ekc25.png" class="hover-ekc25"></div>
-    Europe-Korea Conference on Science and Technology (EKC)
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Aug. 2025</div>
-        <div class="tab-cell" style="flex: 4;">Vienna, Austria <span class='emoji'>🇦🇹</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS46773.2023.10181417" target="_blank" class="pub-hover">
-    A 3.11 μW 40 nV/√Hz Instrumentation Amplifier for Bio-Impedance Sensors Exploiting Positive-Feedback-Assisted Gain Boosting
-    </a><br>
-    <div class="img-container"><img src="./../img/icons/logo--iscas23.png" class="hover-iscas23"></div>
-    IEEE International Symposium on Circuits and Systems (ISCAS)
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">May. 2023</div>
-        <div class="tab-cell" style="flex: 4;">Monterey, California, United States <span class='emoji'>🇺🇸</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC42614.2022.9731708" target="_blank" class="pub-hover">
-    A 23μW Solar-Powered Keyword-Spotting ASIC with Ring-Oscillator-Based Time-Domain Feature Extraction
-    </a><br>
-    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    IEEE International Solid-State Circuits Conference (ISSCC)
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Feb. 2022</div>
-        <div class="tab-cell" style="flex: 4;">San Francisco, California, United States <span class='emoji'>🇺🇸</span> (Virtual)</div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/VLSICircuits18222.2020.9162983" target="_blank" class="pub-hover">
-    A 0.5V, 6.2μW, 0.059mm<sup>2</sup> Sinusoidal Current Generator IC with 0.088% THD for Bio-Impedance Sensing
-    </a><br>
-    <div class="img-container"><img src="./../img/icons/logo--vlsic.png" class="hover-vlsic"></div>
-    IEEE Symposium on VLSI Circuits
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Jun. 2020</div>
-        <div class="tab-cell" style="flex: 4;">Honolulu, Hawaii, United States <span class='emoji'>🇺🇸</span> (Virtual)</div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISSCC.2019.8662466" target="_blank" class="pub-hover">
-    A 0.5V 9.26μW 15.28mΩ/√Hz Bio-Impedance Sensor IC With 0.55° Overall Phase Error
-    </a><br>
-    <div class="img-container"><img src="./../img/icons/logo--isscc.png" class="hover-isscc"></div>
-    IEEE International Solid-State Circuits Conference (ISSCC)
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Feb. 2019</div>
-        <div class="tab-cell" style="flex: 4;">San Francisco, California, United States <span class='emoji'>🇺🇸</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ESSCIRC.2017.8094566" target="_blank" class="pub-hover">
-    A 24 μW 38.51 mΩ<sub>rms</sub> Resolution Bio-Impedance Sensor with Dual Path Instrumentation Amplifier
-    </a><br>
-    <div class="img-container"><img src="./../img/icons/logo--esscirc.png" class="hover-esscirc"></div>
-    IEEE European Solid State Circuits Conference (ESSCIRC)
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Sep. 2017</div>
-        <div class="tab-cell" style="flex: 4;">Leuven, Belgium <span class='emoji'>🇧🇪</span></div>
-    </div>
-  </td></tr>
-  <tr><td class="tg-desc">
-    <a href="https://doi.org/10.1109/ISCAS.2016.7527432" target="_blank" class="pub-hover">
-    A 54-μW Fast-Settling Arterial Pulse Wave Sensor for Wrist Watch Type System
-    </a><br>
-    <div class="img-container"><img src="./../img/icons/logo--iscas16.png" class="hover-iscas16"></div>
-    IEEE International Symposium on Circuits and Systems (ISCAS)
-    <div class="tab-row">
-        <div class="tab-cell" style="flex: 1;">Jun. 2016</div>
-        <div class="tab-cell" style="flex: 4;">Montreal, Quebec, Canada <span class='emoji'>🇨🇦</span></div>
     </div>
   </td></tr>
 </tbody>

@@ -118,6 +118,7 @@ details > summary::marker {display: none;}
 <link href="{{ site.base_url }}/emoji.css" rel="stylesheet" type='text/css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 
+<!-- Open position banner: hidden while no position is open. Uncomment to reuse.
 <div>
   <a class="open-banner" href="{{ site.base_url }}/open-position/">
     <i class="fa-solid fa-bell open-bell"></i>
@@ -127,6 +128,7 @@ details > summary::marker {display: none;}
     </div>
   </a>
 </div>
+-->
 
 ## Visitors
 
