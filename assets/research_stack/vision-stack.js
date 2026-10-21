@@ -417,15 +417,16 @@
     const ongoing = p.status === "ongoing";
     const repo = p.status === "repo";
     const accepted = p.status === "accepted";
+    const noLink = ongoing || (accepted && !p.repo);
 
-    const card = (ongoing || accepted)
+    const card = noLink
       ? h("div", { class: "project project--" + selectedLayer, "data-tag": p.tag })
       : h("a", {
           class: "project project--" + selectedLayer,
-          href: repo ? p.repo : "https://doi.org/" + p.doi,
+          href: p.repo || "https://doi.org/" + p.doi,
           target: "_blank",
           rel: "noopener noreferrer",
-          "data-doi": repo ? "" : p.doi,
+          "data-doi": p.doi || "",
           "data-tag": p.tag,
         });
 
@@ -476,9 +477,17 @@
       doi.appendChild(h("span", { class: "project-doi-arrow" }, "↗"));
     }
     foot.appendChild(doi);
+    if (accepted && p.repo) {
+      const tail = p.repo.replace(/^https?:\/\/(?:www\.)?github\.com\//i, "");
+      const repoEl = h("span", { class: "project-doi" });
+      repoEl.appendChild(h("span", { class: "project-doi-key" }, "REPO"));
+      repoEl.appendChild(h("span", { class: "project-doi-val" }, tail));
+      repoEl.appendChild(h("span", { class: "project-doi-arrow" }, "↗"));
+      foot.appendChild(repoEl);
+    }
     card.appendChild(foot);
 
-    if (ongoing || accepted) return card;
+    if (noLink) return card;
 
     const motifId = Object.keys(MOTIF_TAG).find((id) => MOTIF_TAG[id] === p.tag);
     const motifEl = motifId ? document.querySelector('.submotif[data-motif="' + motifId + '"]') : null;
@@ -621,7 +630,7 @@
 
   function showTooltip(anchor, project) {
     const tip = document.getElementById("tooltip");
-    const isRepo = project.status === "repo";
+    const isRepo = project.status === "repo" || (!project.doi && !!project.repo);
 
     tip.innerHTML = "";
     const head = h("div", { class: "tooltip-head" });

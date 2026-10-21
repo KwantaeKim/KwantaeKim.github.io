@@ -40,7 +40,8 @@
       "authors": "S. Bhowmick et al.",
       "venue": "IEEE AICAS",
       "year": "2026",
-      "status": "accepted"
+      "status": "accepted",
+      "repo": "https://github.com/TSircGroup/monarchgru"
     }
   ],
   "circuit": [

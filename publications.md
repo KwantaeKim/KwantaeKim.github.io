@@ -119,7 +119,8 @@ span.venue {font-style: italic;}
     <div class="img-container"><img src="./../img/icons/logo--aicas26.png" class="hover-aicas26"></div>
     <span class="venue">IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)</span>, 2026
     <br><span style='color: black;'>
-    <i class="fa-solid fa-trophy fa-lg"></i> IEEE CASS Student Travel Grant Award
+    <i class="fa-solid fa-trophy fa-lg"></i> IEEE CASS Student Travel Grant Award <br>
+    <i class="fa-brands fa-github fa-lg"></i> Open-Sourced in <a href="https://github.com/TSircGroup/monarchgru" target="_blank">GitHub</a>
     </span>
   </td></tr>
   <tr><td class="tg-desc">
