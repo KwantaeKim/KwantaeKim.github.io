@@ -61,7 +61,7 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
 <thead class="skip"><tr><th>.</th></tr></thead><tbody class='talk'>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
-    ELEC-E9520 Analog Integrated Circuits II D
+    ELEC-E9520 Analog Integrated Circuits II
     <div class="img-container"><img src="./../img/icons/logo--aalto.png" class="hover-aalto"></div>
     </span>
     <div class="tab-row">
@@ -81,7 +81,11 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
       <div class="tab-cell" style="flex: 4;">Aalto University, Finland <span class='emoji'>🇫🇮</span></div>
     </div>
     <div class="tab-row">
-      <div class="tab-cell" style="flex: 2;"></div>
+      <div class="tab-cell" style="flex: 2;">
+        <a href="./../assets/ELEC-E9510/NMOS_explorer.html" target="_blank">
+          <i class="fa-solid fa-file-code"></i> NMOS Explorer
+        </a>
+      </div>
       <div class="tab-cell" style="flex: 4;">
         <a href="https://youtube.com/playlist?list=PLEUf2IojJowM" target="_blank">
           <i class="fa-brands fa-youtube fa-bounce fa-lg"></i> Video
