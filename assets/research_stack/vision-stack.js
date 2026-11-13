@@ -423,7 +423,7 @@
       ? h("div", { class: "project project--" + selectedLayer, "data-tag": p.tag })
       : h("a", {
           class: "project project--" + selectedLayer,
-          href: p.repo || "https://doi.org/" + p.doi,
+          href: p.doi ? "https://doi.org/" + p.doi : p.repo,
           target: "_blank",
           rel: "noopener noreferrer",
           "data-doi": p.doi || "",
@@ -477,7 +477,7 @@
       doi.appendChild(h("span", { class: "project-doi-arrow" }, "↗"));
     }
     foot.appendChild(doi);
-    if (accepted && p.repo) {
+    if (!repo && p.repo) {
       const tail = p.repo.replace(/^https?:\/\/(?:www\.)?github\.com\//i, "");
       const repoEl = h("span", { class: "project-doi" });
       repoEl.appendChild(h("span", { class: "project-doi-key" }, "REPO"));
