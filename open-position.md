@@ -137,7 +137,7 @@ toc_title: Contents
     <p><i class="fa-solid fa-bullseye"></i>&nbsp; Genuine interest in our group must be shown. Explain why you want to join our group in particular.</p>
   </div>
   <div class="value-card">
-    <p><i class="fa-solid fa-pen-nib"></i>&nbsp; We value the applicant's own text and slides above AI-generated material.</p>
+    <p><i class="fa-solid fa-pen-nib"></i>&nbsp; We value your own text and slides above AI-generated material. We consider unedited AI output as AI-generated, even from your own prompts. See this <a href="https://lnkd.in/p/dW_TtAMq" target="_blank">link</a>.</p>
   </div>
   <div class="value-card">
     <p><i class="fa-solid fa-chalkboard-user"></i>&nbsp; Interview slides are expected to follow the given guidelines and cover technical details.</p>
