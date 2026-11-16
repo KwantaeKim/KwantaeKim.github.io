@@ -8,8 +8,15 @@
         {% for image in gallery.images %}
         <div class="column is-4-desktop is-6-tablet">
             <div class="card">
-                <div class="card-image">
+                <div class="card-image" style="position: relative;">
+                    {% if image.link %}
                     {% include image-modal.html ratio=image.ratio link=image.link alt=image.alt large_link=image.large_link %}
+                    {% else %}
+                    <figure class="image {{ image.ratio | default: 'is-16by9' }}" style="background: #f2f2f2;"></figure>
+                    {% endif %}
+                    {% if image.badge %}
+                    <span class="tag is-danger is-medium" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; pointer-events: none;">{{ image.badge }}</span>
+                    {% endif %}
                 </div>
                 <div class="card-content">
                     <div class="content">

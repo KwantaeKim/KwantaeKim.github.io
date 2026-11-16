@@ -1,3 +1,16 @@
+- title: 2026
+  images:
+    - badge: To Appear
+      description: |-
+        ### DITTO
+        Pragmatic 600nm FlexIC <br>
+        **Zhenhan**: Analog <br>
+        **Jiayu**: Digital <br>
+        **Kwantae**: Supervisor
+
+        Tape-out: Oct. 2026
+      ratio: is-16by9
+
 - title: 2024
   images:
     - link: /img/chips/2024-FENNEC.png

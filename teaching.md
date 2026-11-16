@@ -92,6 +92,13 @@ tr:hover .hover-iitguwahati {left: -110px; top:calc(50% - 45px); visibility: vis
         </a>
       </div>
     </div>
+    <div class="tab-row">
+      <div class="tab-cell" style="flex: 2;">
+        <a href="./../assets/ELEC-E9510/feedback_self.html" target="_blank">
+          <i class="fa-solid fa-file-code"></i> Feedback Demo
+        </a>
+      </div>
+    </div>
   </td></tr>
   <tr><td class="tg-desc">
     <span style='color: #4A61C8;'>
