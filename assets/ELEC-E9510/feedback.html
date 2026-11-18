@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="build" content="2026-11-16 14:47:53">
+<meta name="build" content="2026-11-18 11:37:12">
 <title>Bichon Hide-and-Seek</title>
 <style>
   /* The stage is laid out at its displayed size: fit() sets the root font-size to the stage scale in px, so 1rem is one
@@ -20,13 +20,13 @@
     align-items: center; justify-content: center; gap: 14rem; background: rgba(20, 26, 38, .55); color: #fff; text-align: center; }
   #msg:empty, #sub:empty { display: none; }     /* the start screen shows only the button, centred */
   #sub:empty + #btn { margin-top: 0; }
-  /* control panel under the playfield: control mode, random stops and time constants, then the speed-command bar */
+  /* control panel under the playfield: control mode, random stops and pole frequencies, then the speed-command bar */
   #panel { width: 100%; height: 90rem; box-sizing: border-box; padding: 9rem 16rem 10rem;
     display: flex; flex-direction: column; justify-content: space-between; background: #1b2531;
     border-top: 2rem solid rgba(255, 255, 255, .08); color: #e8eef5;
     font: 700 13rem system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
   .row { display: flex; align-items: center; gap: 24rem; }
-  #panel > .row:first-child { column-gap: 16rem; }   /* mode, random stops, τ₁, τ₂ fit one row on the desktop */
+  #panel > .row:first-child { column-gap: 16rem; }   /* mode, random stops, f₁, f₂ fit one row on the desktop */
   .grp { display: flex; align-items: center; gap: 8rem; white-space: nowrap; }
   .grp.off { opacity: .35; }
   .pill { position: relative; }
@@ -195,13 +195,13 @@
   html.locked .pill input:not(:checked) + span, html.locked .sw .knob, html.locked .tau::-webkit-slider-thumb,
   html.locked #speed input::-webkit-slider-thumb { opacity: .55; }
   /* students in a room (html.student, set by showMode) see the room's mode as a read-only badge in place of the mode
-     buttons: a flat tag, no pill shape, no pointer, not focusable. The min-width holds the longest label, so the τ
+     buttons: a flat tag, no pill shape, no pointer, not focusable. The min-width holds the longest label, so the pole
      groups beside it stay in place when the mode changes. */
   #modeBadge { display: none; min-width: 126rem; box-sizing: border-box; padding: 4rem 10rem; border-radius: 4rem;
     background: rgba(255, 211, 77, .14); color: #ffd34d; text-align: center; cursor: default; user-select: none; -webkit-user-select: none; }
   html.student #modeBadge { display: inline-block; }
   html.student .pill { display: none; }
-  /* nor any other difficulty control: the seeker speed, τ₁, τ₂ and random stops are the room's. The speed-command bar
+  /* nor any other difficulty control: the seeker speed, f₁, f₂ and random stops are the room's. The speed-command bar
      and the room row stay. */
   html.student #tau1g, html.student #tau2g, html.student #speed, html.student .sw { display: none; }
   /* the admin's sign-in dialog */
@@ -494,14 +494,14 @@
       </div>
       <label class="sw"><input type="checkbox" id="rstops"><span class="knob"></span><span>Random stops</span></label>
       <div class="grp off" id="tau1g">
-        <span>τ₁</span>
-        <input id="tau1" class="tau" type="range" min="0.05" max="1" step="0.05" value="0.5" disabled aria-label="Time constant τ₁">
-        <span class="tv" id="tau1Val">0.50 s</span>
+        <span>f₁</span>
+        <input id="tau1" class="tau" type="range" min="0" max="13" step="1" value="3" disabled aria-label="Pole frequency f₁">
+        <span class="tv" id="tau1Val">0.32 Hz</span>
       </div>
       <div class="grp off" id="tau2g">
-        <span>τ₂</span>
-        <input id="tau2" class="tau" type="range" min="0.05" max="1" step="0.05" value="0.5" disabled aria-label="Time constant τ₂">
-        <span class="tv" id="tau2Val">0.50 s</span>
+        <span>f₂</span>
+        <input id="tau2" class="tau" type="range" min="0" max="13" step="1" value="3" disabled aria-label="Pole frequency f₂">
+        <span class="tv" id="tau2Val">0.32 Hz</span>
       </div>
     </div>
     <div class="row" id="row2">
@@ -558,8 +558,8 @@
           </div>
           <label class="t-sl">Seeker speed<output id="tSpV">×2.0</output><input id="tSp" type="range" min="2" max="10" step="0.1" value="2"></label>
           <div class="t-taus">
-            <label class="t-sl" id="tT1g">τ₁<output id="tT1V">0.50 s</output><input id="tT1" type="range" min="0.05" max="1" step="0.05" value="0.5"></label>
-            <label class="t-sl" id="tT2g">τ₂<output id="tT2V">0.50 s</output><input id="tT2" type="range" min="0.05" max="1" step="0.05" value="0.5"></label>
+            <label class="t-sl" id="tT1g">f₁<output id="tT1V">0.32 Hz</output><input id="tT1" type="range" min="0" max="13" step="1" value="3"></label>
+            <label class="t-sl" id="tT2g">f₂<output id="tT2V">0.32 Hz</output><input id="tT2" type="range" min="0" max="13" step="1" value="3"></label>
           </div>
           <label class="t-tg"><input type="checkbox" id="tRs"><span class="knob"></span>Random stops</label>
           <div class="t-lock">Sign in to control the room</div>
@@ -607,7 +607,7 @@
 <script>
 'use strict';
 const W = 960, H = 540, LIMIT = 30;
-const BUILD = '2026-11-16 14:47:53';                     // build time, also in <meta name="build">: shows which version is loaded
+const BUILD = '2026-11-18 11:37:12';                     // build time, also in <meta name="build">: shows which version is loaded
 const META = {"export": 4, "pts": {"eye": [0.0, -120.88], "nose": [32.92, -129.85], "headTop": [-28.26, -149.51], "head": [-15.97, -111.43], "body": [-65.11, -48.77], "tail": [-109.34, -90.54], "hindFeet": [-99.51, -4.55], "frontFeet": [-34.4, -4.55]}, "idle": {"w": 688, "h": 612, "ax": 548.89, "ay": 605.41}};
 // classroom mode: ?room=<id> (letters, digits, hyphens) joins a room whose difficulty settings are shared through
 // Firebase (see "classroom sync" below). Without a room nothing is loaded or contacted: standalone play as before.
@@ -1327,7 +1327,19 @@ function setCtrl(mode) {                        // mode switch: both filter stat
   taus.forEach((t, i) => { const on = mode === 'p2' || (mode === 'p1' && i === 0); t.el.disabled = !on || locked; t.grp.classList.toggle('off', !on); });
 }
 function setMode(mode) { if (G.ctrl !== mode) setCtrl(mode); document.querySelector(`input[name=ctrl][value=${mode}]`).checked = true; }
-function setTau(i, v) { const t = taus[i]; v = clamp(Math.round(v * 20) / 20, 0.05, 1); G[t.key] = v; t.el.value = v; t.val.textContent = v.toFixed(2) + ' s'; }
+// The two poles are set as frequencies, f = 1 / (2 pi tau) in Hz, on 14 steps a tenth of a decade apart (higher to the
+// right). The filters and the room's settings keep time constants in seconds (tau1, tau2: 0.05 .. 1 s, the range the
+// room's rules allow), so the top step, 3.2 Hz, is held at 0.05 s (3.18 Hz). A time constant that lies on no step (the
+// default 0.50 s, which is 0.318 Hz, or a value written by an older page) is used as it is: the slider stands on the
+// nearest step, and the readout shows that step's frequency when it is within 2 %, the exact frequency otherwise.
+const POLE_F = [0.16, 0.2, 0.25, 0.32, 0.4, 0.5, 0.63, 0.8, 1, 1.25, 1.6, 2, 2.5, 3.2];
+const poleF = tau => 1 / (2 * Math.PI * tau), poleTau = f => clamp(1 / (2 * Math.PI * f), 0.05, 1);
+function poleStep(tau) {                        // the nearest step on the logarithmic scale
+  const x = Math.log(poleF(tau)), d = F => Math.abs(Math.log(F) - x);
+  return POLE_F.reduce((k, F, i) => d(F) < d(POLE_F[k]) ? i : k, 0);
+}
+function poleText(tau) { const f = poleF(tau), F = POLE_F[poleStep(tau)]; return (Math.abs(F / f - 1) < 0.02 ? F : f).toFixed(2) + ' Hz'; }
+function setTau(i, v) { const t = taus[i]; v = clamp(v, 0.05, 1); G[t.key] = v; t.el.value = poleStep(v); t.val.textContent = poleText(v); }
 function setRandomStops(on) {                   // touches only the seeker's schedule, never the game
   G.randomStops = on;
   if (on) newInterval(G.seeker, false);         // a fresh moving interval from the current position and phase
@@ -1340,7 +1352,7 @@ slider.addEventListener('pointerup', () => slider.blur());
 for (const r of document.querySelectorAll('input[name=ctrl]'))
   r.addEventListener('change', () => { if (r.checked) { setMode(r.value); net.send('mode', r.value, true); } r.blur(); });
 taus.forEach((t, i) => {                        // a new time constant acts from the current filter state on
-  t.el.addEventListener('input', () => { setTau(i, +t.el.value); net.send(t.key, G[t.key]); });
+  t.el.addEventListener('input', () => { setTau(i, poleTau(POLE_F[+t.el.value])); net.send(t.key, G[t.key]); });
   t.el.addEventListener('change', () => { t.el.blur(); net.flush(t.key); });
   t.el.addEventListener('pointerup', () => t.el.blur());
 });
@@ -1802,7 +1814,7 @@ function teachView() {
   tEl.ctrl.classList.toggle('locked', !admin); tEl.go.disabled = !admin || !net.synced;
   for (const b of tEl.modes) { b.classList.toggle('on', b.dataset.mode === G.ctrl); b.disabled = !admin; }
   tRange(tEl.sp, G.seekerSpeed, tEl.spV, '×' + G.seekerSpeed.toFixed(1));
-  tRange(tEl.t1, G.tau1, tEl.t1V, G.tau1.toFixed(2) + ' s'); tRange(tEl.t2, G.tau2, tEl.t2V, G.tau2.toFixed(2) + ' s');
+  tRange(tEl.t1, poleStep(G.tau1), tEl.t1V, poleText(G.tau1)); tRange(tEl.t2, poleStep(G.tau2), tEl.t2V, poleText(G.tau2));
   tEl.t1g.classList.toggle('off', G.ctrl === 'direct'); tEl.t2g.classList.toggle('off', G.ctrl !== 'p2');
   tEl.sp.disabled = tEl.rs.disabled = !admin; tEl.t1.disabled = !admin || G.ctrl === 'direct'; tEl.t2.disabled = !admin || G.ctrl !== 'p2';
   tEl.rs.checked = G.randomStops;
@@ -1905,7 +1917,7 @@ window.__game = { G, step, render, start, fit, ready, exposureOf, visiblePoints,
                   blocked, eyeOf, dogPoint, dogAnim, setCtrl, setRandomStops, forward, drawTrail, clearTrails, strips, META, TRAIL,
                   safeBand, seekerYAt, SNAP, BARS, barsLayout, barText, EXC, outsideOf, measureExcursion,
                   net, FIREBASE, ROOM, TEACHER, PANEL_H, SETTINGS, setSpeed, setMode, setTau, setStops, lockControls, countRoom, advance, progStore, presenceId, showCount,
-                  PTS, VIEW, WALL, PLAYER, SEEKER, PATROL, CATCH_TIME, CALM_TIME, CATCH_LEVEL, LIMIT, LOOK, P_FLIP, S_FLIP, keys, disp, mips, spriteFor, DEV_MAX, tune, BUILD, press, release, setTouch, held, TOUCH_H,
+                  PTS, VIEW, WALL, PLAYER, SEEKER, PATROL, CATCH_TIME, CALM_TIME, CATCH_LEVEL, LIMIT, POLE_F, poleTau, poleStep, poleText, LOOK, P_FLIP, S_FLIP, keys, disp, mips, spriteFor, DEV_MAX, tune, BUILD, press, release, setTouch, held, TOUCH_H,
                   stop: () => { halted = true; cancelAnimationFrame(rafId); }, resume: startLoop,
                   kill: () => cancelAnimationFrame(rafId) };
 </script>

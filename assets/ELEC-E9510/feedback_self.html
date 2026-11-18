@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="build" content="2026-11-16 14:47:53">
+<meta name="build" content="2026-11-18 13:06:34">
 <title>Bichon Hide-and-Seek</title>
 <style>
   /* The stage is laid out at its displayed size: fit() sets the root font-size to the stage scale in px, so 1rem is one
@@ -20,13 +20,13 @@
     align-items: center; justify-content: center; gap: 14rem; background: rgba(20, 26, 38, .55); color: #fff; text-align: center; }
   #msg:empty, #sub:empty { display: none; }     /* the start screen shows only the button, centred */
   #sub:empty + #btn { margin-top: 0; }
-  /* control panel under the playfield: control mode, random stops and time constants, then the speed-command bar */
+  /* control panel under the playfield: control mode, random stops and pole frequencies, then the speed-command bar */
   #panel { width: 100%; height: 90rem; box-sizing: border-box; padding: 9rem 16rem 10rem;
     display: flex; flex-direction: column; justify-content: space-between; background: #1b2531;
     border-top: 2rem solid rgba(255, 255, 255, .08); color: #e8eef5;
     font: 700 13rem system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
   .row { display: flex; align-items: center; gap: 24rem; }
-  #panel > .row:first-child { column-gap: 16rem; }   /* mode, random stops, τ₁, τ₂ fit one row on the desktop */
+  #panel > .row:first-child { column-gap: 16rem; }   /* mode, random stops, f₁, f₂ fit one row on the desktop */
   .grp { display: flex; align-items: center; gap: 8rem; white-space: nowrap; }
   .grp.off { opacity: .35; }
   .pill { position: relative; }
@@ -195,13 +195,13 @@
   html.locked .pill input:not(:checked) + span, html.locked .sw .knob, html.locked .tau::-webkit-slider-thumb,
   html.locked #speed input::-webkit-slider-thumb { opacity: .55; }
   /* students in a room (html.student, set by showMode) see the room's mode as a read-only badge in place of the mode
-     buttons: a flat tag, no pill shape, no pointer, not focusable. The min-width holds the longest label, so the τ
+     buttons: a flat tag, no pill shape, no pointer, not focusable. The min-width holds the longest label, so the pole
      groups beside it stay in place when the mode changes. */
   #modeBadge { display: none; min-width: 126rem; box-sizing: border-box; padding: 4rem 10rem; border-radius: 4rem;
     background: rgba(255, 211, 77, .14); color: #ffd34d; text-align: center; cursor: default; user-select: none; -webkit-user-select: none; }
   html.student #modeBadge { display: inline-block; }
   html.student .pill { display: none; }
-  /* nor any other difficulty control: the seeker speed, τ₁, τ₂ and random stops are the room's. The speed-command bar
+  /* nor any other difficulty control: the seeker speed, f₁, f₂ and random stops are the room's. The speed-command bar
      and the room row stay. */
   html.student #tau1g, html.student #tau2g, html.student #speed, html.student .sw { display: none; }
   /* the admin's sign-in dialog */
@@ -462,6 +462,13 @@
     html.phone .tau, html.phone #speed input { height: 26px; }
     html.phone #sheetDone { padding: 7px 22px; }
   }
+  /* auto-play (feedback_self.html only): its switch and sensitivity sit before the command bar, which keeps the rest
+     of the row. While it plays, a phone's Up and Down do nothing and are dimmed. */
+  #sensg { margin-bottom: -3rem; }                /* the slider centred on the command bar's track, the switch's words level with its label */
+  html.narrow #sensg { margin-bottom: 0; }
+  html.auto .tbtn .disc { opacity: .35; }
+  html.phone #sensg { order: 1; }                 /* a phone's sheet: the two switches share a line, then the sensitivity, */
+  html.phone #speed { order: 2; }                 /* then the seeker speed (one line fewer on the smallest phones) */
 </style>
 </head>
 <body>
@@ -494,17 +501,24 @@
       </div>
       <label class="sw"><input type="checkbox" id="rstops"><span class="knob"></span><span>Random stops</span></label>
       <div class="grp off" id="tau1g">
-        <span>τ₁</span>
-        <input id="tau1" class="tau" type="range" min="0.05" max="1" step="0.05" value="0.5" disabled aria-label="Time constant τ₁">
-        <span class="tv" id="tau1Val">0.50 s</span>
+        <span>f₁</span>
+        <input id="tau1" class="tau" type="range" min="0" max="13" step="1" value="3" disabled aria-label="Pole frequency f₁">
+        <span class="tv" id="tau1Val">0.32 Hz</span>
       </div>
       <div class="grp off" id="tau2g">
-        <span>τ₂</span>
-        <input id="tau2" class="tau" type="range" min="0.05" max="1" step="0.05" value="0.5" disabled aria-label="Time constant τ₂">
-        <span class="tv" id="tau2Val">0.50 s</span>
+        <span>f₂</span>
+        <input id="tau2" class="tau" type="range" min="0" max="13" step="1" value="3" disabled aria-label="Pole frequency f₂">
+        <span class="tv" id="tau2Val">0.32 Hz</span>
       </div>
     </div>
     <div class="row" id="row2">
+      <label class="sw"><input type="checkbox" id="autoOn"><span class="knob"></span><span>Auto-play</span></label>
+      <div class="grp off" id="sensg">
+        <span>Sensitivity</span>
+        <input id="sens" class="tau" type="range" min="0.5" max="30" step="0.5" value="4" disabled aria-label="Auto-play sensitivity">
+        <span class="tv" id="sensVal">×4.0</span>
+      </div>
+      <label class="sw"><input type="checkbox" id="holdOn"><span class="knob"></span><span>Stop seeker</span></label>
       <div id="vbar">
         <div class="lbl"><span>↑ Up</span><span class="z">0</span><span>Down ↓</span></div>
         <div class="track"><div class="tick"></div><div id="vfill"></div></div>
@@ -558,8 +572,8 @@
           </div>
           <label class="t-sl">Seeker speed<output id="tSpV">×2.0</output><input id="tSp" type="range" min="2" max="10" step="0.1" value="2"></label>
           <div class="t-taus">
-            <label class="t-sl" id="tT1g">τ₁<output id="tT1V">0.50 s</output><input id="tT1" type="range" min="0.05" max="1" step="0.05" value="0.5"></label>
-            <label class="t-sl" id="tT2g">τ₂<output id="tT2V">0.50 s</output><input id="tT2" type="range" min="0.05" max="1" step="0.05" value="0.5"></label>
+            <label class="t-sl" id="tT1g">f₁<output id="tT1V">0.32 Hz</output><input id="tT1" type="range" min="0" max="13" step="1" value="3"></label>
+            <label class="t-sl" id="tT2g">f₂<output id="tT2V">0.32 Hz</output><input id="tT2" type="range" min="0" max="13" step="1" value="3"></label>
           </div>
           <label class="t-tg"><input type="checkbox" id="tRs"><span class="knob"></span>Random stops</label>
           <div class="t-lock">Sign in to control the room</div>
@@ -589,8 +603,8 @@
 <script type="text/plain" id="firebase-sdk"></script>
 <script>
 'use strict';
-const W = 960, H = 540, LIMIT = 30;
-const BUILD = '2026-11-16 14:47:53';                     // build time, also in <meta name="build">: shows which version is loaded
+const W = 960, H = 540 + 160, LIMIT = 30;
+const BUILD = '2026-11-18 13:06:34';                     // build time, also in <meta name="build">: shows which version is loaded
 const META = {"export": 4, "pts": {"eye": [0.0, -120.88], "nose": [32.92, -129.85], "headTop": [-28.26, -149.51], "head": [-15.97, -111.43], "body": [-65.11, -48.77], "tail": [-109.34, -90.54], "hindFeet": [-99.51, -4.55], "frontFeet": [-34.4, -4.55]}, "idle": {"w": 688, "h": 612, "ax": 548.89, "ay": 605.41}};
 // classroom mode: ?room=<id> (letters, digits, hyphens) joins a room whose difficulty settings are shared through
 // Firebase (see "classroom sync" below). Without a room nothing is loaded or contacted: standalone play as before.
@@ -609,6 +623,12 @@ if (TEACH) document.documentElement.classList.add('teach');
 const PANEL_H = ROOM === null ? 90 : 120;      // the panel gets a third row (room status, admin controls) in classroom mode
 const PLAYER = { x: 770, speed: 290, yMin: 215, yMax: 515, start: 470 };   // the hider, right side
 const SEEKER = { x: 170, yMin: 215, yMax: 515 };                            // the seeker, left side
+// feedback_self.html has a taller playfield (H above: 700 instead of 540), so that the hider has room to pass its
+// target. In the classroom page the target, the middle of the hidden region, runs a little further than the hider's
+// own range as the seeker patrols, so at both ends the hider stands against a limit. Here the seeker and the wall
+// (below) sit 73 px lower with the same 300 px of patrol: the target then runs 292..597, and the hider's range,
+// 215..674, reaches 77 px further up and further down than that.
+SEEKER.yMin += 73; SEEKER.yMax += 73; PLAYER.yMax = 674; PLAYER.start += 73;
 // patrol rate at seeker speed x1 (rad/s), rising linearly over a round: one patrol cycle (down and back up) takes
 // 20 s at the start and 12 s at the end; xN divides both by N. x4 (5 s -> 3 s) is about the fastest patrol a player
 // moving at 290 px/s can follow with human reaction times (was 0.9 -> 1.5 rad/s at x1, so x4 was out of reach).
@@ -617,6 +637,7 @@ const PATROL = { r0: 2 * Math.PI / 20, r1: 2 * Math.PI / 12 };
 const LOOK = PLAYER.x > SEEKER.x ? 1 : -1;          // the seeker looks toward the hider: +1 right, -1 left
 const P_FLIP = LOOK > 0, S_FLIP = LOOK < 0;         // the sprites face right unless flipped
 const WALL = { x: 480, y1: 187, y2: 347, w: 26 };   // short enough that no fixed spot stays hidden
+WALL.y1 += 73; WALL.y2 += 73;                       // with the seeker, see PLAYER above
 const VIEW = { half: 1.0, far: 4000 };               // the seeker's view cone: half-angle (rad), ray length
 const PTS = ['head', 'eye', 'nose', 'headTop', 'body', 'tail', 'frontFeet', 'hindFeet'];   // gaze priority
 // paw-print trails: each dog leaves a print every TRAIL.gap px of logical movement (bounce and hop excluded)
@@ -818,12 +839,13 @@ function step(dt) {
   G.tState += dt;
   if (G.state === 'playing') {
     G.t += dt;
-    const u = keys.up && keys.down ? keys.last : (keys.down ? 1 : 0) - (keys.up ? 1 : 0), y0 = p.y;
+    if (auto.on) { autoSense(p, s); auto.free += dt; }   // auto-play: the loop's error and its command take the keys' place, and its time is free
+    const u = auto.on ? auto.u : keys.up && keys.down ? keys.last : (keys.down ? 1 : 0) - (keys.up ? 1 : 0), y0 = p.y;
     const f = forward(p, u, dt);
     Object.assign(p, { u, b1: f.b1, b2: f.b2 });
     p.y = clamp(p.y + f.dy, PLAYER.yMin, PLAYER.yMax);      // the position is limited, the filter states are not
     pMoving = p.y !== y0;                       // walks only while the position really changes
-    if (!s.freeze) {                            // steady patrol that speeds up over time, scaled by the slider
+    if (!s.freeze && !s.hold) {                            // steady patrol that speeds up over time, scaled by the slider
       const rate = G.seekerSpeed * (PATROL.r0 + (PATROL.r1 - PATROL.r0) * clamp(G.t / LIMIT, 0, 1));
       let left = dt;
       while (left > 0) {                        // with random stops, a frame may straddle the end of an interval
@@ -841,11 +863,14 @@ function step(dt) {
     }
     G.gauge = G.exposure > 0 ? Math.min(CATCH_LEVEL, G.gauge + (0.35 + 0.65 * G.exposure) * dt / CATCH_TIME)
                              : Math.max(0, G.gauge - dt / CALM_TIME);
-    if (G.gauge >= CATCH_LEVEL) {               // both frozen where they stand, no bounce settling; the bars keep the
+    // auto-play: a catch does not end the round. It is announced ("Caught!", see render) for as long as the gauge
+    // is full and 1.2 s more, and the gauge drains again as soon as the hider is hidden.
+    if (auto.on) auto.hit = G.gauge >= CATCH_LEVEL ? 1.2 : Math.max(0, auto.hit - dt);
+    if (G.gauge >= CATCH_LEVEL && !auto.on) {               // both frozen where they stand, no bounce settling; the bars keep the
       sig = { ctrl: G.ctrl, u: p.u, b1: p.b1, b2: p.b2 };   // signals of this frame, which setState now zeroes
       setState('caught'); pMoving = sMoving = false; p.walk = s.walk = 0;
     }
-    else if (G.t >= LIMIT) { G.t = LIMIT; setState('won'); pMoving = sMoving = false; net.progress('completed', G.runMax); }
+    else if (G.t - auto.free >= LIMIT) { G.t = LIMIT + auto.free; setState('won'); pMoving = sMoving = false; net.progress('completed', G.runMax); }
   } else if (G.state === 'caught' && G.tState >= 1.4 && !overlay.classList.contains('show')) {
     showOverlay('Caught!', 'The seeker spotted you.', 'Play again', true);
   } else if (G.state === 'won' && G.tState >= 1.2 && !overlay.classList.contains('show')) {
@@ -911,7 +936,7 @@ function showBtn() {
 function userStart() { if (!TEACH && !net.mustWait()) start(); }   // the button and Space/Enter; the teacher's restart calls start()
 function start() {
   if (G.state === 'playing') return;
-  G.t = 0; G.gauge = 0; G.exposure = 0; G.runMax = 0;
+  G.t = 0; auto.free = auto.hit = 0; G.gauge = 0; G.exposure = 0; G.runMax = 0;
   Object.assign(G.player, { y: PLAYER.start, u: 0, b1: 0, b2: 0, moving: false, walk: 0, animT: 0 });
   releaseKeys(); keys.last = 0;
   Object.assign(G.seeker, { y: SEEKER.yMin, phase: 0, moving: false, walk: 0, animT: 0 });
@@ -1006,6 +1031,53 @@ function barsLayout(ctrl, py) {
   return { k, xs, yc, box: { x0: xs[0] - e, x1: xr + e, y0: yc - BARS.h / 2 - 16 * k, y1: yc + BARS.h / 2 + 16 * k } };
 }
 const barText = v => (Math.abs(v) < 0.005 ? '0.00' : (v < 0 ? '−' : '') + Math.abs(v).toFixed(2));   // two decimals, up positive
+// Auto-play: a feedback loop plays the hider. Every frame it senses the target r, the middle of the hidden region for
+// where the seeker stands now, takes the error e = r - y against the hider's position y, and commands
+// u = sens * e / v, limited to full speed (v = PLAYER.speed), in place of the keys. It is an error amplifier: the
+// hider's speed is sens * e, so `sens` (the "Sensitivity" slider, 1/s) is the loop gain, the loop's unity-gain
+// frequency in rad/s. The plant is the game's own: an integrator (speed to position) in Direct, plus one lag of tau1
+// in +1 pole, plus a second of tau2 in +2 poles. So Direct settles without overshoot at any sensitivity, +1 pole
+// rings once sens * tau1 > 1/4, and +2 poles oscillate from sens = 1/tau1 + 1/tau2. A target faster than v cannot be
+// followed at all (slew limit).
+// No time limit while it plays: `free` adds up the seconds of the round that auto-play has played, and the 30 s count
+// only the rest (the time played by hand). A catch does not end it either (`hit`: seconds left to show "Caught!",
+// see step), so a round under auto-play runs until auto-play is switched off. The seeker's speed-up
+// still follows the round's whole time, G.t. The time bar is not drawn while auto-play is on.
+const auto = { on: false, sens: 4, r: null, e: 0, u: 0, free: 0, hit: 0 };   // r, e in px (y down)
+function autoSense(p, s) {
+  const band = safeBand(eyeOf({ x: s.x, y: s.y }, S_FLIP));
+  if (band.length) {                             // the hidden region (the one nearest the hider, should there be two)
+    const mid = b => (b[0] + b[1]) / 2, b = band.reduce((a, c) => Math.abs(mid(c) - p.y) < Math.abs(mid(a) - p.y) ? c : a);
+    auto.r = mid(b);
+  }
+  if (auto.r === null) { auto.e = auto.u = 0; return; }   // nowhere to hide yet: no error to act on
+  auto.e = auto.r - p.y;
+  auto.u = clamp(auto.sens * auto.e / PLAYER.speed, -1, 1);
+}
+// The error, live while auto-play runs, on the hider in the trails' frame (no extra bar: +2 poles has three already).
+// The target is a horizontal dashed line across the hider, from beside the bars. The error is the vertical arrow from
+// the hider's own point to that line. No number: an "Error: N px" label stood beyond the line until 2026-11-18, and
+// the user found it redundant beside the Input bar, which is the error times the sensitivity.
+function drawAuto() {
+  if (auto.r === null) return;
+  const B = barsLayout(G.ctrl, G.player.y), k = B.k, col = TRAIL.hider.x, yT = auto.r + TRAIL.y, yD = G.player.y + TRAIL.y;
+  const d = Math.sign(yT - yD) || 1, gap = Math.abs(yT - yD);
+  ctx.save(); ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+  const line = (lw, c, dash, pts) => { ctx.lineWidth = lw; ctx.strokeStyle = c; ctx.setLineDash(dash); ctx.beginPath();
+    pts.forEach(([a, b], i) => i ? ctx.lineTo(a, b) : ctx.moveTo(a, b)); ctx.stroke(); };
+  const target = [[B.box.x1 + 10 * k, yT], [col + 62 * k, yT]];   // clear of the bars' values, which reach past their box
+  line(4 * k, 'rgba(255,255,255,.8)', [], target); line(1.75 * k, '#1b2531', [6 * k, 4 * k], target);
+  if (gap > 7 * k) {                             // the error: an arrow from the hider's point to the target line
+    const tip = yT - d * 2.5 * k, a = 5 * k;
+    for (const [lw, c] of [[5.5 * k, 'rgba(255,255,255,.9)'], [3 * k, BARS.fill]]) {
+      line(lw, c, [], [[col, yD], [col, tip]]); line(lw, c, [], [[col - a, tip - d * a], [col, tip], [col + a, tip - d * a]]);
+    }
+  }
+  ctx.setLineDash([]);
+  ctx.beginPath(); ctx.arc(col, yD, 3.2 * k, 0, Math.PI * 2); ctx.fillStyle = '#1b2531'; ctx.fill();   // the hider's point
+  ctx.lineWidth = 1.5 * k; ctx.strokeStyle = '#fff'; ctx.stroke();
+  ctx.restore();
+}
 function drawBars() {                            // after a catch, the values and the mode of the catch (G.snap.sig)
   const sig = G.snap ? G.snap.sig : { ctrl: G.ctrl, u: G.player.u, b1: G.player.b1, b2: G.player.b2 };
   const L = barsLayout(sig.ctrl, G.player.y), k = L.k, w = BARS.w * k, top = L.yc - BARS.h / 2, vals = [sig.u, sig.b1, sig.b2];
@@ -1109,6 +1181,7 @@ function render() {
   drawDog(p, P_FLIP, 0, dogAnim(p) + hop);
   drawDog(s, S_FLIP, 0, dogAnim(s));
   drawBars();
+  if (auto.on && G.state === 'playing') drawAuto();
   if (sn) drawSnapshot(sn);
 
   // detection gauge above the seeker, "!" when caught
@@ -1126,20 +1199,29 @@ function render() {
       ctx.fillStyle = `rgb(255,${Math.round(210 - 160 * f)},${Math.round(80 - 60 * f)})`;
       rr(gx + 2, gy + 2, 80 * f, 8, 4); ctx.fill();
     }
-    if (G.randomStops && s.stopped) {           // an intentional stop, not a turnaround
+    if (s.hold || G.randomStops && s.stopped) {           // an intentional stop, not a turnaround
       ctx.font = '700 12px ' + FONT; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       const tw = ctx.measureText('Seeker stopped').width + 16, lx = s.x + 6, ly = s.y - 198;
       ctx.fillStyle = 'rgba(30,40,60,.75)'; rr(lx - tw / 2, ly - 10, tw, 20, 10); ctx.fill();
       ctx.fillStyle = '#fff'; ctx.fillText('Seeker stopped', lx, ly);
     }
+    if (auto.on && auto.hit > 0) {               // auto-play: the catch is announced above the gauge and the round goes on
+      const ly = s.y - (s.hold || G.randomStops && s.stopped ? 224 : 196);   // above the "Seeker stopped" label when it shows
+      ctx.save(); ctx.globalAlpha = Math.min(1, auto.hit / 0.3);            // fades out over its last 0.3 s
+      ctx.font = '900 30px ' + FONT; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.lineWidth = 6; ctx.lineJoin = 'round'; ctx.strokeStyle = '#c0392b'; ctx.strokeText('Caught!', s.x + 6, ly);
+      ctx.fillStyle = '#fff'; ctx.fillText('Caught!', s.x + 6, ly); ctx.restore();
+    }
   }
 
   // HUD
-  const rem = Math.max(0, LIMIT - G.t), f = rem / LIMIT, bx = 330, by = 16, bw = 300, bh = 18;
+  const rem = Math.max(0, LIMIT - G.t + auto.free), f = rem / LIMIT, bx = 330, by = 16, bw = 300, bh = 18;
+  if (!auto.on) {                                // auto-play has no time limit: no time bar at all while it is on
   ctx.fillStyle = 'rgba(0,0,0,.28)'; rr(bx, by, bw, bh, 9); ctx.fill();
   if (f > 0) { ctx.fillStyle = f > 0.25 ? '#ffffff' : '#ffb3b3'; rr(bx + 2, by + 2, (bw - 4) * f, bh - 4, 7); ctx.fill(); }
   ctx.fillStyle = '#1e2a1a'; ctx.font = '700 15px ' + FONT; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
   ctx.fillText('Time left', bx - 78, by + bh / 2); ctx.fillText(rem.toFixed(1) + ' s', bx + bw + 10, by + bh / 2);
+  } else ctx.textAlign = 'left';                 // the hint below relies on it
   ctx.font = '500 13px ' + FONT; ctx.fillStyle = 'rgba(20,40,20,.7)'; ctx.textBaseline = 'alphabetic';
   if (!disp.phone) ctx.fillText('↑↓ or W/S: move', 16, H - 14);   // a phone has no keys: its two buttons say Up and Down
 
@@ -1213,7 +1295,7 @@ function fit() {
   const whole = Math.min(vw / W, (vh - th) / SH);  // the 960x630 stage at one scale
   // narrow (phones, small windows): the panel would become unreadable at that scale, so only the playfield scales
   // and the touch row and the panel flow below it at css size; the page may then scroll
-  const narrow = phone || whole < 0.9;
+  const narrow = phone || whole < 0.9 - 0.1;
   html.classList.toggle('narrow', narrow); html.classList.toggle('phone', phone); html.classList.toggle('rot', rot);
   dock(phone);
   // a phone's playfield: as large as fits between the two button columns, inside the screen's safe area. The insets
@@ -1289,6 +1371,25 @@ touchButton(tUp, -1, held.up); touchButton(tDown, 1, held.down);
 // phones: the gear opens the panel as a sheet over the playfield (between runs, see html.idle), "Done" or a run closes it
 gear.addEventListener('click', () => { document.documentElement.classList.toggle('sheet'); gear.blur(); });
 sheetDone.addEventListener('click', () => document.documentElement.classList.remove('sheet'));
+// auto-play's switch and its sensitivity (the loop gain, see `auto`). While it is on, the keys and the touch buttons
+// move nothing: html.auto dims a phone's two buttons.
+const autoOn = document.getElementById('autoOn'), sensEl = document.getElementById('sens'), sensVal = document.getElementById('sensVal');
+function setAuto(on) {
+  auto.on = on; autoOn.checked = on; sensEl.disabled = !on;
+  document.getElementById('sensg').classList.toggle('off', !on); document.documentElement.classList.toggle('auto', on);
+  Object.assign(auto, { r: null, e: 0, u: 0, hit: 0 }); releaseKeys();
+}
+function setSens(v) { auto.sens = clamp(Math.round(v * 2) / 2, 0.5, 30); sensEl.value = auto.sens; sensVal.textContent = '×' + auto.sens.toFixed(1); }
+autoOn.addEventListener('change', () => { setAuto(autoOn.checked); autoOn.blur(); });
+sensEl.addEventListener('input', () => setSens(+sensEl.value));
+sensEl.addEventListener('change', () => sensEl.blur());
+// "Stop seeker": the seeker stands where it is for as long as the switch is on (also from the start of a round), and
+// goes on from there when it is switched off. It still looks and the round's clock still runs, as in a random stop.
+// The target then stands still, so what the hider does is the loop's own response: it settles, or it keeps swinging.
+const holdOn = document.getElementById('holdOn');
+function setHold(on) { G.seeker.hold = on; holdOn.checked = on; }
+holdOn.addEventListener('change', () => { setHold(holdOn.checked); holdOn.blur(); });
+setAuto(false); setSens(4); setHold(false);    // defaults on every load, whatever form state the browser restores
 const coarse = matchMedia('(any-pointer: coarse)');
 function setTouch(on = coarse.matches || navigator.maxTouchPoints > 0) {   // touch buttons on touch-capable devices
   document.documentElement.classList.toggle('touch', on);
@@ -1310,7 +1411,19 @@ function setCtrl(mode) {                        // mode switch: both filter stat
   taus.forEach((t, i) => { const on = mode === 'p2' || (mode === 'p1' && i === 0); t.el.disabled = !on || locked; t.grp.classList.toggle('off', !on); });
 }
 function setMode(mode) { if (G.ctrl !== mode) setCtrl(mode); document.querySelector(`input[name=ctrl][value=${mode}]`).checked = true; }
-function setTau(i, v) { const t = taus[i]; v = clamp(Math.round(v * 20) / 20, 0.05, 1); G[t.key] = v; t.el.value = v; t.val.textContent = v.toFixed(2) + ' s'; }
+// The two poles are set as frequencies, f = 1 / (2 pi tau) in Hz, on 14 steps a tenth of a decade apart (higher to the
+// right). The filters and the room's settings keep time constants in seconds (tau1, tau2: 0.05 .. 1 s, the range the
+// room's rules allow), so the top step, 3.2 Hz, is held at 0.05 s (3.18 Hz). A time constant that lies on no step (the
+// default 0.50 s, which is 0.318 Hz, or a value written by an older page) is used as it is: the slider stands on the
+// nearest step, and the readout shows that step's frequency when it is within 2 %, the exact frequency otherwise.
+const POLE_F = [0.16, 0.2, 0.25, 0.32, 0.4, 0.5, 0.63, 0.8, 1, 1.25, 1.6, 2, 2.5, 3.2];
+const poleF = tau => 1 / (2 * Math.PI * tau), poleTau = f => clamp(1 / (2 * Math.PI * f), 0.05, 1);
+function poleStep(tau) {                        // the nearest step on the logarithmic scale
+  const x = Math.log(poleF(tau)), d = F => Math.abs(Math.log(F) - x);
+  return POLE_F.reduce((k, F, i) => d(F) < d(POLE_F[k]) ? i : k, 0);
+}
+function poleText(tau) { const f = poleF(tau), F = POLE_F[poleStep(tau)]; return (Math.abs(F / f - 1) < 0.02 ? F : f).toFixed(2) + ' Hz'; }
+function setTau(i, v) { const t = taus[i]; v = clamp(v, 0.05, 1); G[t.key] = v; t.el.value = poleStep(v); t.val.textContent = poleText(v); }
 function setRandomStops(on) {                   // touches only the seeker's schedule, never the game
   G.randomStops = on;
   if (on) newInterval(G.seeker, false);         // a fresh moving interval from the current position and phase
@@ -1323,7 +1436,7 @@ slider.addEventListener('pointerup', () => slider.blur());
 for (const r of document.querySelectorAll('input[name=ctrl]'))
   r.addEventListener('change', () => { if (r.checked) { setMode(r.value); net.send('mode', r.value, true); } r.blur(); });
 taus.forEach((t, i) => {                        // a new time constant acts from the current filter state on
-  t.el.addEventListener('input', () => { setTau(i, +t.el.value); net.send(t.key, G[t.key]); });
+  t.el.addEventListener('input', () => { setTau(i, poleTau(POLE_F[+t.el.value])); net.send(t.key, G[t.key]); });
   t.el.addEventListener('change', () => { t.el.blur(); net.flush(t.key); });
   t.el.addEventListener('pointerup', () => t.el.blur());
 });
@@ -1785,7 +1898,7 @@ function teachView() {
   tEl.ctrl.classList.toggle('locked', !admin); tEl.go.disabled = !admin || !net.synced;
   for (const b of tEl.modes) { b.classList.toggle('on', b.dataset.mode === G.ctrl); b.disabled = !admin; }
   tRange(tEl.sp, G.seekerSpeed, tEl.spV, '×' + G.seekerSpeed.toFixed(1));
-  tRange(tEl.t1, G.tau1, tEl.t1V, G.tau1.toFixed(2) + ' s'); tRange(tEl.t2, G.tau2, tEl.t2V, G.tau2.toFixed(2) + ' s');
+  tRange(tEl.t1, poleStep(G.tau1), tEl.t1V, poleText(G.tau1)); tRange(tEl.t2, poleStep(G.tau2), tEl.t2V, poleText(G.tau2));
   tEl.t1g.classList.toggle('off', G.ctrl === 'direct'); tEl.t2g.classList.toggle('off', G.ctrl !== 'p2');
   tEl.sp.disabled = tEl.rs.disabled = !admin; tEl.t1.disabled = !admin || G.ctrl === 'direct'; tEl.t2.disabled = !admin || G.ctrl !== 'p2';
   tEl.rs.checked = G.randomStops;
@@ -1884,11 +1997,11 @@ setTouch(); fit();
 showOverlay('', '', 'Start');                    // the start screen is only the button over the dimmed playfield
 ready.then(() => { loaded = true; if (TEACH) { halted = true; tEl.mascot.src = img.idle.src; } else startLoop(); });   // the dashboard draws no playfield
 document.addEventListener('DOMContentLoaded', () => net.start());   // after every script in the page (the test harness sets its config first)
-window.__game = { G, step, render, start, fit, ready, exposureOf, visiblePoints, visible, visibility, viewAngle,
+window.__game = { auto, autoSense, setAuto, setSens, setHold, G, step, render, start, fit, ready, exposureOf, visiblePoints, visible, visibility, viewAngle,
                   blocked, eyeOf, dogPoint, dogAnim, setCtrl, setRandomStops, forward, drawTrail, clearTrails, strips, META, TRAIL,
                   safeBand, seekerYAt, SNAP, BARS, barsLayout, barText, EXC, outsideOf, measureExcursion,
                   net, FIREBASE, ROOM, TEACHER, PANEL_H, SETTINGS, setSpeed, setMode, setTau, setStops, lockControls, countRoom, advance, progStore, presenceId, showCount,
-                  PTS, VIEW, WALL, PLAYER, SEEKER, PATROL, CATCH_TIME, CALM_TIME, CATCH_LEVEL, LIMIT, LOOK, P_FLIP, S_FLIP, keys, disp, mips, spriteFor, DEV_MAX, tune, BUILD, press, release, setTouch, held, TOUCH_H,
+                  PTS, VIEW, WALL, PLAYER, SEEKER, PATROL, CATCH_TIME, CALM_TIME, CATCH_LEVEL, LIMIT, POLE_F, poleTau, poleStep, poleText, LOOK, P_FLIP, S_FLIP, keys, disp, mips, spriteFor, DEV_MAX, tune, BUILD, press, release, setTouch, held, TOUCH_H,
                   stop: () => { halted = true; cancelAnimationFrame(rafId); }, resume: startLoop,
                   kill: () => cancelAnimationFrame(rafId) };
 </script>
