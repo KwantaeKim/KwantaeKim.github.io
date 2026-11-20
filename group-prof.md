@@ -289,6 +289,28 @@ toc_title: TSirc Group
   <div class="underline"></div>
 </div>
 
+<!-- NRF-RCF Joint Grant -->
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 5;">
+    <b>NRF-RCF Joint Grant</b>,
+    <i class="fa-solid fa-user"></i>
+    Principal Investigator (PI)
+  </div>
+  <div class="tab-cell" style="flex: 1; text-align: right; white-space: nowrap;">2026 ~ 2029</div>
+</div>
+<div class="tab-row" style="display: flex; align-items: center;">
+  <div class="tab-cell" style="flex: 1;">
+    <span style="margin-right: 2em;"></span>
+    • <a href="https://research.fi/en/results/funding/89461" target="_blank" class="pub-hover">"OSCAR: Open-Source AI-Driven PA-DPD with Computing-In-Memory Acceleration for Energy-Efficient 6G FR3 Wideband Transmitters"</a> <br>
+    <span style="margin-right: 2em;"></span>
+    • Collaboration with Yonsei University and GIST, South Korea <span class='emoji'>🇰🇷</span> <br>
+    <span style="margin-right: 2em;"></span>
+    • <span style="display: inline-block; min-width: 12em;">€714k for 3 years</span>Research Council of Finland (€500k), Aalto University (€214k)
+  </div>
+</div>
+
+<span style="display: block;"></span>
+
 <!-- Academy Research Fellowship -->
 <div class="tab-row" style="display: flex; align-items: center;">
   <div class="tab-cell" style="flex: 5;">
@@ -305,9 +327,7 @@ toc_title: TSirc Group
     <span style="margin-right: 2em;"></span>
     • Ranked 1<sup>st</sup> in the <em>Communications Engineering and Electronics</em> panel <br>
     <span style="margin-right: 2em;"></span>
-    • Research Council of Finland <span class='emoji'>🇫🇮</span> <br>
-    <span style="margin-right: 2em;"></span>
-    • €999,998
+    • <span style="display: inline-block; min-width: 12em;">€1M for 4 years</span>Research Council of Finland (€700k), Aalto University (€300k)
   </div>
 </div>
 

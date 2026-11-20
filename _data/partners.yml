@@ -152,6 +152,17 @@
   lon: 127.301388
   zoom: 15.5
 
+- name: Sangjin Kim
+  url: https://symplelab.com
+  title: Assistant Professor
+  institution: GIST
+  country: South Korea
+  flag: 🇰🇷
+  continent: Asia
+  lat: 35.229350
+  lon: 126.841685
+  zoom: 16.5
+
 - name: Sohmyung Ha
   url: https://wp.nyu.edu/sohmyung/
   title: Associate Professor
